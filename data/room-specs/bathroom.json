@@ -1,0 +1,1045 @@
+{
+ "id": "bathroom",
+ "order": 4,
+ "name": "Bathroom",
+ "name_sr": "Kupatilo",
+ "plan_room": "bathroom",
+ "estimates": "data/estimates/bathroom.json (camera fits and measurements from the 5 renders)",
+ "exterior_walls": [
+  "left"
+ ],
+ "exterior_thickness": {
+  "value": 0.199,
+  "source": "assumed",
+  "note": "as drawn on the plan"
+ },
+ "floor": "floor-tiles",
+ "wall": "wall-tiles",
+ "ceiling": "ceiling",
+ "outside": {
+  "sky": "#c9d8e6",
+  "ground": "#8d8a62"
+ },
+ "materials": {
+  "floor-tiles": {
+   "color": "#a89a88",
+   "texture": "tiles",
+   "tile": [
+    0.6,
+    0.6
+   ],
+   "textureScale": 2.4,
+   "roughness": 0.55,
+   "source": "estimated",
+   "from": "60 x 60 beige porcelain, white-balanced #897d6e, lifted"
+  },
+  "wall-tiles": {
+   "color": "#b8ad9f",
+   "texture": "tiles",
+   "tile": [
+    0.6,
+    0.6
+   ],
+   "textureScale": 2.4,
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "60 x 60 light beige porcelain, white-balanced #a19a90, lifted"
+  },
+  "wood-tiles": {
+   "color": "#9a7048",
+   "texture": "plank-tiles",
+   "tile": [
+    1.0,
+    0.113
+   ],
+   "textureScale": 2.0,
+   "roughness": 0.55,
+   "source": "estimated",
+   "from": "oak-look plank tiles 11.3 cm high, white-balanced #614527, lifted"
+  },
+  "ceiling": {
+   "color": "#c9bdac",
+   "roughness": 0.95,
+   "source": "assumed",
+   "from": "off-white paint"
+  },
+  "cabinet": {
+   "color": "#aba193",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "greige doors, white-balanced #c0bcb9"
+  },
+  "vanity": {
+   "color": "#9a8c76",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "vanity carcass and drawers, white-balanced #8e8270"
+  },
+  "worktop": {
+   "color": "#d6cfc4",
+   "texture": "stone",
+   "textureScale": 1.0,
+   "roughness": 0.4,
+   "source": "estimated",
+   "from": "light stone-look worktop"
+  },
+  "smoked-mirror": {
+   "color": "#5e554d",
+   "roughness": 0.18,
+   "metalness": 0.85,
+   "source": "estimated",
+   "from": "smoked grey mirror doors"
+  },
+  "sanitary": {
+   "color": "#f2f0eb",
+   "roughness": 0.15,
+   "source": "estimated",
+   "from": "white ceramic"
+  },
+  "black": {
+   "color": "#0c0a08",
+   "roughness": 0.45,
+   "metalness": 0.2,
+   "source": "estimated",
+   "from": "matt black fittings"
+  },
+  "white": {
+   "color": "#f0eee9",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "door frame and casings, flush plate"
+  },
+  "anthracite": {
+   "color": "#3b3b3b",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "window frame"
+  },
+  "door": {
+   "color": "#e6e1d9",
+   "texture": "door-inlay",
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "white leaf with black diagonal inlay lines"
+  },
+  "glass": {
+   "color": "#d6dde0",
+   "opacity": 0.06,
+   "roughness": 0.05,
+   "source": "assumed"
+  },
+  "mat": {
+   "color": "#7d6450",
+   "texture": "fabric",
+   "textureScale": 0.5,
+   "roughness": 1.0,
+   "source": "estimated",
+   "from": "beige-brown bobble mat"
+  }
+ },
+ "openings": [
+  {
+   "id": "door",
+   "name": "Door to the corridor (page 1 door N)",
+   "type": "door",
+   "plan": "p5-D",
+   "trim": {
+    "value": 0.07,
+    "source": "estimated",
+    "from": "casings about 7 cm"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.08,
+    "source": "owner",
+    "note": "standard door: 2.00 m leaf plus frame (render leaf top 2.05)"
+   },
+   "latch": "x-max",
+   "latch_source": {
+    "value": "handle at x 0.82 (+-5 cm)",
+    "source": "estimated",
+    "from": "renders"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "window",
+   "name": "Small high window",
+   "type": "window",
+   "plan": "p5-C",
+   "sill": {
+    "value": 1.7,
+    "source": "estimated",
+    "from": "seen reflected in the mirror cabinet (p01, p04)"
+   },
+   "head": {
+    "value": 2.4,
+    "source": "estimated",
+    "from": "renders"
+   },
+   "sashes": 1,
+   "frameMaterial": "anthracite"
+  }
+ ],
+ "elements": [
+  {
+   "id": "wood-tile-cladding",
+   "name": "Wood-look plank tiles (shower walls)",
+   "type": "parts",
+   "source_note": "estimated from the renders: whole top wall, left wall z 0.07-0.88, right wall z 0-1.0, floor to ceiling",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.179,
+       1.929
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0,
+       0.003
+      ],
+      "m": "wood-tiles"
+     },
+     {
+      "x": [
+       0.0,
+       1.179
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.07,
+       0.073
+      ],
+      "m": "wood-tiles"
+     },
+     {
+      "x": [
+       1.176,
+       1.179
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0,
+       0.07
+      ],
+      "m": "wood-tiles"
+     },
+     {
+      "x": [
+       0.0,
+       0.003
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.073,
+       0.88
+      ],
+      "m": "wood-tiles"
+     },
+     {
+      "x": [
+       1.926,
+       1.929
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.003,
+       1.0
+      ],
+      "m": "wood-tiles"
+     }
+    ]
+   }
+  },
+  {
+   "id": "boiler-cabinet",
+   "name": "Boiler cabinet (floating)",
+   "type": "parts",
+   "label": "POLICA /SKRIVAČ ZA BOJLER",
+   "source_note": "80 x 40 cm as labelled (owner: label wins; drawn 34.5 deep); floats at 0.379, to the ceiling (renders)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.0,
+       0.8
+      ],
+      "y": [
+       0.379,
+       "ceiling"
+      ],
+      "z": [
+       0.073,
+       0.47
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.399,
+       0.401
+      ],
+      "y": [
+       0.379,
+       {
+        "below_ceiling": 0.018
+       }
+      ],
+      "z": [
+       0.47,
+       0.472
+      ],
+      "m": "vanity"
+     },
+     {
+      "x": [
+       0.0,
+       0.8
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.02
+       },
+       {
+        "below_ceiling": 0.017
+       }
+      ],
+      "z": [
+       0.47,
+       0.472
+      ],
+      "m": "vanity"
+     },
+     {
+      "x": [
+       0.405,
+       0.417
+      ],
+      "y": [
+       0.41,
+       1.06
+      ],
+      "z": [
+       0.472,
+       0.482
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "shower-glass",
+   "name": "Shower enclosure (clear glass, black frame)",
+   "type": "glass",
+   "source_note": "panel lines from the plan (x 0.81, z 1.0); glass height 2.35 from the renders",
+   "materials": {
+    "glass": "glass",
+    "frame": "black"
+   },
+   "params": {
+    "panels": [
+     {
+      "from": [
+       0.81,
+       0.073
+      ],
+      "to": [
+       0.81,
+       1.0
+      ],
+      "y": [
+       0,
+       2.35
+      ]
+     },
+     {
+      "from": [
+       0.81,
+       1.0
+      ],
+      "to": [
+       1.926,
+       1.0
+      ],
+      "y": [
+       0,
+       2.35
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "shower-fittings",
+   "name": "Shower fittings (black)",
+   "type": "parts",
+   "source_note": "estimated from the renders: linear drain along the right wall (the plan's p5-A), bar mixer at 1.17, rain head 30 cm at 2.17",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.804,
+       1.876
+      ],
+      "y": [
+       0,
+       0.005
+      ],
+      "z": [
+       0.162,
+       0.798
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.89,
+       1.926
+      ],
+      "y": [
+       1.15,
+       1.19
+      ],
+      "z": [
+       0.305,
+       0.595
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.6,
+       1.926
+      ],
+      "y": [
+       2.2,
+       2.22
+      ],
+      "z": [
+       0.46,
+       0.48
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.45,
+       1.75
+      ],
+      "y": [
+       2.16,
+       2.18
+      ],
+      "z": [
+       0.32,
+       0.62
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "toilet-box",
+   "name": "Toilet box, LED niche and cabinet",
+   "type": "parts",
+   "label": "POLICA IZNAD ŠOLJE",
+   "source_note": "footprint: plan merged outline z 1.02-1.60 (label 58); heights from the renders: tiled box to 1.20, niche 1.20-1.42, cabinet to the ceiling",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.729,
+       1.926
+      ],
+      "y": [
+       0,
+       1.2
+      ],
+      "z": [
+       1.02,
+       1.6
+      ],
+      "m": "wall-tiles"
+     },
+     {
+      "x": [
+       1.729,
+       1.926
+      ],
+      "y": [
+       1.424,
+       "ceiling"
+      ],
+      "z": [
+       1.02,
+       1.6
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       1.726,
+       1.729
+      ],
+      "y": [
+       1.424,
+       {
+        "below_ceiling": 0.054
+       }
+      ],
+      "z": [
+       1.31,
+       1.312
+      ],
+      "m": "vanity"
+     },
+     {
+      "x": [
+       1.726,
+       1.729
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.056
+       },
+       {
+        "below_ceiling": 0.053
+       }
+      ],
+      "z": [
+       1.02,
+       1.6
+      ],
+      "m": "vanity"
+     },
+     {
+      "x": [
+       1.72,
+       1.729
+      ],
+      "y": [
+       0.882,
+       1.076
+      ],
+      "z": [
+       1.2,
+       1.445
+      ],
+      "m": "white"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wc",
+   "name": "Wall-hung toilet",
+   "type": "wc",
+   "center": {
+    "value": [
+     1.729,
+     0.41,
+     1.3065
+    ],
+    "source": "estimated",
+    "from": "renders: bowl x 1.187-1.729, z 1.121-1.492; seat 0.41 assumed"
+   },
+   "rotationY": -1.5708,
+   "materials": {
+    "body": "sanitary",
+    "seat": "sanitary"
+   },
+   "params": {
+    "length": 0.54,
+    "width": 0.37
+   }
+  },
+  {
+   "id": "vanity",
+   "name": "Vanity (floating, 2 drawers)",
+   "type": "parts",
+   "label": "POLICA SA OGLEDALOM",
+   "source_note": "estimated from the renders: x 1.428-1.929, z 1.60-2.54, 0.356-0.796; worktop 1.8 cm",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.437,
+       1.926
+      ],
+      "y": [
+       0.356,
+       0.778
+      ],
+      "z": [
+       1.6,
+       2.54
+      ],
+      "m": "vanity"
+     },
+     {
+      "x": [
+       1.428,
+       1.926
+      ],
+      "y": [
+       0.778,
+       0.796
+      ],
+      "z": [
+       1.6,
+       2.54
+      ],
+      "m": "worktop"
+     },
+     {
+      "x": [
+       1.434,
+       1.437
+      ],
+      "y": [
+       0.58,
+       0.583
+      ],
+      "z": [
+       1.62,
+       2.52
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "basin",
+   "name": "Vessel basin",
+   "type": "basin",
+   "center": {
+    "value": [
+     1.66,
+     0.915,
+     2.09
+    ],
+    "source": "estimated",
+    "from": "renders: 0.35 x 0.62, rim 0.915"
+   },
+   "rotationY": 1.5708,
+   "materials": {
+    "body": "sanitary"
+   },
+   "params": {
+    "width": 0.62,
+    "depth": 0.35,
+    "height": 0.119
+   }
+  },
+  {
+   "id": "vanity-tap",
+   "name": "Wall-mounted mixer (black)",
+   "type": "parts",
+   "source_note": "estimated from the renders: spout at z 2.10, y 1.03-1.06",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.76,
+       1.926
+      ],
+      "y": [
+       1.03,
+       1.05
+      ],
+      "z": [
+       2.09,
+       2.11
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.9,
+       1.926
+      ],
+      "y": [
+       1.03,
+       1.07
+      ],
+      "z": [
+       1.99,
+       2.01
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.9,
+       1.926
+      ],
+      "y": [
+       1.03,
+       1.07
+      ],
+      "z": [
+       2.21,
+       2.23
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mirror-cabinet",
+   "name": "Mirror cabinet (smoked mirror doors)",
+   "type": "parts",
+   "source_note": "estimated from the renders: x 1.715-1.929, z 1.602-2.54 (94 as labelled), 1.204 to the ceiling, doors split at z 2.065",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.715,
+       1.926
+      ],
+      "y": [
+       1.204,
+       "ceiling"
+      ],
+      "z": [
+       1.602,
+       2.54
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       1.712,
+       1.715
+      ],
+      "y": [
+       1.21,
+       {
+        "below_ceiling": 0.062
+       }
+      ],
+      "z": [
+       1.605,
+       2.062
+      ],
+      "m": "smoked-mirror"
+     },
+     {
+      "x": [
+       1.712,
+       1.715
+      ],
+      "y": [
+       1.21,
+       {
+        "below_ceiling": 0.062
+       }
+      ],
+      "z": [
+       2.068,
+       2.535
+      ],
+      "m": "smoked-mirror"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ceiling-light",
+   "name": "Ceiling light (round)",
+   "type": "ceiling-disc",
+   "params": {
+    "at": [
+     0.81,
+     1.35
+    ],
+    "diameter": 0.48,
+    "intensity": 7,
+    "color": "#fff6ea"
+   },
+   "source_note": "estimated: centre (0.81, 1.35), 48 cm (renders)"
+  },
+  {
+   "id": "bath-mat",
+   "name": "Bath mat",
+   "type": "rug",
+   "center": {
+    "value": [
+     1.075,
+     0.008,
+     1.805
+    ],
+    "source": "estimated",
+    "from": "far edge x 1.25, z 1.11-2.50 (near edge not seen)"
+   },
+   "size": {
+    "value": [
+     0.35,
+     0.016,
+     1.39
+    ],
+    "source": "estimated",
+    "from": "renders"
+   },
+   "materials": {
+    "body": "mat"
+   }
+  }
+ ],
+ "lights": [
+  {
+   "id": "ambient",
+   "type": "hemisphere",
+   "color": "#fff3e6",
+   "groundColor": "#3b2f25",
+   "intensity": 0.9,
+   "source": "assumed",
+   "from": "stands in for bounce light"
+  },
+  {
+   "id": "daylight",
+   "type": "window-sky",
+   "group": "daylight",
+   "position": [
+    0.03,
+    2.05,
+    2.105
+   ],
+   "facing": [
+    1,
+    0,
+    0
+   ],
+   "width": 0.45,
+   "height": 0.6,
+   "color": "#eef3f8",
+   "intensity": 5,
+   "source": "estimated",
+   "from": "small window (seen in reflections)"
+  },
+  {
+   "id": "led-niche",
+   "type": "led-strip",
+   "from": [
+    1.74,
+    1.418,
+    1.03
+   ],
+   "to": [
+    1.74,
+    1.418,
+    1.59
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 40,
+   "source": "estimated",
+   "from_render": "LED in the niche above the toilet"
+  },
+  {
+   "id": "led-mirror",
+   "type": "led-strip",
+   "from": [
+    1.8,
+    1.198,
+    1.61
+   ],
+   "to": [
+    1.8,
+    1.198,
+    2.53
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 40,
+   "source": "estimated",
+   "from_render": "LED under the mirror cabinet"
+  },
+  {
+   "id": "led-vanity",
+   "type": "led-strip",
+   "from": [
+    1.6,
+    0.35,
+    1.62
+   ],
+   "to": [
+    1.6,
+    0.35,
+    2.52
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 40,
+   "source": "estimated",
+   "from_render": "underglow under the vanity"
+  },
+  {
+   "id": "led-boiler",
+   "type": "led-strip",
+   "from": [
+    0.02,
+    0.373,
+    0.27
+   ],
+   "to": [
+    0.78,
+    0.373,
+    0.27
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 40,
+   "source": "estimated",
+   "from_render": "underglow under the boiler cabinet"
+  }
+ ],
+ "cameras": [
+  {
+   "id": "p01",
+   "name": "Render 1: from the door side",
+   "position": [
+    -1.875,
+    1.503,
+    1.496
+   ],
+   "target": [
+    1.929,
+    1.296,
+    1.376
+   ],
+   "fov": 50.6,
+   "near": 2.0,
+   "aspect": 1,
+   "daylight": true,
+   "ref": "reference/renders/bathroom/bathroom-p01.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.87 px rms; camera beyond the left wall"
+  },
+  {
+   "id": "p02",
+   "name": "Render 2: boiler cabinet and shower",
+   "position": [
+    0.48,
+    1.539,
+    3.518
+   ],
+   "target": [
+    1.254,
+    1.289,
+    0.0
+   ],
+   "fov": 50.6,
+   "near": 1.33,
+   "aspect": 1,
+   "daylight": true,
+   "ref": "reference/renders/bathroom/bathroom-p02.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.27 px rms; camera beyond the bottom wall"
+  },
+  {
+   "id": "p03",
+   "name": "Render 3: shower and vanity",
+   "position": [
+    -0.234,
+    1.435,
+    2.741
+   ],
+   "target": [
+    1.929,
+    1.27,
+    0.648
+   ],
+   "fov": 50.6,
+   "near": 0.1,
+   "aspect": 1,
+   "daylight": true,
+   "ref": "reference/renders/bathroom/bathroom-p03.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.91 px rms"
+  },
+  {
+   "id": "p04",
+   "name": "Render 4: vanity wall",
+   "position": [
+    -0.48,
+    1.476,
+    0.567
+   ],
+   "target": [
+    1.929,
+    1.393,
+    2.086
+   ],
+   "fov": 50.6,
+   "near": 1.0,
+   "aspect": 1,
+   "daylight": true,
+   "ref": "reference/renders/bathroom/bathroom-p04.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.14 px rms; camera beyond the left wall"
+  },
+  {
+   "id": "p05",
+   "name": "Render 5: vanity close-up",
+   "position": [
+    0.189,
+    1.82,
+    0.761
+   ],
+   "target": [
+    1.929,
+    0.689,
+    2.018
+   ],
+   "fov": 35.3,
+   "near": 0.05,
+   "aspect": 1,
+   "daylight": true,
+   "ref": "reference/renders/bathroom/bathroom-p05.jpg",
+   "source": "estimated",
+   "from": "rough camera fit, 3.8 px rms (zoomed close-up)"
+  }
+ ]
+}

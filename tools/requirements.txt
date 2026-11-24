@@ -1,0 +1,7 @@
+# Python packages for the plan-geometry tools. Install into tools/.venv:
+#   python -m venv tools/.venv
+#   tools/.venv/Scripts/python -m pip install -r tools/requirements.txt
+pymupdf==2.1
+numpy==2.5.5
+opencv-python-headless==5.1.0.95
+shapely==2.2.0

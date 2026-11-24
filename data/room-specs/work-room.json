@@ -1,0 +1,1459 @@
+{
+ "id": "work-room",
+ "order": 2,
+ "name": "Work room",
+ "name_sr": "Radna soba",
+ "plan_room": "work-room",
+ "estimates": "data/estimates/work-room.json (camera fits and measurements from the 5 renders)",
+ "exterior_walls": [
+  "top"
+ ],
+ "exterior_thickness": {
+  "value": 0.2,
+  "source": "assumed",
+  "note": "as drawn on the plan; real exterior walls are probably thicker"
+ },
+ "floor": "floor-wood",
+ "wall": "wall-plaster",
+ "ceiling": "ceiling",
+ "skirting": {
+  "height": {
+   "value": 0.065,
+   "source": "estimated",
+   "from": "renders p01-p05, joint fit 0.068"
+  },
+  "material": "skirting"
+ },
+ "outside": {
+  "sky": "#c9d8e6",
+  "ground": "#8d8a62"
+ },
+ "materials": {
+  "floor-wood": {
+   "color": "#5a3a28",
+   "texture": "wood-planks",
+   "textureScale": 2.4,
+   "roughness": 0.75,
+   "source": "estimated",
+   "from": "renders, white-balanced #2a1912, lifted for the missing bounce light"
+  },
+  "skirting": {
+   "color": "#24150e",
+   "roughness": 0.6,
+   "source": "estimated",
+   "from": "p02"
+  },
+  "wall-plaster": {
+   "color": "#a48b72",
+   "texture": "plaster",
+   "textureScale": 1.0,
+   "roughness": 0.92,
+   "source": "estimated",
+   "from": "p02/p04, white-balanced #766757, lifted"
+  },
+  "ceiling": {
+   "color": "#b8aa96",
+   "roughness": 0.95,
+   "source": "assumed",
+   "from": "off-white paint; renders show it unlit"
+  },
+  "walnut": {
+   "color": "#7a5034",
+   "texture": "walnut",
+   "textureScale": 0.8,
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "p01/p02/p04/p05"
+  },
+  "greige": {
+   "color": "#a8977c",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "wardrobe doors p04/p05, white-balanced"
+  },
+  "plinth": {
+   "color": "#1b130e",
+   "roughness": 0.8,
+   "source": "estimated",
+   "from": "p04"
+  },
+  "oak": {
+   "color": "#9a7e58",
+   "roughness": 0.55,
+   "source": "estimated",
+   "from": "desk top p02/p04, white-balanced #987f57"
+  },
+  "black": {
+   "color": "#141210",
+   "roughness": 0.45,
+   "metalness": 0.2,
+   "source": "estimated",
+   "from": "track lights, handles, desk frame"
+  },
+  "white": {
+   "color": "#f0eee9",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "window frame, radiator (white PVC / enamel)"
+  },
+  "door": {
+   "color": "#e6e1d9",
+   "texture": "door-inlay",
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "white leaf with black diagonal inlay lines (p01, p03)"
+  },
+  "glass": {
+   "color": "#dfe9ef",
+   "opacity": 0.12,
+   "roughness": 0.05,
+   "source": "assumed"
+  },
+  "tv-screen": {
+   "color": "#060606",
+   "roughness": 0.6,
+   "metalness": 0.0,
+   "source": "estimated",
+   "from": "TV off in all renders"
+  },
+  "monitor-screen": {
+   "color": "#121826",
+   "emissive": "#4a5578",
+   "emissiveIntensity": 0.35,
+   "roughness": 0.2,
+   "source": "estimated",
+   "from": "monitors on (p01, p03, p04)"
+  },
+  "leather": {
+   "color": "#4e2a1a",
+   "roughness": 0.6,
+   "source": "estimated",
+   "from": "p01"
+  },
+  "curtain": {
+   "color": "#e3d8c6",
+   "opacity": 0.82,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "cream pencil-pleat curtains, p02"
+  },
+  "rug": {
+   "color": "#a59a88",
+   "texture": "rug",
+   "textureScale": 1.0,
+   "roughness": 1.0,
+   "source": "estimated",
+   "from": "p01/p04, white-balanced"
+  },
+  "shutter-box": {
+   "color": "#b9b2a6",
+   "roughness": 0.8,
+   "source": "estimated",
+   "from": "light warm grey band above the window, p02"
+  },
+  "brass": {
+   "color": "#9a6a2a",
+   "roughness": 0.35,
+   "metalness": 0.8,
+   "source": "estimated",
+   "from": "floor lamp accents, p04"
+  }
+ },
+ "openings": [
+  {
+   "id": "door",
+   "name": "Door to the hallway (page 1 door I)",
+   "type": "door",
+   "plan": "p2-F",
+   "trim": {
+    "value": 0.07,
+    "source": "estimated",
+    "from": "casings about 7 cm wide (renders)"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.105,
+    "source": "owner",
+    "note": "standard door: 2.00 m leaf plus frame (the render model's leaf top is 2.075)"
+   },
+   "latch": "z-min",
+   "latch_source": {
+    "value": "handle on the window side, hinges toward the corner; opens into the room",
+    "source": "estimated",
+    "from": "p01, p04"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "window",
+   "name": "Window (2 casement sashes)",
+   "type": "window",
+   "wall": "top",
+   "range": {
+    "value": [
+     0.46,
+     1.93
+    ],
+    "source": "plan",
+    "from": "plan sill line z 0.02, x 0.46-1.93"
+   },
+   "sill": {
+    "value": 1.02,
+    "source": "estimated",
+    "from": "p02 head-on"
+   },
+   "head": {
+    "value": 2.2,
+    "source": "estimated",
+    "from": "p02 head-on"
+   },
+   "sashes": 2,
+   "frameMaterial": "white"
+  }
+ ],
+ "elements": [
+  {
+   "id": "desk",
+   "name": "Desk (height-adjustable, shown at 80 cm)",
+   "type": "desk",
+   "label": "RADNI STO",
+   "rect": {
+    "x": [
+     0.023,
+     0.674
+    ],
+    "z": [
+     1.142,
+     2.804
+    ],
+    "source": "plan",
+    "from": "RADNI STO footprint (the plan notch at the wall is the TV)"
+   },
+   "y1": {
+    "value": 0.804,
+    "source": "estimated",
+    "from": "joint camera fit p01-p04 (+-1 cm)"
+   },
+   "materials": {
+    "top": "oak",
+    "frame": "black"
+   },
+   "params": {
+    "top": 0.02,
+    "legs": [
+     1.36,
+     2.54
+    ]
+   }
+  },
+  {
+   "id": "monitor-left",
+   "name": "Monitor",
+   "type": "monitor",
+   "center": {
+    "value": [
+     0.2,
+     1.155,
+     1.68
+    ],
+    "source": "estimated",
+    "from": "p01 (+-5 cm)"
+   },
+   "size": {
+    "value": [
+     0.03,
+     0.39,
+     0.62
+    ],
+    "source": "estimated",
+    "from": "about 27 inch"
+   },
+   "materials": {
+    "body": "black",
+    "screen": "monitor-screen"
+   },
+   "params": {
+    "face": "+x"
+   }
+  },
+  {
+   "id": "monitor-right",
+   "name": "Monitor",
+   "type": "monitor",
+   "center": {
+    "value": [
+     0.2,
+     1.155,
+     2.31
+    ],
+    "source": "estimated",
+    "from": "p01 (+-5 cm)"
+   },
+   "size": {
+    "value": [
+     0.03,
+     0.39,
+     0.62
+    ],
+    "source": "estimated",
+    "from": "about 27 inch"
+   },
+   "materials": {
+    "body": "black",
+    "screen": "monitor-screen"
+   },
+   "params": {
+    "face": "+x"
+   }
+  },
+  {
+   "id": "tv",
+   "name": "Wall TV (about 50 inch)",
+   "type": "tv",
+   "center": {
+    "value": [
+     0.035,
+     1.733,
+     1.9575
+    ],
+    "source": "estimated",
+    "from": "p01 head-on, checked in p03; z extent from the plan"
+   },
+   "size": {
+    "value": [
+     0.06,
+     0.64,
+     1.105
+    ],
+    "source": "estimated",
+    "from": "p01"
+   },
+   "materials": {
+    "body": "black",
+    "screen": "tv-screen"
+   },
+   "params": {
+    "face": "+x"
+   }
+  },
+  {
+   "id": "bookshelf",
+   "name": "Bookshelf (closed base, two open bays)",
+   "type": "parts",
+   "label": "POLICA",
+   "source_note": "footprint from the plan (POLICA x 0.02-0.45, z 0.064-0.728); heights and structure estimated from p01 and p03",
+   "materials": {
+    "body": "greige"
+   },
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.02,
+       0.42
+      ],
+      "y": [
+       0,
+       0.065
+      ],
+      "z": [
+       0.064,
+       0.728
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       0.02,
+       0.45
+      ],
+      "y": [
+       0.065,
+       1.024
+      ],
+      "z": [
+       0.064,
+       0.728
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.02,
+       0.035
+      ],
+      "y": [
+       1.024,
+       "ceiling"
+      ],
+      "z": [
+       0.064,
+       0.728
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.024,
+       "ceiling"
+      ],
+      "z": [
+       0.064,
+       0.082
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.024,
+       "ceiling"
+      ],
+      "z": [
+       0.71,
+       0.728
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.455
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.3,
+       0.5
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.384,
+       1.406
+      ],
+      "z": [
+       0.082,
+       0.3
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.76,
+       1.78
+      ],
+      "z": [
+       0.082,
+       0.3
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       2.137,
+       2.158
+      ],
+      "z": [
+       0.082,
+       0.3
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.384,
+       1.406
+      ],
+      "z": [
+       0.5,
+       0.71
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       1.76,
+       1.78
+      ],
+      "z": [
+       0.5,
+       0.71
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.035,
+       0.45
+      ],
+      "y": [
+       2.137,
+       2.158
+      ],
+      "z": [
+       0.5,
+       0.71
+      ],
+      "m": "greige"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tall-unit",
+   "name": "Walnut tall unit in front of the wall pier",
+   "type": "parts",
+   "source_note": "footprint: plan (pier face x 0.12 to the front line x 0.46, z 0.79-1.14); floor to ceiling (renders)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.12,
+       0.43
+      ],
+      "y": [
+       0,
+       0.065
+      ],
+      "z": [
+       0.79,
+       1.14
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       0.12,
+       0.46
+      ],
+      "y": [
+       0.065,
+       "ceiling"
+      ],
+      "z": [
+       0.79,
+       1.14
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wardrobe",
+   "name": "Built-in wardrobe (L-shaped)",
+   "type": "parts",
+   "label": "GARDEROBER",
+   "source_note": "footprint: plan (both legs, 60 cm deep); doors, plinth, top panel, walnut ends and handles from p04 and p05",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.802,
+       2.37
+      ],
+      "y": [
+       0,
+       0.07
+      ],
+      "z": [
+       2.811,
+       3.85
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       0.87,
+       2.37
+      ],
+      "y": [
+       0,
+       0.07
+      ],
+      "z": [
+       3.85,
+       4.42
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.772,
+       2.37
+      ],
+      "y": [
+       0.07,
+       "ceiling"
+      ],
+      "z": [
+       2.831,
+       3.82
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       0.89,
+       2.37
+      ],
+      "y": [
+       0.07,
+       "ceiling"
+      ],
+      "z": [
+       3.82,
+       4.42
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       1.772,
+       2.37
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       2.811,
+       2.831
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       0.87,
+       0.89
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       3.82,
+       4.42
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       1.769,
+       1.772
+      ],
+      "y": [
+       0.07,
+       {
+        "below_ceiling": 0.103
+       }
+      ],
+      "z": [
+       3.304,
+       3.308
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.769,
+       1.772
+      ],
+      "y": [
+       0.07,
+       {
+        "below_ceiling": 0.103
+       }
+      ],
+      "z": [
+       3.779,
+       3.783
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.304,
+       1.319
+      ],
+      "y": [
+       0.07,
+       {
+        "below_ceiling": 0.103
+       }
+      ],
+      "z": [
+       3.817,
+       3.82
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.724,
+       1.728
+      ],
+      "y": [
+       0.07,
+       {
+        "below_ceiling": 0.103
+       }
+      ],
+      "z": [
+       3.817,
+       3.82
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.769,
+       1.772
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.105
+       },
+       {
+        "below_ceiling": 0.101
+       }
+      ],
+      "z": [
+       2.831,
+       3.82
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       0.89,
+       1.772
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.105
+       },
+       {
+        "below_ceiling": 0.101
+       }
+      ],
+      "z": [
+       3.817,
+       3.82
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.758,
+       1.769
+      ],
+      "y": [
+       0.07,
+       1.065
+      ],
+      "z": [
+       3.299,
+       3.313
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.303,
+       1.317
+      ],
+      "y": [
+       0.07,
+       1.065
+      ],
+      "z": [
+       3.809,
+       3.817
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "walnut-panel-1",
+   "name": "Walnut wall panel with LED edge",
+   "type": "parts",
+   "source_note": "position: plan lines on the right wall; floor-to-ceiling walnut board 5 cm off the wall (renders p01, p02)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       2.3,
+       2.32
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.01,
+       0.79
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "walnut-panel-2",
+   "name": "Walnut wall panel with LED edge",
+   "type": "parts",
+   "source_note": "position: plan lines on the right wall; height and finish from p02, p04, p05",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       2.3,
+       2.32
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       2.021,
+       2.809
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "shutter-box",
+   "name": "Roller-shutter box above the window",
+   "type": "parts",
+   "source_note": "estimated from p02: flat band above the window frame, full window width",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.46,
+       1.93
+      ],
+      "y": [
+       2.2,
+       2.4
+      ],
+      "z": [
+       0.0,
+       0.006
+      ],
+      "m": "shutter-box"
+     }
+    ]
+   }
+  },
+  {
+   "id": "window-sill",
+   "name": "Window sill board",
+   "type": "parts",
+   "source_note": "estimated from p02: 2 cm proud of the wall, top at 1.02",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.44,
+       1.95
+      ],
+      "y": [
+       0.98,
+       1.02
+      ],
+      "z": [
+       -0.02,
+       0.02
+      ],
+      "m": "white"
+     }
+    ]
+   }
+  },
+  {
+   "id": "radiator",
+   "name": "Radiator",
+   "type": "radiator",
+   "center": {
+    "value": [
+     1.2955,
+     0.439,
+     0.058
+    ],
+    "source": "estimated",
+    "from": "plan x 1.008-1.583 and front face z 0.0965; height p02 (0.088-0.79)"
+   },
+   "size": {
+    "value": [
+     0.575,
+     0.702,
+     0.0765
+    ],
+    "source": "estimated",
+    "from": "p02"
+   },
+   "materials": {
+    "body": "white"
+   }
+  },
+  {
+   "id": "curtain-rod",
+   "name": "Curtain rod",
+   "type": "parts",
+   "source_note": "estimated from p01/p02: about 11 cm below the ceiling, 12 cm from the wall, x 0.51-2.24",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.51,
+       2.24
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.123
+       },
+       {
+        "below_ceiling": 0.103
+       }
+      ],
+      "z": [
+       0.11,
+       0.13
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "curtain-left",
+   "name": "Curtain (sheer, cream)",
+   "type": "curtain",
+   "y0": {
+    "value": 0.015,
+    "source": "estimated",
+    "from": "p02"
+   },
+   "y1": {
+    "value": {
+     "below_ceiling": 0.125
+    },
+    "source": "estimated",
+    "from": "hangs from the rod"
+   },
+   "materials": {
+    "body": "curtain"
+   },
+   "params": {
+    "from": [
+     0.49,
+     0.13
+    ],
+    "to": [
+     0.84,
+     0.13
+    ],
+    "rod": false
+   }
+  },
+  {
+   "id": "curtain-right",
+   "name": "Curtain (sheer, cream)",
+   "type": "curtain",
+   "y0": {
+    "value": 0.015,
+    "source": "estimated",
+    "from": "p02"
+   },
+   "y1": {
+    "value": {
+     "below_ceiling": 0.125
+    },
+    "source": "estimated",
+    "from": "hangs from the rod"
+   },
+   "materials": {
+    "body": "curtain"
+   },
+   "params": {
+    "from": [
+     1.81,
+     0.13
+    ],
+    "to": [
+     2.15,
+     0.13
+    ],
+    "rod": false
+   }
+  },
+  {
+   "id": "chair",
+   "name": "Desk chair (brown leather)",
+   "type": "chair",
+   "center": {
+    "value": [
+     0.85,
+     0,
+     1.97
+    ],
+    "source": "estimated",
+    "from": "p01 (+-15 cm)"
+   },
+   "rotationY": 1.5708,
+   "materials": {
+    "seat": "leather",
+    "frame": "black"
+   }
+  },
+  {
+   "id": "rug",
+   "name": "Rug",
+   "type": "rug",
+   "center": {
+    "value": [
+     1.49,
+     0.004,
+     1.49
+    ],
+    "source": "estimated",
+    "from": "edges from p01, p02, p04, p05 (x 0.75-2.23, z 0.35-2.63)"
+   },
+   "size": {
+    "value": [
+     1.48,
+     0.008,
+     2.28
+    ],
+    "source": "estimated",
+    "from": "p01-p05"
+   },
+   "materials": {
+    "body": "rug"
+   }
+  },
+  {
+   "id": "floor-lamp",
+   "name": "Floor lamp",
+   "type": "floor-lamp",
+   "center": {
+    "value": [
+     1.99,
+     0,
+     2.45
+    ],
+    "source": "estimated",
+    "from": "triangulated from p04 and p05"
+   },
+   "materials": {
+    "frame": "black",
+    "accent": "brass"
+   },
+   "params": {
+    "height": 1.61,
+    "intensity": 22,
+    "color": "#ffd9a8"
+   }
+  },
+  {
+   "id": "track-a",
+   "name": "Track lights (8 spots)",
+   "type": "track",
+   "source_note": "rail x 0.72, z 0.30-3.50 and spot positions from p01-p04; aiming estimated",
+   "materials": {
+    "frame": "black"
+   },
+   "params": {
+    "from": [
+     0.72,
+     0.3
+    ],
+    "to": [
+     0.72,
+     3.5
+    ],
+    "intensity": 10,
+    "angle": 0.5,
+    "color": "#ffd8a6",
+    "spots": [
+     [
+      0.009,
+      0.25,
+      1.7,
+      0.4
+     ],
+     [
+      0.094,
+      0.25,
+      1.3,
+      0.62
+     ],
+     [
+      0.203,
+      0.4,
+      1.3,
+      1.0
+     ],
+     [
+      0.281,
+      0.3,
+      0.8,
+      1.6,
+      1
+     ],
+     [
+      0.694,
+      0.3,
+      0.8,
+      2.4,
+      1
+     ],
+     [
+      0.775,
+      0.35,
+      0.8,
+      2.6
+     ],
+     [
+      0.881,
+      0.6,
+      0.0,
+      3.4
+     ],
+     [
+      0.956,
+      1.2,
+      0.0,
+      3.6
+     ]
+    ],
+    "penumbra": 0.85
+   }
+  },
+  {
+   "id": "track-b",
+   "name": "Track lights (4 spots)",
+   "type": "track",
+   "source_note": "rail x 1.70, z 0.24-1.80 and spot positions from p02; aiming estimated",
+   "materials": {
+    "frame": "black"
+   },
+   "params": {
+    "from": [
+     1.7,
+     0.24
+    ],
+    "to": [
+     1.7,
+     1.8
+    ],
+    "intensity": 9,
+    "angle": 0.5,
+    "color": "#ffd8a6",
+    "spots": [
+     [
+      0.167,
+      1.45,
+      1.4,
+      0.0
+     ],
+     [
+      0.359,
+      2.37,
+      1.2,
+      0.9
+     ],
+     [
+      0.564,
+      2.37,
+      1.2,
+      1.5
+     ],
+     [
+      0.744,
+      1.5,
+      0.0,
+      1.6
+     ]
+    ],
+    "penumbra": 0.85
+   }
+  }
+ ],
+ "lights": [
+  {
+   "id": "ambient",
+   "type": "hemisphere",
+   "color": "#ffe9d2",
+   "groundColor": "#3b2a1f",
+   "intensity": 1.1,
+   "source": "assumed",
+   "from": "stands in for bounce light"
+  },
+  {
+   "id": "daylight",
+   "type": "window-sky",
+   "group": "daylight",
+   "position": [
+    1.195,
+    1.61,
+    0.03
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 1.33,
+   "height": 1.06,
+   "color": "#eef3f8",
+   "intensity": 10,
+   "source": "estimated",
+   "from": "daylight through the window in p02 (overcast sky)"
+  },
+  {
+   "id": "led-panel-1",
+   "type": "led-strip",
+   "from": [
+    2.34,
+    0.02,
+    0.795
+   ],
+   "to": [
+    2.34,
+    {
+     "below_ceiling": 0.02
+    },
+    0.795
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 0.03,
+   "color": "#ffdcae",
+   "intensity": 45,
+   "source": "estimated",
+   "from_render": "p02: LED in the edge of walnut panel 1, washing the wall toward +z"
+  },
+  {
+   "id": "led-panel-2",
+   "type": "led-strip",
+   "from": [
+    2.34,
+    0.02,
+    2.016
+   ],
+   "to": [
+    2.34,
+    {
+     "below_ceiling": 0.02
+    },
+    2.016
+   ],
+   "facing": [
+    0,
+    0,
+    -1
+   ],
+   "width": 0.03,
+   "color": "#ffdcae",
+   "intensity": 45,
+   "source": "estimated",
+   "from_render": "p04, p05"
+  },
+  {
+   "id": "led-shelf-1",
+   "type": "led-strip",
+   "from": [
+    0.115,
+    1.03,
+    0.083
+   ],
+   "to": [
+    0.115,
+    {
+     "below_ceiling": 0.01
+    },
+    0.083
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 18,
+   "source": "estimated",
+   "from_render": "p01, p03: strips on the inner faces of the bookshelf sides"
+  },
+  {
+   "id": "led-shelf-2",
+   "type": "led-strip",
+   "from": [
+    0.115,
+    1.03,
+    0.709
+   ],
+   "to": [
+    0.115,
+    {
+     "below_ceiling": 0.01
+    },
+    0.709
+   ],
+   "facing": [
+    0,
+    0,
+    -1
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 18,
+   "source": "estimated",
+   "from_render": "p01, p03"
+  }
+ ],
+ "cameras": [
+  {
+   "id": "p01",
+   "name": "Render 1: desk wall",
+   "position": [
+    3.44,
+    1.448,
+    1.637
+   ],
+   "target": [
+    0.0,
+    1.233,
+    1.663
+   ],
+   "fov": 52.1,
+   "near": 1.8,
+   "daylight": true,
+   "ref": "reference/renders/work-room/work-room-p01.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.5 px rms; camera 1.07 m outside the right wall"
+  },
+  {
+   "id": "p02",
+   "name": "Render 2: toward the window",
+   "position": [
+    0.477,
+    1.455,
+    4.382
+   ],
+   "target": [
+    0.787,
+    1.157,
+    0.0
+   ],
+   "fov": 52.1,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/work-room/work-room-p02.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.4 px rms"
+  },
+  {
+   "id": "p03",
+   "name": "Render 3: toward the door",
+   "position": [
+    2.206,
+    1.384,
+    0.359
+   ],
+   "target": [
+    0.0,
+    1.231,
+    2.21
+   ],
+   "fov": 52.1,
+   "near": 0.05,
+   "daylight": false,
+   "ref": "reference/renders/work-room/work-room-p03.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.9 px rms"
+  },
+  {
+   "id": "p04",
+   "name": "Render 4: wardrobe and floor lamp",
+   "position": [
+    1.348,
+    1.416,
+    -0.735
+   ],
+   "target": [
+    1.24,
+    1.228,
+    4.42
+   ],
+   "fov": 52.1,
+   "near": 1.0,
+   "daylight": false,
+   "ref": "reference/renders/work-room/work-room-p04.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.9 px rms; camera 0.74 m outside the window wall"
+  },
+  {
+   "id": "p05",
+   "name": "Render 5: wardrobe corner",
+   "position": [
+    -1.061,
+    1.493,
+    1.921
+   ],
+   "target": [
+    2.37,
+    1.282,
+    3.431
+   ],
+   "fov": 52.1,
+   "near": 2.3,
+   "daylight": false,
+   "ref": "reference/renders/work-room/work-room-p05.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.5 px rms; camera 1.06 m outside the left wall"
+  }
+ ]
+}

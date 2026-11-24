@@ -1,0 +1,937 @@
+{
+ "room": "bathroom",
+ "frame": "x right, z down the plan page, y up, metres, origin interior top-left",
+ "scale": {
+  "render_ceiling_height_m": 2.412,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (ceiling 2.412 m), within 1-2 cm of the owner's 2.40 m; see notes 1",
+  "per_render_ceiling_fit_m": {
+   "p01": 2.412,
+   "p02": 2.412,
+   "p03": 2.412,
+   "p04": 2.412,
+   "p05": null
+  },
+  "source": "estimated",
+  "from": "ceiling-wall lines back-projected onto their wall planes with the joint cameras (p01 2.413/2.411, p02 2.412/2.412, p03 2.412/2.411, p04 2.412); p05 shows no ceiling"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat painted ceiling, no recesses or coves; the toilet-box cabinet, boiler cabinet and mirror cabinet run up to it",
+   "y": [
+    2.412,
+    2.412
+   ],
+   "note": "matches the owner's 2.40 m within 1-2 cm (unlike the work-room renders, 2.61 m); each render alone gives 2.411-2.413",
+   "source": "estimated",
+   "from": "joint fit (ceiling-wall lines in all of p01-p04)"
+  },
+  {
+   "name": "top wall step",
+   "what": "the top wall is 7 cm further out (z 0) for x 1.179-1.929 than for x 0-1.179 (z 0.07); both parts wood-look tiled",
+   "x": [
+    1.1791,
+    1.1791
+   ],
+   "z": [
+    0.0,
+    0.07
+   ],
+   "y": [
+    0.0,
+    2.412
+   ],
+   "source": "estimated",
+   "from": "plan; p02 and p03 (tile pattern changes at x 1.18)"
+  },
+  {
+   "name": "wood-look tile zone",
+   "what": "horizontal wood-look plank tiles (warm mid-brown oak, staggered joints), floor to ceiling: the whole top wall x 0-1.929 (z 0 and 0.07, including behind and under the boiler cabinet), the right wall inside the shower z 0-1.0, and the left wall z 0.07-0.88. All other walls are beige large-format tiles",
+   "plank_height_m": 0.113,
+   "plank_length_m": "0.4-1.2 (staggered, not measured)",
+   "left_wall_z": [
+    0.07,
+    0.88
+   ],
+   "right_wall_z": [
+    0.0,
+    1.0
+   ],
+   "source": "estimated",
+   "from": "p01 (ceiling to floor), p02 and p03 for the extent; plank height from 7 rows in p01"
+  },
+  {
+   "name": "beige wall tiles",
+   "what": "large-format light beige porcelain with faint grey veining, matt-satin; about 60 x 60 cm (joint spacing 0.60-0.65 measured), thin light grout",
+   "tile_size_m": [
+    0.6,
+    0.6
+   ],
+   "reliability": "+-5 cm",
+   "source": "estimated",
+   "from": "joints: y 0.60 on the toilet box (p01); y 1.16 and 1.81 and x 1.32 on the bottom wall (p04)"
+  },
+  {
+   "name": "floor tiles",
+   "what": "large-format beige porcelain 60 x 60 cm, same family as the walls; level floor, the shower has no tray or step",
+   "tile_size_m": [
+    0.6,
+    0.6
+   ],
+   "joints_x": [
+    0.6,
+    1.203
+   ],
+   "joints_z": [
+    0.143,
+    0.746,
+    1.34,
+    1.937
+   ],
+   "source": "estimated",
+   "from": "plan raster (tile lines at x 0.60, 1.20 and z 0.14, 0.75, 1.34, 1.94); renders show the same large square tiles continuing into the shower"
+  },
+  {
+   "name": "door (bottom wall)",
+   "what": "white leaf with thin black diagonal inlay lines, white casings about 7 cm wide and 1.5 cm proud of the wall; black lever handle with a black square rose and a separate square escutcheon on the x 0.9 side (towards the vanity); black hinges on the x 0.08 side, visible from inside (so it most likely opens into the bathroom)",
+   "x": [
+    0.0156,
+    0.9892
+   ],
+   "z": [
+    2.52,
+    2.54
+   ],
+   "y": [
+    0.0,
+    2.135
+   ],
+   "casing_top_y": 2.135,
+   "leaf_top_y": 2.05,
+   "casing_inner_edge_x": 0.891,
+   "handle": {
+    "y": 0.98,
+    "x": 0.82
+   },
+   "handle_reliability": "+-5 cm",
+   "source": "estimated",
+   "from": "p01 and p04 (casing head lines back-projected onto z 2.525, the two views agree within 1 cm); x from the plan and p04"
+  },
+  {
+   "name": "window (left wall)",
+   "what": "small window in the plan's 55 cm gap: dark anthracite frame, single sash with its handle on the z 2.33 side, clear glass with a landscape view; set high, head practically at the ceiling. It is not above the vanity: what the renders show above the vanity is its reflection",
+   "x": [
+    -0.2,
+    0.0
+   ],
+   "z": [
+    1.828,
+    2.382
+   ],
+   "y": [
+    1.7,
+    2.4
+   ],
+   "sill_y": 1.7,
+   "head_y": 2.4,
+   "glass_y": [
+    1.78,
+    2.31
+   ],
+   "glass_z": [
+    1.91,
+    2.29
+   ],
+   "frame_z_seen": [
+    1.84,
+    2.34
+   ],
+   "reliability": "+-3 cm (depends on the mirror-plane and frame-depth assumptions; frame depth in the reveal unknown)",
+   "source": "estimated",
+   "from": "plan gap p5-C; seen only reflected in the closed mirror-cabinet door in p01 (and a sliver in p02); back-projected through the mirror plane x 1.715"
+  },
+  {
+   "name": "vanity",
+   "what": "floating greige vanity, 94 cm long (fills z 1.60-2.54 up to the bottom wall): 1.8 cm light stone-look worktop, carcass with 2 cm side panels framing two inset handle-less drawer fronts (split at 0.58); LED underglow beneath",
+   "x": [
+    1.428,
+    1.9291
+   ],
+   "z": [
+    1.6,
+    2.54
+   ],
+   "y": [
+    0.356,
+    0.796
+   ],
+   "worktop_y": [
+    0.778,
+    0.796
+   ],
+   "drawer_split_y": 0.581,
+   "underside_y": 0.356,
+   "carcass_front_x": 1.437,
+   "source": "estimated",
+   "from": "plan line x 1.428 and edges in p01-p05; heights back-projected in p01 and p03 (agree within 2 mm)"
+  },
+  {
+   "name": "vessel basin",
+   "what": "white oval (rounded-rectangle) vessel basin on the worktop, thin rim, centred under the tap; push-button waste",
+   "centre_xz": [
+    1.66,
+    2.09
+   ],
+   "size_m": [
+    0.35,
+    0.62
+   ],
+   "y": [
+    0.796,
+    0.915
+   ],
+   "rim_y": 0.915,
+   "reliability": "+-3 cm",
+   "source": "estimated",
+   "from": "p01 (rim and extents back-projected at assumed depths x 1.50, 1.66 and 1.83)"
+  },
+  {
+   "name": "vanity tap",
+   "what": "black wall-mounted 3-hole mixer: spout between two round handles on the backsplash",
+   "x": [
+    1.86,
+    1.929
+   ],
+   "spout_z": 2.1,
+   "handles_z": [
+    2.0,
+    2.22
+   ],
+   "y": [
+    1.03,
+    1.06
+   ],
+   "source": "estimated",
+   "from": "p01 (back-projected onto the right wall)"
+  },
+  {
+   "name": "mirror cabinet (shelf with mirror)",
+   "what": "wall cabinet over the vanity from z 1.602 to the bottom wall: two doors (z 1.60-2.06 and 2.07-2.54) faced with smoked grey mirror with a fine white fleck/vein pattern, fixed 6 cm top panel up to the ceiling; the right door is shown open (about 60 deg, as in the plan) revealing open shelves with LED strips; an LED strip along its underside washes the backsplash",
+   "x": [
+    1.7152,
+    1.9291
+   ],
+   "z": [
+    1.602,
+    2.54
+   ],
+   "y": [
+    1.204,
+    2.412
+   ],
+   "door_y": [
+    1.204,
+    2.352
+   ],
+   "top_panel_y": [
+    2.352,
+    2.412
+   ],
+   "door_split_z": 2.065,
+   "open_door_hinge_xz": [
+    1.72,
+    2.51
+   ],
+   "note": "the drawn footprint ends at z 2.518, but the renders put the cabinet's right side at the bottom wall (2.54), matching the 94 label",
+   "source": "estimated",
+   "from": "plan footprint and the 94 label; heights from p01 (top, door top) and p01/p03/p04 (bottom, agree within 1 mm)"
+  },
+  {
+   "name": "toilet box with niche and cabinet (shelf above the toilet)",
+   "what": "floor-to-ceiling unit 20 cm deep in front of the right wall: tiled box over the concealed cistern (beige wall tiles, joint at 0.60) carrying the flush plate, an open niche with an LED strip under its top, a two-door greige cabinet above and a fixed top panel",
+   "x": [
+    1.7291,
+    1.9291
+   ],
+   "z": [
+    1.02,
+    1.6
+   ],
+   "y": [
+    0.0,
+    2.412
+   ],
+   "box_y": [
+    0.0,
+    1.2
+   ],
+   "niche_y": [
+    1.2,
+    1.424
+   ],
+   "cabinet_door_y": [
+    1.424,
+    2.358
+   ],
+   "top_panel_y": [
+    2.358,
+    2.412
+   ],
+   "cabinet_door_split_z": 1.311,
+   "source": "estimated",
+   "from": "plan (merged footprint z 1.02-1.60 = label 58); heights back-projected onto x 1.729 in p01; niche bottom agrees in p01-p04"
+  },
+  {
+   "name": "flush plate",
+   "what": "white rectangular dual-flush plate with a thin frame (two rectangular buttons)",
+   "x": [
+    1.72,
+    1.7291
+   ],
+   "z": [
+    1.2,
+    1.445
+   ],
+   "y": [
+    0.882,
+    1.076
+   ],
+   "source": "estimated",
+   "from": "p01 (back-projected onto x 1.729)"
+  },
+  {
+   "name": "wall-hung toilet",
+   "what": "white rimless wall-hung bowl with a slim soft-close lid, hung on the toilet box",
+   "x": [
+    1.187,
+    1.7291
+   ],
+   "z": [
+    1.121,
+    1.492
+   ],
+   "lid_top_y": 0.45,
+   "seat_y_assumed": 0.41,
+   "reliability": "lid top +-2 cm; bowl underside not measured (use a standard 0.20-0.25 m clearance)",
+   "source": "estimated",
+   "from": "bowl footprint from the plan (x 1.187-1.729, z 1.121-1.492); lid top from p01 (back-projected at x 1.60-1.68)"
+  },
+  {
+   "name": "boiler cabinet (shelf / boiler concealer)",
+   "what": "floating floor-to-ceiling greige cabinet, two flat doors split at x 0.40, 2 cm top rail, one long black vertical bar handle on the right door's left edge (y 0.41-1.06), LED underglow; the wood-look tiles continue behind and below it",
+   "x": [
+    0.0,
+    0.8
+   ],
+   "z": [
+    0.07,
+    0.414
+   ],
+   "y": [
+    0.379,
+    2.412
+   ],
+   "door_split_x": 0.4,
+   "door_top_y": 2.394,
+   "handle_y": [
+    0.41,
+    1.06
+   ],
+   "note": "the renders show it 34.5 cm deep (front z 0.414) as drawn; the owner's label says 40 cm (front z 0.47)",
+   "source": "estimated",
+   "from": "plan (merged x 0.002-0.799, drawn front z 0.42); p01 and p02 fit: right edge x 0.799, front z 0.414, bottom 0.379, top at the ceiling"
+  },
+  {
+   "name": "shower enclosure",
+   "what": "corner enclosure, clear glass on black profiles, floor to just below the ceiling (corner post top measured 2.35): left side along x 0.81 (z 0.07-1.0) and front side along z 1.0 (x 0.81-1.929); each side has a fixed and a sliding panel (plan: inner sliding panel x 0.848-0.857, z 0.09-0.52; front sliding panel z 0.99, x 1.40-1.91; fixed front panel x 0.85-1.22); black corner post at (0.81, 1.0); long black bar handles y 0.89-1.50 on the sliding panels; a black stabiliser bar from the glass top (about x 1.61, z 0.95) to the right wall (z 0.79) at about y 2.35",
+   "x": [
+    0.808,
+    1.9291
+   ],
+   "z": [
+    0.07,
+    1.01
+   ],
+   "y": [
+    0.0,
+    2.36
+   ],
+   "glass_thickness_m": 0.008,
+   "handle_y": [
+    0.89,
+    1.5
+   ],
+   "walk_in": "level, no tray",
+   "source": "estimated",
+   "from": "plan vector lines (panel positions); p01-p03 for profiles, handles and height"
+  },
+  {
+   "name": "linear drain",
+   "what": "black linear shower drain on the floor along the right wall, 6-7 cm wide. The plan's 'radiator?' p5-A is this drain. In the renders it looks shorter (visible z 0.15 to 0.50-0.59), possibly partly hidden",
+   "x": [
+    1.8042,
+    1.8756
+   ],
+   "z": [
+    0.1623,
+    0.7977
+   ],
+   "y": [
+    0.0,
+    0.005
+   ],
+   "source": "estimated",
+   "from": "plan footprint (validation item p5-A, detected as a radiator); p01 and p03 show it on the floor"
+  },
+  {
+   "name": "shower fittings",
+   "what": "black: wall-mounted thermostatic bar mixer on the right wall, hand shower on a wall holder with a silver hose, round rain head about 0.30 m diameter on an arm from the right wall",
+   "mixer": {
+    "x": 1.929,
+    "y": 1.17,
+    "z": 0.45,
+    "width_m": 0.29
+   },
+   "hand_shower_holder": {
+    "x": 1.929,
+    "y": 1.34,
+    "z": 0.71
+   },
+   "rain_head": {
+    "centre": [
+     1.6,
+     2.17,
+     0.47
+    ],
+    "diameter_m": 0.3,
+    "reliability": "+-10 cm"
+   },
+   "source": "estimated",
+   "from": "p01 (mixer and holder back-projected onto the right wall); rain head triangulated from p01 and p02 (rays miss by 4-11 cm)"
+  },
+  {
+   "name": "bath mat",
+   "what": "beige-brown bobble (pebble) mat in front of the toilet and vanity; far edge x 1.25, z 1.11-2.55; the near edge is outside the view",
+   "x": [
+    0.9,
+    1.25
+   ],
+   "z": [
+    1.11,
+    2.5
+   ],
+   "y": [
+    0.0,
+    0.02
+   ],
+   "reliability": "rough",
+   "source": "estimated",
+   "from": "p01 (far edge back-projected onto the floor)"
+  },
+  {
+   "name": "accessories",
+   "what": "glass soap dispenser and toothbrush cup on a black wall holder by the vanity, toiletries on the niche shelf (decor, not modelled)",
+   "source": "estimated",
+   "from": "p01, p04"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "bathroom-p01",
+   "shows": "right wall head-on: shower (wood-look tiles, rain head) at left, toilet with box and LED niche, vanity with vessel basin, mirror cabinet (window reflected in it), door at right edge; boiler cabinet at far left edge",
+   "position": [
+    -1.875,
+    1.503,
+    1.496
+   ],
+   "target": [
+    1.929,
+    1.296,
+    1.376
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.998,
+    -0.0543,
+    -0.0315
+   ],
+   "hfov_deg": 50.6,
+   "vfov_deg": 50.6,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 2710.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": -1.81,
+   "pitch_deg": -3.11,
+   "roll_deg": -0.02,
+   "fit_rms_px": 0.87,
+   "inside_room": false,
+   "near_clip_m": 2.0,
+   "source": "estimated",
+   "notes": "Camera is 1.88 m outside the left wall (x 0). The near plane must hide the left wall (depth 1.80-1.99 in view) but keep the boiler cabinet front (its visible part starts at depth 2.10): near about 2.0 (range 1.95-2.08); a clipping plane at x = 0.01 is cleaner. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of wall corners, ceiling and floor lines, boiler-cabinet, toilet-box, niche, mirror-cabinet and vanity edges, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length 2710 px (vanishing-point estimates 2702-2706 px; free fit 2690-2750), ceiling and cabinet heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bathroom-p02",
+   "shows": "toward the top wall: boiler cabinet (floating, LED underglow) at left, shower with wood-look back wall and the step at x 1.18, toilet box and niche, vanity front-left at right",
+   "position": [
+    0.48,
+    1.539,
+    3.518
+   ],
+   "target": [
+    1.254,
+    1.289,
+    0.0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.2144,
+    -0.0695,
+    -0.9743
+   ],
+   "hfov_deg": 50.6,
+   "vfov_deg": 50.6,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 2710.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": -77.59,
+   "pitch_deg": -3.98,
+   "roll_deg": -0.01,
+   "fit_rms_px": 0.27,
+   "inside_room": false,
+   "near_clip_m": 1.33,
+   "source": "estimated",
+   "notes": "Camera is 0.98 m outside the bottom wall (z 2.54). The near plane must hide the bottom wall with the door (depth 0.85-1.26) but keep the vanity top (nearest visible point at depth 1.40): near about 1.33 (range 1.27-1.39); alternatively clip at z = 2.53. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of wall corners, ceiling and floor lines, boiler-cabinet, toilet-box, niche, mirror-cabinet and vanity edges, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length 2710 px (vanishing-point estimates 2702-2706 px; free fit 2690-2750), ceiling and cabinet heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bathroom-p03",
+   "shows": "into the shower corner (x 1.93, z 0): both wood-look shower walls, glass enclosure, toilet box and niche, vanity at right, ceiling disc reflected in the mirror cabinet",
+   "position": [
+    -0.234,
+    1.435,
+    2.741
+   ],
+   "target": [
+    1.929,
+    1.27,
+    0.648
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.7175,
+    -0.0545,
+    -0.6945
+   ],
+   "hfov_deg": 50.6,
+   "vfov_deg": 50.6,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 2710.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": -44.07,
+   "pitch_deg": -3.12,
+   "roll_deg": -0.05,
+   "fit_rms_px": 0.91,
+   "inside_room": false,
+   "near_clip_m": 0.1,
+   "source": "estimated",
+   "notes": "Camera is just outside the bottom-left corner (x -0.23, z 2.74); both nearby walls are outside its field of view, so no clipping is needed (near 0.1 is fine; nearest visible object at depth about 1.5). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of wall corners, ceiling and floor lines, boiler-cabinet, toilet-box, niche, mirror-cabinet and vanity edges, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length 2710 px (vanishing-point estimates 2702-2706 px; free fit 2690-2750), ceiling and cabinet heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bathroom-p04",
+   "shows": "vanity wall at about 32 deg: toilet-box cabinet and niche at left, mirror cabinet (right door open, LED shelves, door reflected), vanity and basin, bottom wall and door at right",
+   "position": [
+    -0.48,
+    1.476,
+    0.567
+   ],
+   "target": [
+    1.929,
+    1.393,
+    2.086
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.8456,
+    -0.029,
+    0.533
+   ],
+   "hfov_deg": 50.6,
+   "vfov_deg": 50.6,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 2710.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": 32.22,
+   "pitch_deg": -1.66,
+   "roll_deg": -0.11,
+   "fit_rms_px": 1.14,
+   "inside_room": false,
+   "near_clip_m": 1.0,
+   "source": "estimated",
+   "notes": "Camera is 0.48 m outside the left wall. The near plane must hide the left wall (in view at depth 0.4-0.8) and keep the shower glass at the left edge (depth about 1.4): near about 1.0 (range 0.85-1.35). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of wall corners, ceiling and floor lines, boiler-cabinet, toilet-box, niche, mirror-cabinet and vanity edges, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length 2710 px (vanishing-point estimates 2702-2706 px; free fit 2690-2750), ceiling and cabinet heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bathroom-p05",
+   "shows": "close-up from above: vanity with oval vessel basin, wall tap, LED underglow, flush plate on the toilet box, mirror cabinet bottom (door reflected)",
+   "position": [
+    0.189,
+    1.82,
+    0.761
+   ],
+   "target": [
+    1.929,
+    0.689,
+    2.018
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.7171,
+    -0.4662,
+    0.5181
+   ],
+   "hfov_deg": 35.3,
+   "vfov_deg": 35.3,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 4025.9,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": 35.85,
+   "pitch_deg": -27.79,
+   "roll_deg": -0.65,
+   "fit_rms_px": 3.83,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Close-up with its own focal length (zoomed, vfov about 35 deg). Fitted with the scene fixed from p01-p04 on 5 vanity and cabinet edges only (the box edge and the worktop front-top edge disagree by 5-12 px and were dropped), so this camera is rough: about +-5 cm and +-1.5 deg. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "pose and focal length fitted to vanity and mirror-cabinet edges with the scene geometry fixed from p01-p04; vanishing points give yaw 37 deg, pitch -26.8 deg, focal 4440 px, consistent within the stated accuracy"
+  }
+ ],
+ "colours": {
+  "wall_tiles_beige": {
+   "hex": "#ac9a86",
+   "what": "large-format light beige porcelain, faint grey veining",
+   "source": "estimated",
+   "from": "p01 px box [1040, 1630, 1420, 1770], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a19a90",
+   "other_views": {
+    "p04 [1780, 900, 1990, 1400]": "#877664",
+    "p04 [2050, 1000, 2250, 1400]": "#998776"
+   }
+  },
+  "floor_tiles": {
+   "hex": "#937d66",
+   "what": "large-format beige porcelain (same family as the walls)",
+   "source": "estimated",
+   "from": "p02 px box [1150, 2330, 1450, 2420], median of the 10-90% luminance band",
+   "hex_white_balanced": "#897d6e",
+   "other_views": {
+    "p01 [600, 2290, 950, 2400]": "#9e8870",
+    "p03 [600, 2420, 900, 2520]": "#897762"
+   }
+  },
+  "wood_look_tiles": {
+   "hex": "#684524",
+   "what": "warm mid-brown oak-look plank tiles",
+   "source": "estimated",
+   "from": "p01 px box [650, 1450, 950, 1700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#614527",
+   "other_views": {
+    "p03 [300, 600, 800, 900]": "#64462a",
+    "p02 [1250, 1300, 1450, 1600]": "#69492c"
+   }
+  },
+  "cabinet_greige": {
+   "hex": "#cdbcac",
+   "what": "flat matt greige (light taupe) doors of the toilet-box cabinet and the boiler cabinet; this patch is directly lit by the ceiling disc",
+   "source": "estimated",
+   "from": "p01 px box [1040, 520, 1420, 1150], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c0bcb9",
+   "other_views": {
+    "p02 [300, 600, 550, 1400] boiler cabinet in shade": "#9e876e",
+    "p04 [450, 300, 880, 1200]": "#b8a493"
+   }
+  },
+  "vanity_drawers": {
+   "hex": "#988268",
+   "what": "greige carcass and drawer fronts, slightly darker than the wall cabinets because they face away from the light",
+   "source": "estimated",
+   "from": "p01 px box [1500, 1760, 2150, 1860], median of the 10-90% luminance band",
+   "hex_white_balanced": "#8e8270",
+   "other_views": {
+    "p04 [1200, 2120, 1880, 2250]": "#7c6852",
+    "p05 [1300, 1900, 2100, 2100]": "#735e46"
+   }
+  },
+  "worktop": {
+   "hex": "#d0c0b1",
+   "what": "light warm-white stone-look worktop",
+   "source": "estimated",
+   "from": "p01 px box [1470, 1665, 1560, 1700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c2c0bf",
+   "other_views": {
+    "p05 [700, 1350, 1000, 1500]": "#ba9f84"
+   }
+  },
+  "mirror_cabinet_doors": {
+   "hex": "#736050",
+   "what": "smoked grey mirror with fine white flecks/veins; reflections render mid grey-brown",
+   "source": "estimated",
+   "from": "p01 px box [1460, 1100, 1560, 1300], median of the 10-90% luminance band",
+   "hex_white_balanced": "#6b6056",
+   "other_views": {
+    "p04 [960, 1250, 1100, 1450]": "#4f4134"
+   }
+  },
+  "sanitary_white": {
+   "hex": "#d1c1af",
+   "what": "glossy white ceramic (basin top, toilet); the toilet front in shadow renders #8a745c",
+   "source": "estimated",
+   "from": "p05 px box [1300, 1150, 1500, 1250], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c3c1bc",
+   "other_views": {
+    "p01 [1660, 1615, 1960, 1650]": "#bfb5ac",
+    "p01 [1110, 2060, 1290, 2180]": "#8a745c"
+   }
+  },
+  "black_fittings": {
+   "hex": "#020000",
+   "what": "matt black: taps, shower set, glass profiles and handles, door handle, linear drain",
+   "source": "estimated",
+   "from": "p01 px box [540, 1358, 710, 1376], median of the 10-90% luminance band",
+   "hex_white_balanced": "#020000",
+   "other_views": {
+    "p01 [503, 700, 509, 1100]": "#1a120c"
+   }
+  },
+  "door": {
+   "hex": "#bdb4ab",
+   "what": "white leaf with thin black diagonal inlay lines; casings white",
+   "source": "estimated",
+   "from": "p04 px box [2450, 800, 2550, 1300], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b1b4b8",
+   "other_views": {
+    "p01 [2470, 800, 2550, 1200]": "#cdc6c0"
+   }
+  },
+  "ceiling": {
+   "hex": "#ac9b89",
+   "what": "flat white/off-white paint (renders warm)",
+   "source": "estimated",
+   "from": "p01 px box [1500, 100, 1900, 250], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a19b94",
+   "other_views": {
+    "p02 [1300, 150, 1600, 300]": "#816f5c"
+   }
+  },
+  "led_glow": {
+   "hex": "#c48e49",
+   "what": "warm wash on the backsplash below the mirror cabinet and under the vanity",
+   "source": "estimated",
+   "from": "p01 px box [1550, 2080, 2000, 2160], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b78e4f",
+   "other_views": {
+    "p04 [1000, 1530, 1300, 1600]": "#b78d59"
+   }
+  },
+  "ceiling_disc_diffuser": {
+   "hex": "#fbfdfc",
+   "what": "emissive diffuser of the ceiling light (near white, slightly cool)",
+   "source": "estimated",
+   "from": "p01 px box [1150, 230, 1300, 320]"
+  },
+  "ceiling_disc_body": {
+   "hex": "#b4a495",
+   "what": "white body with a thin brass ring trim (the ring is too thin to sample reliably; use a warm brass)",
+   "source": "estimated",
+   "from": "p01 px box [985, 255, 1000, 300]"
+  },
+  "bath_mat": {
+   "hex": "#755941",
+   "what": "beige-brown bobble mat",
+   "source": "estimated",
+   "from": "p01 px box [1100, 2450, 2100, 2550], median of the 10-90% luminance band",
+   "hex_white_balanced": "#6d5946"
+  },
+  "chrome": {
+   "hex": "#b0a69c",
+   "what": "silver hand-shower hose only (thin; estimated by eye, not sampled)",
+   "source": "estimated",
+   "from": "p01 visual"
+  },
+  "_how_to_read": "hex = rendered sRGB in a plain patch, median of the 10-90% luminance band. hex_white_balanced applies per-channel linear gains that make the lit white basin top neutral (R x0.934, G x0.999, B x1.077; reference #c8bbae from the p05 and p01 basin tops). The bathroom renders are much less orange than the work-room ones; the ceiling disc emits near-neutral white and the LED strips are warm.",
+  "light_colour_temperature": {
+   "value": "ceiling disc neutral-to-cool white (about 4000 K, diffuser renders #fbfdfc); LED strips (niche, mirror-cabinet underside and shelves, vanity and boiler-cabinet underglow) warm white about 2700-3000 K (glow #c48e49); daylight only visible through the reflected window",
+   "source": "estimated",
+   "from": "diffuser and glow pixels in p01 and p04"
+  }
+ },
+ "lights": [
+  {
+   "type": "ceiling-disc",
+   "name": "ceiling light",
+   "position": [
+    0.81,
+    2.33,
+    1.35
+   ],
+   "diameter_m": 0.38,
+   "outer_diameter_m": 0.48,
+   "depth_m": 0.08,
+   "what": "surface-mounted round fixture: white body with a thin brass ring, flat opal diffuser (luminous diameter about 0.38 m), bottom face about 8 cm below the ceiling",
+   "colour": "neutral white",
+   "source": "estimated",
+   "from": "p01 and p03 (reflection in the mirror cabinet) triangulated with the diffuser plane at 2.33; p02 agrees within 6 cm"
+  },
+  {
+   "type": "led-strip",
+   "name": "toilet niche strip",
+   "position": {
+    "x": [
+     1.73,
+     1.75
+    ],
+    "y": 1.42,
+    "z": [
+     1.03,
+     1.59
+    ]
+   },
+   "faces": "down into the niche (1.20-1.42)",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01-p04 (bright line under the cabinet bottom at 1.424)"
+  },
+  {
+   "type": "led-strip",
+   "name": "mirror cabinet underside strip",
+   "position": {
+    "x": [
+     1.75,
+     1.9
+    ],
+    "y": 1.2,
+    "z": [
+     1.61,
+     2.53
+    ]
+   },
+   "faces": "down onto the backsplash and worktop",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01, p03, p04 (warm wash below 1.204)"
+  },
+  {
+   "type": "led-strip",
+   "name": "mirror cabinet shelf strips",
+   "position": {
+    "x": [
+     1.75,
+     1.92
+    ],
+    "z": [
+     2.07,
+     2.53
+    ]
+   },
+   "y_note": "one strip under each internal shelf (3-4 shelves between about 1.25 and 2.30; shelf heights not measured)",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01, p04 (lit open shelves behind the open right door)"
+  },
+  {
+   "type": "led-strip",
+   "name": "vanity underglow",
+   "position": {
+    "x": [
+     1.45,
+     1.9
+    ],
+    "y": 0.356,
+    "z": [
+     1.62,
+     2.52
+    ]
+   },
+   "faces": "down onto the floor and the lower wall",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01, p02, p04, p05"
+  },
+  {
+   "type": "led-strip",
+   "name": "boiler cabinet underglow",
+   "position": {
+    "x": [
+     0.02,
+     0.78
+    ],
+    "y": 0.379,
+    "z": [
+     0.1,
+     0.4
+    ]
+   },
+   "faces": "down onto the wood-look wall and floor",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p02, p03"
+  },
+  {
+   "type": "daylight",
+   "note": "daylight through the small left-wall window (z 1.83-2.38, y 1.70-2.40); the room otherwise looks lit by the disc and the LEDs",
+   "source": "estimated",
+   "from": "p01 and p02 (mirror reflection only)"
+  }
+ ],
+ "notes": [
+  "CEILING: the bathroom render model has a 2.412 m ceiling (every ceiling line in p01-p04 gives 2.411-2.413), i.e. it matches the owner's 2.40 m within 1-2 cm. This differs from the work-room renders (2.61 m), so the room models were not built to one height. Heights in this file are in the render-model scale; scaling by 2.40/2.412 changes almost nothing.",
+  "Cameras p01, p02 and p04 sit outside the room (p01 1.88 m beyond the left wall, p02 0.98 m beyond the bottom wall, p04 0.48 m beyond the left wall); p03 is just outside the bottom-left corner but needs no clipping; p05 is inside. Use near_clip_m or a world clipping plane.",
+  "Focal length: p01-p04 share f = 2710 px (vfov = hfov = 50.6 deg). Vanishing points give 2702-2706 px and a free fit 2690-2750 px; changing f within that range moves the cameras by up to 7 cm along their view axis and changes heights by under 1 cm. Edge rms is 0.3-1.1 px. p05 is a zoomed close-up (about 4030 px, vfov 35 deg) and is rough (rms 3.8 px on few edges).",
+  "Window: the plan's 55 cm left-wall gap (p5-C) is a small high window (sill 1.70, head 2.40). No render shows it directly; it appears only as a reflection in the closed mirror-cabinet door, which is why the room notes describe a window above the vanity. There is no window above the vanity.",
+  "Plan item p5-A on the right wall ('radiator?', z 0.16-0.80) is the black linear shower drain, not a radiator. There is no radiator or towel radiator in any render.",
+  "Mirror cabinet: the renders put its right side at the bottom wall (z 2.54), giving the labelled 94 cm (the drawn footprint stops at 2.518). The vanity below also runs z 1.60-2.54.",
+  "Boiler cabinet: the renders match the drawing, 80 x 34.5 cm (front at z 0.414). The owner said to use the 40 cm label; the model should then put the front at z 0.47.",
+  "Toilet box: the renders match the merged plan footprint z 1.02-1.60 (the 58 label), not the narrower drawn cabinet outline (1.042-1.578).",
+  "Shower glass: panel positions come from the plan; the renders show black profiles at the corner post (0.81, 1.0), at z 0.50-0.52 on the left side and at x 1.22 and 1.40 on the front side, consistent with fixed plus sliding panels and a corner entry. Which panels slide, and whether the doors are shown open, could not be determined.",
+  "Not determined: internal shelf heights of the mirror cabinet, the exact basin model, the bowl underside height, the plank lengths of the wood-look tiles, the door swing (hinges visible from inside suggest inward).",
+  "Colours are rendered pixel values; see colours._how_to_read."
+ ],
+ "generated": "2026-11-23 from the 5 bathroom renders (OpenCV LSD and gradient edge fits, Levenberg-Marquardt camera solve, back-projection onto plan planes); analysis scripts kept outside the repo"
+}

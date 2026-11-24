@@ -1,0 +1,1162 @@
+{
+ "room": "bedroom",
+ "frame": "x right, z down the plan page, y up, metres, origin interior top-left",
+ "scale": {
+  "render_ceiling_height_m": 2.539,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (ceiling 2.539 m); see notes 1-3",
+  "per_render_ceiling_fit_m": {
+   "p01": 2.534,
+   "p02": 2.54,
+   "p03": null,
+   "p04": null,
+   "p05": 2.54,
+   "p06": 2.539
+  },
+  "structural_slab_m": 2.61,
+  "source": "estimated",
+  "from": "camera fits (see cameras[].from); p03 and p04 show no floor-level edge, so their ceiling height cannot be separated from the camera height (null); structural slab from the top of the ceiling pocket on the balcony wall"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat painted dropped ceiling with two nested rectangles of recessed linear LED lines (see lights); along the balcony (right) wall a recessed pocket 14 cm wide and 7 cm deep, empty in the renders (probably for a curtain track or blind)",
+   "y": [
+    2.539,
+    2.539
+   ],
+   "pocket": {
+    "x": [
+     3.24,
+     3.383
+    ],
+    "z": [
+     1.07,
+     4.66
+    ],
+    "y_top": 2.61
+   },
+   "note": "2.539 is lower than the work room's 2.608; the pocket top at 2.61 matches the work-room ceiling, so this room has a ~7 cm dropped ceiling. Contradicts the owner's 2.40 m; see notes",
+   "source": "estimated",
+   "from": "joint camera fit (ceiling-wall lines in all 6 renders, floor lines in p01, p02, p05, p06); pocket edges triangulated from p01, p03 and p05 (x 3.238-3.248, end face at z 1.06-1.09, top line on the wall at y 2.60-2.61)"
+  },
+  {
+   "name": "headboard wall panels",
+   "what": "the headboard wall (x 0.71) is clad floor to ceiling in light greige textured (stone/plaster-look) panels from the alcove corner (z 0.92) to the walnut wardrobe end panel (z 3.995), split by two thin black vertical inlay grooves; the 60 cm centre panel is centred on the bed",
+   "x": [
+    0.7,
+    0.71
+   ],
+   "z": [
+    0.92,
+    3.995
+   ],
+   "y": [
+    0.0,
+    2.539
+   ],
+   "grooves_z": [
+    2.294,
+    2.894
+   ],
+   "panel_z": [
+    [
+     0.92,
+     2.294
+    ],
+    [
+     2.294,
+     2.894
+    ],
+    [
+     2.894,
+     3.995
+    ]
+   ],
+   "note": "panel thickness could not be measured; the fitted wall plane is x 0.708 (plan 0.71), so treat the panels as a finish on the plan face",
+   "source": "estimated",
+   "from": "grooves fitted jointly in p01, p04, p05, p06 (sd 0.002)"
+  },
+  {
+   "name": "door A (alcove left wall)",
+   "what": "the bedroom door from the corridor (plan gap p4-A): white leaf with thin black diagonal inlay lines, white casings about 7 cm wide; hinges visible from the room on the z 0.05-0.10 side (opens into the bedroom), so the lever handle is on the z ~0.85 side, which is hidden behind the alcove corner in every view",
+   "x": [
+    0.0,
+    0.0
+   ],
+   "z": [
+    0.0,
+    0.92
+   ],
+   "y": [
+    0.0,
+    2.136
+   ],
+   "leaf_top_y": 2.057,
+   "casing_top_y": 2.136,
+   "hinges": {
+    "z": 0.07,
+    "y": [
+     0.35,
+     1.83
+    ]
+   },
+   "source": "estimated",
+   "from": "p06 (casing and leaf tops back-projected onto x 0; threshold line used in the camera fit); z from the plan; hinge heights rough (+-5 cm)"
+  },
+  {
+   "name": "balcony door C (right wall)",
+   "what": "plan gap p4-C is a full-height single-leaf white PVC balcony door (glazed almost to the floor); lever handle on the z 1.81 side at y 1.07, hinges on the z 1.08 side; frame set back in the reveal (about 7-12 cm); a flush opaque band above the frame up to the opening head (external roller-shutter box, as on the work-room window)",
+   "x": [
+    3.383,
+    3.5
+   ],
+   "z": [
+    1.078,
+    1.872
+   ],
+   "y": [
+    0.0,
+    2.41
+   ],
+   "opening_head_y": 2.41,
+   "shutter_box_y": [
+    2.2,
+    2.39
+   ],
+   "frame_top_y": 2.175,
+   "glass_y": [
+    0.07,
+    2.139
+   ],
+   "threshold_y": 0.0,
+   "handle": {
+    "y": 1.07,
+    "z": 1.81
+   },
+   "source": "estimated",
+   "from": "p03 (head-on): edges back-projected onto x 3.383 (head), 3.40 (box) and 3.50 (frame, glass, threshold); plan for z; p01 and p02 reveal edges used in the camera fit"
+  },
+  {
+   "name": "balcony door E (right wall)",
+   "what": "plan gap p4-E is a second full-height glazed balcony door, the mirror image of C: handle on the z ~3.40 side at y ~1.05, hinges on the z 4.11 side, same shutter box above. Not a window: it reaches the floor (p05) and its handle is at door height",
+   "x": [
+    3.383,
+    3.5
+   ],
+   "z": [
+    3.32,
+    4.111
+   ],
+   "y": [
+    0.0,
+    2.41
+   ],
+   "opening_head_y": 2.41,
+   "shutter_box_y": [
+    2.19,
+    2.38
+   ],
+   "handle": {
+    "y": 1.05,
+    "z": 3.4
+   },
+   "source": "estimated",
+   "from": "p05 (reveal floor line, head and box lines back-projected onto x 3.383/3.40) and p03 (handle, partly visible at the right edge); plan for z"
+  },
+  {
+   "name": "split AC unit (right wall)",
+   "what": "white wall-mounted split air conditioner (Samsung logo) high on the right wall between the top-right corner and door C; this is plan item p4-B (not a window)",
+   "x": [
+    3.19,
+    3.383
+   ],
+   "z": [
+    0.13,
+    0.954
+   ],
+   "y": [
+    2.176,
+    2.484
+   ],
+   "width_m": 0.82,
+   "height_m": 0.31,
+   "source": "estimated",
+   "from": "p03 head-on, back-projected onto the front plane x 3.195 (plan vectors x 3.186-3.38, z 0.11-0.94)"
+  },
+  {
+   "name": "TV (right wall)",
+   "what": "wall-mounted black flat TV, about 50 inch (same size as the work-room TV), on the wall pier between the two balcony doors; this is the upper part of plan item p4-D",
+   "x": [
+    3.29,
+    3.383
+   ],
+   "z": [
+    2.09,
+    3.2
+   ],
+   "y": [
+    1.28,
+    1.91
+   ],
+   "width_m": 1.11,
+   "height_m": 0.635,
+   "source": "estimated",
+   "from": "p03 head-on back-projected onto x 3.27-3.335; depth from plan lines x 3.287-3.382"
+  },
+  {
+   "name": "radiator (right wall)",
+   "what": "white panel radiator with a top grille under the TV (lower part of plan item p4-D; the 275 detected 'fins' are its convector fins); thermostatic valve on its z-max end at y ~0.71. It is not under a window: the room has no window, only the two balcony doors",
+   "x": [
+    3.29,
+    3.383
+   ],
+   "z": [
+    2.275,
+    2.92
+   ],
+   "y": [
+    0.09,
+    0.775
+   ],
+   "valve": {
+    "y": 0.71,
+    "z": 2.96
+   },
+   "source": "estimated",
+   "from": "p03 (top, ends, valve) and p05 (bottom edge) back-projected onto x 3.29"
+  },
+  {
+   "name": "wardrobe",
+   "what": "L-shaped built-in wardrobe to the ceiling: recessed dark plinth 0-0.057, flat matt greige doors 0.057-2.435, fixed greige top panel 2.435 to the ceiling; bottom leg along the bottom wall with 4 doors (about 50 cm each), left leg along the headboard wall with 2 doors (about 30 cm each); a 4 cm filler at the inner corner; floor-to-ceiling dark walnut end panel (2 cm) on the left leg, facing the bed",
+   "bottom_leg": {
+    "x": [
+     0.73,
+     3.359
+    ],
+    "z": [
+     4.662,
+     5.255
+    ]
+   },
+   "left_leg": {
+    "x": [
+     0.71,
+     1.31
+    ],
+    "z": [
+     3.995,
+     4.68
+    ]
+   },
+   "y": [
+    0.0,
+    2.539
+   ],
+   "plinth_y": [
+    0.0,
+    0.057
+   ],
+   "door_y": [
+    0.057,
+    2.435
+   ],
+   "top_panel_y": [
+    2.435,
+    2.539
+   ],
+   "doors_bottom_leg_x": [
+    [
+     1.349,
+     1.85
+    ],
+    [
+     1.852,
+     2.351
+    ],
+    [
+     2.353,
+     2.854
+    ],
+    [
+     2.856,
+     3.359
+    ]
+   ],
+   "doors_left_leg_z": [
+    [
+     4.016,
+     4.317
+    ],
+    [
+     4.319,
+     4.617
+    ]
+   ],
+   "corner_filler": {
+    "x": [
+     1.307,
+     1.347
+    ],
+    "z": [
+     4.617,
+     4.68
+    ]
+   },
+   "walnut_end_panel": {
+    "x": [
+     0.71,
+     1.31
+    ],
+    "z": [
+     3.995,
+     4.014
+    ],
+    "y": [
+     0.0,
+     2.539
+    ]
+   },
+   "source": "estimated",
+   "from": "plan vectors for x/z (door fronts at z 4.662 and x 1.29-1.31, door joints); door top fitted jointly in p04-p06 (2.435); plinth from p06; joints and walnut edges used in the camera fit"
+  },
+  {
+   "name": "wardrobe handles",
+   "what": "black vertical bar handles at the meeting edges of each door pair, from the door bottom to about 1.065 m",
+   "positions": [
+    {
+     "on": "bottom leg front z 4.662",
+     "x": 1.851
+    },
+    {
+     "on": "bottom leg front z 4.662",
+     "x": 2.855
+    },
+    {
+     "on": "left leg front x 1.31",
+     "z": 4.318
+    }
+   ],
+   "y": [
+    0.06,
+    1.065
+   ],
+   "source": "estimated",
+   "from": "p06 (left-leg handle 0.063-1.065), p05 (bottom-leg handle tops 1.059; bottoms hidden by the bed)"
+  },
+  {
+   "name": "bedside tables",
+   "what": "two floating (wall-hung) bedside tables: 2.2 cm dark walnut top slab over a greige drawer box with a handle-less front; no legs; footprints exactly as the plan",
+   "upper": {
+    "x": [
+     0.712,
+     1.122
+    ],
+    "z": [
+     0.92,
+     1.695
+    ]
+   },
+   "lower": {
+    "x": [
+     0.712,
+     1.122
+    ],
+    "z": [
+     3.495,
+     3.993
+    ]
+   },
+   "top_y": [
+    0.478,
+    0.5
+   ],
+   "box_y": [
+    0.3,
+    0.478
+   ],
+   "source": "estimated",
+   "from": "p06 (both tables head-on, edges back-projected onto x 0.712 and 1.122; the two tables agree within 2 mm) and p04 (ends match the plan within 2 cm)"
+  },
+  {
+   "name": "bed",
+   "what": "upholstered bed in beige velour: low padded base, 160 x 200 mattress with white fitted sheet, brown duvet and dark brown checked throw, two white and two brown pillows; thick cushion-type headboard leaning on the wall panels. It fills the plan's 180 cm gap between the bedside tables",
+   "base": {
+    "x": [
+     0.71,
+     2.86
+    ],
+    "z": [
+     1.72,
+     3.46
+    ],
+    "y": [
+     0.0,
+     0.26
+    ]
+   },
+   "mattress": {
+    "x": [
+     0.87,
+     2.82
+    ],
+    "z": [
+     1.78,
+     3.4
+    ],
+    "y": [
+     0.26,
+     0.51
+    ]
+   },
+   "headboard": {
+    "x": [
+     0.71,
+     0.89
+    ],
+    "z": [
+     1.698,
+     3.484
+    ],
+    "y": [
+     0.0,
+     1.04
+    ]
+   },
+   "reliability": "+-3 cm; mattress x start and base sides partly hidden",
+   "source": "estimated",
+   "from": "headboard top corners triangulated from p04, p05, p06 (rays meet within 0.7 cm); foot lines from p01, p05 and p06 (foot x 2.82-2.86); widths from p06"
+  },
+  {
+   "name": "armchairs",
+   "what": "two round tub armchairs in light taupe velvet on thin black metal legs, in the corner between the top wall and the balcony wall, turned toward the room",
+   "left": {
+    "position_xz": [
+     2.27,
+     0.39
+    ],
+    "diameter_m": 0.7
+   },
+   "right": {
+    "position_xz": [
+     2.98,
+     0.97
+    ],
+    "diameter_m": 0.65
+   },
+   "y": [
+    0.0,
+    0.815
+   ],
+   "seat_y": 0.45,
+   "reliability": "rough (+-10 cm, orientation approximate; seat height assumed)",
+   "source": "estimated",
+   "from": "leg tips back-projected onto the floor in p02 and p03; back tops triangulated from p01, p02, p03 (0.811 and 0.817)"
+  },
+  {
+   "name": "side table with plant",
+   "what": "small round black metal side table between and behind the armchairs, with a beige ceramic pot and a small green plant (plant top about 1.0 m) and a small round vase",
+   "position_xz": [
+    2.7,
+    0.55
+   ],
+   "diameter_m": 0.35,
+   "y": [
+    0.0,
+    0.555
+   ],
+   "reliability": "rough (+-8 cm); diameter and plant height estimated",
+   "source": "estimated",
+   "from": "table top triangulated from p01, p02, p03 (rays meet within 1.3 cm)"
+  },
+  {
+   "name": "painting",
+   "what": "large abstract landscape painting (textured mountains and a winding river in sand, brown and cream tones) in a thin black frame, on the top wall above the armchairs",
+   "x": [
+    1.764,
+    2.719
+   ],
+   "z": [
+    0.0,
+    0.024
+   ],
+   "y": [
+    0.885,
+    2.29
+   ],
+   "width_m": 0.955,
+   "height_m": 1.405,
+   "source": "estimated",
+   "from": "edges fitted jointly from p01, p02, p03 (residuals 0.2-3 px)"
+  },
+  {
+   "name": "pendants",
+   "what": "two brass cylinder pendants (about 6 cm diameter, 25 cm tall) on black cords from small white round ceiling canopies, one over each bedside table",
+   "positions_xz": [
+    [
+     1.012,
+     1.317
+    ],
+    [
+     1.014,
+     3.703
+    ]
+   ],
+   "body_y": [
+    1.45,
+    1.7
+   ],
+   "canopy_y": [
+    2.52,
+    2.539
+   ],
+   "drop_below_ceiling_m": 1.09,
+   "source": "estimated",
+   "from": "cords fitted jointly as vertical lines in p01, p04, p05, p06 (sd 2 mm); body heights and diameter from p06"
+  },
+  {
+   "name": "rug",
+   "what": "large rug under the bed, black with broad cream bands and thin gold lines (geometric pattern)",
+   "x": [
+    0.97,
+    2.97
+   ],
+   "z": [
+    1.04,
+    3.95
+   ],
+   "y": [
+    0.0,
+    0.01
+   ],
+   "reliability": "x min hidden under the bed (assumed to start under the bedside tables); other edges +-5 cm",
+   "source": "estimated",
+   "from": "edges back-projected onto the floor: x max and z min from p03, z max from p06"
+  },
+  {
+   "name": "balcony",
+   "what": "balcony outside the right wall, floor at about room-floor level, grey stone-look tiles (the plan's checkerboard is a hatch); balustrade with a black metal top rail at about 1.09 m and a second bar at about 0.94 m, with what looks like a solid grey lower part up to about 0.8 m; outside: dry grassland, scattered trees and hills under a partly cloudy sky (a backdrop image). The notches in the plan outline at x 4.81-5.05 could not be verified",
+   "x": [
+    3.588,
+    5.047
+   ],
+   "z": [
+    -0.154,
+    5.426
+   ],
+   "railing_top_y": 1.09,
+   "second_rail_y": 0.94,
+   "parapet_top_y": 0.8,
+   "reliability": "railing heights assume the railing stands at the balcony's outer edge (x 4.95-5.0); +-5 cm",
+   "source": "estimated",
+   "from": "p03 lines seen through door C back-projected onto x 4.95-5.0; p02 for the look"
+  },
+  {
+   "name": "skirting",
+   "what": "dark brown skirting about 1 cm thick (assumed) on the plain walls; wardrobe, panels and doors run to the floor",
+   "y": [
+    0.0,
+    0.068
+   ],
+   "source": "estimated",
+   "from": "joint fit of skirting tops in p01, p02 and p06 (0.068)"
+  },
+  {
+   "name": "curtains and blinds",
+   "what": "none visible in any render: no curtains and no interior roller blind; the opaque bands above both balcony doors are roller-shutter boxes and the ceiling pocket on the balcony wall is empty",
+   "source": "estimated",
+   "from": "p01-p06"
+  },
+  {
+   "name": "light switches and sockets",
+   "what": "none noticed in the 6 renders",
+   "source": "estimated",
+   "from": "p01-p06"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "bedroom-p01",
+   "shows": "from beyond the bottom wall toward the top wall: bed and lower bedside table, armchairs, painting, AC, door C, TV and radiator",
+   "position": [
+    1.982,
+    1.49,
+    5.362
+   ],
+   "target": [
+    1.681,
+    1.028,
+    0.0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.0558,
+    -0.0856,
+    -0.9948
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -93.21,
+   "pitch_deg": -4.91,
+   "roll_deg": -0.03,
+   "fit_rms_px": 1.25,
+   "inside_room": false,
+   "near_clip_m": 1.0,
+   "source": "estimated",
+   "notes": "Camera is 10 cm behind the bottom wall (z 5.26), behind the wardrobe. The near plane must hide the wardrobe (front at depth 0.70) but keep the lower bedside table (depth 1.37): near about 1.0 m (range 0.75-1.35). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bedroom-p02",
+   "shows": "armchair corner: painting, side table and plant, AC, door C with the balcony",
+   "position": [
+    0.524,
+    1.516,
+    2.552
+   ],
+   "target": [
+    3.22,
+    1.162,
+    0.0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.723,
+    -0.095,
+    -0.6843
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -43.43,
+   "pitch_deg": -5.45,
+   "roll_deg": 0.02,
+   "fit_rms_px": 1.37,
+   "inside_room": false,
+   "near_clip_m": 1.5,
+   "source": "estimated",
+   "notes": "Camera is 19 cm behind the headboard wall (x 0.71), behind the bed head. The near plane must hide the headboard, the upper pendant and bedside table (depth 1.2-1.25) but keep the bed's foot corner (depth 2.28): near about 1.5 m (range 1.3-2.2). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bedroom-p03",
+   "shows": "the balcony wall head-on: painting at left, armchairs, AC, door C, TV, radiator, edge of door E at right",
+   "position": [
+    -0.411,
+    1.527,
+    1.193
+   ],
+   "target": [
+    3.382,
+    1.377,
+    1.119
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.999,
+    -0.0394,
+    -0.0197
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -1.13,
+   "pitch_deg": -2.26,
+   "roll_deg": -0.05,
+   "fit_rms_px": 0.47,
+   "inside_room": false,
+   "near_clip_m": 1.7,
+   "source": "estimated",
+   "notes": "Camera is 1.12 m behind the headboard wall (x 0.71), at the alcove's z. The near plane must hide that wall, the upper bedside table and pendant (depth up to 1.53) but keep the bed and the painting edge (depth 1.8 and more): near about 1.7 m (range 1.55-2.0). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bedroom-p04",
+   "shows": "bed from the top-right corner toward the headboard wall and wardrobe corner; walnut end panel, upper bedside table, pendants",
+   "position": [
+    3.403,
+    1.427,
+    -0.173
+   ],
+   "target": [
+    0.71,
+    1.252,
+    2.943
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.6532,
+    -0.0424,
+    0.756
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 130.83,
+   "pitch_deg": -2.43,
+   "roll_deg": 0.01,
+   "fit_rms_px": 0.31,
+   "inside_room": false,
+   "near_clip_m": 0.3,
+   "source": "estimated",
+   "notes": "Camera is 17 cm behind the top wall and 2 cm beyond the right wall (inside the wall corner); neither wall is in the frustum, so any near plane from 0.2 to 1.7 m works; 0.3 m skips the wall slabs around the camera. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bedroom-p05",
+   "shows": "down the room toward the wardrobe: door C, TV, radiator and door E on the left, bed, walnut end panel and headboard wall on the right",
+   "position": [
+    1.943,
+    1.438,
+    -0.631
+   ],
+   "target": [
+    1.982,
+    1.352,
+    5.259
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.0066,
+    -0.0146,
+    0.9999
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 89.62,
+   "pitch_deg": -0.83,
+   "roll_deg": 0.02,
+   "fit_rms_px": 0.3,
+   "inside_room": false,
+   "near_clip_m": 1.0,
+   "source": "estimated",
+   "notes": "Camera is 0.63 m behind the top wall (z 0). The near plane must hide the top wall and the painting (depth 0.65) but keep the right armchair's back (depth 1.3): near about 1.0 m (range 0.7-1.3). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "bedroom-p06",
+   "shows": "bed head-on: wardrobe and walnut panel at left, headboard wall with grooves, both bedside tables and pendants, door A in the alcove at right",
+   "position": [
+    5.212,
+    1.489,
+    2.875
+   ],
+   "target": [
+    0.71,
+    1.188,
+    2.939
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.9977,
+    -0.0666,
+    0.014
+   ],
+   "hfov_deg": 64.6,
+   "vfov_deg": 50.7,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2026.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 179.2,
+   "pitch_deg": -3.82,
+   "roll_deg": 0.01,
+   "fit_rms_px": 0.87,
+   "inside_room": false,
+   "near_clip_m": 2.1,
+   "source": "estimated",
+   "notes": "Camera is 1.83 m beyond the right wall (x 3.383), beyond the balcony's outer edge. The near plane must hide the right wall with the TV, radiator and doors (depth 1.83-1.93) but keep the bed foot (depth 2.35): near about 2.1 m (range 1.95-2.3). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 6 renders: straight edges (OpenCV LSD segments refined to sub-pixel gradient lines) of room corners, ceiling lines, wardrobe joints and door tops, headboard-wall grooves, pendant cords, painting edges, balcony-door reveals, door A threshold and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, wardrobe-door-top, skirting, groove, pendant and painting positions as free parameters; Levenberg-Marquardt on point-to-line distances"
+  }
+ ],
+ "colours": {
+  "floor": {
+   "hex": "#321d11",
+   "what": "dark brown wood planks with strong grain (same as the work room)",
+   "source": "estimated",
+   "from": "p06 px box [100, 1750, 330, 1880], median of the 10-90% luminance band",
+   "hex_white_balanced": "#2e1d13",
+   "other_views": {
+    "p04 [1900, 1860, 2200, 1910]": "#2d180d"
+   }
+  },
+  "wall_paint": {
+   "hex": "#beaa98",
+   "what": "light warm greige paint with a fine texture (much lighter than the work-room walls)",
+   "source": "estimated",
+   "from": "p01 px box [930, 550, 1250, 900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#adaba7",
+   "other_views": {
+    "p03 [1700, 1100, 1790, 1300]": "#bfafa1",
+    "p02 [150, 450, 450, 850]": "#bca896"
+   }
+  },
+  "headboard_wall_panels": {
+   "hex": "#c3b1a0",
+   "what": "light greige textured stone/plaster-look panels with thin black grooves",
+   "source": "estimated",
+   "from": "p06 px box [1350, 450, 1550, 900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b2b2b0",
+   "other_views": {
+    "p04 [1550, 300, 1850, 600]": "#d4c5b7"
+   }
+  },
+  "ceiling": {
+   "hex": "#ac9987",
+   "what": "flat painted ceiling (white or off-white)",
+   "source": "estimated",
+   "from": "p05 px box [1000, 150, 1400, 350], median of the 10-90% luminance band",
+   "hex_white_balanced": "#9d9a94",
+   "other_views": {
+    "p06 [1200, 100, 1800, 250]": "#9f8976",
+    "p03 [1300, 40, 1700, 150]": "#9b897a"
+   }
+  },
+  "wardrobe_doors": {
+   "hex": "#b8a38c",
+   "what": "flat matt greige doors (same as the work room)",
+   "source": "estimated",
+   "from": "p05 px box [1000, 650, 1100, 1000], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a8a49a",
+   "other_views": {
+    "p06 [420, 500, 540, 1000]": "#a69178",
+    "p04 [250, 600, 380, 1000]": "#a28a71"
+   }
+  },
+  "walnut": {
+   "hex": "#4a2d1a",
+   "what": "dark walnut veneer, vertical grain: wardrobe end panel",
+   "source": "estimated",
+   "from": "p05 px box [1580, 500, 1690, 750], median of the 10-90% luminance band",
+   "hex_white_balanced": "#442d1d",
+   "other_views": {
+    "p04 [790, 500, 900, 900]": "#341d10",
+    "p06 [735, 500, 795, 1000]": "#462a17"
+   }
+  },
+  "bedside_top": {
+   "hex": "#452916",
+   "what": "walnut top slab of the bedside tables",
+   "source": "estimated",
+   "from": "p06 px box [775, 1280, 860, 1303], median of the 10-90% luminance band",
+   "hex_white_balanced": "#3f2918",
+   "other_views": {
+    "p05 [2050, 1760, 2200, 1800]": "#582e11"
+   }
+  },
+  "bedside_front": {
+   "hex": "#94877b",
+   "what": "greige drawer box and front (same finish as the wardrobe)",
+   "source": "estimated",
+   "from": "p06 px box [790, 1330, 990, 1395], median of the 10-90% luminance band",
+   "hex_white_balanced": "#878887",
+   "other_views": {
+    "p04 [1700, 1700, 1950, 1780] (in shadow)": "#583f32"
+   }
+  },
+  "duvet": {
+   "hex": "#65543f",
+   "what": "brown duvet with a fine woven texture; the throw is a darker brown check",
+   "source": "estimated",
+   "from": "p05 px box [700, 1300, 1000, 1500], median of the 10-90% luminance band",
+   "hex_white_balanced": "#5c5445",
+   "other_views": {
+    "p06 [1100, 1450, 1400, 1550] (in shadow)": "#1d140e"
+   }
+  },
+  "sheet_and_pillows": {
+   "hex": "#c8b8a8",
+   "what": "white fitted sheet and white pillows (the sheet renders blue-grey in the shaded p06 foot)",
+   "source": "estimated",
+   "from": "p04 px box [1450, 1250, 1550, 1350], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b7b9b9",
+   "other_views": {
+    "p06 [1100, 1680, 1500, 1800]": "#7c8287"
+   }
+  },
+  "headboard_and_bed_base": {
+   "hex": "#977c5d",
+   "what": "beige velour upholstery of the headboard and bed base",
+   "source": "estimated",
+   "from": "p06 px box [1300, 1060, 1450, 1120], median of the 10-90% luminance band",
+   "hex_white_balanced": "#8a7d66",
+   "other_views": {
+    "p04 [1300, 1100, 1500, 1200]": "#9d8364"
+   }
+  },
+  "armchairs": {
+   "hex": "#ab8f7a",
+   "what": "light taupe velvet",
+   "source": "estimated",
+   "from": "p02 px box [1450, 1520, 1650, 1620], median of the 10-90% luminance band",
+   "hex_white_balanced": "#9c9086",
+   "other_views": {
+    "p03 [1050, 1550, 1250, 1650]": "#937760"
+   }
+  },
+  "rug": {
+   "hex": "#bca68f",
+   "what": "cream bands of the rug; the main field is black and there are thin gold lines",
+   "source": "estimated",
+   "from": "p06 px box [725, 1640, 790, 1700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#aca79d",
+   "other_views": {
+    "p06 black field [560, 1820, 700, 1900]": "#080402",
+    "p06 gold line [2200, 1560, 2300, 1620]": "#886438"
+   }
+  },
+  "door": {
+   "hex": "#a19386",
+   "what": "white leaf with thin black diagonal inlay lines (renders light warm grey)",
+   "source": "estimated",
+   "from": "p06 px box [2250, 700, 2380, 1100], median of the 10-90% luminance band",
+   "hex_white_balanced": "#939493"
+  },
+  "balcony_tiles": {
+   "hex": "#828584",
+   "what": "grey stone-look balcony tiles (seen through door C)",
+   "source": "estimated",
+   "from": "p02 px box [2000, 1460, 2300, 1640], median of the 10-90% luminance band",
+   "hex_white_balanced": "#778691"
+  },
+  "painting_tones": {
+   "tones": [
+    {
+     "hex": "#d9c4b0",
+     "share": 0.26,
+     "what": "cream highlights"
+    },
+    {
+     "hex": "#b09781",
+     "share": 0.27,
+     "what": "sand"
+    },
+    {
+     "hex": "#7b614a",
+     "share": 0.24,
+     "what": "mid brown"
+    },
+    {
+     "hex": "#402917",
+     "share": 0.22,
+     "what": "dark brown"
+    }
+   ],
+   "what": "dominant tones of the painting (k-means, 4 clusters)",
+   "source": "estimated",
+   "from": "p01 px box [1330, 500, 1660, 990]"
+  },
+  "ac_unit": {
+   "hex": "#ddd6cc",
+   "what": "white plastic split AC with a black front strip",
+   "source": "estimated",
+   "from": "p03 px box [760, 380, 1150, 440], median of the 10-90% luminance band",
+   "hex_white_balanced": "#cad7e0",
+   "other_views": {
+    "p02 [1400, 170, 1650, 230]": "#d8d0c7"
+   }
+  },
+  "door_frames_pvc": {
+   "hex": "#ddddce",
+   "what": "white PVC balcony-door frames",
+   "source": "estimated",
+   "from": "p02 px box [1960, 400, 1990, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#cadee3"
+  },
+  "radiator": {
+   "hex": "#a59689",
+   "what": "white enamel panel radiator (in shade)",
+   "source": "estimated",
+   "from": "p03 px box [1930, 1340, 2240, 1500], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a5a5a5"
+  },
+  "skirting": {
+   "hex": "#0e0503",
+   "what": "dark brown skirting",
+   "source": "estimated",
+   "from": "p06 px box [2475, 1415, 2495, 1428], median of the 10-90% luminance band",
+   "hex_white_balanced": "#0d0503"
+  },
+  "black_items": {
+   "hex": "#090603",
+   "what": "TV screen (off); side table, armchair legs, wardrobe handles, pendant cords and the door inlay lines are black",
+   "source": "estimated",
+   "from": "p03 px box [1900, 700, 2400, 980], median of the 10-90% luminance band",
+   "hex_white_balanced": "#080603"
+  },
+  "brass_accents": {
+   "hex": "#a77f46",
+   "what": "brushed brass pendant bodies",
+   "source": "estimated",
+   "from": "p06 px box [895, 730, 920, 830], median of the 10-90% luminance band",
+   "hex_white_balanced": "#98804d",
+   "other_views": {
+    "p04 [940, 760, 965, 860]": "#b48a56"
+   }
+  },
+  "pendant_canopy": {
+   "hex": "#dabea6",
+   "what": "small white round ceiling canopies of the pendants",
+   "source": "estimated",
+   "from": "p06 px box [885, 305, 925, 318], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c7bfb6"
+  },
+  "led_strip_emitter": {
+   "hex": "#fffffd",
+   "what": "visible recessed LED lines (clipped white)",
+   "source": "estimated",
+   "from": "p06 px box [900, 290, 1800, 330], brightest 3%",
+   "other_views": {
+    "p05 [300, 0, 800, 500]": "#fdfffd"
+   }
+  },
+  "_how_to_read": "hex = rendered sRGB in the best-lit plain patch. These renders are graded much less warm than the work-room set (the walls render #beaa98 here vs #85674a there). hex_white_balanced applies per-channel linear gains that make the shaded white radiator in p03 (#a59689) neutral (R x0.913, G x1.004, B x1.10). Use hex_white_balanced as a starting base colour under ~3000 K lights, or hex under neutral light.",
+  "light_colour_temperature": {
+   "value": "LED lines render pure white (neutral to cool white, about 4000 K); the pendant pools on the headboard wall are warm (#ddc7ab, about 3000 K); daylight through the balcony doors is neutral, sky #ecf0f3",
+   "source": "estimated",
+   "from": "LED, wall-pool and sky pixels in p03, p05, p06"
+  }
+ },
+ "lights": [
+  {
+   "type": "led-strip",
+   "name": "ceiling LED rectangle, outer",
+   "what": "recessed linear LED profile flush with the ceiling, about 2 cm wide, forming a closed rectangle",
+   "y": 2.539,
+   "x": [
+    0.94,
+    2.905
+   ],
+   "z": [
+    0.16,
+    4.5
+   ],
+   "colour": "white",
+   "source": "estimated",
+   "from": "LED line edges back-projected onto the ceiling plane in p01-p06 (spread 2-3 cm; the far-end lines in p01 are offset by up to 7 cm and were not used)"
+  },
+  {
+   "type": "led-strip",
+   "name": "ceiling LED rectangle, inner",
+   "what": "second rectangle about 17 cm inside the outer one, same profile",
+   "y": 2.539,
+   "x": [
+    1.11,
+    2.73
+   ],
+   "z": [
+    0.325,
+    4.33
+   ],
+   "colour": "white",
+   "source": "estimated",
+   "from": "as the outer rectangle"
+  },
+  {
+   "type": "pendant",
+   "name": "pendant upper",
+   "position": [
+    1.012,
+    1.45,
+    1.317
+   ],
+   "body": "brass cylinder 6 cm x 25 cm, y 1.45-1.70",
+   "direction": "mainly down (warm pool on the bedside table and the wall above it)",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "cord fit and p06"
+  },
+  {
+   "type": "pendant",
+   "name": "pendant lower",
+   "position": [
+    1.014,
+    1.45,
+    3.703
+   ],
+   "body": "as the upper one",
+   "direction": "mainly down",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "cord fit and p06"
+  },
+  {
+   "type": "spots",
+   "note": "no downlights, spots or tracks visible; the only other ceiling objects are the two pendant canopies",
+   "source": "estimated",
+   "from": "p01-p06"
+  },
+  {
+   "type": "daylight",
+   "note": "all six renders are daytime with the interior lights on: bright sky and landscape through door C in p01-p03 and through door E in p05; bright sun-like patches on the wardrobe doors and the bed foot in p04 and p06",
+   "source": "estimated",
+   "from": "p01-p06"
+  }
+ ],
+ "notes": [
+  "CEILING HEIGHT: with square pixels and the plan's horizontal dimensions the bedroom renders put the ceiling at 2.539 m (joint fit; each render with a floor edge alone gives 2.534-2.540), not the owner's 2.40 m and not the work room's 2.608 m. The ceiling pocket on the balcony wall rises to 2.61, so the render model has a ~2.61 m slab with a ~7 cm dropped ceiling in this room. All heights in this file are in that render-model scale.",
+  "The door A leaf top measures 2.057 m (casing top 2.136), not the owner's standard 2.00 m; the work-room door measured 2.075.",
+  "Adapting to 2.40 m (owner decision needed): either keep absolute heights for things with real-world sizes (bedside tables 0.30-0.50, bed, armchairs, radiator, TV 1.28-1.91, handles, doors) and re-anchor the ceiling-hung items to 2.40 (wardrobe top panel, wall panels, LED lines, pendant canopies, pocket), or scale every y by 2.40/2.539 = 0.945. The balcony-door heads (2.41) and shutter boxes cannot fit under a 2.40 ceiling, so they need a decision.",
+  "Openings: C and E are both full-height single-leaf glazed balcony doors (a mirror pair, handles on the TV-pier side at about 1.06 m). The bedroom has no window, and the radiator is not under an opening: it sits on the wall pier between the doors, under the TV. Plan item B is the split AC unit; plan item D is the TV with the radiator below it.",
+  "All six cameras are outside the room (p01 behind the wardrobe, p02 and p03 behind the headboard wall, p04 in the top-right wall corner, p05 behind the top wall, p06 beyond the balcony). Reproduce them with camera.near set to near_clip_m, or by hiding the walls behind the camera.",
+  "Camera accuracy: shared focal 2026 px (hfov 64.6 deg, vfov 50.7 deg; the work-room set used 1965 px, so the lens differs). Edge reprojection rms is 0.3-1.4 px per camera (0.86 px over 166 residuals). A variant with a focal length per camera gives 2018-2066 px and moves positions by under 4 cm. Pitch is -0.8 to -5.5 deg, roll under 0.1 deg. If the scene is built with a 2.40 m ceiling, keep the camera heights (1.43-1.53 m) as heights above the floor.",
+  "Bed, armchairs, side table and rug are measured from partial views: bed +-3 cm, armchairs and side table +-10 cm, rug x min hidden under the bed. The armchair seat height (0.45) and the side-table diameter are assumed.",
+  "Could not be determined: the headboard-wall panel thickness, the frame depth of the balcony doors in their reveals, the sash details of door E (only partly visible), and what the notches along the balcony's outer edge in the plan are. The balcony railing heights assume the railing stands at the outer edge.",
+  "No curtains or interior blinds appear in any render; the roller blind mentioned in docs/room-notes.md is the external roller-shutter box above each balcony door. The ceiling pocket on the balcony wall is empty.",
+  "Colours are rendered pixel values; see colours._how_to_read. This set is graded far less warm than the work-room set, so materials that appear in both rooms (floor, wardrobe doors, walnut) should share one base colour rather than copying each room's rendered hex."
+ ],
+ "generated": "2026-11-23 from the 6 bedroom renders (OpenCV LSD and gradient edge fits, Levenberg-Marquardt camera solve); analysis scripts were kept outside the repo"
+}

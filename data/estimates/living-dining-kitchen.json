@@ -1,0 +1,1795 @@
+{
+ "room": "living-dining-kitchen",
+ "frame": "plan page 1 frame: x right, z down the page, y up, metres, origin = top-left of the whole hallway+living+dining+kitchen interior bounding box (main space x 3.84-10.84, z 0.0306-5.1156)",
+ "scale": {
+  "render_ceiling_height_m": 2.6,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (nominal ceiling 2.60 m over the dining area and kitchen); see notes 1",
+  "ceiling_fits_m": {
+   "kitchen: junction above the left-run cabinets (p09) and top line over the kitchen units (p07)": 2.667,
+   "dining wall: top of the wall panels (p01, p10)": 2.605,
+   "TV wall: top of the upper cabinets and AC box (p13, p17)": 2.519,
+   "living room: ceiling junction above the right-wall windows (p02, p03)": 2.487
+  },
+  "source": "estimated",
+  "from": "joint camera fit with these heights as free parameters; floor references: floor-wall lines at the TV wall (p13, p17) and at the right wall (p03), island base corner (p14); checks: balcony-door threshold back-projects to y 0.01-0.02, kitchen plinth floor line to 0.01"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat white ceiling; not one level in the render model: about 2.60-2.67 over the dining area and kitchen, about 2.49 at the living-room walls where the double LED rectangle is (the living part reads as a lower or dropped ceiling, see notes 1)",
+   "y_zones": {
+    "kitchen": 2.667,
+    "dining": 2.605,
+    "TV wall cabinet tops": 2.519,
+    "living walls": 2.487
+   },
+   "from": "joint camera fit (shared unknown height)",
+   "source": "estimated"
+  },
+  {
+   "name": "window 1 (right wall)",
+   "what": "white PVC single-sash window with an opaque flush band above the frame (roller-shutter box, as in the work room); interior sill board 2 cm proud of the wall; landscape backdrop outside",
+   "x": [
+    10.82,
+    10.84
+   ],
+   "z": [
+    1.226,
+    2.396
+   ],
+   "y": [
+    0.95,
+    2.36
+   ],
+   "sill_top_y": 0.993,
+   "sill_bottom_y": 0.95,
+   "frame_y": [
+    1.04,
+    2.15
+   ],
+   "shutter_box_y": [
+    2.15,
+    2.36
+   ],
+   "opening_head_y": 2.36,
+   "from": "plan sill lines x 10.82 (z extents); heights from p03 and p02 back-projected onto x 10.84 (sill 0.985-0.996, frame bottom 1.03-1.05, frame top 2.14-2.16, box top 2.33-2.38)",
+   "source": "estimated"
+  },
+  {
+   "name": "window 2 (right wall)",
+   "what": "same as window 1",
+   "x": [
+    10.82,
+    10.84
+   ],
+   "z": [
+    3.026,
+    4.206
+   ],
+   "y": [
+    0.95,
+    2.36
+   ],
+   "sill_top_y": 0.993,
+   "frame_y": [
+    1.04,
+    2.15
+   ],
+   "shutter_box_y": [
+    2.15,
+    2.36
+   ],
+   "opening_head_y": 2.36,
+   "from": "plan sill lines x 10.82; p03 (head-on) and p02 back-projected onto x 10.84",
+   "source": "estimated"
+  },
+  {
+   "name": "top-wall items A-E (not windows)",
+   "what": "A (left wall, z 0.03-0.83) = walnut wall panel about 7 cm deep with a warm LED wall-wash at its front end; B (x 4.881-5.649) = mirror panel between the dining-wall greige panels, with warm LED glow at its vertical edges; C (x 6.62-7.306) = plain walnut wall panel behind the divider; D (x 8.468-8.99) = slatted walnut panel behind the sofa (the \"fins\" are slats, not a radiator); E (x 10.04-10.84) = plain walnut panel at the corner behind the curtains. Greige wall panels (front z 0.051, about 52 cm wide, joints at x 4.4245, 6.106, 7.943, 9.515) fill the rest of the top wall up to the ceiling",
+   "from": "p01, p10, p14, p15 (panel edges fit at the plan positions within 1-3 px)",
+   "source": "estimated"
+  },
+  {
+   "name": "balcony door (bottom wall)",
+   "what": "single-leaf white PVC glazed balcony door between the TV unit end and a 20 cm pier at the right-wall corner; lever handle on the TV-unit side; opaque band above the sash like the windows (shutter box); no window beside it on the bottom wall; outside a balcony with a grey solid parapet and a black top rail (rough)",
+   "x": [
+    9.96,
+    10.64
+   ],
+   "z": [
+    5.1156,
+    5.12
+   ],
+   "y": [
+    0.0,
+    2.42
+   ],
+   "opening_head_y": 2.42,
+   "sash_top_y": 2.2,
+   "glass_y": [
+    0.12,
+    2.14
+   ],
+   "threshold_y": [
+    0.0,
+    0.08
+   ],
+   "handle": {
+    "x": 10.05,
+    "y": 1.08
+   },
+   "from": "plan bottom-wall lines (x 9.96-10.64); p13 frame edges back-projected onto z 5.1156 (outer x 9.95-10.64, top band 2.41-2.42, sash top 2.19-2.21, glass top 2.14, threshold 0.08, floor 0.01-0.02); handle from p12; p17 agrees (x 10.03-10.67)",
+   "source": "estimated"
+  },
+  {
+   "name": "TV unit (floating, with fireplace)",
+   "what": "off-white floating low unit 37 cm deep with a linear electric fireplace (black glass, flame effect) left of centre, doors either side, warm LED underglow below",
+   "x": [
+    7.022,
+    9.95
+   ],
+   "z": [
+    4.7456,
+    5.1156
+   ],
+   "y": [
+    0.254,
+    0.675
+   ],
+   "fireplace": {
+    "x": [
+     7.92,
+     9.13
+    ],
+    "y": [
+     0.24,
+     0.65
+    ],
+    "z": 4.746
+   },
+   "from": "plan footprint (labels 293 x 37); heights from the joint fit (p07, p12, p13, p17 with floor lines in p13 and p17); fireplace back-projected from p13",
+   "source": "estimated"
+  },
+  {
+   "name": "stone slab behind the TV",
+   "what": "large stone-look slab (warm grey-beige with gold veins) on the wall",
+   "x": [
+    6.95,
+    9.47
+   ],
+   "z": [
+    5.09,
+    5.116
+   ],
+   "y": [
+    0.78,
+    2.03
+   ],
+   "from": "p13 back-projected onto z 5.09",
+   "source": "estimated"
+  },
+  {
+   "name": "TV",
+   "what": "black flat TV (about 65 inch) on the slab",
+   "x": [
+    7.8,
+    9.23
+   ],
+   "z": [
+    5.04,
+    5.09
+   ],
+   "y": [
+    0.95,
+    1.77
+   ],
+   "from": "p13 back-projected onto z 5.05",
+   "source": "estimated"
+  },
+  {
+   "name": "walnut slat wall (TV wall)",
+   "what": "vertical dark walnut slats (about 3 cm slats, 2 cm gaps) from the floor up to the AC box, continuing behind the left part of the stone slab",
+   "x": [
+    8.97,
+    9.96
+   ],
+   "z": [
+    5.09,
+    5.116
+   ],
+   "y": [
+    0.0,
+    2.147
+   ],
+   "from": "p13 (edges back-projected onto z 5.10)",
+   "source": "estimated"
+  },
+  {
+   "name": "TV-wall upper cabinets",
+   "what": "greige flat doors from 2.15 up to the ceiling; warm LED strip under them washing the slab (glow band 2.04-2.10)",
+   "x": [
+    7.044,
+    8.965
+   ],
+   "z": [
+    4.8156,
+    5.1156
+   ],
+   "y": [
+    2.15,
+    2.519
+   ],
+   "from": "plan inner lines (z 4.8156); heights from the joint fit (p12, p13, p17)",
+   "source": "estimated"
+  },
+  {
+   "name": "AC concealer box",
+   "what": "walnut box with a vertical walnut slat grille in front of the split AC unit (unit visible between the slats)",
+   "x": [
+    8.967,
+    9.928
+   ],
+   "z": [
+    4.8156,
+    5.1156
+   ],
+   "y": [
+    2.147,
+    2.519
+   ],
+   "from": "plan inner lines; heights from the joint fit (p13, p17)",
+   "source": "estimated"
+  },
+  {
+   "name": "kitchen worktop and base cabinets",
+   "what": "stone worktop (same stone as the backsplash) on matt greige base cabinets with handle-less grooves; bottom run along the bottom wall (x 4.03-5.666) and left run along the left wall (z 3.13-4.67); drawer joints at 0.73, 0.51 and 0.19; recessed plinth",
+   "worktop_y": [
+    0.876,
+    0.9
+   ],
+   "bottom_run": {
+    "x": [
+     4.03,
+     5.666
+    ],
+    "z": [
+     4.514,
+     5.116
+    ]
+   },
+   "left_run": {
+    "x": [
+     3.84,
+     4.44
+    ],
+    "z": [
+     3.13,
+     4.67
+    ]
+   },
+   "plinth_y": [
+    0.0,
+    0.1
+   ],
+   "drawer_joints_y": [
+    0.19,
+    0.51,
+    0.73
+   ],
+   "from": "plan footprints (60 cm deep); worktop height from the joint fit (p05, p07, p08, p09, p11, p16), thickness and drawer joints from p07 back-projected onto z 4.514",
+   "source": "estimated"
+  },
+  {
+   "name": "kitchen backsplash",
+   "what": "stone slab from the worktop to the upper cabinets on both kitchen walls",
+   "y": [
+    0.9,
+    1.57
+   ],
+   "from": "p07 (under-cabinet line back-projected onto z 4.77)",
+   "source": "estimated"
+  },
+  {
+   "name": "kitchen upper cabinets",
+   "what": "greige wall cabinets (front about z 4.77 on the bottom run, x about 4.19 on the left run): main row 1.57-2.28 with under-cabinet LED, a recessed band 2.28-2.34 with an LED strip, top row 2.34 to the ceiling; black slim extractor at the bottom of the main row above the hob",
+   "y": [
+    1.57,
+    2.667
+   ],
+   "rows_y": {
+    "main": [
+     1.57,
+     2.28
+    ],
+    "led_band": [
+     2.28,
+     2.34
+    ],
+    "top": [
+     2.34,
+     2.667
+    ]
+   },
+   "front_z_bottom_run": 4.77,
+   "front_x_left_run": 4.19,
+   "reliability": "+-3 cm (front plane depth assumed from the plan line at z 4.77)",
+   "from": "p07 back-projected onto z 4.77; p08, p09 for the layout",
+   "source": "estimated"
+  },
+  {
+   "name": "walnut oven column",
+   "what": "floor-to-ceiling walnut column with two black built-in ovens stacked (upper with control strip and two round knobs about 1.32-1.81, lower about 0.86-1.30)",
+   "x": [
+    5.666,
+    6.31
+   ],
+   "z": [
+    4.514,
+    5.116
+   ],
+   "y": [
+    0.0,
+    2.667
+   ],
+   "ovens_y": [
+    0.86,
+    1.81
+   ],
+   "from": "plan footprint; p07 lines back-projected onto z 4.514 (+-3 cm)",
+   "source": "estimated"
+  },
+  {
+   "name": "greige tall column",
+   "what": "tall greige unit (probably an integrated fridge-freezer: door split at 0.84), plinth below, stops about 8 cm under the ceiling",
+   "x": [
+    6.31,
+    7.0
+   ],
+   "z": [
+    4.54,
+    5.116
+   ],
+   "y": [
+    0.13,
+    2.59
+   ],
+   "door_split_y": 0.84,
+   "from": "plan footprint; p07 back-projected onto z 4.54",
+   "source": "estimated"
+  },
+  {
+   "name": "kitchen island",
+   "what": "stone worktop 2.3 cm thick on greige cabinets (kitchen side: door, three drawers, door), dark walnut waterfall end panels at both ends, warm LED strip under the worktop on the dining side; seating overhang on the dining side",
+   "x": [
+    5.124,
+    7.044
+   ],
+   "z": [
+    2.755,
+    3.555
+   ],
+   "y": [
+    0.0,
+    0.768
+   ],
+   "worktop_y": [
+    0.745,
+    0.768
+   ],
+   "seating_overhang_m": 0.25,
+   "reliability": "top +-3 cm; overhang rough (+-10 cm)",
+   "from": "plan (labels 192 x 80); heights from the joint fit (p04, p05, p06, p10, p14, p16; floor corner in p14)",
+   "source": "estimated"
+  },
+  {
+   "name": "bar stools",
+   "what": "three cream boucle stools with curved backs and walnut legs on the dining side of the island",
+   "count": 3,
+   "seat_y": 0.64,
+   "back_top_y": 0.79,
+   "reliability": "+-5 cm",
+   "from": "p05 (back-projected at z 2.45-2.55), p11 for the count",
+   "source": "estimated"
+  },
+  {
+   "name": "dining table",
+   "what": "dark walnut top on black crossed (X) legs; owner label 190 x 75 at 57 cm from the left wall (x 4.41-6.31); the render model follows the drawn footprint x 4.382-6.311",
+   "x": [
+    4.41,
+    6.31
+   ],
+   "z": [
+    0.79,
+    1.541
+   ],
+   "y": [
+    0.0,
+    0.74
+   ],
+   "from": "labels (owner rule); height from the joint fit (p01)",
+   "source": "estimated"
+  },
+  {
+   "name": "dining chairs",
+   "what": "six cream boucle chairs with walnut frames, three per long side",
+   "count": 6,
+   "seat_y": 0.44,
+   "back_top_y": 0.77,
+   "reliability": "+-5 cm",
+   "from": "p01 (back-projected at z 1.8-1.95)",
+   "source": "estimated"
+  },
+  {
+   "name": "dining drum pendant",
+   "what": "long oval drum shade (white textured fabric), long axis along x, on two cables from a black linear ceiling canopy",
+   "centre": [
+    5.29,
+    1.81,
+    1.15
+   ],
+   "size_m": [
+    0.75,
+    0.27,
+    0.25
+   ],
+   "y": [
+    1.68,
+    1.94
+   ],
+   "canopy": {
+    "x": [
+     5.13,
+     5.45
+    ],
+    "y": 2.58
+   },
+   "reliability": "x and heights +-3 cm (p01); z +-5 cm; shade depth (0.25-0.30) rough",
+   "from": "p01 back-projected onto z 1.165 (table centre line); p04 and p10 triangulation gives z 1.12",
+   "source": "estimated"
+  },
+  {
+   "name": "living drum pendant",
+   "what": "same drum model over the coffee table, long axis along x",
+   "centre": [
+    8.89,
+    1.96,
+    1.8
+   ],
+   "size_m": [
+    0.7,
+    0.27,
+    0.25
+   ],
+   "y": [
+    1.84,
+    2.08
+   ],
+   "canopy_y": 2.45,
+   "reliability": "x +-5 cm; z uncertain 1.5-2.1 (p03 and p04 rays vs. the shade size in p15 and p17 disagree); heights +-5 cm",
+   "from": "p15, p17, p03, p04",
+   "source": "estimated"
+  },
+  {
+   "name": "island cone pendants",
+   "what": "three white textured truncated-cone shades in a row along the island on cables from a black linear ceiling canopy",
+   "count": 3,
+   "centres_xz": [
+    [
+     6.505,
+     3.12
+    ],
+    [
+     6.156,
+     3.14
+    ],
+    [
+     5.806,
+     3.18
+    ]
+   ],
+   "shade_y": [
+    1.495,
+    1.68
+   ],
+   "bottom_diameter_m": 0.18,
+   "top_diameter_m": 0.13,
+   "from": "p05 and p10 triangulation (reprojection 1-2 px); sizes from p05 at z 3.15",
+   "source": "estimated"
+  },
+  {
+   "name": "shelf / room divider",
+   "what": "floor-to-ceiling open divider: pairs of vertical posts 4 cm thick and 17.7 cm deep (each post a light beige and a walnut half, split at x 7.108) at z 0.201-0.241, 0.435-0.535 (pair), 0.756-0.856 (pair), 1.077-1.177 (pair), 1.371-1.411; staggered walnut shelves between the posts, about 30-40 cm apart from about 0.3 to 2.3 m, alternating between bays (books and decor)",
+   "x": [
+    7.019,
+    7.196
+   ],
+   "z": [
+    0.201,
+    1.411
+   ],
+   "y": [
+    0.0,
+    2.6
+   ],
+   "shelf_y_rough": [
+    0.44,
+    0.56,
+    0.72,
+    0.85,
+    1.09,
+    1.25,
+    1.44,
+    1.85,
+    2.02,
+    2.25
+   ],
+   "reliability": "posts from the plan; shelf heights +-10 cm (p16, weak camera)",
+   "from": "plan vector lines (posts); p16, p03, p01 for the shelves",
+   "source": "estimated"
+  },
+  {
+   "name": "L-sofa",
+   "what": "light grey-beige fabric L-sofa: long part along the top wall, chaise along the right wall toward the TV",
+   "x": [
+    7.6,
+    10.65
+   ],
+   "z": [
+    0.03,
+    2.04
+   ],
+   "seat_y": 0.48,
+   "back_top_y": 0.82,
+   "chaise": {
+    "x": [
+     9.76,
+     10.65
+    ],
+    "z": [
+     0.03,
+     2.04
+    ]
+   },
+   "long_part_front_z": 1.0,
+   "reliability": "+-10 cm",
+   "from": "p15 (floor contacts back-projected onto y 0), p14, p16",
+   "source": "estimated"
+  },
+  {
+   "name": "armchair",
+   "what": "cream boucle tub armchair on a dark plinth",
+   "x": [
+    7.32,
+    8.0
+   ],
+   "z": [
+    1.1,
+    1.8
+   ],
+   "seat_y": 0.51,
+   "top_y": 0.81,
+   "reliability": "+-10 cm",
+   "from": "p15",
+   "source": "estimated"
+  },
+  {
+   "name": "coffee table",
+   "what": "dark walnut rounded-rectangle top on a recessed dark base",
+   "x": [
+    8.21,
+    9.5
+   ],
+   "z": [
+    1.15,
+    1.8
+   ],
+   "top_y": 0.4,
+   "base": {
+    "x": [
+     8.49,
+     9.22
+    ],
+    "z": [
+     1.3,
+     1.86
+    ]
+   },
+   "reliability": "+-10 cm",
+   "from": "p15, p17",
+   "source": "estimated"
+  },
+  {
+   "name": "rugs",
+   "what": "geometric rugs in beige, sand and gold: one under the sofa group, one under the dining table",
+   "living": {
+    "x": [
+     7.45,
+     10.6
+    ],
+    "z": [
+     0.5,
+     2.5
+    ]
+   },
+   "dining": {
+    "x": [
+     3.95,
+     6.75
+    ],
+    "z": [
+     0.25,
+     2.1
+    ]
+   },
+   "reliability": "edges +-15 cm; far edges hidden",
+   "from": "p15 (near edge z 2.50, left edge x 7.49), p01, p02, p04 (rough)",
+   "source": "estimated"
+  },
+  {
+   "name": "curtains",
+   "what": "floor-to-ceiling, drawn open at both ends of the window wall, hanging about 10 cm from the wall: at the bottom-right corner a white sheer (z 4.16-4.76) and a dark walnut-brown panel (z 4.76-5.10); at the top-right corner a white sheer (z 0.68-1.12) next to walnut panel E. No rod visible: assume a ceiling track at the living ceiling height",
+   "x": [
+    10.7,
+    10.8
+   ],
+   "y": [
+    0.0,
+    2.487
+   ],
+   "from": "p03, p15, p17 back-projected onto x 10.74",
+   "source": "estimated"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "living-dining-kitchen-p01",
+   "shows": "dining table under the long drum pendant, facing the dining wall (greige panels, central mirror with LED edge glow, walnut panels); slatted divider at the right",
+   "position": [
+    5.308,
+    1.294,
+    4.417
+   ],
+   "target": [
+    5.359,
+    1.141,
+    0.031
+   ],
+   "up": [
+    0.0005,
+    0.9994,
+    -0.035
+   ],
+   "forward": [
+    0.0115,
+    -0.035,
+    -0.9993
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -89.34,
+   "pitch_deg": -2.0,
+   "roll_deg": -0.01,
+   "fit_rms_px": 1.39,
+   "fit_features": 11,
+   "vanishing_direction_rms_px": 0.3,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p02",
+   "shows": "from the dining corner along the table toward the two right-wall windows; divider at the left, island and TV wall at the right",
+   "position": [
+    2.464,
+    1.381,
+    1.478
+   ],
+   "target": [
+    10.84,
+    0.697,
+    1.604
+   ],
+   "up": [
+    0.0814,
+    0.9967,
+    0.001
+   ],
+   "forward": [
+    0.9966,
+    -0.0814,
+    0.015
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 0.86,
+   "pitch_deg": -4.67,
+   "roll_deg": 0.01,
+   "fit_rms_px": 0.44,
+   "fit_features": 5,
+   "vanishing_direction_rms_px": 0.44,
+   "inside_room": false,
+   "near_clip_m": 1.45,
+   "source": "estimated",
+   "notes": "Camera 1.38 m beyond the dining left wall (x 3.84), looking +x: set near about 1.45 or hide that wall. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p03",
+   "shows": "through the slatted divider into the living room: L-sofa, armchair, the two right-wall windows with curtains",
+   "position": [
+    4.856,
+    1.341,
+    0.379
+   ],
+   "target": [
+    10.84,
+    1.16,
+    1.36
+   ],
+   "up": [
+    0.0299,
+    0.9996,
+    0.0022
+   ],
+   "forward": [
+    0.9864,
+    -0.0298,
+    0.1617
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 9.31,
+   "pitch_deg": -1.71,
+   "roll_deg": 0.15,
+   "fit_rms_px": 4.67,
+   "fit_features": 7,
+   "vanishing_direction_rms_px": 1.43,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p04",
+   "shows": "dining table, island with cone pendants, TV wall and window 2; kitchen columns at the right",
+   "position": [
+    2.358,
+    1.323,
+    1.072
+   ],
+   "target": [
+    10.84,
+    1.537,
+    4.126
+   ],
+   "up": [
+    -0.0218,
+    0.9997,
+    -0.0093
+   ],
+   "forward": [
+    0.9406,
+    0.0237,
+    0.3387
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 19.81,
+   "pitch_deg": 1.36,
+   "roll_deg": 0.08,
+   "fit_rms_px": 1.49,
+   "fit_features": 7,
+   "vanishing_direction_rms_px": 0.64,
+   "inside_room": false,
+   "near_clip_m": 1.65,
+   "source": "estimated",
+   "notes": "Camera 1.48 m beyond the dining left wall (x 3.84): near about 1.65 or hide that wall. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p05",
+   "shows": "island with bar stools in front of the L-kitchen (tall greige column, walnut oven column, hob, sink corner); TV wall at the left",
+   "position": [
+    5.567,
+    1.183,
+    0.388
+   ],
+   "target": [
+    5.609,
+    1.142,
+    5.116
+   ],
+   "up": [
+    -0.0109,
+    0.9999,
+    0.0089
+   ],
+   "forward": [
+    0.0089,
+    -0.0088,
+    0.9999
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 89.49,
+   "pitch_deg": -0.5,
+   "roll_deg": -0.63,
+   "fit_rms_px": 6.43,
+   "fit_features": 7,
+   "vanishing_direction_rms_px": 1.83,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Inside, between the top wall and the dining table; the dining chairs on the top-wall side of the table are not in the render, hide them if they block the view. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p06",
+   "shows": "island and kitchen from the living side; hallway door at the right",
+   "position": [
+    9.339,
+    1.307,
+    1.865
+   ],
+   "target": [
+    4.094,
+    1.265,
+    5.116
+   ],
+   "up": [
+    -0.003,
+    1.0,
+    0.008
+   ],
+   "forward": [
+    -0.85,
+    -0.0068,
+    0.5268
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 148.21,
+   "pitch_deg": -0.39,
+   "roll_deg": 0.3,
+   "fit_rms_px": 2.77,
+   "fit_features": 6,
+   "vanishing_direction_rms_px": 0.96,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p07",
+   "shows": "kitchen close-up: greige tall column, walnut oven column with two ovens, upper cabinets with LED, stone backsplash, hob",
+   "position": [
+    6.0,
+    1.692,
+    1.731
+   ],
+   "target": [
+    6.074,
+    1.357,
+    5.116
+   ],
+   "up": [
+    0.0096,
+    0.9951,
+    0.0984
+   ],
+   "forward": [
+    0.0217,
+    -0.0986,
+    0.9949
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 88.75,
+   "pitch_deg": -5.66,
+   "roll_deg": 0.43,
+   "fit_rms_px": 6.43,
+   "fit_features": 8,
+   "vanishing_direction_rms_px": 1.49,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p08",
+   "shows": "kitchen corner with the sink and under-cabinet LEDs; walnut oven column at the left",
+   "position": [
+    6.505,
+    1.52,
+    1.951
+   ],
+   "target": [
+    3.803,
+    1.521,
+    5.116
+   ],
+   "up": [
+    -0.0003,
+    1.0,
+    -0.0005
+   ],
+   "forward": [
+    -0.6493,
+    0.0002,
+    0.7605
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 130.49,
+   "pitch_deg": 0.01,
+   "roll_deg": -0.03,
+   "fit_rms_px": 0.52,
+   "fit_features": 3,
+   "vanishing_direction_rms_px": 0.81,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p09",
+   "shows": "left (sink) run of the L-kitchen head-on from the island side; hallway door and wardrobe in the background",
+   "position": [
+    8.412,
+    1.464,
+    3.953
+   ],
+   "target": [
+    3.64,
+    1.355,
+    3.214
+   ],
+   "up": [
+    -0.0217,
+    0.9997,
+    -0.008
+   ],
+   "forward": [
+    -0.988,
+    -0.0227,
+    -0.1529
+   ],
+   "hfov_deg": 54.6,
+   "vfov_deg": 42.3,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2480.8,
+   "lens_group": "B",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -171.2,
+   "pitch_deg": -1.3,
+   "roll_deg": -0.26,
+   "fit_rms_px": 2.67,
+   "fit_features": 4,
+   "vanishing_direction_rms_px": 1.14,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p10",
+   "shows": "island front (drawers, kitchen side); dining table and dining wall behind; sofa at the right",
+   "position": [
+    6.115,
+    1.395,
+    5.994
+   ],
+   "target": [
+    6.049,
+    0.855,
+    0.031
+   ],
+   "up": [
+    -0.0011,
+    0.9959,
+    -0.0901
+   ],
+   "forward": [
+    -0.0109,
+    -0.0901,
+    -0.9959
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -90.63,
+   "pitch_deg": -5.17,
+   "roll_deg": 0.01,
+   "fit_rms_px": 2.82,
+   "fit_features": 9,
+   "vanishing_direction_rms_px": 1.11,
+   "inside_room": false,
+   "near_clip_m": 1.6,
+   "source": "estimated",
+   "notes": "Camera 0.88 m behind the kitchen bottom wall (z 5.12), right behind the walnut oven column: near about 1.6 (the island front is at depth 2.44) or hide the wall and the columns. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p11",
+   "shows": "high view down onto the island top and bar stools; oven column and kitchen behind",
+   "position": [
+    7.841,
+    3.311,
+    1.083
+   ],
+   "target": [
+    5.175,
+    0.0,
+    4.881
+   ],
+   "up": [
+    -0.3032,
+    0.8134,
+    0.4964
+   ],
+   "forward": [
+    -0.4677,
+    -0.5809,
+    0.6662
+   ],
+   "hfov_deg": 54.6,
+   "vfov_deg": 42.3,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2480.8,
+   "lens_group": "B",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 125.07,
+   "pitch_deg": -35.51,
+   "roll_deg": 2.12,
+   "fit_rms_px": 3.43,
+   "fit_features": 4,
+   "vanishing_direction_rms_px": 1.66,
+   "inside_room": false,
+   "near_clip_m": 1.3,
+   "source": "estimated",
+   "notes": "Camera above the ceiling (y 3.31), looking down 35 deg: hide the ceiling (preferred) or near about 1.3. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p12",
+   "shows": "TV wall at an angle: walnut slats, stone slab, TV, floating unit with fireplace, AC grille box; balcony door at the left, kitchen columns at the right",
+   "position": [
+    11.2,
+    1.413,
+    1.455
+   ],
+   "target": [
+    7.889,
+    1.397,
+    5.116
+   ],
+   "up": [
+    0.0,
+    1.0,
+    0.0042
+   ],
+   "forward": [
+    -0.6708,
+    -0.0031,
+    0.7416
+   ],
+   "hfov_deg": 54.6,
+   "vfov_deg": 42.3,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2480.8,
+   "lens_group": "B",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 132.13,
+   "pitch_deg": -0.18,
+   "roll_deg": 0.16,
+   "fit_rms_px": 3.3,
+   "fit_features": 9,
+   "vanishing_direction_rms_px": 1.05,
+   "inside_room": false,
+   "near_clip_m": 0.6,
+   "source": "estimated",
+   "notes": "Camera 0.36 m beyond the right wall: near about 0.6 or hide the right wall. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p13",
+   "shows": "TV wall head-on with the balcony door at the left",
+   "position": [
+    8.59,
+    1.658,
+    1.718
+   ],
+   "target": [
+    8.658,
+    1.39,
+    5.116
+   ],
+   "up": [
+    -0.0011,
+    0.9969,
+    0.0786
+   ],
+   "forward": [
+    0.0199,
+    -0.0785,
+    0.9967
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 88.86,
+   "pitch_deg": -4.5,
+   "roll_deg": -0.16,
+   "fit_rms_px": 3.14,
+   "fit_features": 10,
+   "vanishing_direction_rms_px": 1.16,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p14",
+   "shows": "overview from beyond the TV-side corner toward the dining area and kitchen; sofa and coffee table in the foreground",
+   "position": [
+    11.391,
+    1.41,
+    5.357
+   ],
+   "target": [
+    5.304,
+    1.371,
+    0.031
+   ],
+   "up": [
+    -0.0003,
+    1.0,
+    -0.007
+   ],
+   "forward": [
+    -0.7526,
+    -0.0048,
+    -0.6585
+   ],
+   "hfov_deg": 54.6,
+   "vfov_deg": 42.3,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2480.8,
+   "lens_group": "B",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -138.82,
+   "pitch_deg": -0.28,
+   "roll_deg": -0.29,
+   "fit_rms_px": 5.72,
+   "fit_features": 9,
+   "vanishing_direction_rms_px": 1.37,
+   "inside_room": false,
+   "near_clip_m": 0.8,
+   "source": "estimated",
+   "notes": "Camera beyond the right/bottom wall corner (in the balcony area): near about 0.8 or hide those walls. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p15",
+   "shows": "L-sofa, armchair, rug and coffee table against the sofa wall (slatted walnut panel D); divider at the left, window 1 at the right",
+   "position": [
+    8.871,
+    1.288,
+    5.011
+   ],
+   "target": [
+    8.949,
+    1.113,
+    0.031
+   ],
+   "up": [
+    0.0026,
+    0.9994,
+    -0.035
+   ],
+   "forward": [
+    0.0156,
+    -0.035,
+    -0.9993
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -89.1,
+   "pitch_deg": -2.01,
+   "roll_deg": -0.12,
+   "fit_rms_px": 4.81,
+   "fit_features": 6,
+   "vanishing_direction_rms_px": 0.89,
+   "inside_room": true,
+   "near_clip_m": 0.1,
+   "source": "estimated",
+   "notes": "Camera at the TV wall, 10 cm in front of the stone slab (above the TV unit): hide the TV, or near about 0.1. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p16",
+   "shows": "from the sofa side toward the kitchen and the hallway door, past the divider",
+   "position": [
+    11.154,
+    1.254,
+    1.97
+   ],
+   "target": [
+    3.64,
+    1.047,
+    1.338
+   ],
+   "up": [
+    -0.0249,
+    0.9992,
+    -0.0304
+   ],
+   "forward": [
+    -0.9961,
+    -0.0274,
+    -0.0838
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -175.19,
+   "pitch_deg": -1.57,
+   "roll_deg": -1.62,
+   "fit_rms_px": 5.72,
+   "fit_features": 5,
+   "vanishing_direction_rms_px": 1.49,
+   "inside_room": false,
+   "near_clip_m": 0.4,
+   "source": "estimated",
+   "notes": "Camera 0.31 m beyond the right wall: near about 0.4 or hide the right wall. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "living-dining-kitchen-p17",
+   "shows": "TV wall seen over the coffee table with sofa and armchair in the foreground; balcony door and window 2 at the left",
+   "position": [
+    8.821,
+    1.728,
+    0.276
+   ],
+   "target": [
+    8.722,
+    1.047,
+    5.116
+   ],
+   "up": [
+    -0.0083,
+    0.9902,
+    0.1391
+   ],
+   "forward": [
+    -0.0203,
+    -0.1392,
+    0.9901
+   ],
+   "hfov_deg": 65.9,
+   "vfov_deg": 51.9,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1973.2,
+   "lens_group": "A",
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 91.17,
+   "pitch_deg": -8.0,
+   "roll_deg": -0.31,
+   "fit_rms_px": 3.52,
+   "fit_features": 10,
+   "vanishing_direction_rms_px": 1.15,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Camera above the sofa back, close to the top wall. target = where the optical axis meets the far room boundary; yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up; up includes the roll. three.js: camera.up.set(...up); position; lookAt(target); fov = vfov_deg.",
+   "from": "joint fit of all 17 renders: plan-anchored straight edges (LSD segments, sub-pixel) of the TV unit, TV-wall cabinets, kitchen columns, island, worktops, window reveals and sills, wall-panel joints, divider post, floor and ceiling junctions, matched to plan geometry; plus vanishing-direction consistency of all long edges (weight 0.3); two shared focal lengths (lens A 1973 px, lens B 2481 px), principal point at the image centre, shared unknown heights; Levenberg-Marquardt on point-to-line distances"
+  }
+ ],
+ "colours": {
+  "wood_floor": {
+   "hex": "#3b1e0f",
+   "what": "dark brown wood-look planks (living, dining)",
+   "source": "estimated",
+   "from": "p13 px box [900, 1790, 1500, 1900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#381e10",
+   "other_views": {
+    "p15 [0, 1500, 220, 1700]": "#5f462b",
+    "p10 [150, 1880, 400, 1915]": "#94744c"
+   }
+  },
+  "tile_floor": {
+   "hex": "#a08054",
+   "what": "large-format light beige tile (kitchen aisle, hallway)",
+   "source": "estimated",
+   "from": "p09 px box [620, 1760, 1080, 1900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#977f59",
+   "other_views": {
+    "p07 [700, 1875, 1100, 1915]": "#987f5c"
+   }
+  },
+  "walls": {
+   "hex": "#d2c6b8",
+   "what": "warm off-white wall paint (between the windows)",
+   "source": "estimated",
+   "from": "p03 px box [1640, 700, 1780, 950], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c7c5c4",
+   "other_views": {
+    "p13 [2350, 700, 2450, 1000]": "#9e8362"
+   }
+  },
+  "ceiling": {
+   "hex": "#e0d5c7",
+   "what": "flat white ceiling (renders warm)",
+   "source": "estimated",
+   "from": "p15 px box [800, 100, 1700, 300], median of the 10-90% luminance band",
+   "hex_white_balanced": "#d4d4d4",
+   "other_views": {
+    "p05 [300, 20, 700, 120]": "#9b7d5d"
+   }
+  },
+  "stone_slab": {
+   "hex": "#816949",
+   "what": "stone-look slab behind the TV (warm grey-beige with gold veins); same stone as the kitchen backsplash and worktops",
+   "source": "estimated",
+   "from": "p13 px box [1800, 650, 2200, 1100], median of the 10-90% luminance band",
+   "hex_white_balanced": "#7a694e",
+   "other_views": {
+    "p07 [2000, 900, 2400, 1150]": "#976a31"
+   }
+  },
+  "walnut": {
+   "hex": "#30180c",
+   "what": "dark walnut veneer (oven column, slats, wall panels, island ends)",
+   "source": "estimated",
+   "from": "p07 px box [1150, 1400, 1500, 1700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#2d180d",
+   "other_views": {
+    "p13 [560, 600, 750, 1300]": "#371d0e"
+   }
+  },
+  "kitchen_greige": {
+   "hex": "#a98b6a",
+   "what": "matt greige cabinet doors (kitchen, TV-wall upper cabinets)",
+   "source": "estimated",
+   "from": "p07 px box [700, 400, 1000, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a08a71",
+   "other_views": {
+    "p05 [1300, 300, 1700, 700]": "#cfb497"
+   }
+  },
+  "island_front": {
+   "hex": "#9a7549",
+   "what": "greige drawer fronts of the island (kitchen side)",
+   "source": "estimated",
+   "from": "p10 px box [700, 1350, 1400, 1800], median of the 10-90% luminance band",
+   "hex_white_balanced": "#92744e"
+  },
+  "worktop_stone": {
+   "hex": "#a17f55",
+   "what": "island worktop: light beige stone with gold veining",
+   "source": "estimated",
+   "from": "p11 px box [1500, 1250, 1900, 1450], median of the 10-90% luminance band",
+   "hex_white_balanced": "#987e5b",
+   "other_views": {
+    "p10 [700, 1180, 1300, 1260]": "#d7c1a4"
+   }
+  },
+  "tv_unit": {
+   "hex": "#8e7556",
+   "what": "off-white/light beige floating TV unit fronts",
+   "source": "estimated",
+   "from": "p13 px box [1900, 1480, 2250, 1650], median of the 10-90% luminance band",
+   "hex_white_balanced": "#86745c"
+  },
+  "sofa": {
+   "hex": "#c2a895",
+   "what": "light grey-beige fabric (L-sofa)",
+   "source": "estimated",
+   "from": "p15 px box [1500, 1300, 1900, 1400], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b8a79f"
+  },
+  "armchair_and_chairs": {
+   "hex": "#957147",
+   "what": "cream boucle (dining chairs, armchair, bar stools)",
+   "source": "estimated",
+   "from": "p01 px box [1150, 1330, 1400, 1420], median of the 10-90% luminance band",
+   "hex_white_balanced": "#8d704c",
+   "other_views": {
+    "p15 [400, 1250, 600, 1400]": "#cca989"
+   }
+  },
+  "rug": {
+   "hex": "#ccb9a2",
+   "what": "geometric beige/sand/gold rug (living; the dining rug is similar)",
+   "source": "estimated",
+   "from": "p15 px box [700, 1800, 1000, 1900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c1b8ad",
+   "other_views": {
+    "p01 [600, 1820, 1000, 1910]": "#9e7b51"
+   }
+  },
+  "curtain_sheer": {
+   "hex": "#c8bbad",
+   "what": "white sheer curtain",
+   "source": "estimated",
+   "from": "p03 px box [2160, 700, 2280, 1100], median of the 10-90% luminance band",
+   "hex_white_balanced": "#bdbab8"
+  },
+  "curtain_brown": {
+   "hex": "#523e31",
+   "what": "dark walnut-brown curtain panel",
+   "source": "estimated",
+   "from": "p03 px box [2320, 700, 2420, 1100], median of the 10-90% luminance band",
+   "hex_white_balanced": "#4e3e34"
+  },
+  "dining_table": {
+   "hex": "#5a351b",
+   "what": "dark walnut table top",
+   "source": "estimated",
+   "from": "p01 px box [900, 1240, 1500, 1265], median of the 10-90% luminance band",
+   "hex_white_balanced": "#55351d"
+  },
+  "coffee_table": {
+   "hex": "#493222",
+   "what": "dark walnut coffee table top",
+   "source": "estimated",
+   "from": "p15 px box [900, 1435, 1500, 1460], median of the 10-90% luminance band",
+   "hex_white_balanced": "#453224"
+  },
+  "_how_to_read": "hex = rendered sRGB in a plain patch, median of the 10-90% luminance band. hex_white_balanced applies per-channel linear gains that make the white living-room ceiling (p15, rendered #e0d5c7) neutral (R x0.946, G x0.995, B x1.065). The renders are graded warm.",
+  "light_colour_temperature": {
+   "value": "ceiling LED lines and the kitchen disc near-neutral/cool white (about 4000-5000 K); pendants, under-cabinet strips, TV-unit underglow, cabinet and wall-wash LEDs warm white (about 2700-3000 K); daylight through the windows",
+   "source": "estimated",
+   "from": "emitter and glow pixels in p05, p07, p13, p15"
+  }
+ },
+ "lights": [
+  {
+   "type": "led-strip",
+   "name": "living ceiling double LED rectangle",
+   "what": "two nested rectangles of recessed linear LED lines about 13 cm apart in the living-room ceiling",
+   "outer": {
+    "x": [
+     7.4,
+     10.58
+    ],
+    "z": [
+     0.17,
+     4.29
+    ]
+   },
+   "inner": {
+    "x": [
+     7.53,
+     10.42
+    ],
+    "z": [
+     0.3,
+     4.16
+    ]
+   },
+   "y": 2.487,
+   "colour": "neutral white",
+   "reliability": "+-10 cm (left side +-15 cm)",
+   "source": "estimated",
+   "from": "LED pixels of 13 renders back-projected onto y 2.49 (p13 bottom side z 4.16/4.29, p15 top side z 0.17/0.30, p03 right side x 10.40/10.58, p15 and p16 left side x 7.32-7.61)"
+  },
+  {
+   "type": "ceiling-disc",
+   "name": "kitchen ceiling light",
+   "position": [
+    5.55,
+    2.5869999999999997,
+    3.8
+   ],
+   "diameter_m": 0.5,
+   "depth_m": 0.08,
+   "what": "round surface-mounted disc: white body, thin metallic ring, opal diffuser; only one is seen in the renders",
+   "reliability": "+-20 cm in x and z",
+   "source": "estimated",
+   "from": "p04, p05, p06, p09, p16 back-projected onto y 2.58 (x 5.16-6.22, z 3.54-4.01; width 0.47-0.54)"
+  },
+  {
+   "type": "pendant",
+   "name": "dining drum",
+   "position": [
+    5.29,
+    1.81,
+    1.15
+   ],
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "see features: dining drum pendant"
+  },
+  {
+   "type": "pendant",
+   "name": "living drum",
+   "position": [
+    8.89,
+    1.96,
+    1.8
+   ],
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "see features: living drum pendant"
+  },
+  {
+   "type": "pendant",
+   "name": "island cones",
+   "position": [
+    [
+     6.505,
+     1.53,
+     3.12
+    ],
+    [
+     6.156,
+     1.53,
+     3.14
+    ],
+    [
+     5.806,
+     1.53,
+     3.18
+    ]
+   ],
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "see features: island cone pendants"
+  },
+  {
+   "type": "led-strip",
+   "name": "kitchen under-cabinet strips",
+   "position": {
+    "bottom_run": {
+     "x": [
+      4.03,
+      5.666
+     ],
+     "y": 1.57,
+     "z": 4.8
+    },
+    "left_run": {
+     "x": 4.22,
+     "y": 1.57,
+     "z": [
+      3.15,
+      4.67
+     ]
+    }
+   },
+   "faces": "down onto the backsplash and worktop",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p07, p08, p09"
+  },
+  {
+   "type": "led-strip",
+   "name": "kitchen upper-cabinet band",
+   "position": {
+    "y": 2.31,
+    "z": 4.77
+   },
+   "faces": "down onto the main row of wall cabinets",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p07, p08"
+  },
+  {
+   "type": "led-strip",
+   "name": "TV-unit underglow",
+   "position": {
+    "x": [
+     7.03,
+     9.94
+    ],
+    "y": 0.25,
+    "z": 4.95
+   },
+   "faces": "down (floor and wall)",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p12, p13"
+  },
+  {
+   "type": "led-strip",
+   "name": "under TV-wall cabinets",
+   "position": {
+    "x": [
+     7.05,
+     8.96
+    ],
+    "y": 2.15,
+    "z": 4.84
+   },
+   "faces": "down onto the stone slab",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p13 (glow band 2.04-2.10)"
+  },
+  {
+   "type": "led-strip",
+   "name": "island underglow",
+   "position": {
+    "x": [
+     5.15,
+     7.02
+    ],
+    "y": 0.74,
+    "z": 2.8
+   },
+   "faces": "down along the recessed dining-side face",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p05"
+  },
+  {
+   "type": "led-strip",
+   "name": "dining-wall glow",
+   "what": "vertical warm strips at both edges of the mirror B and at the front end of walnut panel A (wall-wash)",
+   "position": [
+    {
+     "x": 4.88,
+     "z": 0.1
+    },
+    {
+     "x": 5.65,
+     "z": 0.1
+    },
+    {
+     "x": 3.9,
+     "z": 0.83
+    }
+   ],
+   "y": [
+    0.0,
+    2.605
+   ],
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01, p10"
+  },
+  {
+   "type": "fireplace",
+   "name": "electric fireplace",
+   "position": {
+    "x": [
+     7.92,
+     9.13
+    ],
+    "y": [
+     0.24,
+     0.65
+    ],
+    "z": 4.75
+   },
+   "colour": "orange flame",
+   "source": "estimated",
+   "from": "p12, p13"
+  },
+  {
+   "type": "daylight",
+   "name": "sun and sky",
+   "what": "all 17 renders are daytime: landscape backdrop in the windows and balcony door (p02, p03, p04, p12, p13, p15, p17) and window-shaped sun patches on the dining left wall and kitchen fronts (p01, p07, p10, p11); the interior lights are on in every render; no evening render",
+   "source": "estimated",
+   "from": "p01-p17"
+  }
+ ],
+ "notes": [
+  "CEILING: the render model has no single ceiling height. Kitchen 2.67, dining wall 2.60, TV-wall cabinet tops 2.52, living-room wall junction 2.49 (above the windows, where the double LED rectangle is). So the living part probably has a lower (dropped) ceiling of about 2.49, and the dining/kitchen part about 2.60-2.67; a 5-8 cm fit bias is possible. Owner: 2.40 everywhere. Heights here are in the render-model scale; to adopt 2.40 keep absolute furniture heights (worktop 0.90, island 0.77, table 0.74, TV unit 0.25-0.68, sills 0.99) and re-anchor ceiling-hung items, or scale every y by 2.40/2.60 = 0.923. Window heads (2.36) and the balcony-door head (2.42) do not fit under 2.40 with their boxes, so they need a decision.",
+  "LENSES: two focal lengths fit, lens A 1973 px (hfov 65.9, vfov 51.9 deg) for 13 renders and lens B 2481 px (hfov 54.6, vfov 42.3 deg) for p09, p11, p12, p14 (vanishing points: p04, p06, p08 give 2026-2049 px, p11, p12, p14 give 2497-2511 px). In near-frontal views (p03, p05, p07, p10, p13, p15, p17) the lens is weakly determined and A was kept; for p17 the living drum size prefers B (camera then at 8.87, 2.06, -0.85) but the LED rectangle prefers A.",
+  "CAMERA ACCURACY: fit rms 0.4-3.5 px for 11 renders; p03 4.7, p05 6.4, p07 6.4, p14 5.7, p15 4.8, p16 5.7 px because plan positions and renders disagree by 3-5 cm in places (kitchen columns in p05/p07, window reveals in p03). Expect +-10 cm and +-0.5 deg for those six. p15 has no height reference of its own: its camera height assumes its top-wall ceiling junction equals the right-wall one (2.49). Cameras p02, p04, p10, p11, p12, p14, p16 are outside the room (see near_clip_m); p11 is above the ceiling.",
+  "OPENINGS: the only windows are the two on the right wall (single-sash, sill 0.99, frame 1.04-2.15, shutter box to 2.36) and the balcony door on the bottom wall (x 9.96-10.64, head 2.42). Plan items A-E on the top/left wall are walnut panels, a mirror and a slatted panel, not windows; D is not a radiator.",
+  "The island top (0.77) is 13 cm lower than the kitchen worktop (0.90): a table-height island (cross-checked in p04, p05, p10 and against the floor corner in p14, which wants about 3 cm more). Bar-stool seats about 0.64.",
+  "Dining table: owner rule (labels) x 4.41-6.31; the render model and drawing use x 4.382-6.311.",
+  "Uncertain: living drum z (1.5-2.1), divider shelf heights (+-10 cm), sofa/armchair/coffee table/rug extents (+-10-15 cm), the curtain track (not visible), the exact hob and sink positions (hob on the bottom run left of the oven column, sink in the left run near the corner), the island dining-side overhang (about 0.25). Only one round ceiling light is visible in the kitchen; docs/room-notes.md says lights (plural).",
+  "Colours are rendered pixel values; see colours._how_to_read. Materials shared with other rooms (walnut, greige, stone, wood floor) should use one base colour across rooms."
+ ],
+ "generated": "2026-11-23 from the 17 living-dining-kitchen renders (OpenCV LSD edges, joint Levenberg-Marquardt camera solve with vanishing-direction terms, back-projection onto plan planes); analysis scripts kept outside the repo"
+}

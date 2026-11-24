@@ -1,0 +1,886 @@
+{
+ "room": "entrance-hallway",
+ "frame": "plan page 1 (hallway + living + dining + kitchen outline): x right, z down the page, y up, metres, origin = top-left of the whole outline's interior bounding box (data/plan-geometry.json room hallway-living-dining-kitchen)",
+ "scale": {
+  "render_ceiling_height_m": 2.544,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (ceiling 2.544 m); see notes 1",
+  "per_render_ceiling_fit_m": {
+   "p01": null,
+   "p02": 2.537,
+   "p03": null,
+   "p04": 2.55,
+   "p05": null
+  },
+  "source": "estimated",
+  "from": "joint camera fit; only p02 (skirting/floor line on the bottom wall) and p04 (skirting and plinth lines under the top wall and the wardrobe) show floor-level edges, so only they fix the ceiling on their own (2.537 and 2.550); p01, p03 and p05 agree with the joint value but do not determine it independently"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat painted ceiling at one level over the whole hallway, the niche (z 1.456-1.886) and the corridor mouth; no coves or dropped steps inside the hallway. Recessed linear LED profiles flush with it (see lights). The only step is the bulkhead over the opening to the living room (next feature)",
+   "y": [
+    2.544,
+    2.544
+   ],
+   "note": "2.544 m in this render model: 14 cm above the owner's 2.40 m (bedroom 2.539, work room 2.608, bathroom 2.412, toilet 2.344)",
+   "source": "estimated",
+   "from": "joint fit: ceiling-wall lines on the top wall, niche back, niche side, wardrobe top, bottom wall, left wall and corridor wall"
+  },
+  {
+   "name": "bulkhead over the living-room opening",
+   "what": "the ceiling drops to about 2.11 m over the opening between the hallway and the living/dining room (x 3.84, z 1.886-3.131): a painted face toward the hallway at about x 3.84 (flush with the dining-side face of the wall pieces), its underside running roughly 0.2-0.25 m into the living room",
+   "x": [
+    3.84,
+    4.06
+   ],
+   "z": [
+    1.886,
+    3.131
+   ],
+   "y": [
+    2.11,
+    2.544
+   ],
+   "reliability": "underside height +-3 cm (p01 2.10-2.13, p04 2.07-2.12); face position x 3.73-3.84; underside depth from p01 only",
+   "source": "estimated",
+   "from": "p01 (ceiling end at v 178, bulkhead underside edges at v 265 and 272 back-projected), p04 (ceiling line along x 3.84 above the end column, bulkhead edge at v 385)"
+  },
+  {
+   "name": "floor tiles",
+   "what": "large-format light beige porcelain, square, about 45 x 45 cm (joint pitch 0.455 m), thin joints; the grid starts at the left wall (x 0) and at the bottom wall (z 3.1556). The hallway tiles stop at x about 3.63 (living-room wood planks beyond) and at z 3.156 across the corridor mouth (the corridor has the dark wood-look plank floor, as in the plan)",
+   "tile_size_m": [
+    0.455,
+    0.455
+   ],
+   "joint_x": [
+    0.457,
+    0.914,
+    1.371,
+    1.828,
+    2.285,
+    2.742,
+    3.199
+   ],
+   "joint_z": [
+    1.349,
+    1.801,
+    2.252,
+    2.704
+   ],
+   "note": "the plan raster draws a 0.61 m hatch here; the renders consistently show 0.455 m (joints measured at x 0.45, 1.38, 1.83-1.84, 2.27-2.29, 2.72-2.74, 3.19-3.20 and z 1.80-1.83, 2.24-2.25, 2.69-2.71 in p01, p03, p04, p05), so use the renders",
+   "source": "estimated",
+   "from": "floor joint segments back-projected onto y 0 in p01, p03, p04, p05; tile/wood threshold lines in p01 (x 3.626, and z 3.156 across the corridor mouth)"
+  },
+  {
+   "name": "walls",
+   "what": "warm off-white painted walls throughout the hallway; the two wall-end faces at the living-room opening (z 1.886, x 3.638-3.84 and z 3.131, x 3.64-3.84) are clad in a beige textured plaster/stone look, which continues on the dining side of the upper wall piece (x 3.84 face)",
+   "source": "estimated",
+   "from": "p01, p04, p05"
+  },
+  {
+   "name": "skirting",
+   "what": "dark brown skirting on the plain walls, thickness about 1.2 cm (assumed); the wardrobe plinth, bench base and door casings run to the floor",
+   "y": [
+    0.0,
+    0.063
+   ],
+   "source": "estimated",
+   "from": "joint fit of skirting tops in p02 and p04 (p02 alone 0.064, p04 alone 0.061)"
+  },
+  {
+   "name": "front door (top wall of the narrow part)",
+   "what": "entrance door: dark walnut-veneer leaf with vertical grain in a slim walnut casing (about 4.9 cm at the sides, 3.9 cm at the top, about 1 cm proud of the wall); black lever and a black smart-lock body on the right (x 0.86-0.95 side), so the hinges are on the left (x about 0.04, next to door I's casing); centred peephole; light grey metal threshold strip",
+   "x": [
+    0.036,
+    1.053
+   ],
+   "z": [
+    1.8856,
+    1.8956
+   ],
+   "y": [
+    0.0,
+    2.142
+   ],
+   "casing_top_y": 2.142,
+   "leaf": {
+    "x": [
+     0.085,
+     1.007
+    ],
+    "top_y": 2.103,
+    "note": "leaf = inside of the casing; left inner edge assumed symmetric to the measured right one"
+   },
+   "peephole": {
+    "x": 0.543,
+    "y": 1.6
+   },
+   "smart_lock_body": {
+    "x": [
+     0.856,
+     0.95
+    ],
+    "y": [
+     0.896,
+     1.136
+    ]
+   },
+   "lever": {
+    "y": 0.914,
+    "x_rose": 0.85,
+    "x_tip": 0.746,
+    "points": "-x (toward the hinge side)"
+   },
+   "reliability": "casing edges +-1 cm (right edge 1.054-1.059 across p01, p03, p04, p05; left edge 0.036-0.038 from p03 and p05); casing top 2.135-2.148 across views",
+   "source": "estimated",
+   "from": "right casing edge and top as free parameters in the joint fit (p01, p03, p04, p05); left edge, inner casing lines, peephole, lock and lever back-projected onto z 1.896 in p03, p05 and p04; the plan marks the handle near x 0.87"
+  },
+  {
+   "name": "door I (left wall, to the work room)",
+   "what": "white leaf with thin black diagonal inlay lines, white casings about 7-7.5 cm wide and about 1.5 cm proud; black lever on a square rose with a square key rose below, on the z 2.80 side (latch toward the console shelf), hinges on the z 1.97 side",
+   "x": [
+    0.0,
+    0.015
+   ],
+   "z": [
+    1.887,
+    2.924
+   ],
+   "y": [
+    0.0,
+    2.142
+   ],
+   "casing_top_y": 2.142,
+   "opening_head_y": 2.078,
+   "leaf_top_y": 2.056,
+   "casing_inner_z": [
+    1.968,
+    2.847
+   ],
+   "handle": {
+    "z_rose": 2.797,
+    "y": 0.975,
+    "z_lever_tip": 2.647,
+    "key_rose_y": 0.893
+   },
+   "source": "estimated",
+   "from": "plan opening p1-I (z 1.887-2.924 across the casings); casing top from the joint fit; inner lines and handle back-projected onto x 0.015 in p03"
+  },
+  {
+   "name": "door J (bottom wall, to the toilet)",
+   "what": "same door type as I: white inlay-pattern leaf, white casings 7.0 cm, black lever on a square rose at x 1.61 (latch on the corridor side), square key rose below, hinges on the x 0.89 side",
+   "x": [
+    0.791,
+    1.725
+   ],
+   "z": [
+    3.1406,
+    3.1556
+   ],
+   "y": [
+    0.0,
+    2.141
+   ],
+   "casing_top_y": 2.141,
+   "opening_head_y": 2.076,
+   "leaf_top_y": 2.052,
+   "casing_inner_x": [
+    0.862,
+    1.656
+   ],
+   "handle": {
+    "x_rose": 1.606,
+    "y": 0.955,
+    "x_lever_tip": 1.479,
+    "key_rose_y": 0.872
+   },
+   "source": "estimated",
+   "from": "plan opening p1-J; casing top from the joint fit (p02); casing, jamb and handle lines back-projected onto z 3.141 in p02 (outer casing edges land at x 0.791 and 1.726, matching the plan)"
+  },
+  {
+   "name": "console shelf",
+   "what": "floating light-wood box shelf, about 10 cm thick, no legs, on the bottom wall between the corner and door J's casing; decor on top (plant, vases, books) not modelled",
+   "x": [
+    0.0,
+    0.789
+   ],
+   "z": [
+    2.9265,
+    3.1556
+   ],
+   "y": [
+    0.806,
+    0.91
+   ],
+   "source": "estimated",
+   "from": "plan footprint (labels 80 x 23); top and bottom front edges as free parameters in the joint fit (p02)"
+  },
+  {
+   "name": "niche walnut back panel",
+   "what": "flat dark walnut veneer panel (vertical grain) covering the whole niche back wall from the floor to the ceiling, 2.2 cm thick (plan element 'OGLEDALO + SEDENJE', z 1.4576-1.4776); the niche side wall (x 1.25) stays painted and is washed by the left mirror strip",
+   "x": [
+    1.25,
+    2.182
+   ],
+   "z": [
+    1.4556,
+    1.4776
+   ],
+   "y": [
+    0.0,
+    2.544
+   ],
+   "source": "estimated",
+   "from": "plan footprint and labels 94 / 145; p04 (panel edges and ceiling line), p01"
+  },
+  {
+   "name": "mirror",
+   "what": "frameless smoked/grey mirror with fine white flecks (same glass as the bathroom and toilet mirrors) on the walnut panel across the full niche width, with two vertical LED strips set 6 cm in from its sides",
+   "x": [
+    1.25,
+    2.176
+   ],
+   "z": [
+    1.4776,
+    1.484
+   ],
+   "y": [
+    0.817,
+    2.147
+   ],
+   "led_strips_x": [
+    1.31,
+    2.11
+   ],
+   "led_strips_y": [
+    0.84,
+    2.1
+   ],
+   "source": "estimated",
+   "from": "p04 (edges and strips back-projected onto z 1.484)"
+  },
+  {
+   "name": "coat hooks",
+   "what": "seven black hooks on a short black rail above the mirror, evenly spaced 10.4 cm, centred on the niche (plan item p1-F, classified there as 'radiator?', is this hook row)",
+   "x_hooks": [
+    1.396,
+    1.499,
+    1.603,
+    1.705,
+    1.809,
+    1.911,
+    2.018
+   ],
+   "z": [
+    1.4776,
+    1.54
+   ],
+   "y": [
+    2.16,
+    2.27
+   ],
+   "source": "estimated",
+   "from": "p04 (hook tips back-projected onto z 1.47-1.53)"
+  },
+  {
+   "name": "bench",
+   "what": "cream boucle bench filling the niche width: five vertical tufted rolls with a rounded top, on a recessed dark base",
+   "x": [
+    1.25,
+    2.182
+   ],
+   "z": [
+    1.4776,
+    1.83
+   ],
+   "y": [
+    0.0,
+    0.484
+   ],
+   "cushion_bottom_y": 0.046,
+   "reliability": "front face z 1.79-1.85 from the left-end silhouettes in p04 and p05 (depth about 0.35 m); top +-2 cm (silhouette of the rounded top)",
+   "source": "estimated",
+   "from": "p04 (top, cushion bottom and base back-projected onto z 1.83), p05"
+  },
+  {
+   "name": "tall wardrobe / shoe cabinet",
+   "what": "floor-to-ceiling built-in unit, 43 cm deep, between dark walnut side panels (2.2 cm, full height): four flat handle-less greige doors (joints at x 2.556, 2.909, 3.264) from 0.557 to 2.442, a fixed greige top panel from 2.442 to the ceiling, two rows of four drawers (0.311-0.557 and 0.069-0.311) with 12 cm black bar pulls about 2 cm below each drawer top, recessed greige plinth 0-0.069 set back to z 1.870",
+   "x": [
+    2.182,
+    3.638
+   ],
+   "z": [
+    1.4556,
+    1.8856
+   ],
+   "y": [
+    0.0,
+    2.544
+   ],
+   "greige_x": [
+    2.2039,
+    3.6161
+   ],
+   "walnut_side_panels_x": [
+    [
+     2.182,
+     2.2039
+    ],
+    [
+     3.6161,
+     3.638
+    ]
+   ],
+   "door_joints_x": [
+    2.556,
+    2.909,
+    3.264
+   ],
+   "doors_y": [
+    0.557,
+    2.442
+   ],
+   "top_panel_y": [
+    2.442,
+    2.544
+   ],
+   "drawer_rows_y": [
+    [
+     0.069,
+     0.311
+    ],
+    [
+     0.311,
+     0.557
+    ]
+   ],
+   "drawer_pull_y": [
+    0.3,
+    0.537
+   ],
+   "drawer_pull_length_m": 0.12,
+   "plinth_y": [
+    0.0,
+    0.069
+   ],
+   "plinth_front_z": 1.87,
+   "source": "estimated",
+   "from": "plan footprint 2.204-3.616 x 1.456-1.886 and label 145 (2.182-3.638 with the walnut panels); joints, drawer lines, top panel and plinth as free parameters in the joint fit (p04, p05); pulls back-projected in p04"
+  },
+  {
+   "name": "wall-end column and wall-wash at the living-room opening",
+   "what": "the 20 cm end face of the hallway/dining wall (z 1.886, x 3.638-3.84) is textured beige plaster, floor to ceiling. The plaster continues round the corner on the dining-side face (x 3.84) to z about 0.78, where a vertical warm LED strip at the edge of a dark walnut panel washes it; the walnut panel runs on toward the window wall. This wall-wash and panel belong to the dining side (seen in p05 only)",
+   "x": [
+    3.638,
+    3.84
+   ],
+   "z": [
+    0.78,
+    1.8856
+   ],
+   "led_strip": {
+    "x": 3.84,
+    "z": 0.79,
+    "y": [
+     0.0,
+     2.544
+    ]
+   },
+   "walnut_panel_z": [
+    0.03,
+    0.78
+   ],
+   "reliability": "LED/panel edge z 0.76-0.84 depending on how far the walnut panel stands off the wall (not determined)",
+   "source": "estimated",
+   "from": "p04 (column 2222-2352 px), p05 (column and dining face back-projected onto x 3.84 and z 1.886)"
+  },
+  {
+   "name": "corridor (visible part)",
+   "what": "only the first 1.5 m of the L-shaped corridor is visible (p02 left edge, p01 through its mouth): white walls, dark wood-look plank floor, the ceiling continues at the hallway level with two LED lines along it. Doors N, O and P are not visible in any hallway render; use the door I/J type for them",
+   "source": "estimated",
+   "from": "p01, p02 (corridor right-wall ceiling line back-projected at x 3.65-3.67, plan 3.64)"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "entrance-hallway-p01",
+   "shows": "from behind the left wall down the hallway (+x) into the living room: front door at the left edge, wardrobe walnut side panel and bench, wardrobe front, door J and the console shelf at the right, ceiling LED outline, dining/living area and windows in the distance",
+   "position": [
+    -0.624,
+    1.445,
+    2.564
+   ],
+   "target": [
+    10.84,
+    1.188,
+    1.95
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.9983,
+    -0.0224,
+    -0.0535
+   ],
+   "hfov_deg": 71.4,
+   "vfov_deg": 51.2,
+   "aspect": "3:2 (1260 x 840)",
+   "focal_px": 876.4,
+   "principal_point_px": [
+    630.0,
+    420.0
+   ],
+   "yaw_deg": -3.07,
+   "pitch_deg": -1.28,
+   "roll_deg": 0.09,
+   "fit_rms_px": 1.25,
+   "inside_room": false,
+   "near_clip_m": 0.75,
+   "source": "estimated",
+   "notes": "Camera is 0.62 m behind the left wall (x 0, inside the work room). The near plane must cut the left wall (depth about 0.62-0.66) and keep the console shelf at the bottom right (nearest visible part at depth about 0.9): near about 0.75 (range 0.7-0.9). The image is 1260 x 840 (3:2); its vertical field of view matches p02-p05 (51.2 vs 51.0 deg), so it is the same lens on a wider frame. target = where the optical axis meets the far boundary of the open-plan scene. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p05: sub-pixel straight edges (gradient/intensity profiles along hand-seeded segments, checked against OpenCV LSD) of wall corners, ceiling-wall and floor/skirting lines, the wardrobe edges, door joints, drawer lines and top panel, the niche corner and ceiling lines, door casings, the console shelf front, the ceiling LED lines and the front-door casing, matched to plan geometry (hallway polygon, openings I and J, wardrobe 2.182-3.638 incl. walnut side panels, console 0-0.789 x 2.9265-3.1556, niche back panel at z 1.4776); pinhole, principal point at the image centre, one focal length shared by p02-p05 and a separate one for p01; ceiling height, casing tops, drawer and top-panel heights, LED-line positions and the front-door casing edge as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "entrance-hallway-p02",
+   "shows": "bottom wall head-on: door J with the console shelf at its right, door I's casing on the left wall at the right edge, the corridor mouth with LED lines at the left edge",
+   "position": [
+    1.386,
+    1.342,
+    0.396
+   ],
+   "target": [
+    1.356,
+    1.285,
+    3.156
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.011,
+    -0.0208,
+    0.9997
+   ],
+   "hfov_deg": 64.9,
+   "vfov_deg": 51.0,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2012.8,
+   "principal_point_px": [
+    1280.0,
+    960.0
+   ],
+   "yaw_deg": 90.63,
+   "pitch_deg": -1.19,
+   "roll_deg": -0.02,
+   "fit_rms_px": 1.35,
+   "inside_room": false,
+   "near_clip_m": 1.8,
+   "source": "estimated",
+   "notes": "Camera is 1.06 m behind the niche back wall (z 0.40, behind the walnut panel). The near plane must hide the niche panel, mirror, bench (front at depth about 1.43), the top wall and the wardrobe front (depth 1.49) and keep the left wall with door I (visible from depth 2.18): near about 1.8 (range 1.55-2.15). target = where the optical axis meets the far boundary of the open-plan scene. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p05: sub-pixel straight edges (gradient/intensity profiles along hand-seeded segments, checked against OpenCV LSD) of wall corners, ceiling-wall and floor/skirting lines, the wardrobe edges, door joints, drawer lines and top panel, the niche corner and ceiling lines, door casings, the console shelf front, the ceiling LED lines and the front-door casing, matched to plan geometry (hallway polygon, openings I and J, wardrobe 2.182-3.638 incl. walnut side panels, console 0-0.789 x 2.9265-3.1556, niche back panel at z 1.4776); pinhole, principal point at the image centre, one focal length shared by p02-p05 and a separate one for p01; ceiling height, casing tops, drawer and top-panel heights, LED-line positions and the front-door casing edge as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "entrance-hallway-p03",
+   "shows": "left wall head-on: door I in the centre, console shelf at the left, front door at the right, then the warmly lit niche side wall, the mirror with its left LED strip and the bench at the right edge",
+   "position": [
+    3.244,
+    1.33,
+    2.8
+   ],
+   "target": [
+    0.0,
+    1.222,
+    2.255
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.9856,
+    -0.0328,
+    -0.1656
+   ],
+   "hfov_deg": 64.9,
+   "vfov_deg": 51.0,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2012.8,
+   "principal_point_px": [
+    1280.0,
+    960.0
+   ],
+   "yaw_deg": -170.46,
+   "pitch_deg": -1.88,
+   "roll_deg": 0.06,
+   "fit_rms_px": 1.36,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Camera inside the hallway (x 3.24, z 2.80); no clipping needed. target = where the optical axis meets the far boundary of the open-plan scene. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p05: sub-pixel straight edges (gradient/intensity profiles along hand-seeded segments, checked against OpenCV LSD) of wall corners, ceiling-wall and floor/skirting lines, the wardrobe edges, door joints, drawer lines and top panel, the niche corner and ceiling lines, door casings, the console shelf front, the ceiling LED lines and the front-door casing, matched to plan geometry (hallway polygon, openings I and J, wardrobe 2.182-3.638 incl. walnut side panels, console 0-0.789 x 2.9265-3.1556, niche back panel at z 1.4776); pinhole, principal point at the image centre, one focal length shared by p02-p05 and a separate one for p01; ceiling height, casing tops, drawer and top-panel heights, LED-line positions and the front-door casing edge as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "entrance-hallway-p04",
+   "shows": "top wall head-on: front door, the niche with walnut panel, hooks, LED mirror and boucle bench, the four-door wardrobe with drawers, the plaster end column and a glimpse of the dining area at the right",
+   "position": [
+    2.22,
+    1.441,
+    4.838
+   ],
+   "target": [
+    2.264,
+    1.336,
+    1.886
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.0149,
+    -0.0356,
+    -0.9993
+   ],
+   "hfov_deg": 64.9,
+   "vfov_deg": 51.0,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2012.8,
+   "principal_point_px": [
+    1280.0,
+    960.0
+   ],
+   "yaw_deg": -89.15,
+   "pitch_deg": -2.04,
+   "roll_deg": 0.02,
+   "fit_rms_px": 1.29,
+   "inside_room": false,
+   "near_clip_m": 2.0,
+   "source": "estimated",
+   "notes": "Camera is 1.68 m beyond the bottom wall (z 4.84, in the toilet/bathroom zone). The near plane must hide the bottom wall (depth 1.68) and keep the floor in view (from depth 2.77) and the bench (2.94): near about 2.0 (range 1.75-2.7). target = where the optical axis meets the far boundary of the open-plan scene. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p05: sub-pixel straight edges (gradient/intensity profiles along hand-seeded segments, checked against OpenCV LSD) of wall corners, ceiling-wall and floor/skirting lines, the wardrobe edges, door joints, drawer lines and top panel, the niche corner and ceiling lines, door casings, the console shelf front, the ceiling LED lines and the front-door casing, matched to plan geometry (hallway polygon, openings I and J, wardrobe 2.182-3.638 incl. walnut side panels, console 0-0.789 x 2.9265-3.1556, niche back panel at z 1.4776); pinhole, principal point at the image centre, one focal length shared by p02-p05 and a separate one for p01; ceiling height, casing tops, drawer and top-panel heights, LED-line positions and the front-door casing edge as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "entrance-hallway-p05",
+   "shows": "from the dining area toward the hallway: wardrobe front at an angle, bench, front door and door I in the distance, the plaster end column and the dining-side wall with the LED wall-wash and walnut panel, dining table and chair at the right",
+   "position": [
+    5.44,
+    1.431,
+    3.265
+   ],
+   "target": [
+    3.84,
+    1.306,
+    1.855
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.7489,
+    -0.0589,
+    -0.6601
+   ],
+   "hfov_deg": 64.9,
+   "vfov_deg": 51.0,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 2012.8,
+   "principal_point_px": [
+    1280.0,
+    960.0
+   ],
+   "yaw_deg": -138.61,
+   "pitch_deg": -3.37,
+   "roll_deg": -0.01,
+   "fit_rms_px": 1.51,
+   "inside_room": true,
+   "near_clip_m": 0.3,
+   "source": "estimated",
+   "notes": "Camera stands in the open-plan room over the kitchen-island footprint (x 5.44, z 3.27); the island is below the view. near about 0.3 keeps the foreground dining chair (depth about 0.9). target = where the optical axis meets the far boundary of the open-plan scene. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p05: sub-pixel straight edges (gradient/intensity profiles along hand-seeded segments, checked against OpenCV LSD) of wall corners, ceiling-wall and floor/skirting lines, the wardrobe edges, door joints, drawer lines and top panel, the niche corner and ceiling lines, door casings, the console shelf front, the ceiling LED lines and the front-door casing, matched to plan geometry (hallway polygon, openings I and J, wardrobe 2.182-3.638 incl. walnut side panels, console 0-0.789 x 2.9265-3.1556, niche back panel at z 1.4776); pinhole, principal point at the image centre, one focal length shared by p02-p05 and a separate one for p01; ceiling height, casing tops, drawer and top-panel heights, LED-line positions and the front-door casing edge as free parameters; Levenberg-Marquardt on point-to-line distances"
+  }
+ ],
+ "colours": {
+  "floor_tiles": {
+   "hex": "#9d825c",
+   "what": "large-format light beige porcelain (lit patch)",
+   "source": "estimated",
+   "from": "p01 px box [560, 715, 760, 760], median of the 10-90% luminance band",
+   "hex_white_balanced": "#8a826d",
+   "other_views": {
+    "p04 [700, 1870, 1100, 1915]": "#91744b",
+    "p03 [800, 1760, 1200, 1860]": "#5c482f"
+   }
+  },
+  "wall_paint": {
+   "hex": "#c5b19c",
+   "what": "warm off-white wall paint (bottom wall beside door J)",
+   "source": "estimated",
+   "from": "p02 px box [350, 400, 900, 900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#aeb1b9",
+   "other_views": {
+    "p03 [1000, 180, 1400, 330]": "#e0d9d0",
+    "p04 [470, 600, 570, 1500]": "#ad9b87"
+   }
+  },
+  "textured_plaster": {
+   "hex": "#a68f77",
+   "what": "beige textured plaster/stone look on the wall-end column and the dining-side face",
+   "source": "estimated",
+   "from": "p04 px box [2240, 600, 2320, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#928f8d",
+   "other_views": {
+    "p05 [1300, 500, 1700, 1200]": "#a78561",
+    "p01 [800, 300, 830, 600]": "#a58e78"
+   }
+  },
+  "ceiling": {
+   "hex": "#957d62",
+   "what": "flat white ceiling paint inside the LED outline (renders warm grey)",
+   "source": "estimated",
+   "from": "p01 px box [600, 40, 760, 140], median of the 10-90% luminance band",
+   "hex_white_balanced": "#837d74",
+   "other_views": {
+    "p03 [900, 15, 1300, 60]": "#a69482",
+    "p04 [400, 95, 900, 115]": "#a18f7b"
+   }
+  },
+  "wardrobe_greige": {
+   "hex": "#967a59",
+   "what": "flat matt greige doors and drawers",
+   "source": "estimated",
+   "from": "p04 px box [1300, 300, 1450, 1400], median of the 10-90% luminance band",
+   "hex_white_balanced": "#847a6a",
+   "other_views": {
+    "p05 [840, 400, 940, 1200]": "#997f62",
+    "p01 [480, 250, 520, 600]": "#a0876a"
+   }
+  },
+  "walnut": {
+   "hex": "#230f06",
+   "what": "dark walnut veneer, vertical grain: niche back panel and wardrobe side panels",
+   "source": "estimated",
+   "from": "p04 px box [700, 1300, 1200, 1480], median of the 10-90% luminance band",
+   "hex_white_balanced": "#1f0f07",
+   "other_views": {
+    "p01 [380, 150, 460, 600]": "#291307",
+    "p05 [1880, 300, 2100, 1200]": "#2b1408"
+   }
+  },
+  "front_door_walnut": {
+   "hex": "#2c1912",
+   "what": "front-door leaf and casing, walnut veneer slightly lighter and warmer than the niche panel",
+   "source": "estimated",
+   "from": "p04 px box [50, 500, 380, 1000], median of the 10-90% luminance band",
+   "hex_white_balanced": "#271915",
+   "other_views": {
+    "p03 [1560, 500, 1700, 1000]": "#39261c"
+   }
+  },
+  "door_leaf_white": {
+   "hex": "#a89278",
+   "what": "interior door leaves (white with thin black inlay lines); white-balance reference",
+   "source": "estimated",
+   "from": "p02 px box [1150, 450, 1550, 700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#94928e",
+   "other_views": {
+    "p03 [950, 450, 1400, 700]": "#aa9883"
+   }
+  },
+  "door_casing": {
+   "hex": "#b59d81",
+   "what": "white interior door casings",
+   "source": "estimated",
+   "from": "p02 px box [1015, 600, 1052, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a09d99",
+   "other_views": {
+    "p03 [1460, 600, 1495, 1200]": "#978874"
+   }
+  },
+  "bench_boucle": {
+   "hex": "#856540",
+   "what": "cream boucle bench upholstery",
+   "source": "estimated",
+   "from": "p04 px box [650, 1560, 1200, 1780], median of the 10-90% luminance band",
+   "hex_white_balanced": "#75654c",
+   "other_views": {
+    "p03 [1900, 1830, 2100, 1900]": "#8d6b43"
+   }
+  },
+  "console_shelf": {
+   "hex": "#6a5138",
+   "what": "light wood console shelf front (in shade)",
+   "source": "estimated",
+   "from": "p02 px box [1760, 1270, 2290, 1330], median of the 10-90% luminance band",
+   "hex_white_balanced": "#5d5142"
+  },
+  "skirting": {
+   "hex": "#583e22",
+   "what": "dark brown skirting",
+   "source": "estimated",
+   "from": "p02 px box [400, 1860, 950, 1884], median of the 10-90% luminance band",
+   "hex_white_balanced": "#4e3e28",
+   "other_views": {
+    "p04 [470, 1822, 580, 1852]": "#503b23"
+   }
+  },
+  "mirror": {
+   "hex": "#534231",
+   "what": "smoked grey mirror with white flecks (reflections)",
+   "source": "estimated",
+   "from": "p04 px box [800, 560, 1100, 900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#49423a"
+  },
+  "black_hardware": {
+   "hex": "#060104",
+   "what": "black levers, roses, smart lock, hooks and drawer pulls",
+   "source": "estimated",
+   "from": "p02 px box [1085, 1190, 1110, 1212], median of the 10-90% luminance band",
+   "hex_white_balanced": "#050105",
+   "other_views": {
+    "p04 [325, 1110, 370, 1200]": "#030100"
+   }
+  },
+  "wall_wash_glow": {
+   "hex": "#d7b68b",
+   "what": "warm glow on plaster/paint next to the vertical LED strips",
+   "source": "estimated",
+   "from": "p05 px box [1760, 500, 1820, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#beb6a5",
+   "other_views": {
+    "p03 [2000, 500, 2100, 1200]": "#d2b28a"
+   }
+  },
+  "led_emitter": {
+   "hex": "#fafcfa",
+   "what": "ceiling LED profiles and mirror strips (emissive, near white)",
+   "source": "estimated",
+   "from": "p04 px boxes [400, 77, 800, 83] and [697, 600, 701, 1100]"
+  },
+  "_how_to_read": "hex = rendered sRGB in a plain patch, median of the 10-90% luminance band. hex_white_balanced applies per-channel linear gains that make the white interior door leaves neutral (R x0.882, G x1.000, B x1.187; reference #a99583, the mean of door J in p02 and door I in p03, both in shade). The hallway set is graded warmer than the bedroom and toilet sets, so materials shared with other rooms (walnut, greige, door white, floor tiles) should share one base colour rather than copy each room's rendered hex.",
+  "light_colour_temperature": {
+   "value": "ceiling LED profiles render pure white (about 4000 K, emitter #fafcfa); the mirror strips are near white at the emitter but wash the niche side wall and the plaster warm (#d7b68b, about 3000 K); daylight only from the living-room windows (p01)",
+   "source": "estimated",
+   "from": "emitter and glow pixels in p03, p04, p05"
+  }
+ },
+ "lights": [
+  {
+   "type": "led-strip",
+   "name": "ceiling LED outline, hallway",
+   "what": "recessed linear LED profile flush with the ceiling, about 1-2 cm wide, about 16 cm in from the walls: a line along x at z 2.044 (top side) from x 0.160 to 3.478, a line along x at z 2.999 (bottom side) from x 0.160 to 2.934, and the end segment along z at x 0.160; at the far end both lines turn into the corridor (next item)",
+   "y": 2.544,
+   "polyline_xz": [
+    [
+     3.478,
+     4.6
+    ],
+    [
+     3.478,
+     2.044
+    ],
+    [
+     0.16,
+     2.044
+    ],
+    [
+     0.16,
+     2.999
+    ],
+    [
+     2.934,
+     2.999
+    ],
+    [
+     2.934,
+     4.6
+    ]
+   ],
+   "colour": "white",
+   "source": "estimated",
+   "from": "LED lines as free parameters in the joint fit (p01, p03, p04, p05; spread under 1 cm)"
+  },
+  {
+   "type": "led-strip",
+   "name": "ceiling LED lines, corridor",
+   "what": "the two hallway lines continue along the corridor at x 2.94 (21 cm from its left wall) and x 3.49 (15 cm from its right wall); seen to z about 4.6; where they end or turn further down the corridor is not visible",
+   "y": 2.544,
+   "x": [
+    2.942,
+    3.491
+   ],
+   "z": [
+    3.0,
+    4.6
+   ],
+   "colour": "white",
+   "source": "estimated",
+   "from": "p02 (lines back-projected onto the ceiling: x 2.941-2.943 and 3.489-3.493), p01 (x 2.934 and 3.478)"
+  },
+  {
+   "type": "led-strip",
+   "name": "mirror strips",
+   "position": [
+    {
+     "x": 1.31,
+     "z": 1.484
+    },
+    {
+     "x": 2.11,
+     "z": 1.484
+    }
+   ],
+   "y": [
+    0.84,
+    2.1
+   ],
+   "faces": "+z (into the hallway), through the mirror; also washes the niche side wall (x 1.25)",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p04 (strips back-projected onto z 1.484), p03, p05 (glow on the niche side wall)"
+  },
+  {
+   "type": "led-strip",
+   "name": "wall-wash strip, dining side",
+   "position": {
+    "x": 3.84,
+    "z": 0.79
+   },
+   "y": [
+    0.0,
+    2.544
+   ],
+   "faces": "+z along the dining-side face of the wall, washing the plaster toward the hallway corner",
+   "colour": "warm white",
+   "note": "belongs to the living/dining scene; seen only in p05",
+   "source": "estimated",
+   "from": "p05 (bright vertical line at u 1842-1858 back-projected onto x 3.84)"
+  },
+  {
+   "type": "none",
+   "note": "no pendants, downlights, spots or tracks in the hallway; the LED outline and the mirror strips are the only fittings. No window: daylight reaches the hallway only through the living room (p01)",
+   "source": "estimated",
+   "from": "p01-p05"
+  }
+ ],
+ "notes": [
+  "CEILING: the hallway render model has a 2.544 m ceiling (joint fit; p02 alone 2.537, p04 alone 2.550), 14 cm above the owner's 2.40 m (bedroom 2.539, work room 2.608, bathroom 2.412, toilet 2.344). Heights in this file are in the render-model scale. To adopt 2.40: keep absolute heights for things with real sizes (door casings 2.14, handles, console, bench, drawers, mirror 0.82-2.15) and re-anchor the ceiling-hung items (wardrobe top panel and walnut niche panel to the ceiling, hooks, LED profiles, the bulkhead underside 2.11 if the opening keeps a drop), or scale every y by 2.40/2.544 = 0.943. With absolute heights the hooks (2.16-2.27) must move down.",
+  "Cameras: p02-p05 share f = 2013 px (hfov 64.9, vfov 51.0 deg; the bedroom set used 2026 px); p01 (1260 x 840) has f = 876 px, the same vertical field of view on a 3:2 frame. Edge rms 1.25-1.51 px per camera. Free per-camera focal lengths would give 1767 (p02), 1938 (p03), 2034 (p04), 2024 (p05) with almost the same rms; p02 looks straight at a flat wall and is the weakest. Pitch -1.2 to -3.4 deg, roll under 0.1 deg. p01, p02 and p04 are outside the hallway and p05 stands in the dining/kitchen area; use near_clip_m.",
+  "Excluded from the camera fit as plan-vs-render mismatches: in p02 door I's near casing edge sits about 3 cm closer to the camera than the plan's z 2.924 (it alone pulls the shared focal length to 1990 px); in p01 door J is seen at a grazing angle with its reveal visible, so its casing edges were ambiguous (the projected plan door lands within about 5 px of the visible edges).",
+  "Front door: casing x 0.036-1.054 on the top wall of the narrow part (the plan only marks the handle near x 0.87; the lock and lever measure x 0.75-0.95), casing top 2.142 like the interior doors, leaf about 0.92 x 2.10 m, hinges on the left (x 0.04) next to door I. Opening direction and leaf thickness are not visible.",
+  "Plan items: p1-F ('radiator?' on the niche back wall) is the hook row; p1-G and p1-H (43 cm 'door?' on both faces of the hallway/dining wall end) are not openings (wardrobe side panel on one side, plaster wall on the other).",
+  "The hallway floor tiles are 45 x 45 cm in all renders (grid from x 0 and from the bottom wall), not the 61 cm hatch of the plan raster. The tiles stop at x 3.63; the living room and the corridor have dark wood-look planks.",
+  "Uncertain: the bulkhead over the living-room opening (underside 2.07-2.13, depth into the living room 0.2-0.25 from p01 only); the bench depth (front face z 1.79-1.85); the walnut-panel stand-off on the dining side; door swing directions; the corridor beyond z 4.6 (doors N, O, P and the LED path are not visible in these renders).",
+  "Colours are rendered pixel values; see colours._how_to_read."
+ ],
+ "generated": "2026-11-23 from the 5 entrance-hallway renders (sub-pixel edge fits seeded by hand and OpenCV LSD, Levenberg-Marquardt camera solve, back-projection onto plan planes); analysis scripts kept outside the repo"
+}

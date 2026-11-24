@@ -1,0 +1,5235 @@
+{
+ "source": "source/Milo_-dispozicija_elemenata.pdf",
+ "generated_by": "tools/extract_geometry.py",
+ "frame": "metres per room: x = plan x (right), z = plan y (down the page), origin = top-left of the room's interior bounding box; *_pt fields are PDF points on the page (origin top-left)",
+ "rooms": [
+  {
+   "id": "hallway-living-dining-kitchen",
+   "page": 1,
+   "scale": "1:50",
+   "origin_pt": [
+    173.684,
+    272.503
+   ],
+   "m_per_pt": 0.017638888888888885,
+   "interior": {
+    "polygon": [
+     [
+      10.84,
+      0.0306
+     ],
+     [
+      7.5642,
+      0.0306
+     ],
+     [
+      7.5642,
+      0.0506
+     ],
+     [
+      7.5219,
+      0.0506
+     ],
+     [
+      7.5219,
+      0.0306
+     ],
+     [
+      7.4457,
+      0.0306
+     ],
+     [
+      7.4457,
+      0.0506
+     ],
+     [
+      7.37,
+      0.0506
+     ],
+     [
+      7.37,
+      0.0
+     ],
+     [
+      7.306,
+      0.0
+     ],
+     [
+      7.306,
+      0.0306
+     ],
+     [
+      3.84,
+      0.0306
+     ],
+     [
+      3.84,
+      1.8856
+     ],
+     [
+      3.638,
+      1.8856
+     ],
+     [
+      3.638,
+      1.4556
+     ],
+     [
+      1.25,
+      1.4556
+     ],
+     [
+      1.25,
+      1.8856
+     ],
+     [
+      0.0,
+      1.8856
+     ],
+     [
+      0.0,
+      3.1556
+     ],
+     [
+      2.73,
+      3.1556
+     ],
+     [
+      2.73,
+      6.2356
+     ],
+     [
+      5.96,
+      6.2356
+     ],
+     [
+      5.96,
+      5.3256
+     ],
+     [
+      3.64,
+      5.3256
+     ],
+     [
+      3.64,
+      3.1306
+     ],
+     [
+      3.84,
+      3.1306
+     ],
+     [
+      3.84,
+      4.6706
+     ],
+     [
+      4.03,
+      4.6706
+     ],
+     [
+      4.03,
+      5.1156
+     ],
+     [
+      10.84,
+      5.1156
+     ]
+    ],
+    "polygon_pt": [
+     [
+      788.235,
+      274.239
+     ],
+     [
+      602.52,
+      274.239
+     ],
+     [
+      602.52,
+      275.372
+     ],
+     [
+      600.12,
+      275.372
+     ],
+     [
+      600.12,
+      274.239
+     ],
+     [
+      595.8,
+      274.239
+     ],
+     [
+      595.8,
+      275.372
+     ],
+     [
+      591.51,
+      275.372
+     ],
+     [
+      591.51,
+      272.503
+     ],
+     [
+      587.88,
+      272.503
+     ],
+     [
+      587.88,
+      274.239
+     ],
+     [
+      391.385,
+      274.239
+     ],
+     [
+      391.385,
+      379.404
+     ],
+     [
+      379.933,
+      379.404
+     ],
+     [
+      379.933,
+      355.026
+     ],
+     [
+      244.55,
+      355.026
+     ],
+     [
+      244.55,
+      379.404
+     ],
+     [
+      173.684,
+      379.404
+     ],
+     [
+      173.684,
+      451.404
+     ],
+     [
+      328.456,
+      451.404
+     ],
+     [
+      328.456,
+      626.018
+     ],
+     [
+      511.574,
+      626.018
+     ],
+     [
+      511.574,
+      574.428
+     ],
+     [
+      380.046,
+      574.428
+     ],
+     [
+      380.046,
+      449.987
+     ],
+     [
+      391.385,
+      449.987
+     ],
+     [
+      391.385,
+      537.294
+     ],
+     [
+      402.156,
+      537.294
+     ],
+     [
+      402.156,
+      562.522
+     ],
+     [
+      788.235,
+      562.522
+     ]
+    ],
+    "bbox_cm": [
+     1084.0,
+     623.6
+    ],
+    "area_m2": 46.32,
+    "edges_snapped_to_vectors": "25/30",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p1-A",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      3.84,
+      0.0306
+     ],
+     "to": [
+      3.84,
+      0.8306
+     ],
+     "width_cm": 80.0,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.2,
+      "fins": 3
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-B",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      4.8814,
+      0.0306
+     ],
+     "to": [
+      5.6486,
+      0.0306
+     ],
+     "width_cm": 76.7,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.7,
+      "fins": 8
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-C",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      6.62,
+      0.0306
+     ],
+     "to": [
+      7.306,
+      0.0306
+     ],
+     "width_cm": 68.6,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.0,
+      "fins": 5
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-D",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      8.468,
+      0.0306
+     ],
+     "to": [
+      8.99,
+      0.0306
+     ],
+     "width_cm": 52.2,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 4.0,
+      "fins": 18
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-E",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      10.04,
+      0.0306
+     ],
+     "to": [
+      10.84,
+      0.0306
+     ],
+     "width_cm": 80.0,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.0,
+      "fins": 4
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-F",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      1.252,
+      1.4556
+     ],
+     "to": [
+      2.18,
+      1.4556
+     ],
+     "width_cm": 92.8,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 3.0,
+      "fins": 35
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-G",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      3.638,
+      1.4556
+     ],
+     "to": [
+      3.638,
+      1.8856
+     ],
+     "width_cm": 43.0,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-H",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      3.84,
+      1.4556
+     ],
+     "to": [
+      3.84,
+      1.8856
+     ],
+     "width_cm": 43.0,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-I",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      1.8867
+     ],
+     "to": [
+      0.0,
+      2.9237
+     ],
+     "width_cm": 103.7,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-J",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "bottom",
+     "from": [
+      0.791,
+      3.1556
+     ],
+     "to": [
+      1.7253,
+      3.1556
+     ],
+     "width_cm": 93.4,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-K",
+     "kind": "opening?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      3.84,
+      3.1306
+     ],
+     "to": [
+      3.84,
+      4.6706
+     ],
+     "width_cm": 154.0,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 0.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-L",
+     "kind": "opening?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      4.03,
+      4.6706
+     ],
+     "to": [
+      4.03,
+      5.1156
+     ],
+     "width_cm": 44.5,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 0.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-M",
+     "kind": "opening?",
+     "status": "unverified (check against renders)",
+     "wall_side": "bottom",
+     "from": [
+      4.03,
+      5.1156
+     ],
+     "to": [
+      5.955,
+      5.1156
+     ],
+     "width_cm": 192.5,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 0.01,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-N",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      2.73,
+      5.2753
+     ],
+     "to": [
+      2.73,
+      6.2105
+     ],
+     "width_cm": 93.5,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-O",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      5.96,
+      5.3256
+     ],
+     "to": [
+      5.96,
+      6.2347
+     ],
+     "width_cm": 90.9,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p1-P",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "bottom",
+     "from": [
+      3.9593,
+      6.2356
+     ],
+     "to": [
+      4.9325,
+      6.2356
+     ],
+     "width_cm": 97.3,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "CIPELARNIK",
+     "name_en": "shoe cabinet",
+     "status": "extracted",
+     "tip": [
+      2.4489,
+      1.4502
+     ],
+     "footprint": [
+      [
+       2.2039,
+       1.4556
+      ],
+      [
+       2.2039,
+       1.8856
+      ],
+      [
+       3.6161,
+       1.8856
+      ],
+      [
+       3.6161,
+       1.4556
+      ]
+     ],
+     "size_cm": [
+      141.2,
+      43.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "OGLEDALO + SEDENJE",
+     "name_en": "mirror + bench",
+     "status": "extracted",
+     "tip": [
+      1.54,
+      1.4502
+     ],
+     "footprint": [
+      [
+       1.252,
+       1.4576
+      ],
+      [
+       1.252,
+       1.4776
+      ],
+      [
+       2.18,
+       1.4776
+      ],
+      [
+       2.18,
+       1.4576
+      ]
+     ],
+     "size_cm": [
+      92.8,
+      2.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "KONZOLNA POLICA",
+     "name_en": "console shelf",
+     "status": "extracted",
+     "tip": [
+      0.1386,
+      3.161
+     ],
+     "footprint": [
+      [
+       0.0,
+       2.9265
+      ],
+      [
+       0.0,
+       3.1556
+      ],
+      [
+       0.789,
+       3.1556
+      ],
+      [
+       0.789,
+       2.9265
+      ]
+     ],
+     "size_cm": [
+      78.9,
+      22.9
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "KUHINJA",
+     "name_en": "kitchen",
+     "status": "extracted",
+     "tip": [
+      4.9304,
+      4.8371
+     ],
+     "footprint": [
+      [
+       4.19,
+       4.5156
+      ],
+      [
+       4.19,
+       4.6706
+      ],
+      [
+       4.37,
+       4.6706
+      ],
+      [
+       4.37,
+       5.1156
+      ],
+      [
+       5.664,
+       5.1156
+      ],
+      [
+       5.664,
+       4.5156
+      ]
+     ],
+     "size_cm": [
+      147.4,
+      60.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "KUHINJSKO OSTRVO",
+     "name_en": "kitchen island",
+     "status": "extracted",
+     "tip": [
+      5.689,
+      3.3365
+     ],
+     "footprint": [
+      [
+       4.17,
+       3.1526
+      ],
+      [
+       4.17,
+       3.9776
+      ],
+      [
+       4.3936,
+       3.9776
+      ],
+      [
+       4.3936,
+       4.4576
+      ],
+      [
+       4.17,
+       4.4576
+      ],
+      [
+       4.17,
+       4.5142
+      ],
+      [
+       7.02,
+       4.5142
+      ],
+      [
+       7.02,
+       3.5549
+      ],
+      [
+       7.044,
+       3.5549
+      ],
+      [
+       7.044,
+       2.7549
+      ],
+      [
+       5.124,
+       2.7549
+      ],
+      [
+       5.124,
+       3.5306
+      ],
+      [
+       4.44,
+       3.5306
+      ],
+      [
+       4.44,
+       3.1306
+      ],
+      [
+       4.19,
+       3.1306
+      ],
+      [
+       4.19,
+       3.1526
+      ]
+     ],
+     "size_cm": [
+      287.4,
+      175.9
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "TV SISTEM SA SKRIVAČEM ZA KLIMU",
+     "name_en": "TV unit with AC concealer",
+     "status": "extracted",
+     "tip": [
+      8.1791,
+      4.9526
+     ],
+     "footprint": [
+      [
+       7.022,
+       5.1156
+      ],
+      [
+       8.9647,
+       5.1156
+      ],
+      [
+       8.9647,
+       4.8156
+      ],
+      [
+       9.95,
+       4.8156
+      ],
+      [
+       9.95,
+       4.7456
+      ],
+      [
+       7.022,
+       4.7456
+      ]
+     ],
+     "size_cm": [
+      292.8,
+      37.0
+     ],
+     "footprint_merged": [
+      [
+       6.31,
+       5.1156
+      ],
+      [
+       8.9647,
+       5.1156
+      ],
+      [
+       8.9647,
+       4.8156
+      ],
+      [
+       9.95,
+       4.8156
+      ],
+      [
+       9.95,
+       4.7456
+      ],
+      [
+       7.02,
+       4.7456
+      ],
+      [
+       7.02,
+       4.514
+      ],
+      [
+       6.31,
+       4.514
+      ]
+     ],
+     "size_merged_cm": [
+      364.0,
+      60.2
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "TRP. STO",
+     "name_en": "dining table",
+     "status": "extracted",
+     "tip": [
+      4.7157,
+      0.9274
+     ],
+     "footprint": [
+      [
+       4.3815,
+       0.7899
+      ],
+      [
+       4.3815,
+       1.5411
+      ],
+      [
+       6.3106,
+       1.5411
+      ],
+      [
+       6.3106,
+       0.7899
+      ]
+     ],
+     "size_cm": [
+      192.9,
+      75.1
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA/PARAVAN",
+     "name_en": "shelf / room divider",
+     "status": "footprint not extracted (face at the leader tip is open or too large)",
+     "tip": [
+      7.019,
+      0.2372
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p1-d1",
+     "label_cm": 94,
+     "geometry_cm": 93.0,
+     "status": "pass",
+     "a": [
+      1.25,
+      2.1138
+     ],
+     "b": [
+      2.182,
+      2.1138
+     ]
+    },
+    {
+     "id": "p1-d2",
+     "label_cm": 145,
+     "geometry_cm": 145.8,
+     "status": "pass",
+     "a": [
+      2.182,
+      2.1138
+     ],
+     "b": [
+      3.6401,
+      2.1138
+     ]
+    },
+    {
+     "id": "p1-d3",
+     "label_cm": 80,
+     "geometry_cm": 78.9,
+     "status": "pass",
+     "a": [
+      -0.0001,
+      2.7086
+     ],
+     "b": [
+      0.7891,
+      2.7086
+     ]
+    },
+    {
+     "id": "p1-d4",
+     "label_cm": 23,
+     "geometry_cm": 22.9,
+     "status": "pass",
+     "a": [
+      1.1133,
+      2.9264
+     ],
+     "b": [
+      1.1133,
+      3.1555
+     ]
+    },
+    {
+     "id": "p1-d5",
+     "label_cm": 60,
+     "geometry_cm": 60.0,
+     "status": "pass",
+     "a": [
+      3.8399,
+      2.6087
+     ],
+     "b": [
+      4.44,
+      2.6087
+     ]
+    },
+    {
+     "id": "p1-d6",
+     "label_cm": 68,
+     "geometry_cm": 68.4,
+     "status": "pass",
+     "a": [
+      5.124,
+      2.6087
+     ],
+     "b": [
+      4.44,
+      2.6087
+     ]
+    },
+    {
+     "id": "p1-d7",
+     "label_cm": 192,
+     "geometry_cm": null,
+     "status": "no feature found",
+     "a": [
+      5.124,
+      2.6087
+     ],
+     "b": [
+      7.044,
+      2.6087
+     ]
+    },
+    {
+     "id": "p1-d8",
+     "label_cm": 96,
+     "geometry_cm": 95.9,
+     "status": "pass",
+     "a": [
+      7.3328,
+      4.5141
+     ],
+     "b": [
+      7.3328,
+      3.5549
+     ]
+    },
+    {
+     "id": "p1-d9",
+     "label_cm": 80,
+     "geometry_cm": 80.0,
+     "status": "pass",
+     "a": [
+      7.3328,
+      3.5549
+     ],
+     "b": [
+      7.3328,
+      2.7548
+     ]
+    },
+    {
+     "id": "p1-d10",
+     "label_cm": 293,
+     "geometry_cm": 293.0,
+     "status": "pass",
+     "a": [
+      7.02,
+      4.6215
+     ],
+     "b": [
+      9.95,
+      4.6215
+     ]
+    },
+    {
+     "id": "p1-d11",
+     "label_cm": 37,
+     "geometry_cm": 37.0,
+     "status": "pass",
+     "a": [
+      10.2266,
+      4.7457
+     ],
+     "b": [
+      10.2266,
+      5.1156
+     ]
+    },
+    {
+     "id": "p1-d12",
+     "label_cm": 18,
+     "geometry_cm": 17.7,
+     "status": "pass (raw model edge)",
+     "a": [
+      7.019,
+      1.6873
+     ],
+     "b": [
+      7.1964,
+      1.6873
+     ]
+    },
+    {
+     "id": "p1-d13",
+     "label_cm": 120,
+     "geometry_cm": 121.0,
+     "status": "pass (raw model edge)",
+     "a": [
+      7.5404,
+      1.4107
+     ],
+     "b": [
+      7.5404,
+      0.2007
+     ]
+    },
+    {
+     "id": "p1-d14",
+     "label_cm": 17,
+     "geometry_cm": 17.0,
+     "status": "pass (raw model edge)",
+     "a": [
+      7.5404,
+      0.2007
+     ],
+     "b": [
+      7.5404,
+      0.0306
+     ]
+    },
+    {
+     "id": "p1-d15",
+     "label_cm": 57,
+     "geometry_cm": 54.2,
+     "status": "FAIL label vs line",
+     "a": [
+      4.3814,
+      1.3673
+     ],
+     "b": [
+      3.8399,
+      1.3673
+     ]
+    },
+    {
+     "id": "p1-d16",
+     "label_cm": 190,
+     "geometry_cm": 192.9,
+     "status": "FAIL label vs line",
+     "a": [
+      4.3814,
+      1.3675
+     ],
+     "b": [
+      6.3106,
+      1.3675
+     ]
+    },
+    {
+     "id": "p1-d17",
+     "label_cm": 75,
+     "geometry_cm": 75.1,
+     "status": "pass",
+     "a": [
+      6.5649,
+      1.5411
+     ],
+     "b": [
+      6.5649,
+      0.7898
+     ]
+    },
+    {
+     "id": "p1-d18",
+     "label_cm": 76,
+     "geometry_cm": 75.9,
+     "status": "pass",
+     "a": [
+      6.5649,
+      0.7898
+     ],
+     "b": [
+      6.5649,
+      0.0306
+     ]
+    },
+    {
+     "id": "p1-d19",
+     "label_cm": 120,
+     "geometry_cm": 121.4,
+     "status": "pass",
+     "a": [
+      6.5649,
+      1.5411
+     ],
+     "b": [
+      6.5649,
+      2.7548
+     ]
+    },
+    {
+     "id": "p1-d20",
+     "label_cm": 364,
+     "geometry_cm": 364.4,
+     "status": "pass (raw model edge)",
+     "a": [
+      7.1964,
+      1.6649
+     ],
+     "b": [
+      10.8401,
+      1.6649
+     ]
+    }
+   ],
+   "balcony": {
+    "polygon": [
+     [
+      8.976,
+      5.6603
+     ],
+     [
+      8.976,
+      6.6699
+     ],
+     [
+      9.3591,
+      6.6699
+     ],
+     [
+      9.3591,
+      6.725
+     ],
+     [
+      9.6978,
+      6.725
+     ],
+     [
+      9.6978,
+      6.6699
+     ],
+     [
+      10.0238,
+      6.6699
+     ],
+     [
+      10.0238,
+      6.7292
+     ],
+     [
+      10.3667,
+      6.7292
+     ],
+     [
+      10.3667,
+      6.6699
+     ],
+     [
+      10.6969,
+      6.6699
+     ],
+     [
+      10.6969,
+      6.7292
+     ],
+     [
+      10.7625,
+      6.7292
+     ],
+     [
+      10.7625,
+      6.6636
+     ],
+     [
+      10.7032,
+      6.6636
+     ],
+     [
+      10.7032,
+      6.3376
+     ],
+     [
+      10.9382,
+      6.3376
+     ],
+     [
+      10.9382,
+      6.3948
+     ],
+     [
+      11.008,
+      6.3948
+     ],
+     [
+      11.008,
+      6.1238
+     ],
+     [
+      10.9466,
+      6.1238
+     ],
+     [
+      10.9466,
+      6.0794
+     ],
+     [
+      10.881,
+      6.0794
+     ],
+     [
+      10.881,
+      6.0349
+     ],
+     [
+      10.7646,
+      6.0349
+     ],
+     [
+      10.7646,
+      5.9926
+     ],
+     [
+      10.7053,
+      5.9926
+     ],
+     [
+      10.7053,
+      5.6624
+     ],
+     [
+      10.9382,
+      5.6624
+     ],
+     [
+      10.9382,
+      5.7217
+     ],
+     [
+      11.008,
+      5.7217
+     ],
+     [
+      11.008,
+      5.3364
+     ],
+     [
+      9.357,
+      5.3364
+     ],
+     [
+      9.357,
+      5.6603
+     ]
+    ],
+    "source": "plan (checkerboard raster)"
+   }
+  },
+  {
+   "id": "work-room",
+   "page": 2,
+   "scale": "1:25",
+   "origin_pt": [
+    317.367,
+    170.598
+   ],
+   "m_per_pt": 0.008819444444444442,
+   "interior": {
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.79
+     ],
+     [
+      0.12,
+      0.79
+     ],
+     [
+      0.12,
+      1.12
+     ],
+     [
+      0.0,
+      1.12
+     ],
+     [
+      0.0,
+      4.42
+     ],
+     [
+      2.37,
+      4.42
+     ],
+     [
+      2.37,
+      0.0
+     ]
+    ],
+    "polygon_pt": [
+     [
+      317.367,
+      170.598
+     ],
+     [
+      317.367,
+      260.173
+     ],
+     [
+      330.974,
+      260.173
+     ],
+     [
+      330.974,
+      297.59
+     ],
+     [
+      317.367,
+      297.59
+     ],
+     [
+      317.367,
+      671.764
+     ],
+     [
+      586.092,
+      671.764
+     ],
+     [
+      586.092,
+      170.598
+     ]
+    ],
+    "bbox_cm": [
+     237.0,
+     442.0
+    ],
+    "area_m2": 10.44,
+    "edges_snapped_to_vectors": "8/8",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p2-A",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      0.0,
+      0.0
+     ],
+     "to": [
+      0.46,
+      0.0
+     ],
+     "width_cm": 46.0,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 6.4,
+      "fins": 1
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p2-B",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      1.0084,
+      0.0
+     ],
+     "to": [
+      1.5834,
+      0.0
+     ],
+     "width_cm": 57.5,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 8.5,
+      "fins": 391
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p2-C",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      2.37,
+      0.002
+     ],
+     "to": [
+      2.37,
+      0.79
+     ],
+     "width_cm": 78.8,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.0,
+      "fins": 1
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p2-D",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      1.4113
+     ],
+     "to": [
+      0.0,
+      2.5025
+     ],
+     "width_cm": 109.1,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.5,
+      "fins": 42
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p2-E",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      2.37,
+      2.021
+     ],
+     "to": [
+      2.37,
+      2.809
+     ],
+     "width_cm": 78.8,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.0,
+      "fins": 1
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p2-F",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      3.3315
+     ],
+     "to": [
+      0.0,
+      4.3589
+     ],
+     "width_cm": 102.7,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "GARDEROBER",
+     "name_en": "wardrobe",
+     "status": "extracted",
+     "tip": [
+      2.2059,
+      3.6074
+     ],
+     "footprint": [
+      [
+       1.7743,
+       2.833
+      ],
+      [
+       1.7743,
+       3.838
+      ],
+      [
+       2.3538,
+       3.838
+      ],
+      [
+       2.3538,
+       2.833
+      ]
+     ],
+     "size_cm": [
+      58.0,
+      100.5
+     ],
+     "footprint_merged": [
+      [
+       2.37,
+       2.833
+      ],
+      [
+       1.7743,
+       2.833
+      ],
+      [
+       1.7743,
+       3.82
+      ],
+      [
+       0.8909,
+       3.82
+      ],
+      [
+       0.8909,
+       4.42
+      ],
+      [
+       2.37,
+       4.42
+      ]
+     ],
+     "size_merged_cm": [
+      147.9,
+      158.7
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "RADNI STO",
+     "name_en": "desk",
+     "status": "extracted",
+     "tip": [
+      0.2257,
+      2.6599
+     ],
+     "footprint": [
+      [
+       0.0229,
+       1.142
+      ],
+      [
+       0.0229,
+       1.4057
+      ],
+      [
+       0.075,
+       1.4057
+      ],
+      [
+       0.075,
+       2.5081
+      ],
+      [
+       0.0229,
+       2.5081
+      ],
+      [
+       0.0229,
+       2.8043
+      ],
+      [
+       0.6738,
+       2.8043
+      ],
+      [
+       0.6738,
+       1.142
+      ]
+     ],
+     "size_cm": [
+      65.1,
+      166.2
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA",
+     "name_en": "shelf",
+     "status": "extracted",
+     "tip": [
+      0.2541,
+      0.5466
+     ],
+     "footprint": [
+      [
+       0.02,
+       0.064
+      ],
+      [
+       0.02,
+       0.728
+      ],
+      [
+       0.4527,
+       0.728
+      ],
+      [
+       0.4527,
+       0.064
+      ]
+     ],
+     "size_cm": [
+      43.3,
+      66.4
+     ],
+     "footprint_merged": [
+      [
+       0.02,
+       0.042
+      ],
+      [
+       0.02,
+       0.75
+      ],
+      [
+       0.46,
+       0.75
+      ],
+      [
+       0.46,
+       0.042
+      ]
+     ],
+     "size_merged_cm": [
+      44.0,
+      70.8
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p2-d1",
+     "label_cm": 162,
+     "geometry_cm": 161.6,
+     "status": "pass",
+     "a": [
+      0.3483,
+      4.42
+     ],
+     "b": [
+      0.3483,
+      2.8043
+     ]
+    },
+    {
+     "id": "p2-d2",
+     "label_cm": 165,
+     "geometry_cm": 166.2,
+     "status": "pass",
+     "a": [
+      0.9033,
+      2.8043
+     ],
+     "b": [
+      0.9033,
+      1.142
+     ]
+    },
+    {
+     "id": "p2-d3",
+     "label_cm": 67,
+     "geometry_cm": 67.4,
+     "status": "pass",
+     "a": [
+      -0.0006,
+      1.3699
+     ],
+     "b": [
+      0.6732,
+      1.3715
+     ]
+    },
+    {
+     "id": "p2-d4",
+     "label_cm": 114,
+     "geometry_cm": 114.2,
+     "status": "pass",
+     "a": [
+      0.9033,
+      1.142
+     ],
+     "b": [
+      0.9033,
+      0.0
+     ]
+    },
+    {
+     "id": "p2-d5",
+     "label_cm": 45,
+     "geometry_cm": 45.3,
+     "status": "pass",
+     "a": [
+      0.0,
+      -0.4295
+     ],
+     "b": [
+      0.455,
+      -0.4295
+     ]
+    },
+    {
+     "id": "p2-d6",
+     "label_cm": 110,
+     "geometry_cm": 110.1,
+     "status": "pass",
+     "a": [
+      0.6737,
+      3.0338
+     ],
+     "b": [
+      1.772,
+      3.0338
+     ]
+    },
+    {
+     "id": "p2-d7",
+     "label_cm": 60,
+     "geometry_cm": 59.6,
+     "status": "pass",
+     "a": [
+      1.772,
+      2.663
+     ],
+     "b": [
+      2.37,
+      2.663
+     ]
+    },
+    {
+     "id": "p2-d8",
+     "label_cm": 100,
+     "geometry_cm": 100.9,
+     "status": "pass (raw model edge)",
+     "a": [
+      1.6263,
+      2.811
+     ],
+     "b": [
+      1.6263,
+      3.82
+     ]
+    },
+    {
+     "id": "p2-d9",
+     "label_cm": 60,
+     "geometry_cm": 60.0,
+     "status": "pass",
+     "a": [
+      0.7221,
+      3.82
+     ],
+     "b": [
+      0.7221,
+      4.42
+     ]
+    },
+    {
+     "id": "p2-d10",
+     "label_cm": 102,
+     "geometry_cm": 101.1,
+     "status": "pass (raw model edge)",
+     "a": [
+      0.7221,
+      2.8043
+     ],
+     "b": [
+      0.7221,
+      3.82
+     ]
+    }
+   ]
+  },
+  {
+   "id": "childrens-room",
+   "page": 3,
+   "scale": "1:25",
+   "origin_pt": [
+    258.798,
+    274.737
+   ],
+   "m_per_pt": 0.008819444444444442,
+   "interior": {
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      2.81
+     ],
+     [
+      4.05,
+      2.81
+     ],
+     [
+      4.05,
+      0.0
+     ]
+    ],
+    "polygon_pt": [
+     [
+      258.798,
+      274.737
+     ],
+     [
+      258.798,
+      593.351
+     ],
+     [
+      718.01,
+      593.351
+     ],
+     [
+      718.01,
+      274.737
+     ]
+    ],
+    "bbox_cm": [
+     405.0,
+     281.0
+    ],
+    "area_m2": 11.38,
+    "edges_snapped_to_vectors": "4/4",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p3-A",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "top",
+     "from": [
+      1.5041,
+      0.0
+     ],
+     "to": [
+      2.4185,
+      0.0
+     ],
+     "width_cm": 91.4,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 3.0,
+      "fins": 5
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p3-B",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      4.05,
+      0.002
+     ],
+     "to": [
+      4.05,
+      2.81
+     ],
+     "width_cm": 280.8,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 3.2,
+      "fins": 7
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p3-C",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      1.7711
+     ],
+     "to": [
+      0.0,
+      2.8089
+     ],
+     "width_cm": 103.8,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "RADNI STO",
+     "name_en": "desk",
+     "status": "extracted",
+     "tip": [
+      2.3239,
+      0.1259
+     ],
+     "footprint": [
+      [
+       2.74,
+       0.02
+      ],
+      [
+       1.92,
+       0.02
+      ],
+      [
+       1.92,
+       0.578
+      ],
+      [
+       2.74,
+       0.578
+      ]
+     ],
+     "size_cm": [
+      82.0,
+      55.8
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "GARDEROBER SA BOČNOM POLICOM",
+     "name_en": "wardrobe with side shelf",
+     "status": "extracted",
+     "tip": [
+      1.2272,
+      0.1357
+     ],
+     "footprint": [
+      [
+       1.5021,
+       0.0
+      ],
+      [
+       0.0182,
+       0.0
+      ],
+      [
+       0.0182,
+       1.548
+      ],
+      [
+       0.5977,
+       1.548
+      ],
+      [
+       0.5977,
+       0.6
+      ],
+      [
+       1.5021,
+       0.6
+      ]
+     ],
+     "size_cm": [
+      148.4,
+      154.8
+     ],
+     "footprint_merged": [
+      [
+       0.0182,
+       1.57
+      ],
+      [
+       0.5977,
+       1.57
+      ],
+      [
+       0.5977,
+       0.6
+      ],
+      [
+       1.92,
+       0.6
+      ],
+      [
+       1.92,
+       0.0
+      ],
+      [
+       0.0182,
+       0.0
+      ]
+     ],
+     "size_merged_cm": [
+      190.2,
+      157.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "SKRIVAČ ZA RADIJATOR",
+     "name_en": "radiator cover",
+     "status": "extracted",
+     "tip": [
+      3.3605,
+      2.7331
+     ],
+     "footprint": [
+      [
+       2.932,
+       2.608
+      ],
+      [
+       2.932,
+       2.81
+      ],
+      [
+       4.018,
+       2.81
+      ],
+      [
+       4.018,
+       2.608
+      ]
+     ],
+     "size_cm": [
+      108.6,
+      20.2
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA ZA TV",
+     "name_en": "TV shelf",
+     "status": "extracted",
+     "tip": [
+      1.7716,
+      2.7331
+     ],
+     "footprint": [
+      [
+       1.55,
+       2.608
+      ],
+      [
+       1.55,
+       2.79
+      ],
+      [
+       2.93,
+       2.79
+      ],
+      [
+       2.93,
+       2.608
+      ]
+     ],
+     "size_cm": [
+      138.0,
+      18.2
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p3-d1",
+     "label_cm": 97,
+     "geometry_cm": 97.0,
+     "status": "pass",
+     "a": [
+      0.7813,
+      1.57
+     ],
+     "b": [
+      0.7813,
+      0.6
+     ]
+    },
+    {
+     "id": "p3-d2",
+     "label_cm": 60,
+     "geometry_cm": 59.8,
+     "status": "pass",
+     "a": [
+      0.6,
+      1.7536
+     ],
+     "b": [
+      0.0,
+      1.7536
+     ]
+    },
+    {
+     "id": "p3-d3",
+     "label_cm": 132,
+     "geometry_cm": 132.2,
+     "status": "pass",
+     "a": [
+      0.6,
+      1.7536
+     ],
+     "b": [
+      1.92,
+      1.7536
+     ]
+    },
+    {
+     "id": "p3-d4",
+     "label_cm": 82,
+     "geometry_cm": 82.0,
+     "status": "pass",
+     "a": [
+      2.74,
+      1.7536
+     ],
+     "b": [
+      1.92,
+      1.7536
+     ]
+    },
+    {
+     "id": "p3-d5",
+     "label_cm": 60,
+     "geometry_cm": 57.8,
+     "status": "FAIL label vs line",
+     "a": [
+      2.8994,
+      0.578
+     ],
+     "b": [
+      2.8994,
+      0.0
+     ]
+    },
+    {
+     "id": "p3-d6",
+     "label_cm": 130,
+     "geometry_cm": 131.0,
+     "status": "pass",
+     "a": [
+      2.74,
+      1.7536
+     ],
+     "b": [
+      4.04,
+      1.7536
+     ]
+    },
+    {
+     "id": "p3-d7",
+     "label_cm": 20,
+     "geometry_cm": 20.2,
+     "status": "pass",
+     "a": [
+      1.376,
+      2.608
+     ],
+     "b": [
+      1.376,
+      2.81
+     ]
+    },
+    {
+     "id": "p3-d8",
+     "label_cm": 138,
+     "geometry_cm": 138.0,
+     "status": "pass",
+     "a": [
+      1.55,
+      2.434
+     ],
+     "b": [
+      2.93,
+      2.434
+     ]
+    },
+    {
+     "id": "p3-d9",
+     "label_cm": 110,
+     "geometry_cm": 111.8,
+     "status": "pass",
+     "a": [
+      4.0397,
+      2.432
+     ],
+     "b": [
+      2.9317,
+      2.434
+     ]
+    },
+    {
+     "id": "p3-d10",
+     "label_cm": 124,
+     "geometry_cm": 124.0,
+     "status": "pass",
+     "a": [
+      0.774,
+      1.57
+     ],
+     "b": [
+      0.774,
+      2.81
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bedroom",
+   "page": 4,
+   "scale": "1:25",
+   "origin_pt": [
+    209.209,
+    125.201
+   ],
+   "m_per_pt": 0.008819444444444442,
+   "interior": {
+    "polygon": [
+     [
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.92
+     ],
+     [
+      0.71,
+      0.92
+     ],
+     [
+      0.71,
+      5.26
+     ],
+     [
+      3.383,
+      5.26
+     ],
+     [
+      3.383,
+      0.0
+     ]
+    ],
+    "polygon_pt": [
+     [
+      209.209,
+      125.201
+     ],
+     [
+      209.209,
+      229.514
+     ],
+     [
+      289.713,
+      229.514
+     ],
+     [
+      289.713,
+      721.609
+     ],
+     [
+      592.794,
+      721.609
+     ],
+     [
+      592.794,
+      125.201
+     ]
+    ],
+    "bbox_cm": [
+     338.3,
+     526.0
+    ],
+    "area_m2": 14.71,
+    "edges_snapped_to_vectors": "6/6",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p4-A",
+     "kind": "gap",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      -0.0014
+     ],
+     "to": [
+      0.0,
+      0.9214
+     ],
+     "width_cm": 92.3,
+     "evidence": {
+      "gap_depth_cm": 19.7
+     },
+     "source": "plan (gap in wall band)"
+    },
+    {
+     "id": "p4-B",
+     "kind": "window?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      3.383,
+      0.1206
+     ],
+     "to": [
+      3.383,
+      0.9236
+     ],
+     "width_cm": 80.3,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 9.0,
+      "fins": 0
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p4-C",
+     "kind": "gap",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      3.383,
+      1.0781
+     ],
+     "to": [
+      3.383,
+      1.8718
+     ],
+     "width_cm": 79.4,
+     "evidence": {
+      "gap_depth_cm": 19.9
+     },
+     "source": "plan (gap in wall band)"
+    },
+    {
+     "id": "p4-D",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      3.383,
+      2.0841
+     ],
+     "to": [
+      3.383,
+      3.1765
+     ],
+     "width_cm": 109.2,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 8.8,
+      "fins": 275
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p4-E",
+     "kind": "gap",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      3.383,
+      3.3196
+     ],
+     "to": [
+      3.383,
+      4.1113
+     ],
+     "width_cm": 79.2,
+     "evidence": {
+      "gap_depth_cm": 19.9
+     },
+     "source": "plan (gap in wall band)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "NOĆNI SOČIĆI",
+     "name_en": "bedside table",
+     "status": "extracted",
+     "tip": [
+      0.8404,
+      1.6403
+     ],
+     "footprint": [
+      [
+       0.712,
+       0.92
+      ],
+      [
+       0.712,
+       1.695
+      ],
+      [
+       1.122,
+       1.695
+      ],
+      [
+       1.122,
+       0.92
+      ]
+     ],
+     "size_cm": [
+      41.0,
+      77.5
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "NOĆNI SOČIĆI",
+     "name_en": "bedside table",
+     "status": "extracted",
+     "tip": [
+      0.8189,
+      3.7589
+     ],
+     "footprint": [
+      [
+       0.712,
+       3.495
+      ],
+      [
+       0.712,
+       3.993
+      ],
+      [
+       1.122,
+       3.993
+      ],
+      [
+       1.122,
+       3.495
+      ]
+     ],
+     "size_cm": [
+      41.0,
+      49.8
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "GARDEROBER",
+     "name_en": "wardrobe",
+     "status": "extracted",
+     "tip": [
+      0.9186,
+      5.0384
+     ],
+     "footprint": [
+      [
+       0.73,
+       4.681
+      ],
+      [
+       0.73,
+       5.2552
+      ],
+      [
+       3.359,
+       5.2552
+      ],
+      [
+       3.359,
+       4.6843
+      ],
+      [
+       1.347,
+       4.6843
+      ],
+      [
+       1.347,
+       4.7536
+      ],
+      [
+       1.307,
+       4.7536
+      ],
+      [
+       1.307,
+       4.681
+      ]
+     ],
+     "size_cm": [
+      262.9,
+      57.4
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p4-d1",
+     "label_cm": 40,
+     "geometry_cm": 41.0,
+     "status": "pass",
+     "a": [
+      1.122,
+      0.7654
+     ],
+     "b": [
+      0.712,
+      0.7654
+     ]
+    },
+    {
+     "id": "p4-d2",
+     "label_cm": 77,
+     "geometry_cm": 77.5,
+     "status": "pass",
+     "a": [
+      1.2765,
+      0.9199
+     ],
+     "b": [
+      1.2765,
+      1.695
+     ]
+    },
+    {
+     "id": "p4-d3",
+     "label_cm": 180,
+     "geometry_cm": 180.0,
+     "status": "pass",
+     "a": [
+      1.2765,
+      1.695
+     ],
+     "b": [
+      1.2765,
+      3.495
+     ]
+    },
+    {
+     "id": "p4-d4",
+     "label_cm": 50,
+     "geometry_cm": 49.8,
+     "status": "pass",
+     "a": [
+      1.2765,
+      3.495
+     ],
+     "b": [
+      1.2765,
+      3.993
+     ]
+    },
+    {
+     "id": "p4-d5",
+     "label_cm": 66,
+     "geometry_cm": 66.6,
+     "status": "pass (raw model edge)",
+     "a": [
+      1.7653,
+      3.995
+     ],
+     "b": [
+      1.7653,
+      4.6586
+     ]
+    },
+    {
+     "id": "p4-d6",
+     "label_cm": 207,
+     "geometry_cm": 207.6,
+     "status": "pass",
+     "a": [
+      1.31,
+      3.8712
+     ],
+     "b": [
+      3.3846,
+      3.8712
+     ]
+    },
+    {
+     "id": "p4-d7",
+     "label_cm": 60,
+     "geometry_cm": 59.8,
+     "status": "pass (raw model edge)",
+     "a": [
+      0.7109,
+      4.2992
+     ],
+     "b": [
+      1.309,
+      4.3012
+     ]
+    },
+    {
+     "id": "p4-d8",
+     "label_cm": 60,
+     "geometry_cm": 59.7,
+     "status": "pass (raw model edge)",
+     "a": [
+      1.7653,
+      5.2557
+     ],
+     "b": [
+      1.7653,
+      4.6586
+     ]
+    }
+   ],
+   "balcony": {
+    "polygon": [
+     [
+      3.5879,
+      -0.1538
+     ],
+     [
+      3.5879,
+      5.4257
+     ],
+     [
+      5.0468,
+      5.4257
+     ],
+     [
+      5.0468,
+      4.5282
+     ],
+     [
+      4.8743,
+      4.5282
+     ],
+     [
+      4.8743,
+      4.487
+     ],
+     [
+      4.8139,
+      4.487
+     ],
+     [
+      4.8139,
+      4.161
+     ],
+     [
+      4.9822,
+      4.161
+     ],
+     [
+      4.9822,
+      4.2182
+     ],
+     [
+      5.0468,
+      4.2182
+     ],
+     [
+      5.0468,
+      3.7747
+     ],
+     [
+      4.9822,
+      3.7747
+     ],
+     [
+      4.9822,
+      3.8202
+     ],
+     [
+      4.8139,
+      3.8202
+     ],
+     [
+      4.8139,
+      3.49
+     ],
+     [
+      4.8743,
+      3.49
+     ],
+     [
+      4.8743,
+      3.4403
+     ],
+     [
+      5.0468,
+      3.4403
+     ],
+     [
+      5.0468,
+      2.5259
+     ],
+     [
+      4.8743,
+      2.5259
+     ],
+     [
+      4.8743,
+      2.4846
+     ],
+     [
+      4.8139,
+      2.4846
+     ],
+     [
+      4.8139,
+      2.1565
+     ],
+     [
+      4.9822,
+      2.1565
+     ],
+     [
+      4.9822,
+      2.2147
+     ],
+     [
+      5.0468,
+      2.2147
+     ],
+     [
+      5.0468,
+      1.7702
+     ],
+     [
+      4.9822,
+      1.7702
+     ],
+     [
+      4.9822,
+      1.8179
+     ],
+     [
+      4.8139,
+      1.8179
+     ],
+     [
+      4.8139,
+      1.4877
+     ],
+     [
+      4.8743,
+      1.4877
+     ],
+     [
+      4.8743,
+      1.4358
+     ],
+     [
+      5.0468,
+      1.4358
+     ],
+     [
+      5.0468,
+      0.5235
+     ],
+     [
+      4.8743,
+      0.5235
+     ],
+     [
+      4.8743,
+      0.4844
+     ],
+     [
+      4.8139,
+      0.4844
+     ],
+     [
+      4.8139,
+      0.1563
+     ],
+     [
+      4.9822,
+      0.1563
+     ],
+     [
+      4.9822,
+      0.2145
+     ],
+     [
+      5.0468,
+      0.2145
+     ],
+     [
+      5.0468,
+      -0.1538
+     ]
+    ],
+    "source": "plan (checkerboard raster)"
+   }
+  },
+  {
+   "id": "bathroom",
+   "page": 5,
+   "scale": "1:25",
+   "origin_pt": [
+    258.042,
+    265.797
+   ],
+   "m_per_pt": 0.008819444444444442,
+   "interior": {
+    "polygon": [
+     [
+      1.9291,
+      0.0
+     ],
+     [
+      1.1791,
+      0.0
+     ],
+     [
+      1.1791,
+      0.07
+     ],
+     [
+      0.0,
+      0.07
+     ],
+     [
+      0.0,
+      2.54
+     ],
+     [
+      1.9291,
+      2.54
+     ]
+    ],
+    "polygon_pt": [
+     [
+      476.774,
+      265.797
+     ],
+     [
+      391.735,
+      265.797
+     ],
+     [
+      391.735,
+      273.734
+     ],
+     [
+      258.042,
+      273.734
+     ],
+     [
+      258.042,
+      553.797
+     ],
+     [
+      476.774,
+      553.797
+     ]
+    ],
+    "bbox_cm": [
+     192.9,
+     254.0
+    ],
+    "area_m2": 4.82,
+    "edges_snapped_to_vectors": "6/6",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p5-A",
+     "kind": "radiator?",
+     "status": "unverified (check against renders)",
+     "wall_side": "right",
+     "from": [
+      1.9291,
+      0.1623
+     ],
+     "to": [
+      1.9291,
+      0.7977
+     ],
+     "width_cm": 63.5,
+     "evidence": {
+      "outside_lines": false,
+      "depth_cm": 7.3,
+      "fins": 21
+     },
+     "source": "plan (vector lines on the wall face)"
+    },
+    {
+     "id": "p5-C",
+     "kind": "gap",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      1.8278
+     ],
+     "to": [
+      0.0,
+      2.3823
+     ],
+     "width_cm": 55.5,
+     "evidence": {
+      "gap_depth_cm": 19.9
+     },
+     "source": "plan (gap in wall band)"
+    },
+    {
+     "id": "p5-D",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "bottom",
+     "from": [
+      0.0156,
+      2.54
+     ],
+     "to": [
+      0.9892,
+      2.54
+     ],
+     "width_cm": 97.4,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "POLICA",
+     "name_en": "shelf",
+     "status": "extracted",
+     "tip": [
+      0.2527,
+      0.1298
+     ],
+     "footprint": [
+      [
+       0.024,
+       0.07
+      ],
+      [
+       0.024,
+       0.42
+      ],
+      [
+       0.7764,
+       0.42
+      ],
+      [
+       0.7764,
+       0.07
+      ]
+     ],
+     "size_cm": [
+      75.2,
+      35.0
+     ],
+     "footprint_merged": [
+      [
+       0.002,
+       0.07
+      ],
+      [
+       0.002,
+       0.42
+      ],
+      [
+       0.7987,
+       0.42
+      ],
+      [
+       0.7987,
+       0.07
+      ]
+     ],
+     "size_merged_cm": [
+      79.7,
+      35.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA IZNAD ŠOLJE",
+     "name_en": "shelf above the toilet",
+     "status": "extracted",
+     "tip": [
+      1.8615,
+      1.2524
+     ],
+     "footprint": [
+      [
+       1.7291,
+       1.0419
+      ],
+      [
+       1.7291,
+       1.5781
+      ],
+      [
+       1.9291,
+       1.5781
+      ],
+      [
+       1.9291,
+       1.0419
+      ]
+     ],
+     "size_cm": [
+      20.0,
+      53.6
+     ],
+     "footprint_merged": [
+      [
+       1.7291,
+       1.02
+      ],
+      [
+       1.7291,
+       1.6
+      ],
+      [
+       1.9291,
+       1.6
+      ],
+      [
+       1.9291,
+       1.02
+      ]
+     ],
+     "size_merged_cm": [
+      20.0,
+      58.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA SA OGLEDALOM",
+     "name_en": "shelf with mirror",
+     "status": "extracted",
+     "tip": [
+      1.8589,
+      2.4686
+     ],
+     "footprint": [
+      [
+       1.7291,
+       1.602
+      ],
+      [
+       1.7291,
+       2.4046
+      ],
+      [
+       1.7152,
+       2.4046
+      ],
+      [
+       1.7152,
+       2.518
+      ],
+      [
+       1.9291,
+       2.518
+      ],
+      [
+       1.9291,
+       1.602
+      ]
+     ],
+     "size_cm": [
+      21.4,
+      91.6
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p5-d1",
+     "label_cm": 80,
+     "geometry_cm": 79.7,
+     "status": "pass",
+     "a": [
+      0.002,
+      0.6229
+     ],
+     "b": [
+      0.7987,
+      0.6229
+     ]
+    },
+    {
+     "id": "p5-d2",
+     "label_cm": 112,
+     "geometry_cm": 112.0,
+     "status": "pass (raw model edge)",
+     "a": [
+      0.8093,
+      0.6229
+     ],
+     "b": [
+      1.9291,
+      0.6229
+     ]
+    },
+    {
+     "id": "p5-d3",
+     "label_cm": 40,
+     "geometry_cm": 35.0,
+     "status": "FAIL label vs line",
+     "a": [
+      0.1413,
+      0.42
+     ],
+     "b": [
+      0.1413,
+      0.07
+     ]
+    },
+    {
+     "id": "p5-d4",
+     "label_cm": 100,
+     "geometry_cm": 102.0,
+     "status": "FAIL label vs geometry",
+     "a": [
+      1.722,
+      0.0
+     ],
+     "b": [
+      1.722,
+      1.0032
+     ]
+    },
+    {
+     "id": "p5-d5",
+     "label_cm": 94,
+     "geometry_cm": 94.0,
+     "status": "pass",
+     "a": [
+      1.2209,
+      1.6
+     ],
+     "b": [
+      1.2209,
+      2.54
+     ]
+    },
+    {
+     "id": "p5-d6",
+     "label_cm": 58,
+     "geometry_cm": 58.0,
+     "status": "pass",
+     "a": [
+      1.2209,
+      1.02
+     ],
+     "b": [
+      1.2209,
+      1.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "toilet",
+   "page": 5,
+   "scale": "1:25",
+   "origin_pt": [
+    683.136,
+    283.469
+   ],
+   "m_per_pt": 0.008819444444444442,
+   "interior": {
+    "polygon": [
+     [
+      0.18,
+      0.0
+     ],
+     [
+      0.18,
+      0.14
+     ],
+     [
+      0.0,
+      0.14
+     ],
+     [
+      0.0,
+      2.37
+     ],
+     [
+      0.87,
+      2.37
+     ],
+     [
+      0.87,
+      0.0
+     ]
+    ],
+    "polygon_pt": [
+     [
+      703.546,
+      283.469
+     ],
+     [
+      703.546,
+      299.343
+     ],
+     [
+      683.136,
+      299.343
+     ],
+     [
+      683.136,
+      552.194
+     ],
+     [
+      781.782,
+      552.194
+     ],
+     [
+      781.782,
+      283.469
+     ]
+    ],
+    "bbox_cm": [
+     87.0,
+     237.0
+    ],
+    "area_m2": 2.04,
+    "edges_snapped_to_vectors": "6/6",
+    "source": "plan (raster topology, vector-snapped)"
+   },
+   "openings": [
+    {
+     "id": "p5-B",
+     "kind": "door?",
+     "status": "unverified (check against renders)",
+     "wall_side": "left",
+     "from": [
+      0.0,
+      0.456
+     ],
+     "to": [
+      0.0,
+      1.43
+     ],
+     "width_cm": 97.4,
+     "evidence": {
+      "outside_lines": true,
+      "casing_inside": 1.0,
+      "frame_inside": 0.0
+     },
+     "source": "plan (vector lines on the wall face)"
+    }
+   ],
+   "elements": [
+    {
+     "label": "SKRIVAČ ZA MAŠINE",
+     "name_en": "washing-machine concealer",
+     "status": "extracted",
+     "tip": [
+      0.5361,
+      2.2786
+     ],
+     "footprint": [
+      [
+       0.022,
+       1.77
+      ],
+      [
+       0.022,
+       2.37
+      ],
+      [
+       0.868,
+       2.37
+      ],
+      [
+       0.868,
+       1.77
+      ]
+     ],
+     "size_cm": [
+      84.6,
+      60.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    },
+    {
+     "label": "POLICA IZNAD ŠOLJE",
+     "name_en": "shelf above the toilet",
+     "status": "extracted",
+     "tip": [
+      0.6321,
+      0.0936
+     ],
+     "footprint": [
+      [
+       0.2039,
+       0.0
+      ],
+      [
+       0.2039,
+       0.19
+      ],
+      [
+       0.8461,
+       0.19
+      ],
+      [
+       0.8461,
+       0.0
+      ]
+     ],
+     "size_cm": [
+      64.2,
+      19.0
+     ],
+     "footprint_merged": [
+      [
+       0.182,
+       0.0
+      ],
+      [
+       0.182,
+       0.19
+      ],
+      [
+       0.868,
+       0.19
+      ],
+      [
+       0.868,
+       0.0
+      ]
+     ],
+     "size_merged_cm": [
+      68.6,
+      19.0
+     ],
+     "source": "plan (leader + raster fill, vector-snapped)"
+    }
+   ],
+   "dims": [
+    {
+     "id": "p5-d7",
+     "label_cm": 69,
+     "geometry_cm": 68.8,
+     "status": "pass",
+     "a": [
+      0.182,
+      0.4667
+     ],
+     "b": [
+      0.87,
+      0.4667
+     ]
+    },
+    {
+     "id": "p5-d8",
+     "label_cm": 60,
+     "geometry_cm": 60.0,
+     "status": "pass",
+     "a": [
+      0.2198,
+      1.7675
+     ],
+     "b": [
+      0.2198,
+      2.37
+     ]
+    },
+    {
+     "id": "p5-d9",
+     "label_cm": 87,
+     "geometry_cm": 87.0,
+     "status": "pass",
+     "a": [
+      0.0,
+      1.6462
+     ],
+     "b": [
+      0.87,
+      1.6462
+     ]
+    },
+    {
+     "id": "p5-d10",
+     "label_cm": 20,
+     "geometry_cm": 19.0,
+     "status": "pass",
+     "a": [
+      0.3526,
+      0.0
+     ],
+     "b": [
+      0.3526,
+      0.19
+     ]
+    }
+   ]
+  }
+ ],
+ "dimensions": [
+  {
+   "id": "p1-d1",
+   "page": 1,
+   "label_cm": 94,
+   "line_cm": 93.2,
+   "geometry_cm": 93.0,
+   "features": [
+    "wall",
+    "element:mirror + bench"
+   ],
+   "status": "pass",
+   "a_pt": [
+    244.55,
+    388.4
+   ],
+   "b_pt": [
+    297.39,
+    388.4
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    244.55,
+    392.34
+   ],
+   "line_b_pt": [
+    297.39,
+    392.34
+   ]
+  },
+  {
+   "id": "p1-d2",
+   "page": 1,
+   "label_cm": 145,
+   "line_cm": 145.8,
+   "geometry_cm": 145.8,
+   "features": [
+    "element:mirror + bench",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    297.39,
+    388.4
+   ],
+   "b_pt": [
+    380.05,
+    388.4
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    297.39,
+    392.34
+   ],
+   "line_b_pt": [
+    380.05,
+    392.34
+   ]
+  },
+  {
+   "id": "p1-d3",
+   "page": 1,
+   "label_cm": 80,
+   "line_cm": 78.9,
+   "geometry_cm": 78.9,
+   "features": [
+    "wall",
+    "element:console shelf"
+   ],
+   "status": "pass",
+   "a_pt": [
+    173.68,
+    430.0
+   ],
+   "b_pt": [
+    218.41,
+    429.99
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    173.68,
+    426.06
+   ],
+   "line_b_pt": [
+    218.42,
+    426.06
+   ]
+  },
+  {
+   "id": "p1-d4",
+   "page": 1,
+   "label_cm": 23,
+   "line_cm": 22.9,
+   "geometry_cm": 22.9,
+   "features": [
+    "element:console shelf",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    235.92,
+    438.41
+   ],
+   "b_pt": [
+    235.92,
+    451.4
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    236.8,
+    438.41
+   ],
+   "line_b_pt": [
+    236.8,
+    451.4
+   ]
+  },
+  {
+   "id": "p1-d5",
+   "page": 1,
+   "label_cm": 60,
+   "line_cm": 60.0,
+   "geometry_cm": 60.0,
+   "features": [
+    "wall",
+    "element:kitchen island"
+   ],
+   "status": "pass",
+   "a_pt": [
+    391.39,
+    440.99
+   ],
+   "b_pt": [
+    425.4,
+    440.99
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    391.38,
+    420.4
+   ],
+   "line_b_pt": [
+    425.4,
+    420.4
+   ]
+  },
+  {
+   "id": "p1-d6",
+   "page": 1,
+   "label_cm": 68,
+   "line_cm": 68.4,
+   "geometry_cm": 68.4,
+   "features": [
+    "element:kitchen island",
+    "element:kitchen island"
+   ],
+   "status": "pass",
+   "a_pt": [
+    464.18,
+    420.4
+   ],
+   "b_pt": [
+    425.4,
+    420.4
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    464.18,
+    420.4
+   ],
+   "line_b_pt": [
+    425.4,
+    420.4
+   ]
+  },
+  {
+   "id": "p1-d7",
+   "page": 1,
+   "label_cm": 192,
+   "line_cm": 192.0,
+   "geometry_cm": null,
+   "features": [
+    null,
+    null
+   ],
+   "status": "no feature found",
+   "a_pt": [
+    464.18,
+    419.68
+   ],
+   "b_pt": [
+    573.03,
+    419.68
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    464.18,
+    420.4
+   ],
+   "line_b_pt": [
+    573.03,
+    420.4
+   ]
+  },
+  {
+   "id": "p1-d8",
+   "page": 1,
+   "label_cm": 96,
+   "line_cm": 95.9,
+   "geometry_cm": 95.9,
+   "features": [
+    "element:TV unit with AC concealer (merged)",
+    "element:kitchen island"
+   ],
+   "status": "pass",
+   "a_pt": [
+    580.67,
+    528.42
+   ],
+   "b_pt": [
+    580.67,
+    474.04
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    589.4,
+    528.42
+   ],
+   "line_b_pt": [
+    589.4,
+    474.04
+   ]
+  },
+  {
+   "id": "p1-d9",
+   "page": 1,
+   "label_cm": 80,
+   "line_cm": 80.0,
+   "geometry_cm": 80.0,
+   "features": [
+    "element:kitchen island",
+    "element:kitchen island"
+   ],
+   "status": "pass",
+   "a_pt": [
+    580.67,
+    474.04
+   ],
+   "b_pt": [
+    582.03,
+    428.68
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    589.4,
+    474.04
+   ],
+   "line_b_pt": [
+    589.4,
+    428.68
+   ]
+  },
+  {
+   "id": "p1-d10",
+   "page": 1,
+   "label_cm": 293,
+   "line_cm": 293.0,
+   "geometry_cm": 293.0,
+   "features": [
+    "element:TV unit with AC concealer (merged)",
+    "element:TV unit with AC concealer"
+   ],
+   "status": "pass",
+   "a_pt": [
+    571.67,
+    536.47
+   ],
+   "b_pt": [
+    737.78,
+    536.51
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    571.67,
+    534.51
+   ],
+   "line_b_pt": [
+    737.78,
+    534.51
+   ]
+  },
+  {
+   "id": "p1-d11",
+   "page": 1,
+   "label_cm": 37,
+   "line_cm": 37.0,
+   "geometry_cm": 37.0,
+   "features": [
+    "element:TV unit with AC concealer",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    746.78,
+    541.55
+   ],
+   "b_pt": [
+    746.78,
+    562.52
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    753.46,
+    541.55
+   ],
+   "line_b_pt": [
+    753.46,
+    562.52
+   ]
+  },
+  {
+   "id": "p1-d12",
+   "page": 1,
+   "label_cm": 18,
+   "line_cm": 17.7,
+   "geometry_cm": 17.7,
+   "features": [
+    "edge",
+    "edge"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    571.61,
+    361.48
+   ],
+   "b_pt": [
+    581.67,
+    361.48
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    571.61,
+    368.16
+   ],
+   "line_b_pt": [
+    581.67,
+    368.16
+   ]
+  },
+  {
+   "id": "p1-d13",
+   "page": 1,
+   "label_cm": 120,
+   "line_cm": 121.0,
+   "geometry_cm": 121.0,
+   "features": [
+    "edge",
+    "edge"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    590.67,
+    352.48
+   ],
+   "b_pt": [
+    590.67,
+    283.88
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    601.17,
+    352.48
+   ],
+   "line_b_pt": [
+    601.17,
+    283.88
+   ]
+  },
+  {
+   "id": "p1-d14",
+   "page": 1,
+   "label_cm": 17,
+   "line_cm": 17.0,
+   "geometry_cm": 17.0,
+   "features": [
+    "edge",
+    "wall"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    590.67,
+    283.88
+   ],
+   "b_pt": [
+    590.67,
+    274.24
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    601.17,
+    283.88
+   ],
+   "line_b_pt": [
+    601.17,
+    274.24
+   ]
+  },
+  {
+   "id": "p1-d15",
+   "page": 1,
+   "label_cm": 57,
+   "line_cm": 54.2,
+   "geometry_cm": 54.2,
+   "features": [
+    "element:dining table",
+    "wall"
+   ],
+   "status": "FAIL label vs line",
+   "a_pt": [
+    422.08,
+    350.87
+   ],
+   "b_pt": [
+    391.39,
+    350.86
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    422.08,
+    350.02
+   ],
+   "line_b_pt": [
+    391.38,
+    350.02
+   ]
+  },
+  {
+   "id": "p1-d16",
+   "page": 1,
+   "label_cm": 190,
+   "line_cm": 192.9,
+   "geometry_cm": 192.9,
+   "features": [
+    "element:dining table",
+    "element:dining table"
+   ],
+   "status": "FAIL label vs line",
+   "a_pt": [
+    422.08,
+    350.87
+   ],
+   "b_pt": [
+    531.45,
+    350.87
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    422.08,
+    350.03
+   ],
+   "line_b_pt": [
+    531.45,
+    350.03
+   ]
+  },
+  {
+   "id": "p1-d17",
+   "page": 1,
+   "label_cm": 75,
+   "line_cm": 75.1,
+   "geometry_cm": 75.1,
+   "features": [
+    "element:dining table",
+    "element:dining table"
+   ],
+   "status": "pass",
+   "a_pt": [
+    545.87,
+    359.87
+   ],
+   "b_pt": [
+    545.87,
+    317.28
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    545.87,
+    359.87
+   ],
+   "line_b_pt": [
+    545.87,
+    317.28
+   ]
+  },
+  {
+   "id": "p1-d18",
+   "page": 1,
+   "label_cm": 76,
+   "line_cm": 75.9,
+   "geometry_cm": 75.9,
+   "features": [
+    "element:dining table",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    540.45,
+    317.28
+   ],
+   "b_pt": [
+    540.45,
+    274.24
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    545.87,
+    317.28
+   ],
+   "line_b_pt": [
+    545.87,
+    274.24
+   ]
+  },
+  {
+   "id": "p1-d19",
+   "page": 1,
+   "label_cm": 120,
+   "line_cm": 121.4,
+   "geometry_cm": 121.4,
+   "features": [
+    "element:dining table",
+    "element:kitchen island"
+   ],
+   "status": "pass",
+   "a_pt": [
+    540.45,
+    359.87
+   ],
+   "b_pt": [
+    540.45,
+    428.68
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    545.87,
+    359.87
+   ],
+   "line_b_pt": [
+    545.87,
+    428.68
+   ]
+  },
+  {
+   "id": "p1-d20",
+   "page": 1,
+   "label_cm": 364,
+   "line_cm": 364.4,
+   "geometry_cm": 364.4,
+   "features": [
+    "edge",
+    "wall"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    581.67,
+    361.48
+   ],
+   "b_pt": [
+    788.23,
+    361.47
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    581.67,
+    366.89
+   ],
+   "line_b_pt": [
+    788.24,
+    366.89
+   ]
+  },
+  {
+   "id": "p2-d1",
+   "page": 2,
+   "label_cm": 162,
+   "line_cm": 161.6,
+   "geometry_cm": 161.6,
+   "features": [
+    "wall",
+    "element:desk"
+   ],
+   "status": "pass",
+   "a_pt": [
+    326.37,
+    671.76
+   ],
+   "b_pt": [
+    326.37,
+    488.57
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    356.86,
+    671.76
+   ],
+   "line_b_pt": [
+    356.86,
+    488.57
+   ]
+  },
+  {
+   "id": "p2-d2",
+   "page": 2,
+   "label_cm": 165,
+   "line_cm": 166.2,
+   "geometry_cm": 166.2,
+   "features": [
+    "element:desk",
+    "element:desk"
+   ],
+   "status": "pass",
+   "a_pt": [
+    402.76,
+    488.57
+   ],
+   "b_pt": [
+    402.76,
+    300.08
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    419.79,
+    488.57
+   ],
+   "line_b_pt": [
+    419.79,
+    300.08
+   ]
+  },
+  {
+   "id": "p2-d3",
+   "page": 2,
+   "label_cm": 67,
+   "line_cm": 67.4,
+   "geometry_cm": 67.4,
+   "features": [
+    "wall",
+    "element:desk"
+   ],
+   "status": "pass",
+   "a_pt": [
+    317.35,
+    308.9
+   ],
+   "b_pt": [
+    393.74,
+    309.08
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    317.3,
+    325.92
+   ],
+   "line_b_pt": [
+    393.7,
+    326.11
+   ]
+  },
+  {
+   "id": "p2-d4",
+   "page": 2,
+   "label_cm": 114,
+   "line_cm": 114.2,
+   "geometry_cm": 114.2,
+   "features": [
+    "element:desk",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    402.76,
+    300.08
+   ],
+   "b_pt": [
+    402.77,
+    170.6
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    419.79,
+    300.08
+   ],
+   "line_b_pt": [
+    419.79,
+    170.6
+   ]
+  },
+  {
+   "id": "p2-d5",
+   "page": 2,
+   "label_cm": 45,
+   "line_cm": 45.5,
+   "geometry_cm": 45.3,
+   "features": [
+    "wall",
+    "element:shelf"
+   ],
+   "status": "pass",
+   "a_pt": [
+    317.37,
+    138.92
+   ],
+   "b_pt": [
+    368.96,
+    138.92
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    317.37,
+    121.9
+   ],
+   "line_b_pt": [
+    368.96,
+    121.9
+   ]
+  },
+  {
+   "id": "p2-d6",
+   "page": 2,
+   "label_cm": 110,
+   "line_cm": 109.8,
+   "geometry_cm": 110.1,
+   "features": [
+    "element:desk",
+    "element:wardrobe"
+   ],
+   "status": "pass",
+   "a_pt": [
+    393.76,
+    497.57
+   ],
+   "b_pt": [
+    518.29,
+    497.57
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    393.76,
+    514.59
+   ],
+   "line_b_pt": [
+    518.29,
+    514.59
+   ]
+  },
+  {
+   "id": "p2-d7",
+   "page": 2,
+   "label_cm": 60,
+   "line_cm": 59.8,
+   "geometry_cm": 59.6,
+   "features": [
+    "element:wardrobe",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    518.29,
+    480.32
+   ],
+   "b_pt": [
+    586.09,
+    480.32
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    518.29,
+    472.55
+   ],
+   "line_b_pt": [
+    586.09,
+    472.55
+   ]
+  },
+  {
+   "id": "p2-d8",
+   "page": 2,
+   "label_cm": 100,
+   "line_cm": 100.9,
+   "geometry_cm": 100.9,
+   "features": [
+    "edge",
+    "element:wardrobe (merged)"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    509.29,
+    489.32
+   ],
+   "b_pt": [
+    509.55,
+    603.73
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    501.77,
+    489.32
+   ],
+   "line_b_pt": [
+    501.77,
+    603.73
+   ]
+  },
+  {
+   "id": "p2-d9",
+   "page": 2,
+   "label_cm": 60,
+   "line_cm": 60.0,
+   "geometry_cm": 60.0,
+   "features": [
+    "element:wardrobe (merged)",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    407.01,
+    603.73
+   ],
+   "b_pt": [
+    407.01,
+    671.76
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    399.24,
+    603.73
+   ],
+   "line_b_pt": [
+    399.24,
+    671.76
+   ]
+  },
+  {
+   "id": "p2-d10",
+   "page": 2,
+   "label_cm": 102,
+   "line_cm": 101.6,
+   "geometry_cm": 101.1,
+   "features": [
+    "edge",
+    "element:wardrobe (merged)"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    402.76,
+    488.57
+   ],
+   "b_pt": [
+    407.01,
+    603.73
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    399.24,
+    488.57
+   ],
+   "line_b_pt": [
+    399.24,
+    603.73
+   ]
+  },
+  {
+   "id": "p3-d1",
+   "page": 3,
+   "label_cm": 97,
+   "line_cm": 97.0,
+   "geometry_cm": 97.0,
+   "features": [
+    "element:wardrobe with side shelf (merged)",
+    "element:wardrobe with side shelf"
+   ],
+   "status": "pass",
+   "a_pt": [
+    335.83,
+    452.75
+   ],
+   "b_pt": [
+    335.57,
+    342.77
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    347.39,
+    452.75
+   ],
+   "line_b_pt": [
+    347.39,
+    342.77
+   ]
+  },
+  {
+   "id": "p3-d2",
+   "page": 3,
+   "label_cm": 60,
+   "line_cm": 60.0,
+   "geometry_cm": 59.8,
+   "features": [
+    "element:wardrobe with side shelf (merged)",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    326.83,
+    461.75
+   ],
+   "b_pt": [
+    258.8,
+    461.75
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    326.83,
+    473.57
+   ],
+   "line_b_pt": [
+    258.8,
+    473.57
+   ]
+  },
+  {
+   "id": "p3-d3",
+   "page": 3,
+   "label_cm": 132,
+   "line_cm": 132.0,
+   "geometry_cm": 132.2,
+   "features": [
+    "element:wardrobe with side shelf (merged)",
+    "element:wardrobe with side shelf (merged)"
+   ],
+   "status": "pass",
+   "a_pt": [
+    326.83,
+    473.57
+   ],
+   "b_pt": [
+    476.5,
+    473.57
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    326.83,
+    473.57
+   ],
+   "line_b_pt": [
+    476.5,
+    473.57
+   ]
+  },
+  {
+   "id": "p3-d4",
+   "page": 3,
+   "label_cm": 82,
+   "line_cm": 82.0,
+   "geometry_cm": 82.0,
+   "features": [
+    "element:desk",
+    "element:wardrobe with side shelf (merged)"
+   ],
+   "status": "pass",
+   "a_pt": [
+    569.48,
+    473.57
+   ],
+   "b_pt": [
+    476.5,
+    473.57
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    569.48,
+    473.57
+   ],
+   "line_b_pt": [
+    476.5,
+    473.57
+   ]
+  },
+  {
+   "id": "p3-d5",
+   "page": 3,
+   "label_cm": 60,
+   "line_cm": 57.8,
+   "geometry_cm": 57.8,
+   "features": [
+    "element:desk",
+    "wall"
+   ],
+   "status": "FAIL label vs line",
+   "a_pt": [
+    578.47,
+    340.27
+   ],
+   "b_pt": [
+    578.47,
+    274.74
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    587.55,
+    340.27
+   ],
+   "line_b_pt": [
+    587.55,
+    274.74
+   ]
+  },
+  {
+   "id": "p3-d6",
+   "page": 3,
+   "label_cm": 130,
+   "line_cm": 130.0,
+   "geometry_cm": 131.0,
+   "features": [
+    "element:desk",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    569.48,
+    421.61
+   ],
+   "b_pt": [
+    716.88,
+    408.59
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    569.48,
+    473.57
+   ],
+   "line_b_pt": [
+    716.88,
+    473.57
+   ]
+  },
+  {
+   "id": "p3-d7",
+   "page": 3,
+   "label_cm": 20,
+   "line_cm": 20.2,
+   "geometry_cm": 20.2,
+   "features": [
+    "element:TV shelf",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    425.55,
+    570.45
+   ],
+   "b_pt": [
+    425.55,
+    593.35
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    414.82,
+    570.45
+   ],
+   "line_b_pt": [
+    414.82,
+    593.35
+   ]
+  },
+  {
+   "id": "p3-d8",
+   "page": 3,
+   "label_cm": 138,
+   "line_cm": 138.0,
+   "geometry_cm": 138.0,
+   "features": [
+    "element:TV shelf",
+    "element:TV shelf"
+   ],
+   "status": "pass",
+   "a_pt": [
+    434.55,
+    561.45
+   ],
+   "b_pt": [
+    591.02,
+    561.45
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    434.55,
+    550.72
+   ],
+   "line_b_pt": [
+    591.02,
+    550.72
+   ]
+  },
+  {
+   "id": "p3-d9",
+   "page": 3,
+   "label_cm": 110,
+   "line_cm": 110.8,
+   "geometry_cm": 111.8,
+   "features": [
+    "wall",
+    "element:radiator cover"
+   ],
+   "status": "pass",
+   "a_pt": [
+    716.86,
+    561.22
+   ],
+   "b_pt": [
+    591.23,
+    561.45
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    716.84,
+    550.49
+   ],
+   "line_b_pt": [
+    591.21,
+    550.72
+   ]
+  },
+  {
+   "id": "p3-d10",
+   "page": 3,
+   "label_cm": 124,
+   "line_cm": 124.0,
+   "geometry_cm": 124.0,
+   "features": [
+    "element:wardrobe with side shelf (merged)",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    335.83,
+    452.75
+   ],
+   "b_pt": [
+    335.83,
+    593.35
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    346.56,
+    452.75
+   ],
+   "line_b_pt": [
+    346.56,
+    593.35
+   ]
+  },
+  {
+   "id": "p4-d1",
+   "page": 4,
+   "label_cm": 40,
+   "line_cm": 41.0,
+   "geometry_cm": 41.0,
+   "features": [
+    "element:bedside table",
+    "element:bedside table"
+   ],
+   "status": "pass",
+   "a_pt": [
+    336.43,
+    220.51
+   ],
+   "b_pt": [
+    289.94,
+    220.51
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    336.43,
+    211.99
+   ],
+   "line_b_pt": [
+    289.94,
+    211.99
+   ]
+  },
+  {
+   "id": "p4-d2",
+   "page": 4,
+   "label_cm": 77,
+   "line_cm": 77.5,
+   "geometry_cm": 77.5,
+   "features": [
+    "element:bedside table",
+    "element:bedside table"
+   ],
+   "status": "pass",
+   "a_pt": [
+    345.43,
+    229.51
+   ],
+   "b_pt": [
+    345.43,
+    317.39
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    353.95,
+    229.51
+   ],
+   "line_b_pt": [
+    353.95,
+    317.39
+   ]
+  },
+  {
+   "id": "p4-d3",
+   "page": 4,
+   "label_cm": 180,
+   "line_cm": 180.0,
+   "geometry_cm": 180.0,
+   "features": [
+    "element:bedside table",
+    "element:bedside table"
+   ],
+   "status": "pass",
+   "a_pt": [
+    353.95,
+    317.39
+   ],
+   "b_pt": [
+    353.95,
+    521.48
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    353.95,
+    317.39
+   ],
+   "line_b_pt": [
+    353.95,
+    521.48
+   ]
+  },
+  {
+   "id": "p4-d4",
+   "page": 4,
+   "label_cm": 50,
+   "line_cm": 49.8,
+   "geometry_cm": 49.8,
+   "features": [
+    "element:bedside table",
+    "element:bedside table"
+   ],
+   "status": "pass",
+   "a_pt": [
+    345.43,
+    521.48
+   ],
+   "b_pt": [
+    345.43,
+    577.95
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    353.95,
+    521.48
+   ],
+   "line_b_pt": [
+    353.95,
+    577.95
+   ]
+  },
+  {
+   "id": "p4-d5",
+   "page": 4,
+   "label_cm": 66,
+   "line_cm": 66.4,
+   "geometry_cm": 66.6,
+   "features": [
+    "element:bedside table",
+    "edge"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    366.74,
+    578.18
+   ],
+   "b_pt": [
+    366.74,
+    653.42
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    409.37,
+    578.18
+   ],
+   "line_b_pt": [
+    409.37,
+    653.42
+   ]
+  },
+  {
+   "id": "p4-d6",
+   "page": 4,
+   "label_cm": 207,
+   "line_cm": 207.5,
+   "geometry_cm": 207.6,
+   "features": [
+    "element:wardrobe",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    357.74,
+    564.14
+   ],
+   "b_pt": [
+    592.97,
+    564.14
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    357.74,
+    564.14
+   ],
+   "line_b_pt": [
+    592.97,
+    564.14
+   ]
+  },
+  {
+   "id": "p4-d7",
+   "page": 4,
+   "label_cm": 60,
+   "line_cm": 59.8,
+   "geometry_cm": 59.8,
+   "features": [
+    "element:bedside table",
+    "edge"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    289.91,
+    586.95
+   ],
+   "b_pt": [
+    357.71,
+    587.18
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    289.82,
+    612.67
+   ],
+   "line_b_pt": [
+    357.63,
+    612.9
+   ]
+  },
+  {
+   "id": "p4-d8",
+   "page": 4,
+   "label_cm": 60,
+   "line_cm": 59.7,
+   "geometry_cm": 59.7,
+   "features": [
+    "element:wardrobe",
+    "edge"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    298.71,
+    721.12
+   ],
+   "b_pt": [
+    366.74,
+    653.42
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    409.37,
+    721.12
+   ],
+   "line_b_pt": [
+    409.37,
+    653.42
+   ]
+  },
+  {
+   "id": "p5-d1",
+   "page": 5,
+   "label_cm": 80,
+   "line_cm": 79.7,
+   "geometry_cm": 79.7,
+   "features": [
+    "element:shelf (merged)",
+    "element:shelf (merged)"
+   ],
+   "status": "pass",
+   "a_pt": [
+    258.27,
+    322.42
+   ],
+   "b_pt": [
+    348.6,
+    322.42
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    258.27,
+    336.43
+   ],
+   "line_b_pt": [
+    348.6,
+    336.43
+   ]
+  },
+  {
+   "id": "p5-d2",
+   "page": 5,
+   "label_cm": 112,
+   "line_cm": 112.0,
+   "geometry_cm": 112.0,
+   "features": [
+    "edge",
+    "wall"
+   ],
+   "status": "pass (raw model edge)",
+   "a_pt": [
+    349.8,
+    371.12
+   ],
+   "b_pt": [
+    476.77,
+    371.11
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    349.8,
+    336.43
+   ],
+   "line_b_pt": [
+    476.77,
+    336.43
+   ]
+  },
+  {
+   "id": "p5-d3",
+   "page": 5,
+   "label_cm": 40,
+   "line_cm": 35.0,
+   "geometry_cm": 35.0,
+   "features": [
+    "element:shelf",
+    "wall"
+   ],
+   "status": "FAIL label vs line",
+   "a_pt": [
+    267.27,
+    313.42
+   ],
+   "b_pt": [
+    267.04,
+    273.73
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    274.06,
+    313.42
+   ],
+   "line_b_pt": [
+    274.06,
+    273.73
+   ]
+  },
+  {
+   "id": "p5-d4",
+   "page": 5,
+   "label_cm": 100,
+   "line_cm": 100.3,
+   "geometry_cm": 102.0,
+   "features": [
+    "wall",
+    "element:shelf above the toilet (merged)"
+   ],
+   "status": "FAIL label vs geometry",
+   "a_pt": [
+    467.77,
+    265.8
+   ],
+   "b_pt": [
+    467.77,
+    379.55
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    453.29,
+    265.8
+   ],
+   "line_b_pt": [
+    453.29,
+    379.55
+   ]
+  },
+  {
+   "id": "p5-d5",
+   "page": 5,
+   "label_cm": 94,
+   "line_cm": 94.0,
+   "geometry_cm": 94.0,
+   "features": [
+    "element:shelf above the toilet (merged)",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    410.95,
+    447.21
+   ],
+   "b_pt": [
+    410.96,
+    553.8
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    396.47,
+    447.21
+   ],
+   "line_b_pt": [
+    396.47,
+    553.8
+   ]
+  },
+  {
+   "id": "p5-d6",
+   "page": 5,
+   "label_cm": 58,
+   "line_cm": 58.0,
+   "geometry_cm": 58.0,
+   "features": [
+    "element:shelf above the toilet (merged)",
+    "element:shelf above the toilet (merged)"
+   ],
+   "status": "pass",
+   "a_pt": [
+    445.1,
+    381.45
+   ],
+   "b_pt": [
+    410.95,
+    447.21
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    396.47,
+    381.45
+   ],
+   "line_b_pt": [
+    396.47,
+    447.21
+   ]
+  },
+  {
+   "id": "p5-d7",
+   "page": 5,
+   "label_cm": 69,
+   "line_cm": 68.8,
+   "geometry_cm": 68.8,
+   "features": [
+    "element:shelf above the toilet (merged)",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    703.77,
+    314.01
+   ],
+   "b_pt": [
+    781.78,
+    314.01
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    703.77,
+    336.39
+   ],
+   "line_b_pt": [
+    781.78,
+    336.39
+   ]
+  },
+  {
+   "id": "p5-d8",
+   "page": 5,
+   "label_cm": 60,
+   "line_cm": 60.2,
+   "geometry_cm": 60.0,
+   "features": [
+    "element:washing-machine concealer",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    692.14,
+    483.88
+   ],
+   "b_pt": [
+    692.14,
+    552.19
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    708.06,
+    483.88
+   ],
+   "line_b_pt": [
+    708.06,
+    552.19
+   ]
+  },
+  {
+   "id": "p5-d9",
+   "page": 5,
+   "label_cm": 87,
+   "line_cm": 87.0,
+   "geometry_cm": 87.0,
+   "features": [
+    "wall",
+    "wall"
+   ],
+   "status": "pass",
+   "a_pt": [
+    683.14,
+    475.53
+   ],
+   "b_pt": [
+    781.78,
+    475.53
+   ],
+   "vertical": false,
+   "line_a_pt": [
+    683.14,
+    470.13
+   ],
+   "line_b_pt": [
+    781.78,
+    470.13
+   ]
+  },
+  {
+   "id": "p5-d10",
+   "page": 5,
+   "label_cm": 20,
+   "line_cm": 19.0,
+   "geometry_cm": 19.0,
+   "features": [
+    "wall",
+    "element:shelf above the toilet"
+   ],
+   "status": "pass",
+   "a_pt": [
+    712.55,
+    283.47
+   ],
+   "b_pt": [
+    712.77,
+    305.01
+   ],
+   "vertical": true,
+   "line_a_pt": [
+    723.12,
+    283.47
+   ],
+   "line_b_pt": [
+    723.12,
+    305.01
+   ]
+  }
+ ],
+ "regression": [
+  {
+   "room": "work-room",
+   "expected_cm": [
+    237.5,
+    442.6
+   ],
+   "extracted_cm": [
+    237.0,
+    442.0
+   ],
+   "pass": true
+  },
+  {
+   "room": "childrens-room",
+   "expected_cm": [
+    405.4,
+    281.6
+   ],
+   "extracted_cm": [
+    405.0,
+    281.0
+   ],
+   "pass": true
+  },
+  {
+   "room": "toilet",
+   "expected_cm": [
+    87.0,
+    238.0
+   ],
+   "extracted_cm": [
+    87.0,
+    237.0
+   ],
+   "pass": true
+  }
+ ]
+}

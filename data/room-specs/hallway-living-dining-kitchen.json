@@ -1,0 +1,6000 @@
+{
+ "id": "hallway-living-dining-kitchen",
+ "order": 1,
+ "name": "Hallway, living room, dining and kitchen",
+ "name_sr": "Ulazni hodnik, dnevna soba, trpezarija i kuhinja",
+ "plan_room": "hallway-living-dining-kitchen",
+ "estimates": "data/estimates/hallway.json (5 hallway renders); data/estimates/living-dining-kitchen.json (17 renders)",
+ "render_ceiling": 2.63,
+ "exterior_walls": [
+  "top",
+  "right@10.84",
+  "bottom@5.1156"
+ ],
+ "exterior_thickness": {
+  "value": 0.2,
+  "source": "assumed",
+  "note": "as drawn on the plan"
+ },
+ "floor": "floor-wood",
+ "wall": "wall-paint",
+ "ceiling": "ceiling",
+ "skirting": {
+  "height": {
+   "value": 0.063,
+   "source": "estimated",
+   "from": "hallway renders"
+  },
+  "material": "skirting"
+ },
+ "outside": {
+  "sky": "#c9d8e6",
+  "ground": "#8d8a62"
+ },
+ "materials": {
+  "floor-wood": {
+   "color": "#5a3a28",
+   "texture": "wood-planks",
+   "textureScale": 2.4,
+   "roughness": 0.75,
+   "source": "estimated",
+   "from": "dark wood-look planks in the corridor and living room (same as the other rooms)"
+  },
+  "hall-tiles": {
+   "color": "#b5aa96",
+   "texture": "tiles",
+   "tile": [
+    0.455,
+    0.455
+   ],
+   "textureScale": 1.82,
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "45 x 45 cm light beige porcelain in the hallway, white-balanced #8a826d, lifted"
+  },
+  "skirting": {
+   "color": "#3a2818",
+   "roughness": 0.6,
+   "source": "estimated",
+   "from": "hallway renders"
+  },
+  "wall-paint": {
+   "color": "#d3cbc0",
+   "texture": "plaster",
+   "textureScale": 1.0,
+   "roughness": 0.92,
+   "source": "estimated",
+   "from": "warm off-white paint in the hallway, white-balanced #aeb1b9"
+  },
+  "plaster-beige": {
+   "color": "#b2a28e",
+   "texture": "plaster",
+   "textureScale": 1.0,
+   "roughness": 0.92,
+   "source": "estimated",
+   "from": "textured beige plaster on the wall end and the dining-side wall"
+  },
+  "ceiling": {
+   "color": "#cdc3b5",
+   "roughness": 0.95,
+   "source": "assumed",
+   "from": "white ceiling paint"
+  },
+  "walnut": {
+   "color": "#6f4529",
+   "texture": "walnut",
+   "textureScale": 0.8,
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "same walnut as the other rooms"
+  },
+  "front-door": {
+   "color": "#5a3624",
+   "texture": "walnut",
+   "textureScale": 0.8,
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "dark walnut-veneer entrance door"
+  },
+  "greige": {
+   "color": "#a8977c",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "same greige as the other wardrobes"
+  },
+  "plinth": {
+   "color": "#1b130e",
+   "roughness": 0.8,
+   "source": "estimated",
+   "from": "renders"
+  },
+  "boucle": {
+   "color": "#d8ccb8",
+   "texture": "fabric",
+   "textureScale": 0.3,
+   "roughness": 1.0,
+   "source": "estimated",
+   "from": "cream boucle bench"
+  },
+  "light-wood": {
+   "color": "#b39a78",
+   "texture": "oak",
+   "textureScale": 1.0,
+   "roughness": 0.6,
+   "source": "estimated",
+   "from": "light-wood console shelf"
+  },
+  "smoked-mirror": {
+   "color": "#6b6056",
+   "roughness": 0.18,
+   "metalness": 0.85,
+   "source": "estimated",
+   "from": "smoked grey mirror (same glass as the bathroom)"
+  },
+  "white": {
+   "color": "#f0eee9",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "door casings and frames"
+  },
+  "black": {
+   "color": "#0c0a08",
+   "roughness": 0.45,
+   "metalness": 0.2,
+   "source": "estimated",
+   "from": "levers, hooks, drawer pulls, smart lock"
+  },
+  "door": {
+   "color": "#e6e1d9",
+   "texture": "door-inlay",
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "white leaves with black diagonal inlay lines"
+  },
+  "glass": {
+   "color": "#d6dde0",
+   "opacity": 0.06,
+   "roughness": 0.05,
+   "source": "assumed"
+  },
+  "stone": {
+   "color": "#a6a39b",
+   "texture": "stone",
+   "textureScale": 1.4,
+   "roughness": 0.4,
+   "source": "estimated",
+   "from": "stone-look slab, warm grey-beige with light veins (TV wall p13: lit ~#a0947f); same stone on the backsplash and worktops"
+  },
+  "tv-unit": {
+   "color": "#cfc6b8",
+   "roughness": 0.55,
+   "source": "estimated",
+   "from": "off-white floating TV unit (p12, p13)"
+  },
+  "fireplace": {
+   "color": "#0b0a09",
+   "roughness": 0.15,
+   "metalness": 0.2,
+   "source": "estimated",
+   "from": "black glass of the electric fireplace"
+  },
+  "flame": {
+   "color": "#ff6a1f",
+   "emissive": "#ff4a0a",
+   "emissiveIntensity": 1.0,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "flame effect (p12, p13)"
+  },
+  "tv-screen": {
+   "color": "#060606",
+   "roughness": 0.6,
+   "metalness": 0.0,
+   "source": "estimated",
+   "from": "TV off"
+  },
+  "oven-glass": {
+   "color": "#0e0d0c",
+   "roughness": 0.15,
+   "metalness": 0.3,
+   "source": "estimated",
+   "from": "two black built-in ovens"
+  },
+  "hob": {
+   "color": "#0a0a0a",
+   "roughness": 0.12,
+   "source": "estimated",
+   "from": "black glass hob"
+  },
+  "sink": {
+   "color": "#bcb09c",
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "beige composite sink (p08, p09)"
+  },
+  "faucet": {
+   "color": "#e7e1d7",
+   "roughness": 0.35,
+   "source": "estimated",
+   "from": "cream tall tap (p09)"
+  },
+  "sofa": {
+   "color": "#cdc1b6",
+   "texture": "fabric",
+   "textureScale": 0.4,
+   "roughness": 0.95,
+   "source": "estimated",
+   "from": "light grey-beige fabric, white-balanced #b8a79f, lifted"
+  },
+  "dining-walnut": {
+   "color": "#5c3a22",
+   "texture": "walnut",
+   "textureScale": 0.8,
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "dark walnut table top, white-balanced #55351d"
+  },
+  "coffee-walnut": {
+   "color": "#4c3323",
+   "texture": "walnut",
+   "textureScale": 0.8,
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "dark walnut coffee table, white-balanced #453224"
+  },
+  "rug": {
+   "color": "#c7bcad",
+   "texture": "rug",
+   "textureScale": 1.0,
+   "roughness": 1.0,
+   "source": "estimated",
+   "from": "geometric rugs in beige, sand and gold (pattern not modelled), white-balanced #c1b8ad"
+  },
+  "sheer": {
+   "color": "#efebe5",
+   "opacity": 0.78,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "white sheer curtains"
+  },
+  "curtain-brown": {
+   "color": "#5a4637",
+   "texture": "fabric",
+   "textureScale": 0.5,
+   "roughness": 0.95,
+   "source": "estimated",
+   "from": "walnut-brown curtain panel, white-balanced #4e3e34"
+  },
+  "shade": {
+   "color": "#f6f1e8",
+   "emissive": "#ffefd6",
+   "emissiveIntensity": 0.55,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "white textured fabric shades, lit from inside"
+  },
+  "divider-beige": {
+   "color": "#cbbca4",
+   "roughness": 0.6,
+   "source": "estimated",
+   "from": "light beige divider posts (p03, p16)"
+  },
+  "ac": {
+   "color": "#e8e6e0",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "white split AC unit behind the slat grille"
+  },
+  "shutter-box": {
+   "color": "#ddd8cf",
+   "roughness": 0.8,
+   "source": "estimated",
+   "from": "opaque band above each window and the balcony door"
+  },
+  "balcony-tiles": {
+   "color": "#8b8e8d",
+   "texture": "tiles",
+   "tile": [
+    0.6,
+    0.6
+   ],
+   "textureScale": 2.4,
+   "roughness": 0.8,
+   "source": "estimated",
+   "from": "grey tiles (same balcony type as the bedroom's)"
+  },
+  "parapet": {
+   "color": "#a9aba8",
+   "texture": "plaster",
+   "textureScale": 1.0,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "grey solid balcony parapet (p13)"
+  },
+  "boucle-chair": {
+   "color": "#d2c3aa",
+   "texture": "fabric",
+   "textureScale": 0.3,
+   "roughness": 1.0,
+   "source": "estimated",
+   "from": "boucle of the dining chairs and bar stools (p01, p05), warmer and darker than the hall bench"
+  },
+  "led-glow": {
+   "color": "#ffd9a6",
+   "emissive": "#ffc98a",
+   "emissiveIntensity": 0.9,
+   "roughness": 0.9,
+   "source": "estimated",
+   "from": "wall lit by hidden LED strips (bands above and below the stone slab, under the TV unit)"
+  },
+  "bronze-mirror": {
+   "color": "#4e4034",
+   "roughness": 0.22,
+   "metalness": 0.9,
+   "source": "estimated",
+   "from": "bronze-tinted mirror B on the dining wall (reflects the kitchen darkly, p01)"
+  }
+ },
+ "openings": [
+  {
+   "id": "front-door",
+   "name": "Front door (entrance)",
+   "type": "door",
+   "wall": "top",
+   "range": {
+    "value": [
+     0.085,
+     1.005
+    ],
+    "source": "estimated",
+    "from": "hallway renders: casing x 0.036-1.053, leaf x 0.085-1.007; owner: first thing on the top-left wall"
+   },
+   "head": {
+    "value": 2.1,
+    "source": "estimated",
+    "from": "leaf about 0.92 x 2.10 (renders)"
+   },
+   "latch": "x-max",
+   "latch_source": {
+    "value": "hinges on the left, smart lock and lever at x 0.75-0.95",
+    "source": "estimated",
+    "from": "hallway renders"
+   },
+   "frameMaterial": "front-door",
+   "leafMaterial": "front-door"
+  },
+  {
+   "id": "door-work-room",
+   "name": "Door to the work room (I)",
+   "type": "door",
+   "plan": "p1-I",
+   "trim": {
+    "value": 0.072,
+    "source": "estimated",
+    "from": "casings 7-7.5 cm"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.078,
+    "source": "owner",
+    "note": "standard door"
+   },
+   "latch": "z-max",
+   "latch_source": {
+    "value": "lever at z 2.80",
+    "source": "estimated",
+    "from": "p02"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "door-toilet",
+   "name": "Door to the toilet (J)",
+   "type": "door",
+   "plan": "p1-J",
+   "trim": {
+    "value": 0.07,
+    "source": "estimated",
+    "from": "casings 7.0 cm"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.076,
+    "source": "owner",
+    "note": "standard door"
+   },
+   "latch": "x-max",
+   "latch_source": {
+    "value": "lever at x 1.61",
+    "source": "estimated",
+    "from": "p01, p03"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "door-bathroom",
+   "name": "Door to the bathroom (N)",
+   "type": "door",
+   "plan": "p1-N",
+   "trim": {
+    "value": 0.07,
+    "source": "assumed",
+    "from": "same door type as I and J"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.076,
+    "source": "owner",
+    "note": "standard door"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "door-bedroom",
+   "name": "Door to the bedroom (O)",
+   "type": "door",
+   "plan": "p1-O",
+   "trim": {
+    "value": 0.07,
+    "source": "assumed",
+    "from": "same door type as I and J"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.076,
+    "source": "owner",
+    "note": "standard door"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "door-childrens-room",
+   "name": "Door to the children's room (P)",
+   "type": "door",
+   "plan": "p1-P",
+   "trim": {
+    "value": 0.07,
+    "source": "assumed",
+    "from": "same door type as I and J"
+   },
+   "head": {
+    "value": 2.03,
+    "render": 2.076,
+    "source": "owner",
+    "note": "standard door; owner: the children's room itself is not modelled"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door"
+  },
+  {
+   "id": "window-1",
+   "name": "Window (right wall, upper)",
+   "type": "window",
+   "wall": "right",
+   "range": {
+    "value": [
+     1.226,
+     2.396
+    ],
+    "source": "estimated",
+    "from": "renders p02, p03, p04 (reveals; the plan draws no window on this wall)"
+   },
+   "sill": {
+    "value": 0.993,
+    "source": "estimated",
+    "from": "interior sill top 0.993 (board 0.95-0.993)"
+   },
+   "head": {
+    "value": 2.36,
+    "source": "estimated",
+    "from": "frame 1.04-2.15 with a roller-shutter box 2.15-2.36 above it"
+   },
+   "box": {
+    "value": 0.21,
+    "source": "estimated",
+    "from": "roller-shutter box 2.15-2.36 (as in the work room)"
+   },
+   "sashes": 1,
+   "frameMaterial": "white",
+   "notes": "single-sash white PVC window; at the owner's 2.40 m ceiling the shutter box ends 4 cm under the ceiling"
+  },
+  {
+   "id": "window-2",
+   "name": "Window (right wall, lower)",
+   "type": "window",
+   "wall": "right",
+   "range": {
+    "value": [
+     3.026,
+     4.206
+    ],
+    "source": "estimated",
+    "from": "renders p02, p03, p04 (reveals; the plan draws no window on this wall)"
+   },
+   "sill": {
+    "value": 0.993,
+    "source": "estimated",
+    "from": "interior sill top 0.993 (board 0.95-0.993)"
+   },
+   "head": {
+    "value": 2.36,
+    "source": "estimated",
+    "from": "frame 1.04-2.15 with a roller-shutter box 2.15-2.36 above it"
+   },
+   "box": {
+    "value": 0.21,
+    "source": "estimated",
+    "from": "roller-shutter box 2.15-2.36 (as in the work room)"
+   },
+   "sashes": 1,
+   "frameMaterial": "white",
+   "notes": "single-sash white PVC window; at the owner's 2.40 m ceiling the shutter box ends 4 cm under the ceiling"
+  },
+  {
+   "id": "balcony-door",
+   "name": "Balcony door",
+   "type": "balcony-door",
+   "wall": "bottom",
+   "range": {
+    "value": [
+     9.96,
+     10.64
+    ],
+    "source": "estimated",
+    "from": "renders p12, p13, p17 (between the TV unit end and a 20 cm pier)"
+   },
+   "sill": 0,
+   "head": {
+    "value": 2.37,
+    "source": "estimated",
+    "from": "frame top 2.20 with a shutter box above; the render model's box reaches 2.42, which does not fit under 2.40, so 2.37 is used at the owner's height",
+    "render": 2.42
+   },
+   "box": {
+    "value": 0.17,
+    "source": "estimated",
+    "from": "shutter box above the 2.20 frame",
+    "render": 0.22
+   },
+   "sashes": 1,
+   "frameMaterial": "white",
+   "notes": "single-leaf glazed balcony door, lever on the TV-unit side at 1.08 m"
+  }
+ ],
+ "elements": [
+  {
+   "id": "hall-tiles",
+   "name": "Hallway floor tiles (45 x 45)",
+   "type": "parts",
+   "source_note": "hallway renders: 45 cm tiles up to x 3.63; the corridor and living room have wood-look planks",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.0,
+       3.638
+      ],
+      "y": [
+       0,
+       0.002
+      ],
+      "z": [
+       1.4556,
+       3.1556
+      ],
+      "m": "hall-tiles"
+     }
+    ]
+   }
+  },
+  {
+   "id": "console-shelf",
+   "name": "Console shelf (floating)",
+   "type": "parts",
+   "label": "KONZOLNA POLICA",
+   "source_note": "footprint: plan (80 x 23); height 0.806-0.910 from the renders",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.0,
+       0.789
+      ],
+      "y": [
+       0.806,
+       0.91
+      ],
+      "z": [
+       2.926,
+       3.156
+      ],
+      "m": "light-wood"
+     }
+    ]
+   }
+  },
+  {
+   "id": "niche",
+   "name": "Mirror niche with bench and coat hooks",
+   "type": "parts",
+   "label": "OGLEDALO + SEDENJE",
+   "source_note": "niche from the plan (94 wide); walnut back panel, mirror 0.82-2.15 with two LED strips, seven hooks at 2.16-2.27, bench top 0.48 from the renders",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       1.25,
+       2.182
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.4556,
+       1.478
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       1.25,
+       2.176
+      ],
+      "y": [
+       0.817,
+       2.147
+      ],
+      "z": [
+       1.478,
+       1.484
+      ],
+      "m": "smoked-mirror"
+     },
+     {
+      "x": [
+       1.27,
+       2.162
+      ],
+      "y": [
+       0,
+       0.046
+      ],
+      "z": [
+       1.478,
+       1.81
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       1.25,
+       2.182
+      ],
+      "y": [
+       0.046,
+       0.484
+      ],
+      "z": [
+       1.478,
+       1.83
+      ],
+      "m": "boucle"
+     },
+     {
+      "x": [
+       1.4344,
+       1.4384
+      ],
+      "y": [
+       0.06,
+       0.484
+      ],
+      "z": [
+       1.826,
+       1.832
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       1.6208,
+       1.6248
+      ],
+      "y": [
+       0.06,
+       0.484
+      ],
+      "z": [
+       1.826,
+       1.832
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       1.8072,
+       1.8112
+      ],
+      "y": [
+       0.06,
+       0.484
+      ],
+      "z": [
+       1.826,
+       1.832
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       1.9936,
+       1.9976
+      ],
+      "y": [
+       0.06,
+       0.484
+      ],
+      "z": [
+       1.826,
+       1.832
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       1.38,
+       2.035
+      ],
+      "y": [
+       2.21,
+       2.23
+      ],
+      "z": [
+       1.478,
+       1.49
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.389,
+       1.403
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.492,
+       1.506
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.596,
+       1.61
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.698,
+       1.712
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.802,
+       1.816
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       1.904,
+       1.918
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       2.011,
+       2.025
+      ],
+      "y": [
+       2.16,
+       2.27
+      ],
+      "z": [
+       1.49,
+       1.54
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hall-wardrobe",
+   "name": "Tall wardrobe / shoe cabinet",
+   "type": "parts",
+   "label": "CIPELARNIK",
+   "source_note": "footprint: plan (43 deep, x 2.18-3.64); four doors, two drawer rows, top panel and walnut sides from the renders",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       2.204,
+       3.616
+      ],
+      "y": [
+       0,
+       0.069
+      ],
+      "z": [
+       1.4556,
+       1.87
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.204,
+       3.616
+      ],
+      "y": [
+       0.069,
+       "ceiling"
+      ],
+      "z": [
+       1.4556,
+       1.886
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       2.182,
+       2.204
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.4556,
+       1.886
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       3.616,
+       3.638
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.4556,
+       1.886
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       2.5545,
+       2.5575
+      ],
+      "y": [
+       0.069,
+       {
+        "below_ceiling": 0.102
+       }
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.9075,
+       2.9105
+      ],
+      "y": [
+       0.069,
+       {
+        "below_ceiling": 0.102
+       }
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       3.2625,
+       3.2655
+      ],
+      "y": [
+       0.069,
+       {
+        "below_ceiling": 0.102
+       }
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.204,
+       3.616
+      ],
+      "y": [
+       0.3095,
+       0.3125
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.204,
+       3.616
+      ],
+      "y": [
+       0.5555,
+       0.5585
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.204,
+       3.616
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.1035
+       },
+       {
+        "below_ceiling": 0.1005
+       }
+      ],
+      "z": [
+       1.886,
+       1.889
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       2.32,
+       2.44
+      ],
+      "y": [
+       0.294,
+       0.306
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       2.6725,
+       2.7925
+      ],
+      "y": [
+       0.294,
+       0.306
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       3.0265,
+       3.1465
+      ],
+      "y": [
+       0.294,
+       0.306
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       3.38,
+       3.5
+      ],
+      "y": [
+       0.294,
+       0.306
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       2.32,
+       2.44
+      ],
+      "y": [
+       0.531,
+       0.543
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       2.6725,
+       2.7925
+      ],
+      "y": [
+       0.531,
+       0.543
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       3.0265,
+       3.1465
+      ],
+      "y": [
+       0.531,
+       0.543
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       3.38,
+       3.5
+      ],
+      "y": [
+       0.531,
+       0.543
+      ],
+      "z": [
+       1.889,
+       1.897
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bulkhead",
+   "name": "Bulkhead over the opening to the living room",
+   "type": "parts",
+   "source_note": "estimated from p01: underside about 2.11 (2.07-2.13), about 0.22 m deep into the living room",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       3.638,
+       4.06
+      ],
+      "y": [
+       2.11,
+       "ceiling"
+      ],
+      "z": [
+       1.8856,
+       3.1306
+      ],
+      "m": "wall-paint"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dining-wall-panels",
+   "name": "Walnut panel and plaster with LED wash (dining side of the hallway wall)",
+   "type": "parts",
+   "source_note": "estimated from hallway p05 and living p01: walnut panel 7 cm deep at z 0.03-0.78 and textured plaster z 0.79-1.89 on the wall x 3.84, LED wash at z 0.79 (the plan's 'window?' A)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       3.84,
+       3.91
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.78
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       3.84,
+       3.845
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.79,
+       1.8856
+      ],
+      "m": "plaster-beige"
+     },
+     {
+      "x": [
+       3.638,
+       3.84
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.8856,
+       1.8906
+      ],
+      "m": "plaster-beige"
+     }
+    ]
+   }
+  },
+  {
+   "id": "hall-led-1",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     3.478,
+     4.6
+    ],
+    "to": [
+     3.478,
+     2.044
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: LED outline 16 cm in from the walls (hallway renders)"
+  },
+  {
+   "id": "hall-led-2",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     3.478,
+     2.044
+    ],
+    "to": [
+     0.16,
+     2.044
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated"
+  },
+  {
+   "id": "hall-led-3",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     0.16,
+     2.044
+    ],
+    "to": [
+     0.16,
+     2.999
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated"
+  },
+  {
+   "id": "hall-led-4",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     0.16,
+     2.999
+    ],
+    "to": [
+     2.934,
+     2.999
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated"
+  },
+  {
+   "id": "hall-led-5",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     2.934,
+     2.999
+    ],
+    "to": [
+     2.934,
+     4.6
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: continues into the corridor (beyond z 4.6 not visible in the renders)"
+  },
+  {
+   "id": "kitchen-tiles",
+   "name": "Kitchen floor tiles",
+   "type": "parts",
+   "source_note": "estimated: light tiles between the island's kitchen side (z 3.555) and the kitchen, up to x 7.0 (p05, p06, p12); the rest of the living area has the wood floor",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       3.84,
+       7.0
+      ],
+      "y": [
+       0,
+       0.002
+      ],
+      "z": [
+       3.555,
+       5.1156
+      ],
+      "m": "hall-tiles"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dining-wall",
+   "name": "Wall panels: greige panels, mirror, walnut panels, slatted walnut panel",
+   "type": "parts",
+   "source_note": "x positions from the plan (items A-E were marked 'window?'/'radiator?' there; the renders show panels); panel joints and depths from the renders (p01, p10, p15)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       3.91,
+       4.881
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       5.649,
+       6.62
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       7.306,
+       8.468
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       8.99,
+       10.04
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       4.4225,
+       4.4265
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.051,
+       0.053
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       6.104,
+       6.108
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.051,
+       0.053
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       7.941,
+       7.945
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.051,
+       0.053
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       9.513,
+       9.517
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.051,
+       0.053
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.881,
+       5.649
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.038
+      ],
+      "m": "bronze-mirror"
+     },
+     {
+      "x": [
+       6.62,
+       7.306
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.468,
+       8.99
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.04
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       8.476,
+       8.512
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.5282,
+       8.5642
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.5804,
+       8.6164
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.6326,
+       8.6686
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.6848,
+       8.7208
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.737,
+       8.773
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.7892,
+       8.8252
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.8414,
+       8.8774
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.8936,
+       8.9296
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.9458,
+       8.9818
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.04,
+       0.06
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       10.04,
+       10.84
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.0306,
+       0.051
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dining-table",
+   "name": "Dining table",
+   "type": "parts",
+   "source_note": "owner: as labelled, 190 x 75 at 57 cm from the left wall (TRP. STO); top 0.74 from the renders; the black crossed legs are simplified to two trestles",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       4.41,
+       6.31
+      ],
+      "y": [
+       0.71,
+       0.74
+      ],
+      "z": [
+       0.79,
+       1.541
+      ],
+      "m": "dining-walnut"
+     },
+     {
+      "x": [
+       4.8500000000000005,
+       4.89
+      ],
+      "y": [
+       -0.0431,
+       0.7531
+      ],
+      "z": [
+       1.1405,
+       1.1905
+      ],
+      "m": "black",
+      "r": [
+       0.5706,
+       0,
+       0
+      ]
+     },
+     {
+      "x": [
+       4.8500000000000005,
+       4.89
+      ],
+      "y": [
+       -0.0431,
+       0.7531
+      ],
+      "z": [
+       1.1405,
+       1.1905
+      ],
+      "m": "black",
+      "r": [
+       -0.5706,
+       0,
+       0
+      ]
+     },
+     {
+      "x": [
+       5.83,
+       5.869999999999999
+      ],
+      "y": [
+       -0.0431,
+       0.7531
+      ],
+      "z": [
+       1.1405,
+       1.1905
+      ],
+      "m": "black",
+      "r": [
+       0.5706,
+       0,
+       0
+      ]
+     },
+     {
+      "x": [
+       5.83,
+       5.869999999999999
+      ],
+      "y": [
+       -0.0431,
+       0.7531
+      ],
+      "z": [
+       1.1405,
+       1.1905
+      ],
+      "m": "black",
+      "r": [
+       -0.5706,
+       0,
+       0
+      ]
+     },
+     {
+      "x": [
+       4.87,
+       5.85
+      ],
+      "y": [
+       0.67,
+       0.71
+      ],
+      "z": [
+       1.145,
+       1.185
+      ],
+      "m": "black"
+     }
+    ]
+   },
+   "label": "TRP. STO"
+  },
+  {
+   "id": "dining-chair-1",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     4.73,
+     0,
+     0.67
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 0,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-chair-2",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     5.33,
+     0,
+     0.67
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 0,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-chair-3",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     5.93,
+     0,
+     0.67
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 0,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-chair-4",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     4.73,
+     0,
+     1.66
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 3.1416,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-chair-5",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     5.33,
+     0,
+     1.66
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 3.1416,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-chair-6",
+   "name": "Dining chair (boucle, walnut frame)",
+   "type": "chair-dining",
+   "center": {
+    "value": [
+     5.93,
+     0,
+     1.66
+    ],
+    "source": "estimated",
+    "from": "renders p01, p10 (+-5 cm)"
+   },
+   "rotationY": 3.1416,
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.44,
+    "backHeight": 0.77,
+    "width": 0.5,
+    "depth": 0.48,
+    "backBand": 0.17
+   }
+  },
+  {
+   "id": "dining-rug",
+   "name": "Rug (dining)",
+   "type": "rug",
+   "center": {
+    "value": [
+     5.35,
+     0.004,
+     1.175
+    ],
+    "source": "estimated",
+    "from": "renders: x 3.95-6.75, z 0.25-2.10 (+-15 cm)"
+   },
+   "size": {
+    "value": [
+     2.8,
+     0.008,
+     1.85
+    ],
+    "source": "estimated",
+    "from": "renders"
+   },
+   "materials": {
+    "body": "rug"
+   }
+  },
+  {
+   "id": "pendant-dining",
+   "name": "Pendant (oval fabric drum) over the dining table",
+   "type": "pendant",
+   "materials": {
+    "body": "shade",
+    "canopy": "black"
+   },
+   "params": {
+    "at": [
+     5.29,
+     1.15
+    ],
+    "bottom": 1.68,
+    "length": 0.26,
+    "diameter": 0.75,
+    "depth": 0.25,
+    "shape": "drum",
+    "canopyLength": 0.32,
+    "intensity": 9,
+    "angle": 1.0,
+    "color": "#ffcf96",
+    "uplight": 5
+   },
+   "source_note": "estimated: shade 0.75 x 0.25, y 1.68-1.94, black linear canopy (p01, p02, p10)"
+  },
+  {
+   "id": "divider",
+   "name": "Shelf divider (floor to ceiling)",
+   "type": "parts",
+   "source_note": "posts from the plan (POLICA/PARAVAN); beige posts with a walnut centre strip and staggered walnut shelves from the renders (p03, p16; shelf heights +-10 cm)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.201,
+       0.241
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.199,
+       0.243
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.435,
+       0.475
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.433,
+       0.477
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.495,
+       0.535
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.493,
+       0.537
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.756,
+       0.796
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.754,
+       0.798
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.816,
+       0.856
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       0.814,
+       0.858
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.077,
+       1.117
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.075,
+       1.119
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.137,
+       1.177
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.135,
+       1.179
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.019,
+       7.196
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.371,
+       1.411
+      ],
+      "m": "divider-beige"
+     },
+     {
+      "x": [
+       7.098,
+       7.118
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       1.369,
+       1.413
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.415,
+       0.44
+      ],
+      "z": [
+       0.241,
+       0.435
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.825,
+       0.85
+      ],
+      "z": [
+       0.241,
+       0.435
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.225,
+       1.25
+      ],
+      "z": [
+       0.241,
+       0.435
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.825,
+       1.85
+      ],
+      "z": [
+       0.241,
+       0.435
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       2.225,
+       2.25
+      ],
+      "z": [
+       0.241,
+       0.435
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.535,
+       0.56
+      ],
+      "z": [
+       0.535,
+       0.756
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.065,
+       1.09
+      ],
+      "z": [
+       0.535,
+       0.756
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.415,
+       1.44
+      ],
+      "z": [
+       0.535,
+       0.756
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.995,
+       2.02
+      ],
+      "z": [
+       0.535,
+       0.756
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.415,
+       0.44
+      ],
+      "z": [
+       0.856,
+       1.077
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.825,
+       0.85
+      ],
+      "z": [
+       0.856,
+       1.077
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.225,
+       1.25
+      ],
+      "z": [
+       0.856,
+       1.077
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.825,
+       1.85
+      ],
+      "z": [
+       0.856,
+       1.077
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       2.225,
+       2.25
+      ],
+      "z": [
+       0.856,
+       1.077
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       0.695,
+       0.72
+      ],
+      "z": [
+       1.177,
+       1.371
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.065,
+       1.09
+      ],
+      "z": [
+       1.177,
+       1.371
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.415,
+       1.44
+      ],
+      "z": [
+       1.177,
+       1.371
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.024,
+       7.191
+      ],
+      "y": [
+       1.995,
+       2.02
+      ],
+      "z": [
+       1.177,
+       1.371
+      ],
+      "m": "walnut"
+     }
+    ]
+   },
+   "label": "POLICA/PARAVAN"
+  },
+  {
+   "id": "kitchen-base",
+   "name": "Kitchen base cabinets, worktop, sink and hob",
+   "type": "parts",
+   "source_note": "footprint from the plan (KUHINJA, 60 deep) and the renders (left run z 3.13-4.67); worktop 0.876-0.90, drawer joints 0.19/0.51/0.73, sink and hob positions from p05, p08, p09 (+-5 cm)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       3.84,
+       4.39
+      ],
+      "y": [
+       0,
+       0.1
+      ],
+      "z": [
+       3.18,
+       4.67
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       0,
+       0.1
+      ],
+      "z": [
+       4.564,
+       5.1156
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       3.84,
+       4.44
+      ],
+      "y": [
+       0.1,
+       0.876
+      ],
+      "z": [
+       3.13,
+       4.67
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       0.1,
+       0.876
+      ],
+      "z": [
+       4.514,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       3.84,
+       4.46
+      ],
+      "y": [
+       0.876,
+       0.9
+      ],
+      "z": [
+       3.11,
+       4.67
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       0.876,
+       0.9
+      ],
+      "z": [
+       4.494,
+       5.1156
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       3.95,
+       4.32
+      ],
+      "y": [
+       0.9,
+       0.903
+      ],
+      "z": [
+       3.99,
+       4.45
+      ],
+      "m": "sink"
+     },
+     {
+      "x": [
+       3.905,
+       3.93
+      ],
+      "y": [
+       0.9,
+       1.18
+      ],
+      "z": [
+       4.207,
+       4.232
+      ],
+      "m": "faucet"
+     },
+     {
+      "x": [
+       3.905,
+       4.08
+      ],
+      "y": [
+       1.16,
+       1.18
+      ],
+      "z": [
+       4.207,
+       4.232
+      ],
+      "m": "faucet"
+     },
+     {
+      "x": [
+       4.83,
+       5.44
+      ],
+      "y": [
+       0.9,
+       0.906
+      ],
+      "z": [
+       4.56,
+       5.08
+      ],
+      "m": "hob"
+     },
+     {
+      "x": [
+       4.44,
+       5.666
+      ],
+      "y": [
+       0.727,
+       0.733
+      ],
+      "z": [
+       4.508,
+       4.514
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.44,
+       5.666
+      ],
+      "y": [
+       0.507,
+       0.513
+      ],
+      "z": [
+       4.508,
+       4.514
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.44,
+       5.666
+      ],
+      "y": [
+       0.187,
+       0.193
+      ],
+      "z": [
+       4.508,
+       4.514
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.44,
+       4.446
+      ],
+      "y": [
+       0.727,
+       0.733
+      ],
+      "z": [
+       3.13,
+       4.514
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.44,
+       4.443
+      ],
+      "y": [
+       0.1,
+       0.727
+      ],
+      "z": [
+       3.658,
+       3.662
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.44,
+       4.443
+      ],
+      "y": [
+       0.1,
+       0.727
+      ],
+      "z": [
+       4.118,
+       4.122
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.048,
+       5.052
+      ],
+      "y": [
+       0.1,
+       0.876
+      ],
+      "z": [
+       4.511,
+       4.514
+      ],
+      "m": "black"
+     }
+    ]
+   },
+   "label": "KUHINJA"
+  },
+  {
+   "id": "kitchen-uppers",
+   "name": "Kitchen wall cabinets with LED band and extractor",
+   "type": "parts",
+   "source_note": "estimated from p05, p07, p08, p09: main row 1.57-2.28, LED band 2.28-2.34, top row to the ceiling on the hob wall; tall doors 1.57 to the ceiling on the sink wall (+-3 cm)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       1.57,
+       2.28
+      ],
+      "z": [
+       4.77,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       2.28,
+       2.34
+      ],
+      "z": [
+       4.83,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       2.34,
+       "ceiling"
+      ],
+      "z": [
+       4.77,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       3.84,
+       4.19
+      ],
+      "y": [
+       1.57,
+       "ceiling"
+      ],
+      "z": [
+       3.13,
+       4.77
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       4.83,
+       5.44
+      ],
+      "y": [
+       1.545,
+       1.57
+      ],
+      "z": [
+       4.77,
+       5.06
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.633,
+       4.637
+      ],
+      "y": [
+       1.57,
+       2.28
+      ],
+      "z": [
+       4.767,
+       4.77
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.633,
+       4.637
+      ],
+      "y": [
+       2.34,
+       "ceiling"
+      ],
+      "z": [
+       4.767,
+       4.77
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.132,
+       5.136
+      ],
+      "y": [
+       1.57,
+       2.28
+      ],
+      "z": [
+       4.767,
+       4.77
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.132,
+       5.136
+      ],
+      "y": [
+       2.34,
+       "ceiling"
+      ],
+      "z": [
+       4.767,
+       4.77
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.19,
+       4.193
+      ],
+      "y": [
+       1.57,
+       "ceiling"
+      ],
+      "z": [
+       3.675,
+       3.679
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       4.19,
+       4.193
+      ],
+      "y": [
+       1.57,
+       "ceiling"
+      ],
+      "z": [
+       4.221,
+       4.225
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "kitchen-backsplash",
+   "name": "Stone backsplash",
+   "type": "parts",
+   "source_note": "estimated: worktop to the wall cabinets on both kitchen walls",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       4.03,
+       5.666
+      ],
+      "y": [
+       0.9,
+       1.57
+      ],
+      "z": [
+       5.096,
+       5.1156
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       3.84,
+       3.86
+      ],
+      "y": [
+       0.9,
+       1.57
+      ],
+      "z": [
+       3.13,
+       4.67
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       4.03,
+       4.05
+      ],
+      "y": [
+       0.9,
+       1.57
+      ],
+      "z": [
+       4.67,
+       5.1156
+      ],
+      "m": "stone"
+     }
+    ]
+   }
+  },
+  {
+   "id": "oven-column",
+   "name": "Walnut oven column with two ovens",
+   "type": "parts",
+   "source_note": "footprint from the plan (TV SISTEM ... merged outline, x 5.666-6.31); ovens 0.86-1.81 from p05, p07",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       5.666,
+       6.31
+      ],
+      "y": [
+       0,
+       "ceiling"
+      ],
+      "z": [
+       4.514,
+       5.1156
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       5.7,
+       6.276
+      ],
+      "y": [
+       0.86,
+       1.3
+      ],
+      "z": [
+       4.505,
+       4.514
+      ],
+      "m": "oven-glass"
+     },
+     {
+      "x": [
+       5.7,
+       6.276
+      ],
+      "y": [
+       1.32,
+       1.81
+      ],
+      "z": [
+       4.505,
+       4.514
+      ],
+      "m": "oven-glass"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fridge-column",
+   "name": "Tall greige column (fridge-freezer)",
+   "type": "parts",
+   "source_note": "estimated from p05, p07, p12: plinth 0.13, door split at 0.84, stops about 8 cm under the ceiling",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       6.31,
+       7.0
+      ],
+      "y": [
+       0,
+       0.13
+      ],
+      "z": [
+       4.59,
+       5.1156
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       6.31,
+       7.0
+      ],
+      "y": [
+       0.13,
+       {
+        "below_ceiling": 0.077,
+        "render": 2.59
+       }
+      ],
+      "z": [
+       4.54,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       6.31,
+       7.0
+      ],
+      "y": [
+       0.837,
+       0.843
+      ],
+      "z": [
+       4.534,
+       4.54
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "island",
+   "name": "Kitchen island",
+   "type": "parts",
+   "source_note": "plan outline (KUHINJSKO OSTRVO) and the renders: top 0.745-0.768 (13 cm below the kitchen worktop), walnut waterfall ends, 25 cm seating overhang on the dining side, door / 3 drawers / door on the kitchen side (p10)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       5.15,
+       7.02
+      ],
+      "y": [
+       0,
+       0.05
+      ],
+      "z": [
+       3.03,
+       3.5
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       5.15,
+       7.02
+      ],
+      "y": [
+       0.05,
+       0.745
+      ],
+      "z": [
+       3.005,
+       3.555
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       5.124,
+       7.044
+      ],
+      "y": [
+       0.745,
+       0.768
+      ],
+      "z": [
+       2.755,
+       3.555
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       5.124,
+       5.15
+      ],
+      "y": [
+       0,
+       0.745
+      ],
+      "z": [
+       2.755,
+       3.555
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       7.02,
+       7.044
+      ],
+      "y": [
+       0,
+       0.745
+      ],
+      "z": [
+       2.755,
+       3.555
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       5.778,
+       5.782
+      ],
+      "y": [
+       0.05,
+       0.745
+      ],
+      "z": [
+       3.555,
+       3.558
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       6.388,
+       6.392
+      ],
+      "y": [
+       0.05,
+       0.745
+      ],
+      "z": [
+       3.555,
+       3.558
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.15,
+       7.02
+      ],
+      "y": [
+       0.727,
+       0.733
+      ],
+      "z": [
+       3.555,
+       3.558
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.78,
+       6.39
+      ],
+      "y": [
+       0.375,
+       0.381
+      ],
+      "z": [
+       3.555,
+       3.558
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       5.78,
+       6.39
+      ],
+      "y": [
+       0.58,
+       0.586
+      ],
+      "z": [
+       3.555,
+       3.558
+      ],
+      "m": "black"
+     }
+    ]
+   },
+   "label": "KUHINJSKO OSTRVO"
+  },
+  {
+   "id": "stool-1",
+   "name": "Bar stool (boucle, walnut frame)",
+   "type": "stool",
+   "center": {
+    "value": [
+     5.98,
+     0,
+     2.55
+    ],
+    "source": "estimated",
+    "from": "two stools in p05 and p10 (the analysis counted three; only two are visible)"
+   },
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.64,
+    "backHeight": 0.79,
+    "width": 0.48,
+    "depth": 0.46,
+    "backBand": 0.15
+   }
+  },
+  {
+   "id": "stool-2",
+   "name": "Bar stool (boucle, walnut frame)",
+   "type": "stool",
+   "center": {
+    "value": [
+     6.58,
+     0,
+     2.55
+    ],
+    "source": "estimated",
+    "from": "two stools in p05 and p10 (the analysis counted three; only two are visible)"
+   },
+   "materials": {
+    "seat": "boucle-chair",
+    "legs": "walnut"
+   },
+   "params": {
+    "seatHeight": 0.64,
+    "backHeight": 0.79,
+    "width": 0.48,
+    "depth": 0.46,
+    "backBand": 0.15
+   }
+  },
+  {
+   "id": "island-canopy",
+   "name": "Ceiling canopy of the island pendants",
+   "type": "parts",
+   "source_note": "estimated: black linear canopy (p06, p09)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       5.7,
+       6.61
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.02
+       },
+       "ceiling"
+      ],
+      "z": [
+       3.23,
+       3.27
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pendant-island-1",
+   "name": "Pendant (fabric cone) over the island",
+   "type": "pendant",
+   "materials": {
+    "body": "shade"
+   },
+   "params": {
+    "at": [
+     6.505,
+     3.22
+    ],
+    "bottom": 1.495,
+    "length": 0.185,
+    "diameter": 0.18,
+    "topDiameter": 0.13,
+    "shape": "cone",
+    "canopy": false,
+    "intensity": 4,
+    "angle": 0.8,
+    "color": "#ffcf96"
+   },
+   "source_note": "estimated: shade 1.495-1.68, 18 cm at the bottom; x from p05, z from p09 and p11 (+-10 cm)"
+  },
+  {
+   "id": "pendant-island-2",
+   "name": "Pendant (fabric cone) over the island",
+   "type": "pendant",
+   "materials": {
+    "body": "shade"
+   },
+   "params": {
+    "at": [
+     6.156,
+     3.24
+    ],
+    "bottom": 1.495,
+    "length": 0.185,
+    "diameter": 0.18,
+    "topDiameter": 0.13,
+    "shape": "cone",
+    "canopy": false,
+    "intensity": 4,
+    "angle": 0.8,
+    "color": "#ffcf96"
+   },
+   "source_note": "estimated: shade 1.495-1.68, 18 cm at the bottom; x from p05, z from p09 and p11 (+-10 cm)"
+  },
+  {
+   "id": "pendant-island-3",
+   "name": "Pendant (fabric cone) over the island",
+   "type": "pendant",
+   "materials": {
+    "body": "shade"
+   },
+   "params": {
+    "at": [
+     5.806,
+     3.28
+    ],
+    "bottom": 1.495,
+    "length": 0.185,
+    "diameter": 0.18,
+    "topDiameter": 0.13,
+    "shape": "cone",
+    "canopy": false,
+    "intensity": 4,
+    "angle": 0.8,
+    "color": "#ffcf96"
+   },
+   "source_note": "estimated: shade 1.495-1.68, 18 cm at the bottom; x from p05, z from p09 and p11 (+-10 cm)"
+  },
+  {
+   "id": "kitchen-light",
+   "name": "Round ceiling light (kitchen)",
+   "type": "ceiling-disc",
+   "params": {
+    "at": [
+     5.55,
+     3.8
+    ],
+    "diameter": 0.5,
+    "intensity": 4
+   },
+   "source_note": "estimated: the only one visible (p04-p06, p09, p16), +-20 cm"
+  },
+  {
+   "id": "tv-unit",
+   "name": "Floating TV unit with electric fireplace",
+   "type": "parts",
+   "source_note": "footprint from the plan (TV SISTEM SA SKRIVACEM ZA KLIMU, 37 deep); heights 0.254-0.675 and the fireplace from p12, p13",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       7.022,
+       9.95
+      ],
+      "y": [
+       0.254,
+       0.675
+      ],
+      "z": [
+       4.7456,
+       5.1156
+      ],
+      "m": "tv-unit"
+     },
+     {
+      "x": [
+       7.92,
+       9.13
+      ],
+      "y": [
+       0.3,
+       0.62
+      ],
+      "z": [
+       4.739,
+       4.746
+      ],
+      "m": "fireplace"
+     },
+     {
+      "x": [
+       7.97,
+       9.08
+      ],
+      "y": [
+       0.32,
+       0.42
+      ],
+      "z": [
+       4.735,
+       4.739
+      ],
+      "m": "flame"
+     }
+    ]
+   },
+   "label": "TV SISTEM SA SKRIVAČEM ZA KLIMU"
+  },
+  {
+   "id": "tv-wall-slats",
+   "name": "Walnut slat wall",
+   "type": "parts",
+   "source_note": "estimated from p12, p13: 3 cm slats, 2 cm gaps, x 8.97-9.96, up to the AC box",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       8.97,
+       9.96
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.106,
+       5.1156
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       8.97,
+       9.0
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.02,
+       9.05
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.07,
+       9.1
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.12,
+       9.15
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.17,
+       9.2
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.22,
+       9.25
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.27,
+       9.3
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.32,
+       9.35
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.37,
+       9.4
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.42,
+       9.45
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.47,
+       9.5
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.52,
+       9.55
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.57,
+       9.6
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.62,
+       9.65
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.67,
+       9.7
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.72,
+       9.75
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.77,
+       9.8
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.82,
+       9.85
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.87,
+       9.9
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.92,
+       9.95
+      ],
+      "y": [
+       0,
+       2.147
+      ],
+      "z": [
+       5.086,
+       5.106
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tv-wall-slab",
+   "name": "Stone slab behind the TV",
+   "type": "parts",
+   "source_note": "estimated from p12, p13, p17; the warm bands above and below the slab and under the unit are LED-lit wall, drawn as glowing panels",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       6.95,
+       9.47
+      ],
+      "y": [
+       0.78,
+       2.03
+      ],
+      "z": [
+       5.074,
+       5.086
+      ],
+      "m": "stone"
+     },
+     {
+      "x": [
+       7.0,
+       9.47
+      ],
+      "y": [
+       2.03,
+       2.15
+      ],
+      "z": [
+       5.108,
+       5.112
+      ],
+      "m": "led-glow"
+     },
+     {
+      "x": [
+       7.022,
+       9.47
+      ],
+      "y": [
+       0.675,
+       0.78
+      ],
+      "z": [
+       5.108,
+       5.112
+      ],
+      "m": "led-glow"
+     },
+     {
+      "x": [
+       7.022,
+       8.97
+      ],
+      "y": [
+       0.0,
+       0.254
+      ],
+      "z": [
+       5.108,
+       5.112
+      ],
+      "m": "led-glow"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tv",
+   "name": "TV (about 65 inch)",
+   "type": "tv",
+   "center": {
+    "value": [
+     8.515,
+     1.36,
+     5.06
+    ],
+    "source": "estimated",
+    "from": "p13: x 7.80-9.23, y 0.95-1.77"
+   },
+   "size": {
+    "value": [
+     1.43,
+     0.82,
+     0.028
+    ],
+    "source": "estimated",
+    "from": "p13"
+   },
+   "materials": {
+    "body": "black",
+    "screen": "tv-screen"
+   },
+   "params": {
+    "face": "-z"
+   }
+  },
+  {
+   "id": "tv-cabinets",
+   "name": "Wall cabinets above the TV",
+   "type": "parts",
+   "source_note": "estimated from p12, p13: greige doors from 2.15 to the ceiling",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       7.044,
+       8.965
+      ],
+      "y": [
+       2.15,
+       "ceiling"
+      ],
+      "z": [
+       4.8156,
+       5.1156
+      ],
+      "m": "greige"
+     },
+     {
+      "x": [
+       8.0,
+       8.004
+      ],
+      "y": [
+       2.15,
+       "ceiling"
+      ],
+      "z": [
+       4.812,
+       4.8156
+      ],
+      "m": "black"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ac-box",
+   "name": "Walnut box with slat grille in front of the AC unit",
+   "type": "parts",
+   "source_note": "estimated from p12, p13: from 2.147 to the ceiling",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       8.967,
+       9.928
+      ],
+      "y": [
+       2.147,
+       2.167
+      ],
+      "z": [
+       4.8156,
+       5.1156
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.967,
+       9.928
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.02
+       },
+       "ceiling"
+      ],
+      "z": [
+       4.8156,
+       5.1156
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.967,
+       8.987
+      ],
+      "y": [
+       2.147,
+       "ceiling"
+      ],
+      "z": [
+       4.8156,
+       5.1156
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.908,
+       9.928
+      ],
+      "y": [
+       2.147,
+       "ceiling"
+      ],
+      "z": [
+       4.8156,
+       5.1156
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       8.99,
+       9.905
+      ],
+      "y": [
+       2.18,
+       {
+        "below_ceiling": 0.03
+       }
+      ],
+      "z": [
+       4.93,
+       5.11
+      ],
+      "m": "ac"
+     },
+     {
+      "x": [
+       8.997,
+       9.017
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.037,
+       9.057
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.077,
+       9.097
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.117,
+       9.137
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.157,
+       9.177
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.197,
+       9.217
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.237,
+       9.257
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.277,
+       9.297
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.317,
+       9.337
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.357,
+       9.377
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.397,
+       9.417
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.437,
+       9.457
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.477,
+       9.497
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.517,
+       9.537
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.557,
+       9.577
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.597,
+       9.617
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.637,
+       9.657
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.677,
+       9.697
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.717,
+       9.737
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.757,
+       9.777
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.797,
+       9.817
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.837,
+       9.857
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     },
+     {
+      "x": [
+       9.877,
+       9.897
+      ],
+      "y": [
+       2.167,
+       {
+        "below_ceiling": 0.02
+       }
+      ],
+      "z": [
+       4.8156,
+       4.8356
+      ],
+      "m": "walnut"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sofa",
+   "name": "L-sofa",
+   "type": "parts",
+   "source_note": "estimated from p03, p14-p17: x 7.60-10.65, z 0.06-2.04, seat 0.48, back 0.82 (+-10 cm)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       7.62,
+       10.63
+      ],
+      "y": [
+       0,
+       0.08
+      ],
+      "z": [
+       0.08,
+       0.98
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       9.78,
+       10.63
+      ],
+      "y": [
+       0,
+       0.08
+      ],
+      "z": [
+       0.98,
+       2.02
+      ],
+      "m": "plinth"
+     },
+     {
+      "x": [
+       7.6,
+       10.65
+      ],
+      "y": [
+       0.08,
+       0.7
+      ],
+      "z": [
+       0.06,
+       0.22
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       10.49,
+       10.65
+      ],
+      "y": [
+       0.08,
+       0.7
+      ],
+      "z": [
+       0.06,
+       2.04
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       7.6,
+       10.49
+      ],
+      "y": [
+       0.08,
+       0.48
+      ],
+      "z": [
+       0.22,
+       1.0
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       9.76,
+       10.49
+      ],
+      "y": [
+       0.08,
+       0.48
+      ],
+      "z": [
+       1.0,
+       2.04
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       7.76,
+       10.29
+      ],
+      "y": [
+       0.46,
+       0.82
+      ],
+      "z": [
+       0.22,
+       0.42
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       10.29,
+       10.49
+      ],
+      "y": [
+       0.46,
+       0.82
+      ],
+      "z": [
+       0.42,
+       1.88
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       7.6,
+       7.76
+      ],
+      "y": [
+       0.08,
+       0.62
+      ],
+      "z": [
+       0.22,
+       1.0
+      ],
+      "m": "sofa"
+     },
+     {
+      "x": [
+       9.76,
+       10.49
+      ],
+      "y": [
+       0.08,
+       0.62
+      ],
+      "z": [
+       1.88,
+       2.04
+      ],
+      "m": "sofa"
+     }
+    ]
+   }
+  },
+  {
+   "id": "armchair",
+   "name": "Armchair (boucle tub chair)",
+   "type": "armchair",
+   "center": {
+    "value": [
+     7.66,
+     0,
+     1.45
+    ],
+    "source": "estimated",
+    "from": "p03, p14, p16: x 7.32-8.00, z 1.10-1.80 (+-10 cm)"
+   },
+   "rotationY": 1.5708,
+   "materials": {
+    "body": "boucle",
+    "legs": "plinth"
+   },
+   "params": {
+    "radius": 0.34,
+    "seatHeight": 0.51,
+    "backHeight": 0.81
+   }
+  },
+  {
+   "id": "coffee-table",
+   "name": "Coffee table",
+   "type": "parts",
+   "source_note": "estimated from p14, p15, p17: top 0.40 (+-10 cm)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       8.21,
+       9.5
+      ],
+      "y": [
+       0.355,
+       0.4
+      ],
+      "z": [
+       1.15,
+       1.8
+      ],
+      "m": "coffee-walnut"
+     },
+     {
+      "x": [
+       8.49,
+       9.22
+      ],
+      "y": [
+       0,
+       0.355
+      ],
+      "z": [
+       1.3,
+       1.65
+      ],
+      "m": "plinth"
+     }
+    ]
+   }
+  },
+  {
+   "id": "living-rug",
+   "name": "Rug (living room)",
+   "type": "rug",
+   "center": {
+    "value": [
+     9.025,
+     0.004,
+     1.5
+    ],
+    "source": "estimated",
+    "from": "renders: x 7.45-10.60, z 0.50-2.50 (+-15 cm)"
+   },
+   "size": {
+    "value": [
+     3.15,
+     0.008,
+     2.0
+    ],
+    "source": "estimated",
+    "from": "renders"
+   },
+   "materials": {
+    "body": "rug"
+   }
+  },
+  {
+   "id": "pendant-living",
+   "name": "Pendant (oval fabric drum) over the coffee table",
+   "type": "pendant",
+   "materials": {
+    "body": "shade",
+    "canopy": "black"
+   },
+   "params": {
+    "at": [
+     8.89,
+     1.8
+    ],
+    "bottom": 1.84,
+    "length": 0.24,
+    "diameter": 0.7,
+    "depth": 0.25,
+    "shape": "drum",
+    "canopyLength": 0.32,
+    "intensity": 8,
+    "angle": 1.0,
+    "color": "#ffcf96",
+    "uplight": 4
+   },
+   "source_note": "estimated: same drum as the dining one, y 1.84-2.08; z uncertain 1.5-2.1"
+  },
+  {
+   "id": "curtain-sheer-tv",
+   "name": "Curtain (white sheer)",
+   "type": "curtain",
+   "y0": {
+    "value": 0.01,
+    "source": "estimated",
+    "from": "renders"
+   },
+   "y1": {
+    "value": "ceiling",
+    "source": "estimated",
+    "from": "floor to ceiling, ceiling track assumed (no rod visible)"
+   },
+   "materials": {
+    "body": "sheer"
+   },
+   "params": {
+    "from": [
+     10.75,
+     4.16
+    ],
+    "to": [
+     10.75,
+     4.76
+    ],
+    "rod": false
+   }
+  },
+  {
+   "id": "curtain-brown",
+   "name": "Curtain (walnut brown)",
+   "type": "curtain",
+   "y0": {
+    "value": 0.01,
+    "source": "estimated",
+    "from": "renders"
+   },
+   "y1": {
+    "value": "ceiling",
+    "source": "estimated",
+    "from": "floor to ceiling, ceiling track assumed (no rod visible)"
+   },
+   "materials": {
+    "body": "curtain-brown"
+   },
+   "params": {
+    "from": [
+     10.75,
+     4.76
+    ],
+    "to": [
+     10.75,
+     5.1
+    ],
+    "rod": false
+   }
+  },
+  {
+   "id": "curtain-sheer-sofa",
+   "name": "Curtain (white sheer)",
+   "type": "curtain",
+   "y0": {
+    "value": 0.01,
+    "source": "estimated",
+    "from": "renders"
+   },
+   "y1": {
+    "value": "ceiling",
+    "source": "estimated",
+    "from": "floor to ceiling, ceiling track assumed (no rod visible)"
+   },
+   "materials": {
+    "body": "sheer"
+   },
+   "params": {
+    "from": [
+     10.75,
+     0.68
+    ],
+    "to": [
+     10.75,
+     1.12
+    ],
+    "rod": false
+   }
+  },
+  {
+   "id": "balcony",
+   "name": "Balcony",
+   "type": "balcony",
+   "rect": {
+    "x": [
+     8.976,
+     11.008
+    ],
+    "z": [
+     5.336,
+     6.729
+    ],
+    "source": "plan",
+    "from": "checkerboard area below the bottom wall (p1)"
+   },
+   "materials": {
+    "floor": "balcony-tiles",
+    "rail": "black",
+    "parapet": "parapet"
+   },
+   "params": {
+    "floorY": -0.02,
+    "railHeight": 1.0,
+    "wallSide": "z0",
+    "solid": true
+   },
+   "source_note": "solid grey parapet with a black top rail seen through the balcony door (p13); height assumed 1.0 m"
+  },
+  {
+   "id": "living-led-outer-1",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     7.4,
+     0.17
+    ],
+    "to": [
+     10.58,
+     0.17
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: outer rectangle x 7.4-10.58, z 0.17-4.29 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-outer-2",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     10.58,
+     0.17
+    ],
+    "to": [
+     10.58,
+     4.29
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: outer rectangle x 7.4-10.58, z 0.17-4.29 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-outer-3",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     10.58,
+     4.29
+    ],
+    "to": [
+     7.4,
+     4.29
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: outer rectangle x 7.4-10.58, z 0.17-4.29 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-outer-4",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     7.4,
+     4.29
+    ],
+    "to": [
+     7.4,
+     0.17
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: outer rectangle x 7.4-10.58, z 0.17-4.29 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-inner-1",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     7.53,
+     0.3
+    ],
+    "to": [
+     10.42,
+     0.3
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: inner rectangle x 7.53-10.42, z 0.3-4.16 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-inner-2",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     10.42,
+     0.3
+    ],
+    "to": [
+     10.42,
+     4.16
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: inner rectangle x 7.53-10.42, z 0.3-4.16 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-inner-3",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     10.42,
+     4.16
+    ],
+    "to": [
+     7.53,
+     4.16
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: inner rectangle x 7.53-10.42, z 0.3-4.16 (LED pixels of 13 renders, +-10 cm)"
+  },
+  {
+   "id": "living-led-inner-4",
+   "name": "Ceiling LED line",
+   "type": "led-line",
+   "params": {
+    "from": [
+     7.53,
+     4.16
+    ],
+    "to": [
+     7.53,
+     0.3
+    ],
+    "intensity": 16,
+    "color": "#fff1df",
+    "light": false
+   },
+   "source_note": "estimated: inner rectangle x 7.53-10.42, z 0.3-4.16 (LED pixels of 13 renders, +-10 cm)"
+  }
+ ],
+ "lights": [
+  {
+   "id": "ambient",
+   "type": "hemisphere",
+   "color": "#ffd6a8",
+   "groundColor": "#a07850",
+   "intensity": 0.9,
+   "source": "assumed",
+   "from": "stands in for bounce light (warm floor bounce lights the ceiling)"
+  },
+  {
+   "id": "led-mirror-1",
+   "type": "led-strip",
+   "from": [
+    1.31,
+    0.84,
+    1.487
+   ],
+   "to": [
+    1.31,
+    2.1,
+    1.487
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 0.015,
+   "color": "#ffdcae",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "vertical LED strips at the mirror"
+  },
+  {
+   "id": "led-mirror-2",
+   "type": "led-strip",
+   "from": [
+    2.11,
+    0.84,
+    1.487
+   ],
+   "to": [
+    2.11,
+    2.1,
+    1.487
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 0.015,
+   "color": "#ffdcae",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "vertical LED strips at the mirror"
+  },
+  {
+   "id": "led-dining-wash",
+   "type": "led-strip",
+   "from": [
+    3.92,
+    0.02,
+    0.79
+   ],
+   "to": [
+    3.92,
+    {
+     "below_ceiling": 0.02
+    },
+    0.79
+   ],
+   "facing": [
+    0,
+    0,
+    1
+   ],
+   "width": 0.03,
+   "color": "#ffdcae",
+   "intensity": 60,
+   "source": "estimated",
+   "from_render": "vertical LED at the walnut panel edge washing the plaster wall (hallway p05)"
+  },
+  {
+   "id": "daylight-window-1",
+   "type": "window-sky",
+   "group": "daylight",
+   "position": [
+    10.8,
+    1.6,
+    1.811
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ],
+   "width": 1.17,
+   "height": 1.1,
+   "color": "#fff2e0",
+   "intensity": 4,
+   "source": "estimated",
+   "from": "daytime renders"
+  },
+  {
+   "id": "daylight-window-2",
+   "type": "window-sky",
+   "group": "daylight",
+   "position": [
+    10.8,
+    1.6,
+    3.616
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ],
+   "width": 1.17,
+   "height": 1.1,
+   "color": "#fff2e0",
+   "intensity": 4,
+   "source": "estimated",
+   "from": "daytime renders"
+  },
+  {
+   "id": "daylight-balcony",
+   "type": "window-sky",
+   "group": "daylight",
+   "position": [
+    10.3,
+    1.15,
+    5.08
+   ],
+   "facing": [
+    0,
+    0,
+    -1
+   ],
+   "width": 0.6,
+   "height": 2.0,
+   "color": "#fff2e0",
+   "intensity": 4,
+   "source": "estimated",
+   "from": "daytime renders"
+  },
+  {
+   "id": "led-mirror-b-left",
+   "type": "led-strip",
+   "from": [
+    4.889,
+    0.02,
+    0.07
+   ],
+   "to": [
+    4.889,
+    {
+     "below_ceiling": 0.02
+    },
+    0.07
+   ],
+   "facing": [
+    -0.6,
+    0,
+    0.8
+   ],
+   "width": 0.015,
+   "color": "#ffcf96",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "warm glow at both vertical edges of mirror B (p01, p10)"
+  },
+  {
+   "id": "led-mirror-b-right",
+   "type": "led-strip",
+   "from": [
+    5.641,
+    0.02,
+    0.07
+   ],
+   "to": [
+    5.641,
+    {
+     "below_ceiling": 0.02
+    },
+    0.07
+   ],
+   "facing": [
+    0.6,
+    0,
+    0.8
+   ],
+   "width": 0.015,
+   "color": "#ffcf96",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "warm glow at both vertical edges of mirror B (p01, p10)"
+  },
+  {
+   "id": "led-kitchen-under-1",
+   "type": "led-strip",
+   "from": [
+    4.05,
+    1.565,
+    4.8
+   ],
+   "to": [
+    5.65,
+    1.565,
+    4.8
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffcf96",
+   "intensity": 30,
+   "source": "estimated",
+   "from_render": "under-cabinet strip (p07, p08)"
+  },
+  {
+   "id": "led-kitchen-under-2",
+   "type": "led-strip",
+   "from": [
+    4.17,
+    1.565,
+    3.15
+   ],
+   "to": [
+    4.17,
+    1.565,
+    4.75
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffcf96",
+   "intensity": 30,
+   "source": "estimated",
+   "from_render": "under-cabinet strip (p08, p09)"
+  },
+  {
+   "id": "led-kitchen-band",
+   "type": "led-strip",
+   "from": [
+    4.05,
+    2.31,
+    4.835
+   ],
+   "to": [
+    5.65,
+    2.31,
+    4.835
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.015,
+   "color": "#ffcf96",
+   "intensity": 10,
+   "source": "estimated",
+   "from_render": "LED in the recessed band (p05, p07)",
+   "light": false
+  },
+  {
+   "id": "led-tv-underglow",
+   "type": "led-strip",
+   "from": [
+    7.04,
+    0.25,
+    4.93
+   ],
+   "to": [
+    9.93,
+    0.25,
+    4.93
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffcf96",
+   "intensity": 30,
+   "source": "estimated",
+   "from_render": "under the floating TV unit (p12, p13)"
+  },
+  {
+   "id": "led-tv-cabinets",
+   "type": "led-strip",
+   "from": [
+    7.06,
+    2.145,
+    4.84
+   ],
+   "to": [
+    8.95,
+    2.145,
+    4.84
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffcf96",
+   "intensity": 30,
+   "source": "estimated",
+   "from_render": "under the TV-wall cabinets, washing the slab (p13)"
+  },
+  {
+   "id": "led-slab-bottom",
+   "type": "led-strip",
+   "from": [
+    6.97,
+    0.775,
+    5.07
+   ],
+   "to": [
+    9.45,
+    0.775,
+    5.07
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.015,
+   "color": "#ffcf96",
+   "intensity": 20,
+   "source": "estimated",
+   "from_render": "lit band between the TV unit and the slab (p13)",
+   "light": false
+  },
+  {
+   "id": "led-island",
+   "type": "led-strip",
+   "from": [
+    5.16,
+    0.735,
+    2.985
+   ],
+   "to": [
+    7.01,
+    0.735,
+    2.985
+   ],
+   "facing": [
+    0,
+    -0.8,
+    0.6
+   ],
+   "width": 0.02,
+   "color": "#ffcf96",
+   "intensity": 30,
+   "source": "estimated",
+   "from_render": "under the worktop overhang on the dining side (p05)"
+  },
+  {
+   "id": "cove-hallway",
+   "type": "rect",
+   "position": [
+    1.82,
+    {
+     "below_ceiling": 0.01
+    },
+    2.52
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 3.6,
+   "height": 1.24,
+   "color": "#fff0de",
+   "intensity": 0.9,
+   "source": "estimated",
+   "from": "light of the hallway LED outline (16 cm from the walls), spread wall to wall"
+  },
+  {
+   "id": "cove-corridor",
+   "type": "rect",
+   "position": [
+    3.185,
+    {
+     "below_ceiling": 0.01
+    },
+    4.68
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.87,
+   "height": 3.04,
+   "color": "#fff0de",
+   "intensity": 0.9,
+   "source": "estimated",
+   "from": "light of the hallway LED outline, corridor part"
+  },
+  {
+   "id": "cove-living",
+   "type": "rect",
+   "position": [
+    8.99,
+    {
+     "below_ceiling": 0.01
+    },
+    2.23
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 3.18,
+   "height": 4.12,
+   "color": "#ffdcb4",
+   "intensity": 0.55,
+   "source": "estimated",
+   "from": "light of the living-room double LED rectangle"
+  }
+ ],
+ "cameras": [
+  {
+   "id": "h01",
+   "name": "Hallway 1: from the front door",
+   "position": [
+    -0.624,
+    1.445,
+    2.564
+   ],
+   "target": [
+    10.84,
+    1.188,
+    1.95
+   ],
+   "fov": 51.2,
+   "near": 0.75,
+   "aspect": 1.5,
+   "daylight": true,
+   "ref": "reference/renders/entrance-hallway/entrance-hallway-p01.jpg",
+   "source": "estimated",
+   "from": "camera fit, 1.25 px rms (3:2 render)"
+  },
+  {
+   "id": "h02",
+   "name": "Hallway 2: toilet door and console",
+   "position": [
+    1.386,
+    1.342,
+    0.396
+   ],
+   "target": [
+    1.356,
+    1.285,
+    3.156
+   ],
+   "fov": 51.0,
+   "near": 1.8,
+   "daylight": true,
+   "ref": "reference/renders/entrance-hallway/entrance-hallway-p02.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.35 px rms"
+  },
+  {
+   "id": "h03",
+   "name": "Hallway 3: toward the work-room door",
+   "position": [
+    3.244,
+    1.33,
+    2.8
+   ],
+   "target": [
+    0.0,
+    1.222,
+    2.255
+   ],
+   "fov": 51.0,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/entrance-hallway/entrance-hallway-p03.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.36 px rms"
+  },
+  {
+   "id": "h04",
+   "name": "Hallway 4: entrance wall",
+   "position": [
+    2.22,
+    1.441,
+    4.838
+   ],
+   "target": [
+    2.264,
+    1.336,
+    1.886
+   ],
+   "fov": 51.0,
+   "near": 2.0,
+   "daylight": true,
+   "ref": "reference/renders/entrance-hallway/entrance-hallway-p04.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.29 px rms"
+  },
+  {
+   "id": "h05",
+   "name": "Hallway 5: wardrobe corner from the dining area",
+   "position": [
+    5.44,
+    1.431,
+    3.265
+   ],
+   "target": [
+    3.84,
+    1.306,
+    1.855
+   ],
+   "fov": 51.0,
+   "near": 0.3,
+   "daylight": true,
+   "ref": "reference/renders/entrance-hallway/entrance-hallway-p05.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.51 px rms"
+  },
+  {
+   "id": "l01",
+   "name": "Living 1: dining table and the dining wall",
+   "position": [
+    5.308,
+    1.294,
+    4.417
+   ],
+   "target": [
+    5.359,
+    1.141,
+    0.031
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p01.jpg",
+   "source": "estimated",
+   "from": "camera fit, 1.39 px rms, lens A",
+   "hide": [
+    "island",
+    "pendant-island-*",
+    "island-canopy",
+    "stool-*",
+    "kitchen-light"
+   ],
+   "hideNote": "kitchen island, its pendants and stools (between the camera and the table)"
+  },
+  {
+   "id": "l02",
+   "name": "Living 2: along the dining table to the windows",
+   "position": [
+    2.464,
+    1.381,
+    1.478
+   ],
+   "target": [
+    10.84,
+    0.697,
+    1.604
+   ],
+   "fov": 51.9,
+   "near": 1.45,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p02.jpg",
+   "source": "estimated",
+   "from": "camera fit, 0.44 px rms, lens A"
+  },
+  {
+   "id": "l03",
+   "name": "Living 3: through the shelf divider into the living room",
+   "position": [
+    4.856,
+    1.341,
+    0.379
+   ],
+   "target": [
+    10.84,
+    1.16,
+    1.36
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p03.jpg",
+   "source": "estimated",
+   "from": "camera fit, 4.67 px rms, lens A"
+  },
+  {
+   "id": "l04",
+   "name": "Living 4: dining table, island and TV wall",
+   "position": [
+    2.358,
+    1.323,
+    1.072
+   ],
+   "target": [
+    10.84,
+    1.537,
+    4.126
+   ],
+   "fov": 51.9,
+   "near": 1.65,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p04.jpg",
+   "source": "estimated",
+   "from": "camera fit, 1.49 px rms, lens A"
+  },
+  {
+   "id": "l05",
+   "name": "Living 5: island and stools in front of the kitchen",
+   "position": [
+    5.567,
+    1.183,
+    0.388
+   ],
+   "target": [
+    5.609,
+    1.142,
+    5.116
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p05.jpg",
+   "source": "estimated",
+   "from": "camera fit, 6.43 px rms, lens A",
+   "hide": [
+    "dining-table",
+    "dining-chair-*",
+    "pendant-dining"
+   ],
+   "hideNote": "dining table, chairs and pendant (around the camera)"
+  },
+  {
+   "id": "l06",
+   "name": "Living 6: island and kitchen from the living side",
+   "position": [
+    9.339,
+    1.307,
+    1.865
+   ],
+   "target": [
+    4.094,
+    1.265,
+    5.116
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p06.jpg",
+   "source": "estimated",
+   "from": "camera fit, 2.77 px rms, lens A"
+  },
+  {
+   "id": "l07",
+   "name": "Living 7: kitchen: tall columns and wall cabinets",
+   "position": [
+    6.0,
+    1.692,
+    1.731
+   ],
+   "target": [
+    6.074,
+    1.357,
+    5.116
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p07.jpg",
+   "source": "estimated",
+   "from": "camera fit, 6.43 px rms, lens A",
+   "hide": [
+    "island",
+    "pendant-island-*",
+    "island-canopy",
+    "stool-*"
+   ],
+   "hideNote": "kitchen island, its pendants and stools (between the camera and the kitchen)"
+  },
+  {
+   "id": "l08",
+   "name": "Living 8: kitchen corner with the sink",
+   "position": [
+    6.505,
+    1.52,
+    1.951
+   ],
+   "target": [
+    3.803,
+    1.521,
+    5.116
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p08.jpg",
+   "source": "estimated",
+   "from": "camera fit, 0.52 px rms, lens A",
+   "hide": [
+    "island",
+    "pendant-island-*",
+    "island-canopy",
+    "stool-*"
+   ],
+   "hideNote": "kitchen island, its pendants and stools (between the camera and the kitchen)"
+  },
+  {
+   "id": "l09",
+   "name": "Living 9: sink side of the kitchen, head-on",
+   "position": [
+    8.412,
+    1.464,
+    3.953
+   ],
+   "target": [
+    3.64,
+    1.355,
+    3.214
+   ],
+   "fov": 42.3,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p09.jpg",
+   "source": "estimated",
+   "from": "camera fit, 2.67 px rms, lens B"
+  },
+  {
+   "id": "l10",
+   "name": "Living 10: island front, dining area behind",
+   "position": [
+    6.115,
+    1.395,
+    5.994
+   ],
+   "target": [
+    6.049,
+    0.855,
+    0.031
+   ],
+   "fov": 51.9,
+   "near": 1.6,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p10.jpg",
+   "source": "estimated",
+   "from": "camera fit, 2.82 px rms, lens A"
+  },
+  {
+   "id": "l11",
+   "name": "Living 11: high view down onto the island",
+   "position": [
+    7.841,
+    3.311,
+    1.083
+   ],
+   "target": [
+    5.175,
+    0.0,
+    4.881
+   ],
+   "fov": 42.3,
+   "near": 1.3,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p11.jpg",
+   "source": "estimated",
+   "from": "camera fit, 3.43 px rms, lens B",
+   "hide": [
+    "ceiling-zone-*"
+   ],
+   "hideNote": "lowered ceiling parts (the camera is above the ceiling)"
+  },
+  {
+   "id": "l12",
+   "name": "Living 12: TV wall at an angle",
+   "position": [
+    11.2,
+    1.413,
+    1.455
+   ],
+   "target": [
+    7.889,
+    1.397,
+    5.116
+   ],
+   "fov": 42.3,
+   "near": 0.6,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p12.jpg",
+   "source": "estimated",
+   "from": "camera fit, 3.3 px rms, lens B"
+  },
+  {
+   "id": "l13",
+   "name": "Living 13: TV wall head-on, balcony door at the left",
+   "position": [
+    8.59,
+    1.658,
+    1.718
+   ],
+   "target": [
+    8.658,
+    1.39,
+    5.116
+   ],
+   "fov": 51.9,
+   "near": 0.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p13.jpg",
+   "source": "estimated",
+   "from": "camera fit, 3.14 px rms, lens A"
+  },
+  {
+   "id": "l14",
+   "name": "Living 14: overview from the TV corner",
+   "position": [
+    11.391,
+    1.41,
+    5.357
+   ],
+   "target": [
+    5.304,
+    1.371,
+    0.031
+   ],
+   "fov": 42.3,
+   "near": 0.8,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p14.jpg",
+   "source": "estimated",
+   "from": "camera fit, 5.72 px rms, lens B",
+   "hide": [
+    "curtain-sheer-tv",
+    "curtain-brown"
+   ],
+   "hideNote": "curtains next to the camera"
+  },
+  {
+   "id": "l15",
+   "name": "Living 15: sofa, armchair and coffee table",
+   "position": [
+    8.871,
+    1.288,
+    5.011
+   ],
+   "target": [
+    8.949,
+    1.113,
+    0.031
+   ],
+   "fov": 51.9,
+   "near": 0.1,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p15.jpg",
+   "source": "estimated",
+   "from": "camera fit, 4.81 px rms, lens A"
+  },
+  {
+   "id": "l16",
+   "name": "Living 16: from the sofa side toward the kitchen",
+   "position": [
+    11.154,
+    1.254,
+    1.97
+   ],
+   "target": [
+    3.64,
+    1.047,
+    1.338
+   ],
+   "fov": 51.9,
+   "near": 0.4,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p16.jpg",
+   "source": "estimated",
+   "from": "camera fit, 5.72 px rms, lens A"
+  },
+  {
+   "id": "l17",
+   "name": "Living 17: TV wall over the coffee table",
+   "position": [
+    8.87,
+    1.56,
+    -0.85
+   ],
+   "target": [
+    8.722,
+    1.047,
+    5.116
+   ],
+   "fov": 42.3,
+   "near": 1.05,
+   "daylight": true,
+   "ref": "reference/renders/living-dining-kitchen/living-dining-kitchen-p17.jpg",
+   "source": "estimated",
+   "from": "lens B with the camera lowered to 1.56 so the living drum sits where the render shows it; this viewpoint is weakly determined"
+  }
+ ],
+ "ceiling_zones": [
+  {
+   "id": "living",
+   "name": "living room",
+   "x": [
+    7.019,
+    10.84
+   ],
+   "z": [
+    0.0,
+    5.12
+   ],
+   "height": {
+    "value": "ceiling",
+    "source": "estimated",
+    "from": "render model: 2.49 at the right wall, 2.52 at the TV-wall cabinets, with a step at the divider (p06, p12); the owner's ceiling is 2.40 everywhere",
+    "render": 2.5
+   }
+  },
+  {
+   "id": "hallway",
+   "name": "hallway",
+   "x": [
+    0.0,
+    3.84
+   ],
+   "z": [
+    1.4556,
+    6.2356
+   ],
+   "height": {
+    "value": "ceiling",
+    "source": "estimated",
+    "from": "hallway renders (camera fits); dining and kitchen are 2.60-2.67",
+    "render": 2.544
+   }
+  }
+ ],
+ "env_intensity": {
+  "value": 0.25,
+  "source": "assumed",
+  "from": "less neutral fill than the other rooms (0.45): the open-plan renders are warmer and darker"
+ },
+ "walk_start": {
+  "at": [
+   0.55,
+   2.55
+  ],
+  "look": [
+   3.6,
+   2.55
+  ]
+ }
+}

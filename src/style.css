@@ -1,0 +1,29 @@
+:root { --ui-bg: rgba(24, 22, 20, 0.86); --ui-fg: #f2ede6; --ui-mut: #b8afa3; --accent: #e0a96d; }
+html, body { margin: 0; height: 100%; background: #1d1b19; color: var(--ui-fg); font: 13px/1.4 system-ui, sans-serif; overflow: hidden; }
+#app { position: fixed; inset: 0; }
+#app canvas { display: block; }
+.labels { position: fixed; inset: 0; pointer-events: none; }
+.bar { position: fixed; top: 10px; left: 10px; right: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; z-index: 5; }
+.bar > * { background: var(--ui-bg); color: var(--ui-fg); border: 1px solid #3c3732; border-radius: 6px; padding: 5px 9px; font: inherit; }
+.bar button { cursor: pointer; }
+.bar button.on { border-color: var(--accent); color: var(--accent); }
+.bar label { display: flex; gap: 6px; align-items: center; }
+.bar select { max-width: 220px; }
+.panel { position: fixed; z-index: 6; background: var(--ui-bg); border: 1px solid #3c3732; border-radius: 8px; padding: 10px 12px; }
+.panel h3 { margin: 0 0 6px; font-size: 14px; }
+.panel ul { margin: 0; padding-left: 16px; }
+#inspect { right: 10px; bottom: 10px; max-width: 380px; }
+#assumptions { left: 10px; right: 10px; top: 56px; bottom: 10px; overflow: auto; }
+#assumptions table { border-collapse: collapse; width: 100%; }
+#assumptions td, #assumptions th { border-bottom: 1px solid #3c3732; padding: 4px 6px; text-align: left; vertical-align: top; }
+#assumptions tr.src-owner td:nth-child(3) { color: #9fd49f; }
+#assumptions tr.src-estimated td:nth-child(3) { color: #f0c36d; }
+#assumptions tr.src-assumed td:nth-child(3) { color: #f08a6d; }
+.muted { color: var(--ui-mut); }
+.help { position: fixed; left: 10px; bottom: 10px; z-index: 5; background: var(--ui-bg); padding: 6px 10px; border-radius: 6px; color: var(--ui-mut); }
+.tag { background: rgba(255, 255, 255, 0.9); color: #222; padding: 1px 5px; border-radius: 3px; font: 600 11px system-ui, sans-serif; white-space: nowrap; }
+.tag-dim { color: #b30000; }
+.tag-warn { color: #b35c00; background: #fff3dc; }
+.tag-measure { color: #fff; background: #d01a55; }
+#refimg { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; z-index: 2; opacity: 0.5; }
+body.shot .bar, body.shot .panel, body.shot .help { display: none !important; }

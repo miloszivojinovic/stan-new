@@ -1,0 +1,1066 @@
+{
+ "room": "work-room",
+ "frame": "x right, z down the plan page, y up, metres, origin interior top-left",
+ "scale": {
+  "render_ceiling_height_m": 2.608,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (ceiling 2.608 m); see notes 1-3",
+  "per_render_ceiling_fit_m": {
+   "p01": 2.615,
+   "p02": 2.576,
+   "p03": 2.594,
+   "p04": 2.608,
+   "p05": 2.562
+  },
+  "source": "estimated",
+  "from": "camera fits (see cameras[].from)"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat painted ceiling, no recesses or coves",
+   "y": [
+    2.608,
+    2.608
+   ],
+   "note": "contradicts the owner's 2.40 m; see notes",
+   "source": "estimated",
+   "from": "joint camera fit (ceiling-wall lines in all 5 renders); each render alone gives 2.56-2.62"
+  },
+  {
+   "name": "walnut panel 1 (right wall)",
+   "what": "floor-to-ceiling flat walnut veneer panel (no slats), a 2 cm board standing 5 cm off the wall (plan cavity x 2.32-2.37); its edge at z 0.79 hides a vertical LED strip",
+   "x": [
+    2.3,
+    2.37
+   ],
+   "z": [
+    0.01,
+    0.79
+   ],
+   "y": [
+    0.0,
+    2.608
+   ],
+   "source": "estimated",
+   "from": "plan vectors for x/z; p02 and p01 for height and finish"
+  },
+  {
+   "name": "walnut panel 2 (right wall)",
+   "what": "same as panel 1; LED strip at its edge z 2.02; horizontal veneer joint at y 0.73; meets the walnut end panel of the wardrobe at z 2.81",
+   "x": [
+    2.3,
+    2.37
+   ],
+   "z": [
+    2.021,
+    2.809
+   ],
+   "y": [
+    0.0,
+    2.608
+   ],
+   "joint_y": 0.73,
+   "source": "estimated",
+   "from": "plan vectors for x/z; p05, p04 and p02 for height, joint and finish"
+  },
+  {
+   "name": "LED-washed wall section (right wall)",
+   "what": "plain wall (same textured beige) between the two walnut panels, lit from both ends by the panel-edge LED strips; the plan draws a 1 cm layer here (x 2.36-2.37, z 0.742-2.071), which in the renders looks like the same wall finish",
+   "x": [
+    2.36,
+    2.37
+   ],
+   "z": [
+    0.79,
+    2.02
+   ],
+   "y": [
+    0.065,
+    2.608
+   ],
+   "source": "estimated",
+   "from": "p02, p04, p05"
+  },
+  {
+   "name": "TV (left wall)",
+   "what": "wall-mounted black flat TV (Sony logo), about 50 inch; this is the thin plan element at z 1.41-2.50 (validation opening p2-D, misclassified as a radiator)",
+   "x": [
+    0.0,
+    0.07
+   ],
+   "z": [
+    1.405,
+    2.51
+   ],
+   "y": [
+    1.413,
+    2.053
+   ],
+   "width_m": 1.105,
+   "height_m": 0.64,
+   "source": "estimated",
+   "from": "p01 head-on, cross-checked in p03 (both within 1 cm); depth from plan lines x 0.06-0.075"
+  },
+  {
+   "name": "window (top wall)",
+   "what": "white PVC window, 2 casement sashes of about equal width meeting at x 1.17 (two silver handles at y 1.51 on the meeting stiles); landscape view outside. The left frame edge is seen at x 0.47; the right edge is hidden by the curtain, so the x extent is taken from the plan's sill line (z 0.02, x 0.46-1.93). Frame depth in the wall reveal could not be measured.",
+   "x": [
+    0.46,
+    1.93
+   ],
+   "y": [
+    1.02,
+    2.2
+   ],
+   "sill_y": 1.02,
+   "head_y": 2.2,
+   "glass_y": [
+    1.05,
+    2.11
+   ],
+   "handle_y": 1.51,
+   "mullion_x": 1.17,
+   "sashes": 2,
+   "frame_colour": "white",
+   "source": "estimated",
+   "from": "p02 (head-on) back-projected onto z 0; x extent from plan vector line z 0.02, x 0.46-1.93"
+  },
+  {
+   "name": "interior window sill",
+   "what": "sill board 2 cm proud of the wall, about 4 cm thick, top at 1.02",
+   "x": [
+    0.46,
+    1.93
+   ],
+   "z": [
+    0.0,
+    0.02
+   ],
+   "y": [
+    0.97,
+    1.02
+   ],
+   "source": "estimated",
+   "from": "p02 (three edge lines) and plan line z 0.02"
+  },
+  {
+   "name": "box above the window",
+   "what": "opaque flat band flush with the wall above the frame, full window width, light warm grey (probably a roller-shutter box); wall continues above it to the ceiling",
+   "x": [
+    0.46,
+    1.93
+   ],
+   "y": [
+    2.2,
+    2.4
+   ],
+   "source": "estimated",
+   "from": "p02"
+  },
+  {
+   "name": "radiator",
+   "what": "white panel radiator with top grille; thermostatic valve on its right end at y 0.69; plan front face z 0.0965",
+   "x": [
+    1.008,
+    1.583
+   ],
+   "z": [
+    0.02,
+    0.0965
+   ],
+   "y": [
+    0.088,
+    0.79
+   ],
+   "source": "estimated",
+   "from": "p02 back-projected onto z 0.0965 (plan); measured x 0.98-1.575 agrees with the plan x 1.008-1.583 within 3 cm"
+  },
+  {
+   "name": "curtain rod",
+   "what": "black round rod (about 2 cm) with end finials, spanning from the tall walnut unit to walnut panel 1, about 11 cm below the ceiling",
+   "x": [
+    0.51,
+    2.24
+   ],
+   "z": [
+    0.1,
+    0.14
+   ],
+   "y": [
+    2.48,
+    2.51
+   ],
+   "source": "estimated",
+   "from": "p02 (height, ends) and p01 (distance from wall)"
+  },
+  {
+   "name": "curtains",
+   "what": "two cream pencil-pleat panels, drawn open, hanging from the rod to 1-2 cm above the floor; fold depth about 0.08-0.18 from the wall",
+   "left_panel_x": [
+    0.49,
+    0.84
+   ],
+   "right_panel_x": [
+    1.81,
+    2.15
+   ],
+   "z": [
+    0.08,
+    0.18
+   ],
+   "y": [
+    0.015,
+    2.48
+   ],
+   "source": "estimated",
+   "from": "p02 back-projected onto z 0.12; bottoms from p02"
+  },
+  {
+   "name": "desk",
+   "what": "height-adjustable desk: plain light top 2 cm thick, black T-legs at z 1.36 and 2.54 with feet running along x, control keypad under the front-right edge. Footprint from the plan; the plan notch at x < 0.075, z 1.41-2.51 is the TV outline, not the desk.",
+   "x": [
+    0.023,
+    0.674
+   ],
+   "z": [
+    1.142,
+    2.804
+   ],
+   "y": [
+    0.784,
+    0.804
+   ],
+   "leg_z": [
+    1.36,
+    2.54
+   ],
+   "source": "estimated",
+   "from": "desk height fitted jointly in p01-p04 (0.804, sd 0.002); thickness from the p01 front edge; legs from p01"
+  },
+  {
+   "name": "monitors",
+   "what": "two ~27 inch monitors side by side, screens on",
+   "x": [
+    0.15,
+    0.25
+   ],
+   "z": [
+    1.37,
+    2.62
+   ],
+   "y": [
+    0.96,
+    1.35
+   ],
+   "reliability": "rough (+-5 cm)",
+   "source": "estimated",
+   "from": "p01 back-projected at x 0.15-0.25 (depth assumed)"
+  },
+  {
+   "name": "bookshelf",
+   "what": "floor-to-ceiling unit: closed greige base 0-1.02, then two open bays (z 0.07-0.30 and 0.50-0.72) with greige boards and a walnut back, and a floor-to-ceiling walnut vertical panel in the middle (z 0.30-0.50); a vertical LED strip on the inner face of each outer side panel, about 10 cm from the back",
+   "x": [
+    0.02,
+    0.45
+   ],
+   "z": [
+    0.064,
+    0.728
+   ],
+   "y": [
+    0.0,
+    2.608
+   ],
+   "base_top_y": [
+    1.003,
+    1.024
+   ],
+   "board_y": [
+    [
+     1.384,
+     1.406
+    ],
+    [
+     1.76,
+     1.78
+    ],
+    [
+     2.137,
+     2.158
+    ]
+   ],
+   "open_top_compartment_y": [
+    2.158,
+    2.608
+   ],
+   "divider_z": [
+    0.3,
+    0.5
+   ],
+   "bays_z": [
+    [
+     0.07,
+     0.3
+    ],
+    [
+     0.5,
+     0.72
+    ]
+   ],
+   "plinth_y": [
+    0.0,
+    0.065
+   ],
+   "source": "estimated",
+   "from": "p01 head-on (board edges back-projected onto the front plane x 0.45); p03 for the LED positions; plan for the footprint"
+  },
+  {
+   "name": "tall walnut unit",
+   "what": "floor-to-ceiling dark walnut column/cabinet in front of the wall pier, no visible handles, plinth line at 0.065",
+   "x": [
+    0.12,
+    0.46
+   ],
+   "z": [
+    0.79,
+    1.14
+   ],
+   "y": [
+    0.0,
+    2.608
+   ],
+   "source": "estimated",
+   "from": "p01, p02 and p03 edges (used in the camera fit); plan footprint (front face measured at x 0.46; plan 0.45-0.46)"
+  },
+  {
+   "name": "wardrobe",
+   "what": "L-shaped built-in wardrobe to the ceiling: recessed dark plinth 0-0.07, flat greige doors 0.07-2.505, fixed greige top panel 2.505 to the ceiling; walnut end panels facing the window (z 2.81, right leg) and facing the door (x 0.87, bottom leg); 2 doors per leg and a 5 cm filler at the inner corner",
+   "right_leg": {
+    "x": [
+     1.772,
+     2.37
+    ],
+    "z": [
+     2.811,
+     3.82
+    ]
+   },
+   "bottom_leg": {
+    "x": [
+     0.87,
+     2.37
+    ],
+    "z": [
+     3.82,
+     4.42
+    ]
+   },
+   "y": [
+    0.0,
+    2.608
+   ],
+   "plinth_y": [
+    0.0,
+    0.07
+   ],
+   "door_y": [
+    0.07,
+    2.505
+   ],
+   "top_panel_y": [
+    2.505,
+    2.608
+   ],
+   "doors_right_leg_z": [
+    [
+     2.833,
+     3.305
+    ],
+    [
+     3.307,
+     3.781
+    ]
+   ],
+   "doors_bottom_leg_x": [
+    [
+     0.895,
+     1.306
+    ],
+    [
+     1.317,
+     1.726
+    ]
+   ],
+   "corner_filler_x": [
+    1.726,
+    1.772
+   ],
+   "source": "estimated",
+   "from": "p04 (bottom-leg front head-on) and p05; plan for the footprint"
+  },
+  {
+   "name": "wardrobe handles",
+   "what": "black vertical bar/groove handles at the meeting edges of each door pair, running from the door bottom to about 1.07 m",
+   "positions": [
+    {
+     "on": "right leg front x 1.772",
+     "z": 3.31
+    },
+    {
+     "on": "bottom leg front z 3.82",
+     "x": 1.31
+    }
+   ],
+   "y": [
+    0.07,
+    1.065
+   ],
+   "source": "estimated",
+   "from": "p04 and p05 (both legs agree within 1 cm)"
+  },
+  {
+   "name": "door (left wall)",
+   "what": "white leaf with thin black diagonal inlay lines, white casings about 7 cm wide; black square-rose lever handle on the z 3.33 side with a black square lock escutcheon below; two black hinges on the z 4.36 side (opens into the room)",
+   "z": [
+    3.3315,
+    4.3589
+   ],
+   "y": [
+    0.0,
+    2.137
+   ],
+   "leaf_top_y": 2.075,
+   "casing_top_y": 2.137,
+   "handle": {
+    "y": 0.95,
+    "z": 3.47
+   },
+   "lock_y": 0.865,
+   "hinges_z": 4.3,
+   "source": "estimated",
+   "from": "p03 (casing and leaf tops), p01 (handle), p04 (hinges); z from the plan"
+  },
+  {
+   "name": "skirting",
+   "what": "dark brown skirting, thickness about 1.2 cm (assumed), along the plain wall sections; the walnut panels, wardrobe and bookshelf run to the floor",
+   "y": [
+    0.0,
+    0.065
+   ],
+   "source": "estimated",
+   "from": "joint fit 0.068; direct reads 0.065 (left wall, p01), 0.067-0.069 (bottom wall, p03 and p04), 0.059-0.060 (right wall, p02 and p05)"
+  },
+  {
+   "name": "floor lamp",
+   "what": "black floor lamp: round base, thin black twin stem with a brass foot ring, brass U-yoke under a black dome shade with a white diffuser (light points down)",
+   "position_xz": [
+    1.99,
+    2.45
+   ],
+   "y": [
+    0.0,
+    1.61
+   ],
+   "base": {
+    "diameter_m": 0.25,
+    "y": [
+     0.0,
+     0.03
+    ]
+   },
+   "shade": {
+    "diameter_m": 0.41,
+    "y": [
+     1.56,
+     1.61
+    ]
+   },
+   "source": "estimated",
+   "from": "triangulated from p04 and p05 (base and shade-centre reprojection 0.5-2 px)"
+  },
+  {
+   "name": "rug",
+   "what": "light beige low-pile rug with brown streaks, about 1.5 x 2.3 m; the chair and the floor lamp stand on it",
+   "x": [
+    0.75,
+    2.23
+   ],
+   "z": [
+    0.35,
+    2.63
+   ],
+   "y": [
+    0.0,
+    0.01
+   ],
+   "source": "estimated",
+   "from": "edges back-projected onto the floor: x min from p01, z min from p02, x max from p02/p04/p05, z max from p01/p04/p05 (spread 2-3 cm)"
+  },
+  {
+   "name": "office chair",
+   "what": "brown leather executive chair on a black 5-star base",
+   "position_xz": [
+    0.85,
+    1.97
+   ],
+   "reliability": "rough (+-15 cm)",
+   "source": "estimated",
+   "from": "p01 floor point under the chair"
+  },
+  {
+   "name": "light switches and sockets",
+   "what": "none visible in any of the 5 renders",
+   "source": "estimated",
+   "from": "p01-p05"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "work-room-p01",
+   "shows": "left wall head-on: door at left, TV and desk, tall walnut unit and bookshelf, curtain at right",
+   "position": [
+    3.44,
+    1.448,
+    1.637
+   ],
+   "target": [
+    0.0,
+    1.233,
+    1.663
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.998,
+    -0.0621,
+    0.0073
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 52.1,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 179.58,
+   "pitch_deg": -3.56,
+   "roll_deg": -0.01,
+   "fit_rms_px": 1.48,
+   "inside_room": false,
+   "near_clip_m": 1.8,
+   "source": "estimated",
+   "notes": "Camera is 1.07 m outside the right wall (x 2.37); the room is seen through a clipping plane. The near plane must hide the right wall, its walnut panels (depth 1.15 m) and the floor lamp (depth 1.48 m, not visible) but keep the chair (about 2.7 m): near about 1.8 m (range 1.5-2.5). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 5 renders: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of room corners, ceiling lines, wardrobe/tall-unit/panel edges, door casings, desk edges and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, desk and skirting heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "work-room-p02",
+   "shows": "down the room toward the window: desk and TV on the left wall, window with radiator and curtains, track rails, walnut panel and LED-washed wall on the right",
+   "position": [
+    0.477,
+    1.455,
+    4.382
+   ],
+   "target": [
+    0.787,
+    1.157,
+    0.0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.0703,
+    -0.0677,
+    -0.9952
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 52.1,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": -85.96,
+   "pitch_deg": -3.88,
+   "roll_deg": -0.09,
+   "fit_rms_px": 1.42,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Camera inside the room, about 4 cm in front of the bottom wall, between the door and the wardrobe end; no clipping needed. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 5 renders: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of room corners, ceiling lines, wardrobe/tall-unit/panel edges, door casings, desk edges and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, desk and skirting heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "work-room-p03",
+   "shows": "from the window corner toward the door: TV, desk, door, wardrobe end at left, tall unit and bookshelf at right",
+   "position": [
+    2.206,
+    1.384,
+    0.359
+   ],
+   "target": [
+    0.0,
+    1.231,
+    2.21
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.765,
+    -0.0532,
+    0.6418
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 52.1,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 140.01,
+   "pitch_deg": -3.05,
+   "roll_deg": -0.01,
+   "fit_rms_px": 0.87,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Camera inside the room near the window/right-wall corner (9 cm in front of walnut panel 1, just behind the right curtain); no clipping needed. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 5 renders: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of room corners, ceiling lines, wardrobe/tall-unit/panel edges, door casings, desk edges and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, desk and skirting heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "work-room-p04",
+   "shows": "from beyond the window wall toward the bottom wall: wardrobe (both legs), floor lamp, door, desk",
+   "position": [
+    1.348,
+    1.416,
+    -0.735
+   ],
+   "target": [
+    1.24,
+    1.228,
+    4.42
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.0209,
+    -0.0365,
+    0.9991
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 52.1,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 91.2,
+   "pitch_deg": -2.09,
+   "roll_deg": -0.05,
+   "fit_rms_px": 0.85,
+   "inside_room": false,
+   "near_clip_m": 1.0,
+   "source": "estimated",
+   "notes": "Camera is 0.74 m outside the window wall (z 0); seen through a clipping plane. The near plane must hide the window wall but keep the bookshelf edge at depth 1.48 m: near about 1.0 m (range 0.75-1.45). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 5 renders: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of room corners, ceiling lines, wardrobe/tall-unit/panel edges, door casings, desk edges and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, desk and skirting heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "work-room-p05",
+   "shows": "from beyond the left wall toward the right wall: walnut panel with LED edge, floor lamp, wardrobe corner",
+   "position": [
+    -1.061,
+    1.493,
+    1.921
+   ],
+   "target": [
+    2.37,
+    1.282,
+    3.431
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.9138,
+    -0.0562,
+    0.4023
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 52.1,
+   "aspect": "4:3 (2560 x 1920)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    960
+   ],
+   "yaw_deg": 23.76,
+   "pitch_deg": -3.22,
+   "roll_deg": -0.03,
+   "fit_rms_px": 0.5,
+   "inside_room": false,
+   "near_clip_m": 2.3,
+   "source": "estimated",
+   "notes": "Camera is 1.06 m outside the left wall (x 0); seen through a clipping plane. The near plane must hide the wall, the TV and the desk (its corner at depth 1.98 m would be in view) but keep the floor lamp (depth 3.0 m): near about 2.3 m (range 2.0-2.9). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of all 5 renders: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of room corners, ceiling lines, wardrobe/tall-unit/panel edges, door casings, desk edges and skirting, matched to plan geometry; pinhole, principal point at the image centre, one shared focal length, with ceiling, desk and skirting heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  }
+ ],
+ "colours": {
+  "floor": {
+   "hex": "#30190e",
+   "what": "dark brown wood planks with strong grain (walnut / smoked-oak look)",
+   "source": "estimated",
+   "from": "p04 px box [1000, 1520, 1400, 1680], median of the 10-90% luminance band",
+   "hex_white_balanced": "#2a1912",
+   "other_views": {
+    "p01 [300, 1690, 520, 1760]": "#31180d",
+    "p03 [60, 1700, 330, 1900]": "#2b150c"
+   }
+  },
+  "wall_paint": {
+   "hex": "#85674a",
+   "what": "warm beige paint with a fine sand/stucco texture, same on all four walls",
+   "source": "estimated",
+   "from": "p02 px box [260, 900, 560, 1300], median of the 10-90% luminance band",
+   "hex_white_balanced": "#766757",
+   "other_views": {
+    "p04 [1470, 480, 1720, 880]": "#917351",
+    "p01 [450, 300, 720, 650]": "#6a482b"
+   }
+  },
+  "ceiling": {
+   "hex": "#ad957b",
+   "what": "flat painted ceiling (white or off-white; renders warm)",
+   "source": "estimated",
+   "from": "p02 px box [1400, 120, 1650, 260], median of the 10-90% luminance band",
+   "hex_white_balanced": "#9a958f",
+   "other_views": {
+    "p04 [1100, 150, 1400, 320]": "#95744e",
+    "p01 [700, 40, 1300, 140]": "#8e6d48"
+   }
+  },
+  "walnut_panels": {
+   "hex": "#3c2314",
+   "what": "dark walnut veneer, vertical grain: right-wall panels, tall unit, bookshelf divider and back, wardrobe end panels",
+   "source": "estimated",
+   "from": "p02 px box [1970, 600, 2080, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#352319",
+   "other_views": {
+    "p04 [740, 300, 960, 760]": "#3d1e0e",
+    "p05 [560, 300, 900, 700]": "#3c1b0b",
+    "p01 [1640, 600, 1840, 1000]": "#442513"
+   }
+  },
+  "wardrobe_doors": {
+   "hex": "#cda472",
+   "what": "flat matt greige (light taupe) doors; render orange-beige under the warm spots",
+   "source": "estimated",
+   "from": "p04 px box [1100, 500, 1230, 1000], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b7a485",
+   "other_views": {
+    "p05 [1700, 400, 1980, 1000]": "#cca16c"
+   }
+  },
+  "desk_top": {
+   "hex": "#aa7f4a",
+   "what": "plain light oak / sand coloured top, matt, no visible grain",
+   "source": "estimated",
+   "from": "p02 px box [600, 1585, 1000, 1630], median of the 10-90% luminance band",
+   "hex_white_balanced": "#987f57",
+   "other_views": {
+    "p04 [2010, 1435, 2120, 1490]": "#ad7e4d"
+   }
+  },
+  "desk_frame": {
+   "hex": "#32261a",
+   "what": "black metal T-legs (render dark brown-black)",
+   "source": "estimated",
+   "from": "p01 px box [1462, 1400, 1474, 1700], median of the 10-90% luminance band",
+   "hex_white_balanced": "#2c2620"
+  },
+  "door": {
+   "hex": "#7c5e40",
+   "what": "white leaf with thin black diagonal inlay lines; never directly lit, so it renders mid warm grey; the p01 [90,1398,...] value is a sunlit streak",
+   "source": "estimated",
+   "from": "p01 px box [30, 500, 270, 900], median of the 10-90% luminance band",
+   "hex_white_balanced": "#6e5e4c",
+   "other_views": {
+    "p01 [90, 1398, 150, 1418]": "#a48764",
+    "p03 [560, 600, 760, 1300]": "#755c42",
+    "p04 [1800, 700, 1850, 880]": "#775d41"
+   }
+  },
+  "curtains": {
+   "hex": "#d9c5ac",
+   "what": "cream linen look, pencil-pleat heading, semi-opaque",
+   "source": "estimated",
+   "from": "p02 px box [1170, 450, 1290, 1000], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c2c5c8",
+   "other_views": {
+    "p02 [1770, 450, 1880, 1000]": "#c6a987",
+    "p01 [2400, 400, 2540, 1200]": "#d3c5b5"
+   }
+  },
+  "rug": {
+   "hex": "#b89570",
+   "what": "light beige low-pile rug with fine brown streaks running along z",
+   "source": "estimated",
+   "from": "p01 px box [1300, 1870, 1700, 1915], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a49583",
+   "other_views": {
+    "p04 [900, 1800, 1250, 1900]": "#d0b086",
+    "p02 [1650, 1515, 1900, 1555]": "#b18a5d"
+   }
+  },
+  "radiator": {
+   "hex": "#d0baa0",
+   "what": "white enamel panel radiator",
+   "source": "estimated",
+   "from": "p02 px box [1385, 1180, 1440, 1400], median of the 10-90% luminance band",
+   "hex_white_balanced": "#bababa",
+   "other_views": {
+    "p02 [1640, 1180, 1660, 1400]": "#cfb89d"
+   }
+  },
+  "window_frame": {
+   "hex": "#c7b6a5",
+   "what": "white PVC",
+   "source": "estimated",
+   "from": "p02 px box [1480, 1000, 1700, 1012], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b2b6c0"
+  },
+  "window_head_band": {
+   "hex": "#7b6449",
+   "what": "opaque band above the window frame (probably a roller-shutter box), light warm grey",
+   "source": "estimated",
+   "from": "p02 px box [1330, 420, 1700, 480], median of the 10-90% luminance band",
+   "hex_white_balanced": "#6d6456"
+  },
+  "shelf_boards": {
+   "hex": "#875e36",
+   "what": "bookshelf boards, light greige/taupe (not walnut)",
+   "source": "estimated",
+   "from": "p01 px box [1910, 616, 2040, 627], median of the 10-90% luminance band",
+   "hex_white_balanced": "#785e40"
+  },
+  "bookshelf_base": {
+   "hex": "#4c3422",
+   "what": "closed base of the bookshelf, greige, in shadow in every view",
+   "source": "estimated",
+   "from": "p03 px box [2350, 1350, 2550, 1800], median of the 10-90% luminance band",
+   "hex_white_balanced": "#433429",
+   "other_views": {
+    "p01 [1900, 1200, 2040, 1650]": "#4a301d"
+   }
+  },
+  "skirting": {
+   "hex": "#190904",
+   "what": "dark brown skirting",
+   "source": "estimated",
+   "from": "p02 px box [2290, 1700, 2330, 1730], median of the 10-90% luminance band",
+   "hex_white_balanced": "#150906"
+  },
+  "black_items": {
+   "hex": "#070301",
+   "what": "TV screen (off); track rails, spots, door handle, wardrobe handles and lamp are black",
+   "source": "estimated",
+   "from": "p01 px box [820, 520, 1400, 820], median of the 10-90% luminance band",
+   "hex_white_balanced": "#050301"
+  },
+  "led_strip_emitter": {
+   "hex": "#eed7aa",
+   "what": "visible LED strip / its brightest glow",
+   "source": "estimated",
+   "from": "p02 px box [2132, 600, 2148, 1200], median of the 10-90% luminance band",
+   "other_views": {
+    "p04 [505, 300, 525, 1200]": "#f0e4d6"
+   }
+  },
+  "floor_lamp_diffuser": {
+   "hex": "#f5f1ec",
+   "what": "white diffuser under the black lamp shade (emissive)",
+   "source": "estimated",
+   "from": "p04 px box [740, 797, 930, 803], median of the 10-90% luminance band"
+  },
+  "brass_accents": {
+   "hex": "#8c5012",
+   "what": "brass yoke, collar and foot ring of the floor lamp",
+   "source": "estimated",
+   "from": "p04 px box [838, 810, 846, 850], median of the 10-90% luminance band",
+   "hex_white_balanced": "#7d5017"
+  },
+  "_how_to_read": "hex = rendered sRGB in the best-lit plain patch. The renders are graded warm: the white radiator renders #d0baa0 in the daylight view, so hex_white_balanced applies the per-channel linear gains that make that radiator neutral (R x0.78, G x1.00, B x1.40). Use hex_white_balanced as a starting base colour under ~3000 K lights, or hex under neutral light. The night views (p03-p05) are warmer still.",
+  "light_colour_temperature": {
+   "value": "artificial light warm white, about 2700-3000 K (LED strips render #eed7aa to #f0e4d6, the lamp diffuser near white); daylight in p02 (and sun streaks on the door in p01) is neutral, sky #eaeff3; p03-p05 are lit by the warm interior lights only",
+   "source": "estimated",
+   "from": "LED strip, diffuser and sky pixels in p02 and p04"
+  }
+ },
+ "lights": [
+  {
+   "type": "track",
+   "name": "track rail A",
+   "rail": "black surface-mounted track, about 3.5 cm wide and 3-4 cm deep, running along z",
+   "x": 0.72,
+   "y_rail_bottom": 2.573,
+   "z": [
+    0.3,
+    3.5
+   ],
+   "spots": 8,
+   "spot_z": [
+    0.33,
+    0.6,
+    0.95,
+    1.2,
+    2.52,
+    2.78,
+    3.12,
+    3.36
+   ],
+   "spot": "black cylinder about 5.5 cm diameter and 15 cm long on an adapter; aimed individually (some straight down, others tilted 30-60 deg toward the desk wall, the wardrobe or the bookshelf)",
+   "note": "an end or joint is visible at z 1.93 in p04, so this may be two collinear rails (z 0.30-1.9 and 1.93-3.50)",
+   "source": "estimated",
+   "from": "rail edges back-projected onto the ceiling plane in p02, p03 and p04 (x 0.70-0.76); spot positions from p01 (8 heads along its top edge), confirmed by p02 (4), p04 (3) and p03 (2)"
+  },
+  {
+   "type": "track",
+   "name": "track rail B",
+   "rail": "same track type, along z",
+   "x": 1.7,
+   "y_rail_bottom": 2.573,
+   "z": [
+    0.24,
+    1.8
+   ],
+   "spots": 4,
+   "spot_z": [
+    0.5,
+    0.8,
+    1.12,
+    1.4
+   ],
+   "spot": "as rail A",
+   "note": "window end seen at z 0.24 in p02; the far end is not visible (the rail leaves p02 at z 1.70 and is absent in p04, so it ends before z 1.88)",
+   "source": "estimated",
+   "from": "p02 rail edges back-projected onto the ceiling plane; absence check in p04"
+  },
+  {
+   "type": "floor-lamp",
+   "position": [
+    1.99,
+    1.56,
+    2.45
+   ],
+   "direction": "down through a white diffuser 0.41 m wide; warm",
+   "source": "estimated",
+   "from": "p04 and p05 triangulation"
+  },
+  {
+   "type": "led-strip",
+   "name": "panel 1 edge strip",
+   "position": {
+    "x": [
+     2.32,
+     2.36
+    ],
+    "z": 0.77
+   },
+   "y": [
+    0.02,
+    2.59
+   ],
+   "faces": "+z, washing the wall section z 0.79-2.02",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p02 (glow line back-projected onto z 0.77); plan cavity x 2.32-2.37 opening at z 0.742-0.79"
+  },
+  {
+   "type": "led-strip",
+   "name": "panel 2 edge strip",
+   "position": {
+    "x": [
+     2.32,
+     2.36
+    ],
+    "z": 2.04
+   },
+   "y": [
+    0.02,
+    2.59
+   ],
+   "faces": "-z, washing the wall section z 0.79-2.02",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p04 and p05 (bright line at the panel edge); plan cavity opening at z 2.021-2.071"
+  },
+  {
+   "type": "led-strip",
+   "name": "bookshelf strips",
+   "position": [
+    {
+     "x": 0.11,
+     "z": 0.07,
+     "faces": "+z (right bay)"
+    },
+    {
+     "x": 0.12,
+     "z": 0.72,
+     "faces": "-z (left bay)"
+    }
+   ],
+   "y": [
+    1.03,
+    2.6
+   ],
+   "note": "vertical strips on the inner faces of the outer side panels, about 10 cm from the back, interrupted by the boards",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p01 and p03 glow lines intersected with the side-panel planes"
+  },
+  {
+   "type": "emissive",
+   "name": "monitors",
+   "note": "both monitors are on (clock and sunset wallpaper); the TV is off",
+   "source": "estimated",
+   "from": "p01, p03, p04"
+  },
+  {
+   "type": "daylight",
+   "note": "daylight through the window in p02 (bright overcast sky) and sun streaks on the door in p01; p03-p05 look like evening scenes lit only by the interior lights",
+   "source": "estimated",
+   "from": "p01-p05"
+  }
+ ],
+ "notes": [
+  "CEILING HEIGHT CONFLICT: with square pixels and the plan's horizontal dimensions, the renders put the ceiling at 2.61 m (joint fit; each render alone gives 2.56-2.62), not the owner's 2.40 m. Forcing 2.40 m needs a 9% vertical pixel stretch and fits worse (1.38 vs 1.06 px rms). It would also make the TV 1.10 x 0.59 m, which is not a TV shape, and put the door leaf top at 1.91 m. The 2.61 m reading gives a 1.10 x 0.64 m TV (a normal 50 inch) and a 2.07 m leaf top. So the render model is about 2.6 m tall, and all heights in this file are in that render-model scale.",
+  "The door leaf top measures 2.075 m (casing top 2.137), not the 2.00 m assumed. Forcing 2.00 would imply a 2.51 m ceiling, which also disagrees with 2.40.",
+  "Adapting to 2.40 m (owner decision needed): either keep absolute heights for things with real-world sizes (desk 0.80, sill 1.02, radiator, TV 1.41-2.05, handles, door) and re-anchor the ceiling-hung items to 2.40 (wardrobe top panel, tall unit, bookshelf, walnut panels and LED strips, track rails, curtain rod), or scale every y by 2.40/2.608 = 0.920. Window head 2.20, box top 2.40 and rod 2.49 cannot all fit under a 2.40 ceiling, so the window head, box and rod need a decision.",
+  "Validation opening p2-A ('window?' at x 0-0.46 on the top wall) is the bookshelf back, not a window. p2-C and p2-E (right wall) are the walnut panels with LED cavities, not windows. p2-D (left wall) is the TV, not a radiator. p2-B (radiator) and p2-F (door) are confirmed.",
+  "Three of the five cameras are outside the room (p01 beyond the right wall, p04 beyond the window wall, p05 beyond the left wall). Reproduce them with camera.near set to near_clip_m, or by hiding the wall behind the camera.",
+  "Camera accuracy: the joint fit (shared focal 1965 px, hfov 66.2 deg, vfov 52.1 deg) and a variant with a focal length per camera agree within 5 cm in position and 0.3 deg in angle. Edge reprojection rms is 0.5-1.5 px. Pitch is -2 to -4 deg (not zero); roll is under 0.1 deg. If the scene is built with a 2.40 m ceiling, keep the camera heights (1.38-1.49 m) as heights above the floor.",
+  "The desk height of 0.80 m comes from the joint fit (+-0.01). It is a height-adjustable desk, so this is only the setting shown.",
+  "The window frame's depth in the wall reveal and its exact right edge could not be measured; the x extent uses the plan sill line 0.46-1.93. With equal sashes the frame would end near 1.89.",
+  "Track rail B's far end, and whether rail A is one 3.2 m rail or two sections, could not be determined.",
+  "Colours are rendered pixel values under warm lighting; see colours._how_to_read.",
+  "Bookshelf boards and the closed base are greige, not walnut; walnut is the back panel and the central vertical divider."
+ ],
+ "generated": "2026-11-22 from the 5 work-room renders (OpenCV LSD and gradient edge fits, Levenberg-Marquardt camera solve); analysis scripts were kept outside the repo"
+}

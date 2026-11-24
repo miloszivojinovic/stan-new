@@ -1,0 +1,784 @@
+{
+ "id": "toilet",
+ "order": 5,
+ "name": "Toilet",
+ "name_sr": "Toalet",
+ "plan_room": "toilet",
+ "estimates": "data/estimates/toilet.json (camera fits and measurements from the 4 renders)",
+ "exterior_walls": [],
+ "floor": "floor-tiles",
+ "wall": "wall-tiles",
+ "ceiling": "ceiling",
+ "materials": {
+  "floor-tiles": {
+   "color": "#a39684",
+   "texture": "tiles",
+   "tile": [
+    0.6,
+    0.6
+   ],
+   "textureScale": 2.4,
+   "roughness": 0.55,
+   "source": "estimated",
+   "from": "60 x 60 beige porcelain, white-balanced #787163, lifted"
+  },
+  "wall-tiles": {
+   "color": "#c2b8ab",
+   "texture": "tiles",
+   "tile": [
+    0.58,
+    0.58
+   ],
+   "textureScale": 2.32,
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "58 cm light beige porcelain, white-balanced #bab7b3"
+  },
+  "ceiling": {
+   "color": "#d0c8bc",
+   "roughness": 0.95,
+   "source": "assumed",
+   "from": "off-white paint"
+  },
+  "cabinet": {
+   "color": "#b5aa9b",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "greige doors and concealer, white-balanced #c0beba"
+  },
+  "shelves": {
+   "color": "#aa9e90",
+   "roughness": 0.7,
+   "source": "estimated",
+   "from": "greige shelf boards, white-balanced #a1988d"
+  },
+  "machine": {
+   "color": "#e9e7e2",
+   "roughness": 0.35,
+   "source": "estimated",
+   "from": "white washer and dryer"
+  },
+  "chrome": {
+   "color": "#c9c9c9",
+   "roughness": 0.2,
+   "metalness": 1.0,
+   "source": "estimated",
+   "from": "chrome tap"
+  },
+  "smoked-mirror": {
+   "color": "#b0ada8",
+   "roughness": 0.12,
+   "metalness": 0.95,
+   "source": "estimated",
+   "from": "smoked grey mirror"
+  },
+  "sanitary": {
+   "color": "#f2f0eb",
+   "roughness": 0.15,
+   "source": "estimated",
+   "from": "white ceramic"
+  },
+  "black": {
+   "color": "#0c0a08",
+   "roughness": 0.3,
+   "metalness": 0.2,
+   "source": "estimated",
+   "from": "machine door glass"
+  },
+  "white": {
+   "color": "#f0eee9",
+   "roughness": 0.5,
+   "source": "estimated",
+   "from": "door frame and casings"
+  },
+  "flush": {
+   "color": "#d8d6d0",
+   "roughness": 0.4,
+   "source": "estimated",
+   "from": "light grey flush plate"
+  },
+  "door": {
+   "color": "#e6e1d9",
+   "texture": "door-inlay",
+   "roughness": 0.45,
+   "source": "estimated",
+   "from": "white leaf with black diagonal inlay lines"
+  }
+ },
+ "openings": [
+  {
+   "id": "door",
+   "name": "Door to the hallway (page 1 door J)",
+   "type": "door",
+   "plan": "p5-B",
+   "trim": {
+    "value": 0.07,
+    "source": "estimated",
+    "from": "casings about 7 cm"
+   },
+   "head": {
+    "value": 2.03,
+    "source": "owner",
+    "note": "standard door: 2.00 m leaf plus frame (render opening head 2.025)"
+   },
+   "frameMaterial": "white",
+   "leafMaterial": "door",
+   "notes": "handle side not visible in the renders"
+  }
+ ],
+ "elements": [
+  {
+   "id": "cistern-box",
+   "name": "Tiled box over the concealed cistern",
+   "type": "parts",
+   "source_note": "estimated: fills the top-wall recess (z 0-0.14) up to the niche board at 1.135",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.18,
+       0.87
+      ],
+      "y": [
+       0,
+       1.135
+      ],
+      "z": [
+       0.0,
+       0.14
+      ],
+      "m": "wall-tiles"
+     }
+    ]
+   }
+  },
+  {
+   "id": "toilet-cabinet",
+   "name": "Cabinet with LED niche above the toilet",
+   "type": "parts",
+   "label": "POLICA IZNAD ŠOLJE",
+   "source_note": "footprint: plan (69 x 19, as labelled 69 x 20); niche 1.155-1.359, doors split at x 0.524 (renders)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.182,
+       0.868
+      ],
+      "y": [
+       1.135,
+       1.155
+      ],
+      "z": [
+       0.0,
+       0.19
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.182,
+       0.868
+      ],
+      "y": [
+       1.359,
+       "ceiling"
+      ],
+      "z": [
+       0.0,
+       0.19
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.523,
+       0.525
+      ],
+      "y": [
+       1.359,
+       {
+        "below_ceiling": 0.108
+       }
+      ],
+      "z": [
+       0.19,
+       0.193
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.182,
+       0.868
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.11
+       },
+       {
+        "below_ceiling": 0.107
+       }
+      ],
+      "z": [
+       0.19,
+       0.193
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.383,
+       0.637
+      ],
+      "y": [
+       0.94,
+       1.1
+      ],
+      "z": [
+       0.14,
+       0.15
+      ],
+      "m": "flush"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wc",
+   "name": "Wall-hung toilet",
+   "type": "wc",
+   "center": {
+    "value": [
+     0.525,
+     0.42,
+     0.14
+    ],
+    "source": "estimated",
+    "from": "renders: x 0.34-0.71, z 0.14-0.56; standard seat 0.42"
+   },
+   "rotationY": 0,
+   "materials": {
+    "body": "sanitary",
+    "seat": "sanitary"
+   },
+   "params": {
+    "length": 0.42,
+    "width": 0.37
+   }
+  },
+  {
+   "id": "basin",
+   "name": "Basin (semi-pedestal)",
+   "type": "basin",
+   "center": {
+    "value": [
+     0.65,
+     0.86,
+     1.183
+    ],
+    "source": "estimated",
+    "from": "renders: x 0.427-0.87, z 0.913-1.453, rim 0.84-0.905"
+   },
+   "rotationY": -1.5708,
+   "materials": {
+    "body": "sanitary"
+   },
+   "params": {
+    "width": 0.54,
+    "depth": 0.44,
+    "height": 0.15,
+    "pedestal": true
+   }
+  },
+  {
+   "id": "basin-tap",
+   "name": "Tap (chrome, swan neck)",
+   "type": "parts",
+   "source_note": "estimated: at (0.80, 1.19), spout top 1.147",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.79,
+       0.81
+      ],
+      "y": [
+       0.905,
+       1.147
+      ],
+      "z": [
+       1.18,
+       1.2
+      ],
+      "m": "chrome"
+     },
+     {
+      "x": [
+       0.71,
+       0.81
+      ],
+      "y": [
+       1.127,
+       1.147
+      ],
+      "z": [
+       1.18,
+       1.2
+      ],
+      "m": "chrome"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mirror",
+   "name": "Tall LED mirror",
+   "type": "parts",
+   "source_note": "estimated: x 0.85-0.87, z 0.95-1.425, from 1.131 to the ceiling (renders)",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.85,
+       0.87
+      ],
+      "y": [
+       1.131,
+       "ceiling"
+      ],
+      "z": [
+       0.95,
+       1.425
+      ],
+      "m": "smoked-mirror"
+     }
+    ]
+   }
+  },
+  {
+   "id": "machines",
+   "name": "Washer and dryer in an open unit",
+   "type": "parts",
+   "label": "SKRIVAČ ZA MAŠINE",
+   "source_note": "footprint: plan (60 deep); washer 0.11-0.92, dryer 1.07-1.91, shelves and divider from the renders",
+   "params": {
+    "parts": [
+     {
+      "x": [
+       0.022,
+       0.624
+      ],
+      "y": [
+       0.02,
+       0.109
+      ],
+      "z": [
+       1.785,
+       2.37
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.04,
+       0.6
+      ],
+      "y": [
+       0.109,
+       0.918
+      ],
+      "z": [
+       1.785,
+       2.34
+      ],
+      "m": "machine"
+     },
+     {
+      "x": [
+       0.2,
+       0.44
+      ],
+      "y": [
+       0.35,
+       0.7
+      ],
+      "z": [
+       1.781,
+       1.785
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       0.022,
+       0.624
+      ],
+      "y": [
+       0.918,
+       1.073
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.04,
+       0.6
+      ],
+      "y": [
+       1.073,
+       1.905
+      ],
+      "z": [
+       1.785,
+       2.34
+      ],
+      "m": "machine"
+     },
+     {
+      "x": [
+       0.2,
+       0.44
+      ],
+      "y": [
+       1.32,
+       1.66
+      ],
+      "z": [
+       1.781,
+       1.785
+      ],
+      "m": "black"
+     },
+     {
+      "x": [
+       0.022,
+       0.624
+      ],
+      "y": [
+       1.905,
+       1.939
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.022,
+       0.624
+      ],
+      "y": [
+       2.04,
+       2.06
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.022,
+       0.868
+      ],
+      "y": [
+       {
+        "below_ceiling": 0.096
+       },
+       "ceiling"
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.614,
+       0.634
+      ],
+      "y": [
+       0,
+       {
+        "below_ceiling": 0.096
+       }
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.634,
+       0.868
+      ],
+      "y": [
+       0,
+       1.075
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "cabinet"
+     },
+     {
+      "x": [
+       0.634,
+       0.868
+      ],
+      "y": [
+       1.112,
+       1.132
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.634,
+       0.868
+      ],
+      "y": [
+       1.377,
+       1.397
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.634,
+       0.868
+      ],
+      "y": [
+       1.67,
+       1.69
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     },
+     {
+      "x": [
+       0.634,
+       0.868
+      ],
+      "y": [
+       1.953,
+       1.973
+      ],
+      "z": [
+       1.77,
+       2.37
+      ],
+      "m": "shelves"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ceiling-light",
+   "name": "Ceiling light (round)",
+   "type": "ceiling-disc",
+   "params": {
+    "at": [
+     0.43,
+     0.84
+    ],
+    "diameter": 0.4,
+    "intensity": 5,
+    "color": "#fff6ea"
+   },
+   "source_note": "estimated: centre (0.43, 0.84), 40 cm (renders)"
+  }
+ ],
+ "lights": [
+  {
+   "id": "ambient",
+   "type": "hemisphere",
+   "color": "#fff3e6",
+   "groundColor": "#3b2f25",
+   "intensity": 0.9,
+   "source": "assumed",
+   "from": "stands in for bounce light"
+  },
+  {
+   "id": "led-mirror-1",
+   "type": "led-strip",
+   "from": [
+    0.846,
+    1.26,
+    1.014
+   ],
+   "to": [
+    0.846,
+    1.98,
+    1.014
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ],
+   "width": 0.015,
+   "color": "#fff4e6",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "vertical LED strips in the mirror"
+  },
+  {
+   "id": "led-mirror-2",
+   "type": "led-strip",
+   "from": [
+    0.846,
+    1.26,
+    1.37
+   ],
+   "to": [
+    0.846,
+    1.98,
+    1.37
+   ],
+   "facing": [
+    -1,
+    0,
+    0
+   ],
+   "width": 0.015,
+   "color": "#fff4e6",
+   "intensity": 25,
+   "source": "estimated",
+   "from_render": "vertical LED strips in the mirror"
+  },
+  {
+   "id": "led-niche",
+   "type": "led-strip",
+   "from": [
+    0.2,
+    1.355,
+    0.17
+   ],
+   "to": [
+    0.85,
+    1.355,
+    0.17
+   ],
+   "facing": [
+    0,
+    -1,
+    0
+   ],
+   "width": 0.02,
+   "color": "#ffd9a8",
+   "intensity": 45,
+   "source": "estimated",
+   "from_render": "LED in the niche above the toilet"
+  }
+ ],
+ "cameras": [
+  {
+   "id": "p01",
+   "name": "Render 1: basin and machines",
+   "position": [
+    0.467,
+    1.256,
+    -0.379
+   ],
+   "target": [
+    0.415,
+    1.341,
+    2.37
+   ],
+   "fov": 66.2,
+   "near": 0.8,
+   "aspect": 1,
+   "daylight": false,
+   "ref": "reference/renders/toilet/toilet-p01.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 1.3 px rms; camera beyond the top wall"
+  },
+  {
+   "id": "p02",
+   "name": "Render 2: across the room",
+   "position": [
+    -1.128,
+    1.297,
+    1.008
+   ],
+   "target": [
+    0.87,
+    1.269,
+    0.948
+   ],
+   "fov": 66.2,
+   "near": 1.25,
+   "aspect": 1,
+   "daylight": false,
+   "ref": "reference/renders/toilet/toilet-p02.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.23 px rms; camera beyond the left wall"
+  },
+  {
+   "id": "p03",
+   "name": "Render 3: machines",
+   "position": [
+    0.255,
+    1.683,
+    0.423
+   ],
+   "target": [
+    0.762,
+    1.528,
+    2.37
+   ],
+   "fov": 66.2,
+   "near": 0.05,
+   "aspect": 1,
+   "daylight": false,
+   "ref": "reference/renders/toilet/toilet-p03.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.14 px rms"
+  },
+  {
+   "id": "p04",
+   "name": "Render 4: toilet and cabinet",
+   "position": [
+    0.276,
+    1.472,
+    2.122
+   ],
+   "target": [
+    0.671,
+    1.325,
+    0.0
+   ],
+   "fov": 66.2,
+   "near": 0.45,
+   "aspect": 1,
+   "daylight": false,
+   "ref": "reference/renders/toilet/toilet-p04.jpg",
+   "source": "estimated",
+   "from": "joint camera fit, 0.16 px rms; camera inside the machine unit"
+  }
+ ]
+}

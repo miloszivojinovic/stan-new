@@ -1,0 +1,47 @@
+{
+ "answered": "2026-11-20, 2026-11-22",
+ "ceiling_height_m": {
+  "value": 2.4,
+  "applies_to": "all rooms",
+  "source": "owner",
+  "confirmed": "2026-11-23: owner keeps 2.40 m although the designer's renders were modelled at about 2.61 m"
+ },
+ "interior_doors": {
+  "value": "standard",
+  "leaf_height_m": 2.0,
+  "widths": "from the plan",
+  "source": "owner (standard doors); 2.00 m leaf = standard size, assumed"
+ },
+ "interior_wall_thickness_m": {
+  "value": 0.15,
+  "source": "owner",
+  "note": "the plans draw about 0.20 m everywhere (0.15 m around the toilet); exterior wall thickness not given, use as drawn (assumed)"
+ },
+ "revision": {
+  "value": "every PDF received (layout plan and all render sets) is accurate and current",
+  "source": "owner"
+ },
+ "childrens_room": {
+  "value": "no scene, leave it empty and unrendered; only render the door to it",
+  "source": "owner"
+ },
+ "page1_doors": {
+  "source": "owner, answering debug/p1-doors-question.png",
+  "p1-I": "work-room",
+  "p1-J": "toilet",
+  "p1-N": "bathroom",
+  "p1-O": "bedroom",
+  "p1-P": "childrens-room"
+ },
+ "front_door": {
+  "value": "on the entrance hallway's top-left wall (top wall of the narrow left part of page 1), the first thing from the left, left of the entrance cabinet",
+  "source": "owner"
+ },
+ "label_wins_over_drawing": {
+  "source": "owner: make it as labelled",
+  "dining table": "190 x 75 cm, 57 cm from the wall (drawn 192.9 and 54.2)",
+  "childrens-room desk": "60 cm deep (drawn 57.8)",
+  "bathroom boiler cabinet": "40 cm deep (drawn 35.0)"
+ },
+ "open_questions": []
+}

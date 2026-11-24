@@ -1,0 +1,626 @@
+{
+ "room": "toilet",
+ "frame": "x right, z down the plan page, y up, metres, origin interior top-left",
+ "scale": {
+  "render_ceiling_height_m": 2.344,
+  "owner_ceiling_height_m": 2.4,
+  "heights_in_this_file": "render-model scale (ceiling 2.344 m); see notes 1",
+  "per_render_ceiling_fit_m": {
+   "p01": null,
+   "p02": 2.344,
+   "p03": null,
+   "p04": null
+  },
+  "source": "estimated",
+  "from": "the ceiling height is set by p02 (floor and ceiling lines on the right wall); p01, p03 and p04 agree within 0.5 px when they share it but do not determine it independently"
+ },
+ "features": [
+  {
+   "name": "ceiling",
+   "what": "flat painted ceiling; the toilet cabinet, the concealer and the mirror run up to it",
+   "y": [
+    2.344,
+    2.344
+   ],
+   "note": "2.344 m in this render model: 6 cm below the owner's 2.40 m and different from the bathroom (2.41) and the work room (2.61); the value comes from the floor-to-ceiling span on the right wall in p02 relative to the plan distance 1.58 m between the cabinet front (z 0.19) and the concealer front (z 1.77), so it does not depend on the focal length",
+   "source": "estimated",
+   "from": "joint fit: ceiling lines on the right wall (p02, p03, p04), concealer and cabinet tops (p01, p03, p04)"
+  },
+  {
+   "name": "top-wall recess",
+   "what": "the top wall is at z 0 for x 0.18-0.87 and at z 0.14 for x 0-0.18; the toilet cabinet and cistern sit in the recess",
+   "x": [
+    0.18,
+    0.87
+   ],
+   "z": [
+    0.0,
+    0.14
+   ],
+   "source": "estimated",
+   "from": "plan: interior polygon"
+  },
+  {
+   "name": "wall tiles",
+   "what": "large-format light beige porcelain with faint grey veining on all walls, about 58-60 cm square (joint pitch 0.58 m), thin light grout",
+   "tile_size_m": [
+    0.58,
+    0.58
+   ],
+   "joint_y": [
+    0.238,
+    0.817,
+    1.399,
+    1.984
+   ],
+   "joint_z_right_wall": 0.55,
+   "source": "estimated",
+   "from": "p02 (right-wall joints back-projected: 0.238, 0.817, 1.399, 1.984; vertical joint z 0.55)"
+  },
+  {
+   "name": "floor tiles",
+   "what": "large-format beige porcelain, about 60 x 60 cm, same family as the walls",
+   "source": "estimated",
+   "from": "plan raster (one tile line at x about 0.51 and z about 0.53, 1.10, 1.70); renders"
+  },
+  {
+   "name": "door (left wall)",
+   "what": "white leaf with thin black diagonal inlay lines, white casings about 7 cm; handle side not visible in the renders",
+   "x": [
+    0.0,
+    0.02
+   ],
+   "z": [
+    0.456,
+    1.43
+   ],
+   "y": [
+    0.0,
+    2.117
+   ],
+   "casing_top_y": 2.117,
+   "opening_head_y": 2.025,
+   "note": "in p01 the far casing edge appears at about z 1.55 rather than the plan's 1.43, so either the render model's door sits 10-15 cm closer to the concealer or that line is something else; the plan position is kept",
+   "source": "estimated",
+   "from": "plan opening p5-B (left wall, z 0.456-1.430 across the casings); heights from p01 (casing head corners back-projected onto z 1.43 and 1.36)"
+  },
+  {
+   "name": "toilet cabinet with niche (shelf above the toilet)",
+   "what": "wall-hung greige cabinet over the toilet filling the recess, 69 cm wide, 19 cm deep: two flat handle-less doors (split at x 0.524) from 1.359 to 2.236, fixed top panel to the ceiling, open niche 1.155-1.359 with a 2 cm bottom board (underside 1.135) and an LED strip under the cabinet bottom",
+   "x": [
+    0.182,
+    0.868
+   ],
+   "z": [
+    0.0,
+    0.19
+   ],
+   "y": [
+    1.135,
+    2.344
+   ],
+   "door_y": [
+    1.359,
+    2.236
+   ],
+   "top_panel_y": [
+    2.236,
+    2.344
+   ],
+   "niche_y": [
+    1.155,
+    1.359
+   ],
+   "niche_board_underside_y": 1.135,
+   "door_split_x": 0.524,
+   "source": "estimated",
+   "from": "plan footprint (merged x 0.182-0.868, z 0-0.19; labels 69 and 20); heights from p04 (back-projected onto z 0.19)"
+  },
+  {
+   "name": "flush plate",
+   "what": "light grey/white rectangular plate with two round buttons, on the tiled wall under the niche (concealed cistern behind)",
+   "x": [
+    0.383,
+    0.637
+   ],
+   "z": [
+    0.14,
+    0.15
+   ],
+   "y": [
+    0.94,
+    1.1
+   ],
+   "source": "estimated",
+   "from": "p04 (back-projected onto z 0.14 and 0.19; the two differ by 1 cm)"
+  },
+  {
+   "name": "wall-hung toilet",
+   "what": "white wall-hung bowl with slim lid, centred under the cabinet",
+   "x": [
+    0.34,
+    0.71
+   ],
+   "z": [
+    0.14,
+    0.56
+   ],
+   "lid_top_y": 0.48,
+   "seat_y_assumed": 0.42,
+   "reliability": "lid top +-3 cm (p04 gives 0.50 at an assumed depth; p02 gives 0.45-0.62 depending on depth)",
+   "source": "estimated",
+   "from": "bowl footprint from the plan raster (x 0.34-0.71, z 0.18-0.56); lid top from p04 (far edge back-projected at z 0.25)"
+  },
+  {
+   "name": "basin",
+   "what": "white semi-pedestal (wall-hung with half pedestal) basin with a tap deck at the back",
+   "x": [
+    0.427,
+    0.87
+   ],
+   "z": [
+    0.913,
+    1.453
+   ],
+   "rim_front_y": 0.84,
+   "back_deck_y": 0.905,
+   "pedestal_bottom_y": 0.39,
+   "width_m": 0.55,
+   "depth_m": 0.44,
+   "source": "estimated",
+   "from": "plan raster (bowl x 0.427-0.87, z 0.913-1.453); p02 (rim and pedestal back-projected)"
+  },
+  {
+   "name": "basin tap",
+   "what": "chrome deck mixer with tall swan-neck spout and two small lever handles",
+   "position_xz": [
+    0.8,
+    1.19
+   ],
+   "spout_top_y": 1.147,
+   "source": "estimated",
+   "from": "p02 (back-projected)"
+  },
+  {
+   "name": "tall LED mirror",
+   "what": "frameless rectangular mirror (smoked/grey look with fine white flecks, as in the bathroom) on the right wall above the basin, from 1.13 to the ceiling, with two vertical LED strips 6 cm in from the sides",
+   "x": [
+    0.85,
+    0.87
+   ],
+   "z": [
+    0.95,
+    1.425
+   ],
+   "y": [
+    1.131,
+    2.344
+   ],
+   "led_strips_z": [
+    1.014,
+    1.37
+   ],
+   "led_strips_y": [
+    1.26,
+    1.98
+   ],
+   "source": "estimated",
+   "from": "p02 (edges back-projected onto x 0.855; plan shows a thin line at z 0.96-1.41)"
+  },
+  {
+   "name": "washing-machine concealer",
+   "what": "floor-to-ceiling greige open unit across the bottom wall, 60 cm deep: right column (x 0.022-0.624) with the washer on a low plinth, a 15 cm board/drawer front between the machines, the dryer stacked above, a 3.4 cm shelf over the dryer, an open top compartment with a shelf at 2.05, and a fixed top panel 2.248 to the ceiling; left column (x 0.624-0.868) of open shelves above a closed base",
+   "x": [
+    0.022,
+    0.868
+   ],
+   "z": [
+    1.77,
+    2.37
+   ],
+   "y": [
+    0.0,
+    2.344
+   ],
+   "plinth_y": [
+    0.02,
+    0.109
+   ],
+   "washer_y": [
+    0.109,
+    0.918
+   ],
+   "board_between_y": [
+    0.918,
+    1.073
+   ],
+   "dryer_y": [
+    1.073,
+    1.905
+   ],
+   "shelf_over_dryer_y": [
+    1.905,
+    1.939
+   ],
+   "top_compartment_shelf_y": 2.05,
+   "top_panel_y": [
+    2.248,
+    2.344
+   ],
+   "divider_x": 0.624,
+   "side_column_shelves_y": [
+    1.122,
+    1.387,
+    1.68,
+    1.963
+   ],
+   "side_column_base_top_y": 1.075,
+   "machines": "front-loading washer and dryer about 60 cm wide, white with chrome door rings",
+   "source": "estimated",
+   "from": "plan footprint (labels 60, 87), plan divider line at x 0.62; heights from p01 (back-projected onto z 1.785), divider confirmed in p01 and p03"
+  }
+ ],
+ "cameras": [
+  {
+   "render": "toilet-p01",
+   "shows": "down the room toward the bottom wall: stacked washer and dryer in the open greige concealer with side shelves, basin and tall LED mirror at left, door at right",
+   "position": [
+    0.467,
+    1.256,
+    -0.379
+   ],
+   "target": [
+    0.415,
+    1.341,
+    2.37
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    -0.0188,
+    0.0309,
+    0.9993
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 66.2,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": 91.07,
+   "pitch_deg": 1.77,
+   "roll_deg": -0.25,
+   "fit_rms_px": 1.26,
+   "inside_room": false,
+   "near_clip_m": 0.8,
+   "source": "estimated",
+   "notes": "Camera is 0.38 m beyond the top wall (z 0), looking +z. The near plane must hide the top wall and the toilet cabinet (z 0-0.19, depth up to 0.6) and keep the basin and mirror (depth about 1.3): near about 0.8 (range 0.6-1.2). The fit gives pitch +1.8 deg (slightly up); its rms is the highest of the four because the door casing in this view does not match the plan position (see notes). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of the machine concealer's front edges and top, the toilet cabinet's front edges, top and niche, ceiling-wall and floor-wall lines and right-wall tile joints, matched to plan geometry (cabinet front z 0.19, concealer front z 1.77, walls x 0 and 0.87); pinhole, principal point at the image centre, one shared focal length 1965 px (vanishing points of p03/p04 give 1957-1977 px), ceiling and joint heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "toilet-p02",
+   "shows": "right wall head-on: toilet cabinet with LED niche and flush plate at left, wall-hung toilet, semi-pedestal basin under the tall LED mirror, washer/dryer column at right",
+   "position": [
+    -1.128,
+    1.297,
+    1.008
+   ],
+   "target": [
+    0.87,
+    1.269,
+    0.948
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.9995,
+    -0.0144,
+    -0.0297
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 66.2,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": -1.7,
+   "pitch_deg": -0.82,
+   "roll_deg": -0.0,
+   "fit_rms_px": 0.23,
+   "inside_room": false,
+   "near_clip_m": 1.25,
+   "source": "estimated",
+   "notes": "Camera is 1.13 m outside the left wall (x 0), looking +x. The near plane must hide the left wall with the door (depth about 1.13) and keep the toilet (nearest point at depth about 1.45): near about 1.25 (range 1.15-1.4). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of the machine concealer's front edges and top, the toilet cabinet's front edges, top and niche, ceiling-wall and floor-wall lines and right-wall tile joints, matched to plan geometry (cabinet front z 0.19, concealer front z 1.77, walls x 0 and 0.87); pinhole, principal point at the image centre, one shared focal length 1965 px (vanishing points of p03/p04 give 1957-1977 px), ceiling and joint heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "toilet-p03",
+   "shows": "close view of the concealer: dryer over washer, open shelf column at left, top compartment; mirror (reflecting the machines) at left, door casing at right",
+   "position": [
+    0.255,
+    1.683,
+    0.423
+   ],
+   "target": [
+    0.762,
+    1.528,
+    2.37
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.2515,
+    -0.0769,
+    0.9648
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 66.2,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": 75.39,
+   "pitch_deg": -4.41,
+   "roll_deg": 0.01,
+   "fit_rms_px": 0.14,
+   "inside_room": true,
+   "near_clip_m": 0.05,
+   "source": "estimated",
+   "notes": "Camera inside the room near the top wall, above the toilet (y 1.68); no clipping needed. target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of the machine concealer's front edges and top, the toilet cabinet's front edges, top and niche, ceiling-wall and floor-wall lines and right-wall tile joints, matched to plan geometry (cabinet front z 0.19, concealer front z 1.77, walls x 0 and 0.87); pinhole, principal point at the image centre, one shared focal length 1965 px (vanishing points of p03/p04 give 1957-1977 px), ceiling and joint heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  },
+  {
+   "render": "toilet-p04",
+   "shows": "toward the top wall: two-door greige cabinet over the toilet with LED niche, flush plate, toilet, door at left, basin and tall LED mirror at right",
+   "position": [
+    0.276,
+    1.472,
+    2.122
+   ],
+   "target": [
+    0.671,
+    1.325,
+    0.0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0.1826,
+    -0.068,
+    -0.9808
+   ],
+   "hfov_deg": 66.2,
+   "vfov_deg": 66.2,
+   "aspect": "1:1 (2560 x 2560)",
+   "focal_px": 1965.0,
+   "principal_point_px": [
+    1280,
+    1280
+   ],
+   "yaw_deg": -79.46,
+   "pitch_deg": -3.9,
+   "roll_deg": -0.0,
+   "fit_rms_px": 0.16,
+   "inside_room": false,
+   "near_clip_m": 0.45,
+   "source": "estimated",
+   "notes": "Camera stands inside the machine concealer (z 2.12, which occupies z 1.77-2.37), looking -z. Hide the concealer, or set near about 0.45 (the concealer front is at depth 0.35; the basin, the nearest kept object, at depth about 0.6). target = where the optical axis meets the far room boundary. yaw = heading in the x-z plane (0 = +x, 90 = +z), pitch positive = up. three.js: position, lookAt(target), fov = vfov_deg.",
+   "from": "joint fit of p01-p04: sub-pixel straight edges (gradient profiles seeded by OpenCV LSD) of the machine concealer's front edges and top, the toilet cabinet's front edges, top and niche, ceiling-wall and floor-wall lines and right-wall tile joints, matched to plan geometry (cabinet front z 0.19, concealer front z 1.77, walls x 0 and 0.87); pinhole, principal point at the image centre, one shared focal length 1965 px (vanishing points of p03/p04 give 1957-1977 px), ceiling and joint heights as free parameters; Levenberg-Marquardt on point-to-line distances"
+  }
+ ],
+ "colours": {
+  "wall_tiles_beige": {
+   "hex": "#cab7a3",
+   "what": "large-format light beige porcelain",
+   "source": "estimated",
+   "from": "p02 px box [600, 800, 850, 1100], median of the 10-90% luminance band",
+   "hex_white_balanced": "#bab7b3",
+   "other_views": {
+    "p02 [1850, 800, 2050, 1100]": "#a38d75",
+    "p04 [1550, 700, 1750, 1000]": "#ddd0c3"
+   }
+  },
+  "floor_tiles": {
+   "hex": "#83715a",
+   "what": "beige porcelain, floor in shade",
+   "source": "estimated",
+   "from": "p01 px box [1000, 2505, 1600, 2555], median of the 10-90% luminance band",
+   "hex_white_balanced": "#787163",
+   "other_views": {
+    "p02 [900, 2535, 1300, 2558]": "#917c66"
+   }
+  },
+  "cabinet_greige": {
+   "hex": "#d1bea9",
+   "what": "flat matt greige doors and panels (toilet cabinet, concealer)",
+   "source": "estimated",
+   "from": "p04 px box [850, 400, 1450, 1200], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c0beba",
+   "other_views": {
+    "p02 [150, 300, 500, 1000]": "#ccbaa5",
+    "p01 [1150, 300, 1600, 340]": "#96836a"
+   }
+  },
+  "concealer_shelves": {
+   "hex": "#af9880",
+   "what": "greige shelf boards, lit (the p01 value is the shaded interior)",
+   "source": "estimated",
+   "from": "p03 px box [740, 1200, 900, 1400], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a1988d",
+   "other_views": {
+    "p01 [900, 1000, 1070, 1200]": "#28180e"
+   }
+  },
+  "sanitary_white": {
+   "hex": "#c6b8ab",
+   "what": "glossy white ceramic (basin, toilet); shaded faces render #9b8972 to #7f6d58",
+   "source": "estimated",
+   "from": "p04 px box [1150, 2250, 1350, 2350], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b6b8bc",
+   "other_views": {
+    "p02 [1300, 1760, 1700, 1800]": "#9b8972",
+    "p02 [1450, 1950, 1600, 2100]": "#7f6d58"
+   }
+  },
+  "machines_white": {
+   "hex": "#bfb0a0",
+   "what": "white appliance fronts with chrome door rings and black glass doors",
+   "source": "estimated",
+   "from": "p01 px box [1150, 1150, 1250, 1400], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b0b0b0",
+   "other_views": {
+    "p03 [1300, 1500, 1450, 1650]": "#c4b2a0"
+   }
+  },
+  "chrome": {
+   "hex": "#685847",
+   "what": "polished chrome tap (reflects the warm room, so it renders brownish)",
+   "source": "estimated",
+   "from": "p02 px box [1505, 1450, 1525, 1600], median of the 10-90% luminance band",
+   "hex_white_balanced": "#60584e"
+  },
+  "mirror": {
+   "hex": "#988979",
+   "what": "smoked grey mirror; reflections render mid grey-brown",
+   "source": "estimated",
+   "from": "p02 px box [1400, 800, 1650, 1000], median of the 10-90% luminance band",
+   "hex_white_balanced": "#8c8985",
+   "other_views": {
+    "p04 [1950, 1100, 2100, 1300]": "#74604a"
+   }
+  },
+  "door": {
+   "hex": "#d2c6ba",
+   "what": "white leaf with thin black diagonal inlay lines",
+   "source": "estimated",
+   "from": "p01 px box [1900, 1200, 2100, 1500], median of the 10-90% luminance band",
+   "hex_white_balanced": "#c1c6cc",
+   "other_views": {
+    "p04 [100, 1200, 250, 1600]": "#d0c4b4"
+   }
+  },
+  "ceiling": {
+   "hex": "#b39c82",
+   "what": "flat white/off-white paint (renders warm)",
+   "source": "estimated",
+   "from": "p01 px box [900, 100, 1400, 250], median of the 10-90% luminance band",
+   "hex_white_balanced": "#a59c8f",
+   "other_views": {
+    "p04 [700, 100, 900, 180]": "#a99783"
+   }
+  },
+  "flush_plate": {
+   "hex": "#7c6a54",
+   "what": "light grey plate in shade",
+   "source": "estimated",
+   "from": "p04 px box [1050, 1530, 1250, 1650], median of the 10-90% luminance band",
+   "hex_white_balanced": "#726a5c"
+  },
+  "led_emitter": {
+   "hex": "#fdfaee",
+   "what": "mirror LED strips (emissive, near white)",
+   "source": "estimated",
+   "from": "p02 px box [1336, 600, 1344, 1300]"
+  },
+  "niche_glow": {
+   "hex": "#bf9c62",
+   "what": "warm glow inside the niche under the toilet cabinet",
+   "source": "estimated",
+   "from": "p02 px box [100, 1250, 250, 1350], median of the 10-90% luminance band",
+   "hex_white_balanced": "#b09c6c",
+   "other_views": {
+    "p04 [600, 1300, 1400, 1420]": "#bea073"
+   }
+  },
+  "_how_to_read": "hex = rendered sRGB in a plain patch, median of the 10-90% luminance band. hex_white_balanced applies per-channel linear gains that make the lit white dryer front neutral (R x0.920, G x0.998, B x1.098; reference #bfb0a0 from p01). Like the bathroom, these renders are mildly warm.",
+  "light_colour_temperature": {
+   "value": "ceiling disc and mirror strips near-neutral white (about 4000 K, strip renders #fdfaee); niche LED warm white about 2700-3000 K (#bf9c62); no daylight (no window)",
+   "source": "estimated",
+   "from": "emitter and glow pixels in p01, p02, p04"
+  }
+ },
+ "lights": [
+  {
+   "type": "ceiling-disc",
+   "name": "ceiling light",
+   "position": [
+    0.43,
+    2.26,
+    0.84
+   ],
+   "diameter_m": 0.4,
+   "depth_m": 0.08,
+   "what": "round surface-mounted disc like the bathroom one (white body, thin metallic ring, opal diffuser); only partly visible in every render",
+   "reliability": "+-5 cm in x and z; the 8 cm depth is assumed from the bathroom fixture",
+   "source": "estimated",
+   "from": "p02 (bright region at the top edge back-projected onto y 2.26; centre x from the room's centre line), p01 and p04 show it cut off at the top edge"
+  },
+  {
+   "type": "led-strip",
+   "name": "mirror strips",
+   "position": [
+    {
+     "x": 0.855,
+     "z": 1.014
+    },
+    {
+     "x": 0.855,
+     "z": 1.37
+    }
+   ],
+   "y": [
+    1.26,
+    1.98
+   ],
+   "faces": "-x (into the room), through the mirror",
+   "colour": "near-neutral white",
+   "source": "estimated",
+   "from": "p02 and p04 (edges back-projected onto x 0.85)"
+  },
+  {
+   "type": "led-strip",
+   "name": "toilet niche strip",
+   "position": {
+    "x": [
+     0.2,
+     0.85
+    ],
+    "y": 1.355,
+    "z": 0.17
+   },
+   "faces": "down into the niche",
+   "colour": "warm white",
+   "source": "estimated",
+   "from": "p02, p04 (bright line under the cabinet bottom at 1.359)"
+  }
+ ],
+ "notes": [
+  "CEILING: the toilet render model has a 2.344 m ceiling (6 cm below the owner's 2.40 m; the bathroom renders give 2.41 and the work room 2.61). Heights in this file are in the render-model scale. To adopt 2.40, keep absolute heights of fixtures (basin, toilet, flush plate, machines) and stretch only the ceiling-hung items (cabinet top panel, concealer top panel, mirror top), or scale every y by 2.40/2.344 = 1.024.",
+  "Cameras p01, p02 and p04 are outside the usable space (p01 0.38 m beyond the top wall, p02 1.13 m beyond the left wall, p04 inside the machine concealer); p03 is inside. Use near_clip_m or hide the wall/unit behind the camera.",
+  "Focal length: all four share f = 1965 px (vfov = hfov = 66.2 deg, the same lens as the work-room renders). p01 alone prefers a much longer lens if its focal length is freed (about 3100-3700 px) but then disagrees with its own vanishing points; with the shared value its edge rms is 1.3 px, the others 0.14-0.23 px.",
+  "There is no window in the toilet. The plan's door p5-B on the left wall is confirmed (casing top 2.12, opening head 2.03). In p01 the door's far casing edge sits about 12 cm closer to the concealer than the plan says; the plan position was kept.",
+  "The concealer's machine column is x 0.022-0.624 (plan line at 0.62, confirmed in p01 and p03) and the open shelf column x 0.624-0.868; machine heights assume the fronts at z 1.785 (+-1 cm per 3 cm of depth error).",
+  "The toilet lid height is uncertain (0.45-0.50 depending on the assumed depth of its top edge); use a standard seat height of about 0.42 m.",
+  "Not determined: the door's hinge and handle side, the bowl underside, the internal layout of the closed base under the shelf column, the exact ceiling-disc model.",
+  "Colours are rendered pixel values; see colours._how_to_read."
+ ],
+ "generated": "2026-11-23 from the 4 toilet renders (OpenCV LSD and gradient edge fits, Levenberg-Marquardt camera solve, back-projection onto plan planes); analysis scripts kept outside the repo"
+}
